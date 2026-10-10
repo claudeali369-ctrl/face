@@ -166,10 +166,9 @@ def fetch_google_trends(country_code: str) -> list[dict]:
 
     Returns a list of raw trend dicts with keys: topic, source, raw_score.
     """
-    url = (
-        f"https://trends.google.com/trends/trendingsearches/daily/rss"
-        f"?geo={country_code}"
-    )
+    
+    url = f"https://trends.google.com/trending/rss?geo={country_code}"
+
     log.info("Google Trends: fetching %s", url)
     try:
         resp = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
@@ -181,7 +180,9 @@ def fetch_google_trends(country_code: str) -> list[dict]:
     trends: list[dict] = []
     try:
         root = ET.fromstring(resp.content)
-        ns = {"ht": "https://trends.google.com/trends/trendingsearches/daily"}
+        
+        ns = {"ht": "https://trends.google.com/trending/rss"}
+
         channel = root.find("channel")
         if channel is None:
             return []
