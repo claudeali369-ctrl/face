@@ -28,7 +28,7 @@ from tenacity import (
 )
 
 from utils.logger import get_logger
-from utils.state_manager import write_state, read_state
+from utils.state_manager import write_state, read_state, state_exists, delete_state
 from utils.rate_limiter import FACEBOOK_LIMITER
 
 logger = get_logger("facebook_client")
