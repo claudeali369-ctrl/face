@@ -430,7 +430,18 @@ def _process_plan_item(
     or None if the item must be skipped (unsafe / quota exhausted).
     """
     post_id = plan_item["post_id"]
-    fmt     = plan_item.get("format", "single_image")
+    
+    fmt = str(
+        plan_item.get("format", "single_image")
+    ).strip().lower()
+
+    if fmt == "image":
+        fmt = "single_image"
+        plan_item = {
+            **plan_item,
+            "format": "single_image",
+        }
+
 
     log.info("[%s] Generating content — format: %s topic: %r",
              post_id, fmt, plan_item.get("trend_topic", "")[:60])
