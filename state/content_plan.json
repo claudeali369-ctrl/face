@@ -1,13 +1,13 @@
 {
   "date": "2026-10-10",
-  "generated_at": "2026-10-10T18:09:06.039887+00:00",
+  "generated_at": "2026-10-10T18:30:16.011534+00:00",
   "posts": [
     {
-      "post_id": "bb910cd9-511c-4a0d-b2ed-8ee896f20251",
+      "post_id": "4590b8ba-d66b-44a2-9d99-2c8df98a6a31",
       "slot": 1,
       "scheduled_time_utc": "2026-10-10T03:00:00+00:00",
       "format": "image",
-      "trend_topic": "chicago vs new york city",
+      "trend_topic": "napoli vs frosinone",
       "content_pillar": "Hidden Gems",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
@@ -15,23 +15,23 @@
       "status": "planned"
     },
     {
-      "post_id": "2f872345-33d7-4a6d-94ab-cc9fa5f4cc0b",
+      "post_id": "7e5ab930-a7c3-4d5e-b154-777dfa37d6df",
       "slot": 2,
       "scheduled_time_utc": "2026-10-10T07:00:00+00:00",
       "format": "image",
-      "trend_topic": "gavi",
+      "trend_topic": "real madrid vs villarreal",
       "content_pillar": "Hidden Gems",
-      "hook_type": "local_relevance",
+      "hook_type": "curiosity",
       "cta_type": "save_or_share",
       "dominant_emotion": "curiosity",
       "status": "planned"
     },
     {
-      "post_id": "c00cea9a-9aa3-4497-b9dc-ef09c6a5981c",
+      "post_id": "e1262f0a-644d-4bd1-9a90-95b158affed4",
       "slot": 3,
       "scheduled_time_utc": "2026-10-10T14:00:00+00:00",
       "format": "image",
-      "trend_topic": "ইমরান খান",
+      "trend_topic": "psg vs le mans",
       "content_pillar": "Hidden Gems",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
@@ -41,29 +41,29 @@
   ],
   "stories": [
     {
-      "post_id": "71cbdbe9-ca1c-4211-bd38-82972caf9ba4",
+      "post_id": "76d63d38-f675-4f22-954c-16250552b39a",
       "slot": 1,
       "scheduled_time_utc": "2026-10-10T03:00:00+00:00",
       "format": "story",
-      "trend_topic": "chicago vs new york city",
+      "trend_topic": "napoli vs frosinone",
       "content_pillar": "entertainment",
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "bb910cd9-511c-4a0d-b2ed-8ee896f20251",
+      "parent_post_id": "4590b8ba-d66b-44a2-9d99-2c8df98a6a31",
       "status": "planned"
     },
     {
-      "post_id": "a0ea3ea1-bc00-4ea1-bce1-8a0d05a1c1c3",
+      "post_id": "ab8105c4-0f7b-4429-9523-a2f0a020834b",
       "slot": 2,
       "scheduled_time_utc": "2026-10-10T07:00:00+00:00",
       "format": "story",
-      "trend_topic": "gavi",
+      "trend_topic": "real madrid vs villarreal",
       "content_pillar": "inspirational",
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "2f872345-33d7-4a6d-94ab-cc9fa5f4cc0b",
+      "parent_post_id": "7e5ab930-a7c3-4d5e-b154-777dfa37d6df",
       "status": "planned"
     }
   ],
