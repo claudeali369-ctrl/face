@@ -206,10 +206,30 @@ def _generate_post_caption(
         log_exception(log, exc, f"[{post_id}] Caption Gemini call failed")
         return None
 
-    hook     = result.get("hook", "")
-    body     = result.get("caption_body", result.get("body", ""))
-    hashtags = _validate_hashtags(result.get("hashtags", []))
-    cta      = result.get("cta", "")
+    
+    hook = (
+        result.get("hook_line")
+        or result.get("hook")
+        or ""
+    )
+    
+    body = (
+        result.get("body_text")
+        or result.get("caption_body")
+        or result.get("body")
+        or ""
+    )
+    
+    hashtags = _validate_hashtags(
+        result.get("hashtags", [])
+    )
+    
+    cta = (
+        result.get("cta_text")
+        or result.get("cta")
+        or ""
+    )
+
     alt_text = result.get("alt_text", "")
 
     # Compose full caption
