@@ -176,22 +176,43 @@ def _publish_text(fb: FacebookClient, item: dict) -> str:
     return fb.post_text(message=message)
 
 
+
 def _publish_story(fb: FacebookClient, item: dict) -> str:
-    """Publish story slides. Returns last story Facebook post_id (or synthetic id)."""
+    """Publish all validated story slides; return the last story ID."""
     slides = item.get("story_slides") or []
+
     if not slides:
-        raise ValueError(f"No story_slides for {item['post_id']}")
+        raise ValueError(
+            f"No story_slides for {item.get('post_id', 'unknown')}"
+        )
+
+    # Validate the entire story before uploading any slide.
+    paths = []
+    for index, slide in enumerate(slides, start=1):
+        image_path = slide.get("image_path", "")
+        if not image_path or not Path(image_path).is_file():
+            raise ValueError(
+                f"Story slide {index} has missing image_path: {image_path!r}"
+            )
+        paths.append(image_path)
+
     last_id = ""
-    for slide in slides:
-        slide_path = slide.get("image_path", "")
-        if not slide_path or not Path(slide_path).exists():
-            log.warning(f"Story slide missing image_path, skipping: {slide}")
-            continue
+    for index, image_path in enumerate(paths, start=1):
         FACEBOOK_LIMITER.acquire()
-        last_id = fb.post_story_photo(image_path=slide_path)
-    if not last_id:
-        raise ValueError(f"No story slides successfully published for {item['post_id']}")
+        last_id = fb.post_story_photo(image_path=image_path)
+
+        if not last_id:
+            raise RuntimeError(
+                f"Facebook returned no story ID for slide {index}"
+            )
+
+        log.info(
+            "[%s] Story slide %d/%d published: %s",
+            item.get("post_id"), index, len(paths), last_id
+        )
+
     return last_id
+
 
 
 def _publish_reel(fb: FacebookClient, item: dict) -> str:
