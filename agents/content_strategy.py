@@ -152,6 +152,24 @@ def _assign_format(
             return cross[0]
     return preferred[0] if preferred else "single_image"
 
+_FORMAT_ALIASES = {
+    "image": "single_image",
+    "photo": "single_image",
+    "single image": "single_image",
+    "single image post": "single_image",
+    "carousel post": "carousel",
+    "text post": "text",
+    "reel script": "reel",
+    "video": "reel",
+}
+_VALID_FORMATS = {"single_image", "carousel", "text", "story", "reel"}
+
+
+def _normalize_format(raw_format: str, fallback: str) -> str:
+    """Canonicalize whatever Gemini returns into the formats every other agent expects."""
+    fmt = str(raw_format or "").strip().lower()
+    fmt = _FORMAT_ALIASES.get(fmt, fmt)
+    return fmt if fmt in _VALID_FORMATS else fallback
 
 def _is_reel_day(cfg: dict) -> bool:
     """Return True if today (UTC) is a scheduled reel day."""
@@ -324,7 +342,7 @@ def _build_content_plan(
             "post_id":            post_id,
             "slot":               slot_num,
             "scheduled_time_utc": strategy.get("optimal_post_time", scheduled_time_utc),
-            "format":             strategy.get("format", assigned_format),
+            "format":             _normalize_format(strategy.get("format", assigned_format), assigned_format),
             "trend_topic":        trend["topic"],
             "content_pillar":     strategy.get("content_pillar", pillar),
             "hook_type":          strategy.get("hook_type", slot_profile["hook_types"][0]),
