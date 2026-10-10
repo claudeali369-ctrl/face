@@ -1,0 +1,9 @@
+[
+  {
+    "timestamp": "2026-10-10T18:05:09.986184+00:00",
+    "session_id": "85952bfa",
+    "agent_name": "publisher",
+    "message": "Facebook token is invalid or expired — halting publisher.",
+    "exc_info": null
+  }
+]

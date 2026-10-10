@@ -1,13 +1,13 @@
 {
   "date": "2026-10-10",
-  "generated_at": "2026-10-10T17:50:22.485771+00:00",
+  "generated_at": "2026-10-10T18:04:14.069585+00:00",
   "posts": [
     {
-      "post_id": "82a7a28a-1562-42e7-9634-f84c816288f5",
+      "post_id": "1bd76d3a-c0f9-48d2-9d0b-92df2991d3cc",
       "slot": 1,
       "scheduled_time_utc": "2026-10-10T03:00:00+00:00",
       "format": "image",
-      "trend_topic": "al-hilal vs al-ittihad",
+      "trend_topic": "toronto vs montréal",
       "content_pillar": "Hidden Gems",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
@@ -15,23 +15,23 @@
       "status": "planned"
     },
     {
-      "post_id": "20ad8f8b-b4c2-413a-a2b2-28b565babc8a",
+      "post_id": "20c53f29-482f-47f2-9165-77cec10d0286",
       "slot": 2,
       "scheduled_time_utc": "2026-10-10T07:00:00+00:00",
       "format": "image",
       "trend_topic": "anthony gordon",
       "content_pillar": "Hidden Gems",
-      "hook_type": "local_relevance",
+      "hook_type": "curiosity",
       "cta_type": "save_or_share",
       "dominant_emotion": "curiosity",
       "status": "planned"
     },
     {
-      "post_id": "cd5b8820-a967-4a34-9484-3b596fd8e024",
+      "post_id": "f318d39b-27b5-48e7-9582-c49f15acfe6f",
       "slot": 3,
       "scheduled_time_utc": "2026-10-10T14:00:00+00:00",
       "format": "image",
-      "trend_topic": "aurora borealis",
+      "trend_topic": "rishi dhawan",
       "content_pillar": "Hidden Gems",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
@@ -41,20 +41,20 @@
   ],
   "stories": [
     {
-      "post_id": "5a90ee56-f07f-4e23-b075-40b5bc7e21e3",
+      "post_id": "e94dbe18-546c-409f-8056-48fd86c1bfa3",
       "slot": 1,
       "scheduled_time_utc": "2026-10-10T03:00:00+00:00",
       "format": "story",
-      "trend_topic": "al-hilal vs al-ittihad",
+      "trend_topic": "toronto vs montréal",
       "content_pillar": "entertainment",
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "82a7a28a-1562-42e7-9634-f84c816288f5",
+      "parent_post_id": "1bd76d3a-c0f9-48d2-9d0b-92df2991d3cc",
       "status": "planned"
     },
     {
-      "post_id": "fef69dfb-1b87-49d6-8922-a77b76fd9166",
+      "post_id": "d7d20640-4f94-4e37-861f-010ac0b0945b",
       "slot": 2,
       "scheduled_time_utc": "2026-10-10T07:00:00+00:00",
       "format": "story",
@@ -63,7 +63,7 @@
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "20ad8f8b-b4c2-413a-a2b2-28b565babc8a",
+      "parent_post_id": "20c53f29-482f-47f2-9165-77cec10d0286",
       "status": "planned"
     }
   ],
