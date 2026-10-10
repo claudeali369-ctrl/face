@@ -3,8 +3,7 @@
 .env.*
 !.env.example
 
-# Runtime state, logs, API caches, and downloaded media
-/state/
+
 
 # Python virtual environment and bytecode
 .venv/
