@@ -384,6 +384,7 @@ class FacebookClient:
             self._get("/me", params={"fields": "id", "access_token": self.access_token})
             self._token_valid = True
             logger.debug("Facebook token is valid.")
+            self._clear_token_expired_flag()
             return True
         except FacebookTokenExpiredError:
             self._token_valid = False
@@ -394,6 +395,14 @@ class FacebookClient:
             # Conservative — treat unknown errors as valid to not block the pipeline
             return True
 
+    def _clear_token_expired_flag(self) -> None:
+        """Remove the stale expiry marker now that the token has been verified valid."""
+        try:
+            if state_exists(_TOKEN_EXPIRED_FILE):
+                delete_state(_TOKEN_EXPIRED_FILE)
+                logger.info("Cleared stale token_expired.json — token is valid again.")
+        except Exception as exc:
+            logger.warning("Could not clear token_expired.json: %s", exc)
     # -----------------------------------------------------------------------
     # Internal HTTP helpers
     # -----------------------------------------------------------------------
