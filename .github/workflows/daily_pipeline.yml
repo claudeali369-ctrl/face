@@ -59,7 +59,8 @@ jobs:
             libxext6 \
             libfontconfig1 \
             libglib2.0-0 \
-            libgl1 \ libglx-mesa0 \
+            libgl1 \ 
+            libglx-mesa0 \
             fonts-noto \
             fonts-noto-extra
 
