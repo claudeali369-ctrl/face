@@ -131,20 +131,48 @@ jobs:
       - name: Run PublisherAgent
         run: python agents/publisher.py
 
-      # ── Step 15: Commit state back to state branch ────────────────────────
+      
+      # Step 15: Save state on top of the state branch
       - name: Commit state back to state branch
         run: |
+          set -euo pipefail
+
           git config user.name "FACE Bot"
           git config user.email "face-bot@github-actions"
-          git add state/
-          git add state/logs/ 2>/dev/null || true
-          if git diff --staged --quiet; then
+
+          STATE_WORKTREE="$RUNNER_TEMP/face-state"
+
+          # Use the existing state branch as the commit parent.
+          # On the first run, fall back to the current commit.
+          if git ls-remote --exit-code --heads origin state >/dev/null 2>&1; then
+            git fetch origin +refs/heads/state:refs/remotes/origin/state
+            STATE_BASE="refs/remotes/origin/state"
+          else
+            STATE_BASE="HEAD"
+          fi
+
+          # Create an isolated checkout so main remains untouched.
+          git worktree add --detach "$STATE_WORKTREE" "$STATE_BASE"
+
+          # Copy the latest generated state, including file deletions.
+          rm -rf "$STATE_WORKTREE/state"
+          mkdir -p "$STATE_WORKTREE/state"
+          cp -a state/. "$STATE_WORKTREE/state/"
+
+          git -C "$STATE_WORKTREE" config user.name "FACE Bot"
+          git -C "$STATE_WORKTREE" config user.email "face-bot@github-actions"
+          git -C "$STATE_WORKTREE" add -A state/
+
+          if git -C "$STATE_WORKTREE" diff --cached --quiet; then
             echo "No state changes to commit."
           else
-            git commit -m "state: $(date -u +%Y-%m-%d_%H:%M) daily pipeline"
-            git push origin HEAD:state
-            echo "State committed and pushed to state branch."
+            git -C "$STATE_WORKTREE" commit \
+              -m "state: $(date -u +%Y-%m-%d_%H:%M) daily pipeline"
+
+            git -C "$STATE_WORKTREE" push origin HEAD:state
+            echo "State committed and pushed successfully."
           fi
+
 
       # ── Step 16: Clean up large temp files ───────────────────────────────
       - name: Clean up temp files
