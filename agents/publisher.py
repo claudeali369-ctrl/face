@@ -347,10 +347,7 @@ def main() -> None:
     log.info("══ PublisherAgent starting ══")
     run_at = _now_utc()
 
-    # ── Pre-flight: token_expired halt flag ───────────────────────────────
-    if state_exists(STATE_TOKEN_EXPIRED):
-        log.warning("state/token_expired.json exists — Facebook token expired. Skipping all publishing.")
-        sys.exit(0)
+
 
     # ── Pre-flight: token validity check ─────────────────────────────────
     try:
