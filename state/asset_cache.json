@@ -1,0 +1,38 @@
+{
+  "stock_photo::pixabay_photo_3568168": {
+    "asset_id": "pixabay_photo_3568168",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_3568168.jpg",
+    "cached_at": "2026-10-10T19:11:53.099911+00:00",
+    "source_url": "https://pixabay.com/get/gd0e96c3ccd313bb015204737b341ece961014970c6274539bb6f4317126d637beeefdfb909b1a265ac7b962735b09993aaa2fc50de2a89329aa582c4ec4ed418_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/soccer-football-ball-sports-3568168/",
+    "source_id": "3568168",
+    "contributor": "fernandozhiminaicela",
+    "contributor_id": "6246704"
+  },
+  "stock_photo::pixabay_photo_5190643": {
+    "asset_id": "pixabay_photo_5190643",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_5190643.jpg",
+    "cached_at": "2026-10-10T19:12:34.089665+00:00",
+    "source_url": "https://pixabay.com/get/g991dbaad413fd70fdf5a7c1280eff6bdc42933070d77eda8e999bd5885b8669aedf4e045e6f483b758edfb16231586ce893ac218116ad3172d56eb8242d57922_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/make-a-phone-call-mobile-phone-5190643/",
+    "source_id": "5190643",
+    "contributor": "VinzentWeinbeer",
+    "contributor_id": "5342962"
+  },
+  "stock_photo::pixabay_photo_1760998": {
+    "asset_id": "pixabay_photo_1760998",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_1760998.jpg",
+    "cached_at": "2026-10-10T19:13:23.617894+00:00",
+    "source_url": "https://pixabay.com/get/g8db77af283d8600e642bd7147f906ebe923b80ba871408fb6513a6ce7d031c6ee5cb81fed733bd718abaa2204965035ff0007a1e10a012851c8a10589845e68d_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/a-book-book-gift-heart-gift-read-1760998/",
+    "source_id": "1760998",
+    "contributor": "congerdesign",
+    "contributor_id": "509903"
+  }
+}

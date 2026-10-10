@@ -1,5 +1,54 @@
 {
-  "generated_at": "2026-10-10T18:31:12.769908+00:00",
+  "generated_at": "2026-10-10T19:13:23.623321+00:00",
   "date": "2026-10-10",
-  "records": []
+  "records": [
+    {
+      "post_id": "2d1e725e-57f2-46e7-809e-b303be69f03e",
+      "attempt": 1,
+      "provider": "Pollinations",
+      "score": 5.0,
+      "policy_safe": true,
+      "improvement_instructions": "QA evaluation failed; using fallback score.",
+      "timestamp": "2026-10-10T19:11:12.433679+00:00"
+    },
+    {
+      "post_id": "2d1e725e-57f2-46e7-809e-b303be69f03e",
+      "attempt": 4,
+      "provider": "Pixabay",
+      "score": 5.0,
+      "policy_safe": true,
+      "improvement_instructions": "QA evaluation failed; using fallback score.",
+      "timestamp": "2026-10-10T19:11:53.101796+00:00",
+      "fallback": true
+    },
+    {
+      "post_id": "4265562d-7149-43fd-b4d5-71d79b726f6d",
+      "attempt": 4,
+      "provider": "Pixabay",
+      "score": 5.0,
+      "policy_safe": true,
+      "improvement_instructions": "QA evaluation failed; using fallback score.",
+      "timestamp": "2026-10-10T19:12:34.091600+00:00",
+      "fallback": true
+    },
+    {
+      "post_id": "f53cb5a8-3a18-48e9-b2b5-b93c284f2e14",
+      "attempt": 1,
+      "provider": "Pollinations",
+      "score": 5.0,
+      "policy_safe": true,
+      "improvement_instructions": "QA evaluation failed; using fallback score.",
+      "timestamp": "2026-10-10T19:12:43.068632+00:00"
+    },
+    {
+      "post_id": "f53cb5a8-3a18-48e9-b2b5-b93c284f2e14",
+      "attempt": 4,
+      "provider": "Pixabay",
+      "score": 5.0,
+      "policy_safe": true,
+      "improvement_instructions": "QA evaluation failed; using fallback score.",
+      "timestamp": "2026-10-10T19:13:23.619711+00:00",
+      "fallback": true
+    }
+  ]
 }

@@ -1,13 +1,13 @@
 {
   "date": "2026-10-10",
-  "generated_at": "2026-10-10T18:30:16.011534+00:00",
+  "generated_at": "2026-10-10T19:10:01.698480+00:00",
   "posts": [
     {
-      "post_id": "4590b8ba-d66b-44a2-9d99-2c8df98a6a31",
+      "post_id": "2d1e725e-57f2-46e7-809e-b303be69f03e",
       "slot": 1,
       "scheduled_time_utc": "2026-10-10T03:00:00+00:00",
-      "format": "image",
-      "trend_topic": "napoli vs frosinone",
+      "format": "single_image",
+      "trend_topic": "fc barcelona vs getafe cf standings",
       "content_pillar": "Hidden Gems",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
@@ -15,10 +15,10 @@
       "status": "planned"
     },
     {
-      "post_id": "7e5ab930-a7c3-4d5e-b154-777dfa37d6df",
+      "post_id": "4265562d-7149-43fd-b4d5-71d79b726f6d",
       "slot": 2,
       "scheduled_time_utc": "2026-10-10T07:00:00+00:00",
-      "format": "image",
+      "format": "single_image",
       "trend_topic": "real madrid vs villarreal",
       "content_pillar": "Hidden Gems",
       "hook_type": "curiosity",
@@ -27,11 +27,11 @@
       "status": "planned"
     },
     {
-      "post_id": "e1262f0a-644d-4bd1-9a90-95b158affed4",
+      "post_id": "f53cb5a8-3a18-48e9-b2b5-b93c284f2e14",
       "slot": 3,
       "scheduled_time_utc": "2026-10-10T14:00:00+00:00",
-      "format": "image",
-      "trend_topic": "psg vs le mans",
+      "format": "single_image",
+      "trend_topic": "yan diomandé",
       "content_pillar": "Hidden Gems",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
@@ -41,20 +41,20 @@
   ],
   "stories": [
     {
-      "post_id": "76d63d38-f675-4f22-954c-16250552b39a",
+      "post_id": "80ba0561-8ff4-4e4b-ab1a-846cb954e738",
       "slot": 1,
       "scheduled_time_utc": "2026-10-10T03:00:00+00:00",
       "format": "story",
-      "trend_topic": "napoli vs frosinone",
+      "trend_topic": "fc barcelona vs getafe cf standings",
       "content_pillar": "entertainment",
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "4590b8ba-d66b-44a2-9d99-2c8df98a6a31",
+      "parent_post_id": "2d1e725e-57f2-46e7-809e-b303be69f03e",
       "status": "planned"
     },
     {
-      "post_id": "ab8105c4-0f7b-4429-9523-a2f0a020834b",
+      "post_id": "809dfe09-43ac-4aec-9e30-ec5209127adb",
       "slot": 2,
       "scheduled_time_utc": "2026-10-10T07:00:00+00:00",
       "format": "story",
@@ -63,7 +63,7 @@
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "7e5ab930-a7c3-4d5e-b154-777dfa37d6df",
+      "parent_post_id": "4265562d-7149-43fd-b4d5-71d79b726f6d",
       "status": "planned"
     }
   ],

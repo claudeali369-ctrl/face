@@ -1,5 +1,152 @@
 {
-  "generated_at": "2026-10-10T18:31:12.767414+00:00",
+  "generated_at": "2026-10-10T19:11:08.160390+00:00",
   "date": "2026-10-10",
-  "briefs": {}
+  "briefs": {
+    "2d1e725e-57f2-46e7-809e-b303be69f03e": {
+      "post_id": "2d1e725e-57f2-46e7-809e-b303be69f03e",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style captures the high-stakes drama of La Liga standings while blending seamlessly with modern tech-infused sports analytics dashboards popular among Gen-Z tech enthusiasts in Bangladesh.",
+      "composition": "rule_of_thirds",
+      "composition_rationale": "Positions the glowing tactical data interface on the right third, leaving the left third clean and dark for bold bilingual hook text overlay.",
+      "primary_subject": "Glowing digital sports analytics holographic display showing football league standings with Blaugrana and deep blue hues",
+      "background_environment": "A dimly lit modern tech studio in Dhaka with ambient blue and crimson LED lighting, subtle bokeh city lights visible through a large glass window",
+      "color_palette": {
+        "primary": "#0A192F",
+        "secondary": "#A50044",
+        "accent": "#00FF66",
+        "rationale": "Deep navy represents tech trust and night-time viewing habits in Bangladesh, Barcelona's iconic deep red/crimson links to the football club, and neon green acts as a high-contrast curiosity trigger for standings data."
+      },
+      "dominant_emotion": "curiosity",
+      "region_visual_cues": [
+        "Dhaka skyline bokeh at dusk through architectural glass",
+        "Modern minimalist tech workspace setup popular among urban Bangladeshi youth",
+        "Subtle integration of local typography and digital aesthetic"
+      ],
+      "cultural_elements_to_include": [
+        "Smartphone displaying live scores alongside desktop setup",
+        "Urban youth tech lifestyle aesthetic"
+      ],
+      "cultural_elements_to_avoid": [
+        "Generic European pub settings",
+        "Indian or Western-centric local landmarks",
+        "Clichéd AI-generated floating soccer balls with no context",
+        "Overly bright daylight that kills the suspenseful mood"
+      ],
+      "text_overlay_space": "left_third",
+      "text_overlay_color": "#FFFFFF",
+      "text_overlay_background": "semi_dark",
+      "lighting_mood": "Moody neon glow with sharp focal points on analytics displays",
+      "time_of_day_depicted": "night",
+      "generation_prompt_pollinations": "futuristic sports analytics dashboard, cinematic, rule_of_thirds, Dhaka skyline bokeh at dusk, modern tech workspace, deep navy blue and crimson color palette with neon green accents, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic shot of a modern tech workspace in Dhaka at night, featuring a glowing holographic sports analytics dashboard with football league standings. The lighting is moody with deep navy and crimson hues, complemented by neon green data highlights. The composition uses the rule of thirds with a clean, dark space on the left for text overlay. The background shows a soft bokeh view of the urban city skyline through a glass window.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, daytime, outdoor street scenes",
+      "quality_keywords": [
+        "hyper-realistic",
+        "octane render",
+        "ray tracing",
+        "volumetric lighting",
+        "stunning details"
+      ],
+      "image_dimensions": "1080x1350",
+      "seed_suggestion": 4242,
+      "provider_preference": "pollinations"
+    },
+    "4265562d-7149-43fd-b4d5-71d79b726f6d": {
+      "post_id": "4265562d-7149-43fd-b4d5-71d79b726f6d",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style brings a dramatic, high-stakes aesthetic that elevates a sports match preview into an epic narrative. It aligns with the tech-savvy, visually literate 18-30 demographic in Bangladesh who consume international football and high-production-value content daily.",
+      "composition": "layered_depth",
+      "composition_rationale": "Layered depth creates immersive dimensionality, drawing the viewer's eye from the glowing tech-sports elements in the foreground to the stadium atmosphere in the background while reserving a clean upper-third area for the hook text.",
+      "primary_subject": "A glowing holographic tactical display floating above a sleek smartphone showing live match analytics",
+      "background_environment": "A dimly lit modern Dhaka rooftop lounge at night with the city skyline blurred softly in the bokeh, featuring subtle neon blue and amber stadium lighting reflections",
+      "color_palette": {
+        "primary": "#0B1D3A",
+        "secondary": "#E63946",
+        "accent": "#4CC9F0",
+        "rationale": "Deep navy represents technology and night-time football viewing culture in Bangladesh, vibrant red-orange captures the fierce competitive spirit of Real Madrid vs Villarreal, and electric cyan provides a modern tech luminescence that triggers curiosity."
+      },
+      "dominant_emotion": "curiosity",
+      "region_visual_cues": [
+        "Dhaka skyline bokeh at dusk",
+        "Modern rooftop lounge aesthetic popular among Gen-Z urban youth",
+        "Warm atmospheric ambient lighting reflecting local urban density"
+      ],
+      "cultural_elements_to_include": [
+        "Smartphones displaying live sports streaming UI in Bengali-English hybrid context",
+        "Modern urban hangout ambiance representing Dhaka youth culture"
+      ],
+      "cultural_elements_to_avoid": [
+        "Generic European or American living room setups that feel disconnected from Bangladesh realities",
+        "Indian or Pakistani specific cultural clothing or architecture",
+        "Overly saturated or fake-looking AI hands holding devices"
+      ],
+      "text_overlay_space": "top_third",
+      "text_overlay_color": "#FFFFFF",
+      "text_overlay_background": "semi_dark",
+      "lighting_mood": "Moody stadium glow mixed with urban night lights, high contrast, cinematic teal and orange color grading",
+      "time_of_day_depicted": "night",
+      "generation_prompt_pollinations": "A glowing holographic tactical football display floating above a sleek modern smartphone, cinematic style, layered depth composition, Dhaka skyline bokeh background, deep navy #0B1D3A, vibrant red #E63946, electric cyan #4CC9F0, curiosity atmosphere, professional sports tech photography, futuristic stadium lighting, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic and immersive shot of a glowing holographic tactical football display hovering above a modern smartphone on a Dhaka rooftop at night. The background features a soft bokeh of the urban skyline under a moody night sky. The color palette blends deep tech navy with striking match-day red and electric cyan highlights, creating an atmosphere of intense curiosity and high-tech sports analysis.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, daytime lighting, cheap graphics",
+      "quality_keywords": [
+        "cinematic lighting",
+        "hyper-detailed",
+        "8k resolution",
+        "octane render",
+        "sports tech aesthetic"
+      ],
+      "image_dimensions": "1080x1350",
+      "seed_suggestion": 4242,
+      "provider_preference": "pollinations"
+    },
+    "f53cb5a8-3a18-48e9-b2b5-b93c284f2e14": {
+      "post_id": "f53cb5a8-3a18-48e9-b2b5-b93c284f2e14",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style creates a sense of mystery and high-end aspiration, perfectly suited to spark curiosity about a niche global technology figure like Yan Diomandé among young Bangladeshi tech enthusiasts.",
+      "composition": "negative_space",
+      "composition_rationale": "Placing the primary subject off-center with vast negative space allows the hook text to be read clearly while framing the visual with a sense of depth and scale.",
+      "primary_subject": "A focused young professional in a dimly lit modern co-working space in Dhaka, looking intently at a glowing dual-monitor setup displaying intricate code and global tech network maps.",
+      "background_environment": "A moody, sophisticated tech incubator interior with subtle traditional architectural arches blending into modern glass panels, soft bokeh lights resembling distant city traffic.",
+      "color_palette": {
+        "primary": "#0A2540",
+        "secondary": "#20639B",
+        "accent": "#F6D55C",
+        "rationale": "Deep navy and tech-blue convey global technology trust and professionalism, while warm gold accent mimics local ambient lighting and triggers curiosity."
+      },
+      "dominant_emotion": "curiosity",
+      "region_visual_cues": [
+        "Dhaka urban evening ambiance through window glass",
+        "subtle geometric terracotta brick patterns on one interior wall",
+        "warm amber indoor lighting reflecting local hospitality"
+      ],
+      "cultural_elements_to_include": [
+        "modern Bangladeshi tech workspace setup",
+        "subtle fusion of modern tech and local architectural warmth"
+      ],
+      "cultural_elements_to_avoid": [
+        "Western stock photo aesthetics",
+        "misrepresented regional architecture",
+        "pure black backgrounds",
+        "overused AI plastic skin textures"
+      ],
+      "text_overlay_space": "left_third",
+      "text_overlay_color": "#FFFFFF",
+      "text_overlay_background": "semi_dark",
+      "lighting_mood": "Moody and focused with strong accent lighting on the screens and warm ambient glow",
+      "time_of_day_depicted": "blue_hour",
+      "generation_prompt_pollinations": "A focused young professional in a moody modern Dhaka tech workspace, cinematic, negative space on the left, glowing dual monitors showing network maps, deep navy blue and warm gold color palette, subtle terracotta brick accents, curiosity atmosphere, professional technology aesthetic, ultra detailed, 8k resolution, no text, no watermark",
+      "generation_prompt_huggingface": "Cinematic shot of a focused tech professional in a sophisticated modern co-working space in Dhaka during blue hour. The left third of the frame features clean negative space for text overlay. The background shows subtle terracotta architectural touches blended with glowing computer monitors displaying complex global technology networks. The lighting is moody with deep navy tones contrasted by warm gold ambient light, creating an atmosphere of curiosity and aspiration.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, Indian imagery, weapons, political symbols, bright daylight",
+      "quality_keywords": [
+        "hyper-detailed",
+        "award-winning cinematography",
+        "volumetric lighting",
+        "octane render",
+        "professional color grading"
+      ],
+      "image_dimensions": "1080x1350",
+      "seed_suggestion": 4289,
+      "provider_preference": "pollinations"
+    }
+  }
 }

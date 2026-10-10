@@ -5,5 +5,12 @@
     "agent_name": "publisher",
     "message": "Facebook token is invalid or expired — halting publisher.",
     "exc_info": null
+  },
+  {
+    "timestamp": "2026-10-10T19:13:24.676612+00:00",
+    "session_id": "3a5a4d07",
+    "agent_name": "publisher",
+    "message": "Facebook token is invalid or expired — halting publisher.",
+    "exc_info": null
   }
 ]
