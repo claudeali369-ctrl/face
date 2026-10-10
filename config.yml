@@ -9,20 +9,23 @@
 # ───────────────────────────────────────────────────────────────────────────
 
 # The display name of your Facebook Page (used in captions and reel CTAs)
-page_name: "My Awesome Page"
+page_name: "Tech Ultraverse"
 
 # Primary niche — the single overarching content category.
 # Examples: "travel", "tech", "food", "motivation", "education",
 #           "lifestyle", "finance", "fitness", "parenting", "beauty"
-niche: "travel"
+niche: "technology"
 
 # Sub-niches — specific angles within your niche (2-4 recommended).
 # These are used by TrendHunterAgent to filter relevant trends.
 # Examples for travel: ["budget travel", "Southeast Asia backpacking"]
 # Examples for tech:   ["AI tools", "smartphone reviews", "coding tips"]
 sub_niches:
-  - "budget travel"
-  - "Southeast Asia"
+  - "tech tips, software tutorials and digital productivity"
+  - "smartphone, gadget and app updates"
+  - "emerging technology and future innovations"
+  - "AI tools and practical AI use cases"
+  - "budget tech"
   - "hidden gems"
 
 # ───────────────────────────────────────────────────────────────────────────
