@@ -2,10 +2,8 @@ name: FACE Daily Pipeline
 
 on:
   schedule:
-    - cron: '0 3 * * *'   # 9 AM Bangladesh time (UTC+6) = 03:00 UTC
-    - cron: '0 7 * * *'   # 1 PM Bangladesh time = 07:00 UTC
-    - cron: '0 14 * * *'  # 8 PM Bangladesh time = 14:00 UTC
-  workflow_dispatch: {}    # Manual trigger for testing
+    - cron: "0 3,7,14 * * *"
+  workflow_dispatch:    # Manual trigger for testing
 
 permissions:
   contents: write
