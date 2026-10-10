@@ -1,48 +1,48 @@
 {
-  "generated_at": "2026-10-10T18:04:10.009855+00:00",
+  "generated_at": "2026-10-10T18:09:01.986698+00:00",
   "region": "Bangladesh",
   "niche": "technology",
   "trends": [
     {
       "rank": 1,
-      "topic": "toronto vs montréal",
+      "topic": "chicago vs new york city",
       "source": "google_trends",
-      "virality_score": 2.0,
-      "niche_fit_score": 6.0,
+      "virality_score": 1.0,
+      "niche_fit_score": 5.0,
       "region_fit_score": 5.0,
-      "combined_score": 4.15,
+      "combined_score": 3.4,
       "recommended_format": "text",
-      "hook_angle": "Are you making the most of your tech tools today? #TechTips #Bangladesh",
+      "hook_angle": "Are you using your smartphone and apps to their full potential? (আপনার স্মার্টফোন কি আসলেই কাজে লাগাচ্ছেন?)",
       "raw_data": {
-        "approx_traffic": 500,
+        "approx_traffic": 200,
         "related_queries": []
       }
     },
     {
       "rank": 2,
-      "topic": "anthony gordon",
+      "topic": "gavi",
       "source": "google_trends",
-      "virality_score": 2.0,
+      "virality_score": 1.0,
       "niche_fit_score": 5.0,
       "region_fit_score": 5.0,
-      "combined_score": 3.8,
-      "recommended_format": "image",
-      "hook_angle": "기술 팁과 예산 절약을 찾는 분들을 위한 새로운 정보",
+      "combined_score": 3.4,
+      "recommended_format": "text",
+      "hook_angle": "Tech tips and digital productivity updates for youth in Bangladesh.",
       "raw_data": {
-        "approx_traffic": 2000,
+        "approx_traffic": 100,
         "related_queries": []
       }
     },
     {
       "rank": 3,
-      "topic": "rishi dhawan",
+      "topic": "ইমরান খান",
       "source": "google_trends",
       "virality_score": 1.0,
-      "niche_fit_score": 6.0,
+      "niche_fit_score": 5.0,
       "region_fit_score": 5.0,
-      "combined_score": 3.75,
-      "recommended_format": "text",
-      "hook_angle": "Are you using your smartphone to its full potential? smart tech tips for daily productivity! (আপনার স্মার্টফোন কি কাজে লাগাচ্ছেন সঠিকভাবে?)",
+      "combined_score": 3.4,
+      "recommended_format": "image",
+      "hook_angle": "Are you making the most of your everyday tech gadgets? Let's check it out!",
       "raw_data": {
         "approx_traffic": 100,
         "related_queries": []
@@ -50,14 +50,14 @@
     },
     {
       "rank": 4,
-      "topic": "ইমরান খান",
+      "topic": "বাংলাদেশ সড়ক পরিবহন কর্তৃপক্ষ",
       "source": "google_trends",
       "virality_score": 1.0,
       "niche_fit_score": 5.0,
       "region_fit_score": 5.0,
       "combined_score": 3.4,
-      "recommended_format": "text",
-      "hook_angle": "Are you looking for the latest tech updates and productivity tools in Bangladesh? Let us know what you want to see!",
+      "recommended_format": "image",
+      "hook_angle": "Tech tips and software updates for digital productivity in Bangladesh",
       "raw_data": {
         "approx_traffic": 100,
         "related_queries": []
@@ -71,8 +71,8 @@
       "niche_fit_score": 5.0,
       "region_fit_score": 5.0,
       "combined_score": 3.4,
-      "recommended_format": "image",
-      "hook_angle": "Are you making the most of your smartphone and daily apps? #TechTips #Bangladesh",
+      "recommended_format": "text",
+      "hook_angle": "Tech tips and digital productivity updates for youth in Bangladesh.",
       "raw_data": {
         "approx_traffic": 100,
         "related_queries": []
@@ -80,59 +80,59 @@
     },
     {
       "rank": 6,
-      "topic": "al-hilal vs al-ittihad",
+      "topic": "anthony gordon",
       "source": "google_trends",
-      "virality_score": 1.0,
+      "virality_score": 2.0,
       "niche_fit_score": 5.0,
       "region_fit_score": 3.0,
-      "combined_score": 2.9,
+      "combined_score": 3.3,
+      "recommended_format": "text",
+      "hook_angle": "Tech tip বা ডিজিটাল প্রডাক্টিভিটি সম্পর্কে জানতে চান? (Want to know about tech tips or digital productivity?)",
+      "raw_data": {
+        "approx_traffic": 2000,
+        "related_queries": []
+      }
+    },
+    {
+      "rank": 7,
+      "topic": "al-hilal vs al-ittihad",
+      "source": "google_trends",
+      "virality_score": 2.0,
+      "niche_fit_score": 5.0,
+      "region_fit_score": 3.0,
+      "combined_score": 3.3,
       "recommended_format": "image",
-      "hook_angle": "Tech tip বা budget gadget নিয়ে নতুন কিছু খুঁজছেন? (Looking for something new in tech tips or budget gadgets?)",
+      "hook_angle": "Are you making the most of your tech? Let's check out some smart digital tips! (আপনার প্রযুক্তি কি সঠিকভাবে ব্যবহার করছেন? চলুন কিছু দরকারি ডিজিটাল টিপস জেনে নিই!)",
       "raw_data": {
         "approx_traffic": 1000,
         "related_queries": []
       }
     },
     {
-      "rank": 7,
-      "topic": "সংসদ",
+      "rank": 8,
+      "topic": "napoli vs frosinone",
       "source": "google_trends",
       "virality_score": 1.0,
       "niche_fit_score": 5.0,
       "region_fit_score": 3.0,
       "combined_score": 2.9,
       "recommended_format": "text",
-      "hook_angle": "Are you using your smartphone and apps to their full potential? Discover smart tech tips today! (আপনার স্মার্টফোন এবং অ্যাপগুলো কি সঠিকভাবে ব্যবহার করছেন? জেনে নিন দারুণ কিছু টেক টিপস!)",
+      "hook_angle": "Tech tip বা budget gadget সম্পর্কিত নির্দিষ্ট কোনো তথ্য এখানে নেই, বিস্তারিত জানতে সাথে থাকুন।",
       "raw_data": {
-        "approx_traffic": 500,
-        "related_queries": []
-      }
-    },
-    {
-      "rank": 8,
-      "topic": "xavi espart",
-      "source": "google_trends",
-      "virality_score": 1.0,
-      "niche_fit_score": 5.0,
-      "region_fit_score": 2.0,
-      "combined_score": 2.65,
-      "recommended_format": "image",
-      "hook_angle": "Are you looking for the latest tech updates? আপনার প্রযুক্তির দুনিয়ার খোঁজখবর",
-      "raw_data": {
-        "approx_traffic": 500,
+        "approx_traffic": 200,
         "related_queries": []
       }
     },
     {
       "rank": 9,
-      "topic": "বাংলাদেশ সড়ক পরিবহন কর্তৃপক্ষ",
+      "topic": "rishi dhawan",
       "source": "google_trends",
       "virality_score": 1.0,
       "niche_fit_score": 5.0,
-      "region_fit_score": 2.0,
-      "combined_score": 2.65,
+      "region_fit_score": 3.0,
+      "combined_score": 2.9,
       "recommended_format": "text",
-      "hook_angle": "টেকনোলজি প্রেমীদের জন্য অজানা তথ্য - আপনার গ্যাজেটটি কি আসলেই সুরক্ষিত?",
+      "hook_angle": "Tech tips and digital productivity updates for youth in Bangladesh.",
       "raw_data": {
         "approx_traffic": 100,
         "related_queries": []
@@ -140,16 +140,16 @@
     },
     {
       "rank": 10,
-      "topic": "aurora borealis",
+      "topic": "সংসদ",
       "source": "google_trends",
       "virality_score": 1.0,
       "niche_fit_score": 4.0,
-      "region_fit_score": 2.0,
-      "combined_score": 2.3,
+      "region_fit_score": 3.0,
+      "combined_score": 2.55,
       "recommended_format": "text",
-      "hook_angle": "Are you looking for smarter ways to manage your daily tasks using technology? #TechTips #Bangladesh",
+      "hook_angle": "Are you making the most of your everyday tech gadgets? Let's check! (আপনার কি প্রতিদিনের টেক গ্যাজেট ব্যবহারে কোনো সমস্যা হচ্ছে?)",
       "raw_data": {
-        "approx_traffic": 1000,
+        "approx_traffic": 500,
         "related_queries": []
       }
     }
