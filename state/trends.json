@@ -1,0 +1,157 @@
+{
+  "generated_at": "2026-10-10T17:50:18.486631+00:00",
+  "region": "Bangladesh",
+  "niche": "technology",
+  "trends": [
+    {
+      "rank": 1,
+      "topic": "al-hilal vs al-ittihad",
+      "source": "google_trends",
+      "virality_score": 1.0,
+      "niche_fit_score": 5.0,
+      "region_fit_score": 5.0,
+      "combined_score": 3.4,
+      "recommended_format": "image",
+      "hook_angle": "Tech tips and digital productivity updates for Gen Z and young professionals in Bangladesh.",
+      "raw_data": {
+        "approx_traffic": 1000,
+        "related_queries": []
+      }
+    },
+    {
+      "rank": 2,
+      "topic": "anthony gordon",
+      "source": "google_trends",
+      "virality_score": 1.0,
+      "niche_fit_score": 5.0,
+      "region_fit_score": 5.0,
+      "combined_score": 3.4,
+      "recommended_format": "image",
+      "hook_angle": "Tech trends and productivity updates for Bangladesh (Verification needed)",
+      "raw_data": {
+        "approx_traffic": 1000,
+        "related_queries": []
+      }
+    },
+    {
+      "rank": 3,
+      "topic": "aurora borealis",
+      "source": "google_trends",
+      "virality_score": 1.0,
+      "niche_fit_score": 5.0,
+      "region_fit_score": 5.0,
+      "combined_score": 3.4,
+      "recommended_format": "image",
+      "hook_angle": "Tech tip বা budget tech সম্পর্কিত সুনির্দিষ্ট কোনো তথ্য পাওয়া যায়নি।",
+      "raw_data": {
+        "approx_traffic": 1000,
+        "related_queries": []
+      }
+    },
+    {
+      "rank": 4,
+      "topic": "rb leipzig vs eintracht frankfurt",
+      "source": "google_trends",
+      "virality_score": 1.0,
+      "niche_fit_score": 5.0,
+      "region_fit_score": 5.0,
+      "combined_score": 3.4,
+      "recommended_format": "image",
+      "hook_angle": "Tech tips and digital productivity updates for students and young professionals in Bangladesh.",
+      "raw_data": {
+        "approx_traffic": 200,
+        "related_queries": []
+      }
+    },
+    {
+      "rank": 5,
+      "topic": "ইমরান খান",
+      "source": "google_trends",
+      "virality_score": 1.0,
+      "niche_fit_score": 5.0,
+      "region_fit_score": 5.0,
+      "combined_score": 3.4,
+      "recommended_format": "image",
+      "hook_angle": "Are you looking for smarter ways to boost your daily digital productivity? (ডিজিটাল প্রোডাক্টিভিটি বাড়াতে চান?)",
+      "raw_data": {
+        "approx_traffic": 100,
+        "related_queries": []
+      }
+    },
+    {
+      "rank": 6,
+      "topic": "বার্সেলোনা",
+      "source": "google_trends",
+      "virality_score": 1.0,
+      "niche_fit_score": 5.0,
+      "region_fit_score": 5.0,
+      "combined_score": 3.4,
+      "recommended_format": "text",
+      "hook_angle": "Tech tips and software tutorials for everyone / সবার জন্য টেক টিপস এবং সফটওয়্যার টিউটোরিয়াল",
+      "raw_data": {
+        "approx_traffic": 100,
+        "related_queries": []
+      }
+    },
+    {
+      "rank": 7,
+      "topic": "xavi espart",
+      "source": "google_trends",
+      "virality_score": 1.0,
+      "niche_fit_score": 5.0,
+      "region_fit_score": 3.0,
+      "combined_score": 2.9,
+      "recommended_format": "image",
+      "hook_angle": "Are you using your smartphone and apps efficiently? Let's check smart productivity tips!",
+      "raw_data": {
+        "approx_traffic": 500,
+        "related_queries": []
+      }
+    },
+    {
+      "rank": 8,
+      "topic": "toronto vs montréal",
+      "source": "google_trends",
+      "virality_score": 1.0,
+      "niche_fit_score": 5.0,
+      "region_fit_score": 3.0,
+      "combined_score": 2.9,
+      "recommended_format": "text",
+      "hook_angle": "Tech tips এবং productivity বাড়ানোর উপায় যা আপনার জানা দরকার!",
+      "raw_data": {
+        "approx_traffic": 200,
+        "related_queries": []
+      }
+    },
+    {
+      "rank": 9,
+      "topic": "বাংলাদেশ সড়ক পরিবহন কর্তৃপক্ষ",
+      "source": "google_trends",
+      "virality_score": 1.0,
+      "niche_fit_score": 5.0,
+      "region_fit_score": 3.0,
+      "combined_score": 2.9,
+      "recommended_format": "text",
+      "hook_angle": "Tech tips এবং digital productivity বাড়ানোর সহজ উপায় কি জানতে চান? (Want to know easy ways to boost your tech tips and digital productivity?)",
+      "raw_data": {
+        "approx_traffic": 100,
+        "related_queries": []
+      }
+    },
+    {
+      "rank": 10,
+      "topic": "সংসদ",
+      "source": "google_trends",
+      "virality_score": 1.0,
+      "niche_fit_score": 3.0,
+      "region_fit_score": 2.0,
+      "combined_score": 1.95,
+      "recommended_format": "text",
+      "hook_angle": "Are you looking for the latest tech updates in Bangladesh?",
+      "raw_data": {
+        "approx_traffic": 500,
+        "related_queries": []
+      }
+    }
+  ]
+}
