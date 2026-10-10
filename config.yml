@@ -199,9 +199,9 @@ schedule:
   # These must match the cron schedule in daily_pipeline.yml.
   # Default: 04:00, 11:00, 17:00 UTC = 10:00, 17:00, 23:00 BST (+6)
   daily_run_times_utc:
-    - "04:00"
-    - "11:00"
-    - "17:00"
+    - "03:00"
+    - "07:00"
+    - "14:00"
 
   # Which post slot gets which content type on each run.
   # Slot 1 (04:00 UTC): morning post — highest organic reach window
