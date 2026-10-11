@@ -129,14 +129,23 @@ NICHE_STYLE_DEFAULTS: dict[str, dict[str, Any]] = {
 }
 
 
+
 def get_niche_style_defaults(niche: str) -> dict[str, Any]:
-    """
-    Return default visual style values for the given niche.
-    Used when state/visual_style.json hasn't been written yet (first run).
-    Falls back to 'motivation' defaults if niche is unrecognised.
-    """
-    niche_key = niche.lower().strip()
-    return NICHE_STYLE_DEFAULTS.get(niche_key, NICHE_STYLE_DEFAULTS["motivation"])
+    """Return style defaults for the configured niche."""
+    niche_key = str(niche or "").lower().strip()
+
+    # Normalize known aliases.
+    aliases = {
+        "technology": "tech",
+        "technology news": "tech",
+    }
+    niche_key = aliases.get(niche_key, niche_key)
+
+    return NICHE_STYLE_DEFAULTS.get(
+        niche_key,
+        NICHE_STYLE_DEFAULTS["motivation"],
+    )
+
 
 
 # ── Provider helpers ───────────────────────────────────────────────────────────
