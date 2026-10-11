@@ -865,7 +865,15 @@ def main() -> None:
         if not all_slides_ready:
             log.error("[%s] Story is incomplete; it must not publish", pid)
 
-
+    write_state(
+        "visual_briefs.json",
+        {
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "date": content_plan.get("date", ""),
+            "briefs": visual_briefs,
+        },
+    )
+  
     # ── Step 5: Patch generated_content.json ─────────────────────────────────
     log.info("Step 5: Patching state/generated_content.json...")
     current_content = read_state("generated_content.json")
