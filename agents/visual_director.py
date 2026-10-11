@@ -297,11 +297,14 @@ def _run_quality_gate(
     GEMINI_LIMITER.acquire()
     prompt_path = Path("prompts/image_quality_evaluator.txt")
     try:
-        prompt_text = prompt_path.read_text(encoding="utf-8").format(
-            niche=config.get("niche", ""),
-            target_region=config.get("target_region", ""),
-            audience_age_range=config.get("audience_age_range", ""),
-        )
+        
+          prompt_text = prompt_path.read_text(encoding="utf-8").format(
+              niche=config.get("niche", ""),
+              target_region=config.get("target_region", ""),
+              audience_age_range=config.get("audience_age_range", ""),
+              image_path=str(image_path),
+          )
+
         result = gemini.generate_with_image(prompt_text, str(image_path))
         if isinstance(result, str):
             result = json.loads(result)
