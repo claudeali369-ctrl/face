@@ -1,48 +1,48 @@
 {
-  "generated_at": "2026-10-10T19:09:58.052732+00:00",
+  "generated_at": "2026-10-11T03:06:25.771631+00:00",
   "region": "Bangladesh",
   "niche": "technology",
   "trends": [
     {
       "rank": 1,
-      "topic": "fc barcelona vs getafe cf standings",
+      "topic": "philadelphia union vs real salt lake standings",
       "source": "google_trends",
-      "virality_score": 4.0,
+      "virality_score": 2.0,
       "niche_fit_score": 6.0,
       "region_fit_score": 5.0,
-      "combined_score": 4.95,
-      "recommended_format": "image",
-      "hook_angle": "Looking for the best tech tips and digital productivity tools in Bangladesh? Here is what you need to know.",
+      "combined_score": 4.15,
+      "recommended_format": "text",
+      "hook_angle": "Looking for ways to boost your daily productivity with smart tools? (স্মার্ট টুলস দিয়ে আপনার প্রতিদিনের কাজের গতি বাড়াতে চান?)",
       "raw_data": {
-        "approx_traffic": 20000,
+        "approx_traffic": 500,
         "related_queries": []
       }
     },
     {
       "rank": 2,
-      "topic": "real madrid vs villarreal",
+      "topic": "luis suárez",
       "source": "google_trends",
-      "virality_score": 3.0,
+      "virality_score": 1.0,
       "niche_fit_score": 5.0,
-      "region_fit_score": 4.0,
-      "combined_score": 3.95,
+      "region_fit_score": 5.0,
+      "combined_score": 3.4,
       "recommended_format": "image",
-      "hook_angle": "Looking for ways to boost your daily digital productivity in Bangladesh? Here is what you need to know.",
+      "hook_angle": "Did you know about this tech trick? / এই প্রযুক্তি কৌশলটি কি আপনার জানা আছে?",
       "raw_data": {
-        "approx_traffic": 20000,
+        "approx_traffic": 500,
         "related_queries": []
       }
     },
     {
       "rank": 3,
-      "topic": "yan diomandé",
+      "topic": "atlanta united vs cincinnati",
       "source": "google_trends",
       "virality_score": 1.0,
       "niche_fit_score": 5.0,
       "region_fit_score": 5.0,
       "combined_score": 3.4,
       "recommended_format": "text",
-      "hook_angle": "Tech tips and digital productivity updates for students and young professionals in Bangladesh.",
+      "hook_angle": "Tech tips and software updates সম্পর্কে জানতে চান? (Want to know about tech tips and software updates?)",
       "raw_data": {
         "approx_traffic": 200,
         "related_queries": []
@@ -50,14 +50,14 @@
     },
     {
       "rank": 4,
-      "topic": "hamza abdelkarim",
+      "topic": "são paulo vs vitória",
       "source": "google_trends",
       "virality_score": 1.0,
       "niche_fit_score": 5.0,
       "region_fit_score": 5.0,
       "combined_score": 3.4,
-      "recommended_format": "image",
-      "hook_angle": "Tech tips এবং digital productivity বাড়ানোর সহজ উপায় - আপনার স্মার্টফোন কি স্লো কাজ করছে?",
+      "recommended_format": "text",
+      "hook_angle": "Tech tips and productivity tools এর নতুন আপডেট সম্পর্কে জানতে চান?",
       "raw_data": {
         "approx_traffic": 200,
         "related_queries": []
@@ -65,76 +65,91 @@
     },
     {
       "rank": 5,
-      "topic": "matheus cunha",
+      "topic": "videos",
       "source": "google_trends",
       "virality_score": 1.0,
       "niche_fit_score": 5.0,
       "region_fit_score": 5.0,
       "combined_score": 3.4,
       "recommended_format": "text",
-      "hook_angle": "Are you looking for the latest tech updates in Bangladesh? What technology topic do you want to explore today?",
+      "hook_angle": "Tech tip বা budget gadget নিয়ে আপনার কী জানা আছে?",
       "raw_data": {
-        "approx_traffic": 100,
+        "approx_traffic": 200,
         "related_queries": []
       }
     },
     {
       "rank": 6,
-      "topic": "usa vs spain",
+      "topic": "india champions vs south africa champions standings",
       "source": "google_trends",
       "virality_score": 1.0,
       "niche_fit_score": 5.0,
-      "region_fit_score": 3.0,
-      "combined_score": 2.9,
+      "region_fit_score": 5.0,
+      "combined_score": 3.4,
       "recommended_format": "text",
-      "hook_angle": "Tech tips and productivity tools এর নতুন আপডেট সম্পর্কে আপনার মতামত কী?",
+      "hook_angle": "Tech tips and software tutorials for everyone",
       "raw_data": {
-        "approx_traffic": 500,
+        "approx_traffic": 100,
         "related_queries": []
       }
     },
     {
       "rank": 7,
-      "topic": "kylian mbappé",
+      "topic": "saudi arabia vs hong kong",
       "source": "google_trends",
-      "virality_score": 1.0,
+      "virality_score": 2.0,
       "niche_fit_score": 5.0,
       "region_fit_score": 3.0,
-      "combined_score": 2.9,
+      "combined_score": 3.3,
       "recommended_format": "image",
-      "hook_angle": "Tech tips and gadgets for young users in Bangladesh",
+      "hook_angle": "Are you looking for ways to boost your daily productivity using the latest tech tools? (Tech tips & digital productivity)",
       "raw_data": {
-        "approx_traffic": 100,
+        "approx_traffic": 1000,
         "related_queries": []
       }
     },
     {
       "rank": 8,
-      "topic": "jules koundé",
+      "topic": "austin vs nashville",
       "source": "google_trends",
       "virality_score": 1.0,
       "niche_fit_score": 5.0,
-      "region_fit_score": 2.0,
-      "combined_score": 2.65,
+      "region_fit_score": 3.0,
+      "combined_score": 2.9,
       "recommended_format": "text",
-      "hook_angle": "기술 트렌드와 생산성 향상에 관심이 있으신가요? (Are you interested in tech trends and boosting productivity?)",
+      "hook_angle": "Are you looking for smarter ways to boost your daily digital productivity? #TechTips #Bangladesh",
+      "raw_data": {
+        "approx_traffic": 500,
+        "related_queries": []
+      }
+    },
+    {
+      "rank": 9,
+      "topic": "prakash raj",
+      "source": "google_trends",
+      "virality_score": 1.0,
+      "niche_fit_score": 5.0,
+      "region_fit_score": 3.0,
+      "combined_score": 2.9,
+      "recommended_format": "text",
+      "hook_angle": "Are you looking for the latest tech updates in Bangladesh? (টেকনোলজি আপডেট সম্পর্কে জানতে চান?)",
       "raw_data": {
         "approx_traffic": 100,
         "related_queries": []
       }
     },
     {
-      "rank": 9,
-      "topic": "monaco vs toulouse",
+      "rank": 10,
+      "topic": "ইন্টার মায়ামি",
       "source": "google_trends",
       "virality_score": 1.0,
-      "niche_fit_score": 4.0,
-      "region_fit_score": 2.0,
-      "combined_score": 2.3,
+      "niche_fit_score": 3.0,
+      "region_fit_score": 1.0,
+      "combined_score": 1.7,
       "recommended_format": "text",
-      "hook_angle": "Are you looking for smarter ways to use your tech daily? Let us know what device you use!",
+      "hook_angle": "Tech tips and gadgets for young users in Bangladesh",
       "raw_data": {
-        "approx_traffic": 500,
+        "approx_traffic": 100,
         "related_queries": []
       }
     }
