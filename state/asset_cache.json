@@ -118,5 +118,29 @@
     "source_id": "6565726",
     "contributor": "Evilowl",
     "contributor_id": "6246757"
+  },
+  "stock_photo::pixabay_photo_5310589": {
+    "asset_id": "pixabay_photo_5310589",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_5310589.jpg",
+    "cached_at": "2026-10-11T15:01:21.995063+00:00",
+    "source_url": "https://pixabay.com/get/g53cfeb39b6bcebe90866d9fcb70131f756e316e72cec0a7dfc7a1e7b9590213f2d2d58f867f6804e2d1034371e772a469bbb7fd0eb87c345c6a43eae7c565009_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/lights-fireflies-glow-glowworms-5310589/",
+    "source_id": "5310589",
+    "contributor": "JoshuaWoroniecki",
+    "contributor_id": "12734309"
+  },
+  "stock_photo::pixabay_photo_3088775": {
+    "asset_id": "pixabay_photo_3088775",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_3088775.jpg",
+    "cached_at": "2026-10-11T15:02:48.832433+00:00",
+    "source_url": "https://pixabay.com/get/g9b65b3917314914b1073c91f44ae08d6bbb034171a408bc8244c4ea2f57798595fbb4fef6ea0b3cc2ac53ea92d927f88db64a6d68408d6f96184cb454cc99dcf_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/a-book-embossing-leather-book-cover-3088775/",
+    "source_id": "3088775",
+    "contributor": "Darkmoon_Art",
+    "contributor_id": "1664300"
   }
 }

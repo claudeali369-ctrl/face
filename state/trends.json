@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-11T14:05:27.308993+00:00",
+  "generated_at": "2026-10-11T14:59:11.353471+00:00",
   "region": "Bangladesh",
   "niche": "technology",
   "trends": [
     {
       "rank": 1,
-      "topic": "nice vs strasbourg",
+      "topic": "india vs west indies",
       "source": "google_trends",
-      "virality_score": 2.0,
+      "virality_score": 3.0,
       "niche_fit_score": 5.0,
       "region_fit_score": 5.0,
-      "combined_score": 3.8,
+      "combined_score": 4.2,
       "recommended_format": "image",
-      "hook_angle": "Tech tips and digital productivity updates for young professionals in Bangladesh.",
+      "hook_angle": "Looking for ways to boost your daily productivity with simple tech tools? #TechTips #DigitalProductivity",
       "raw_data": {
-        "approx_traffic": 1000,
+        "approx_traffic": 20000,
         "related_queries": []
       }
     },
     {
       "rank": 2,
-      "topic": "sociedad vs deportivo",
+      "topic": "lazio vs monza",
       "source": "google_trends",
       "virality_score": 2.0,
-      "niche_fit_score": 5.0,
-      "region_fit_score": 4.0,
-      "combined_score": 3.55,
-      "recommended_format": "image",
-      "hook_angle": "Are you using your smartphone and apps to their full potential? Discover hidden tech tips today!",
+      "niche_fit_score": 6.0,
+      "region_fit_score": 5.0,
+      "combined_score": 4.15,
+      "recommended_format": "text",
+      "hook_angle": "Are you making the most of your tech tools today? #TechTips #Bangladesh",
       "raw_data": {
         "approx_traffic": 500,
         "related_queries": []
@@ -35,31 +35,31 @@
     },
     {
       "rank": 3,
-      "topic": "গরুর মাংস",
+      "topic": "sociedad vs deportivo",
       "source": "google_trends",
-      "virality_score": 1.0,
+      "virality_score": 2.0,
       "niche_fit_score": 5.0,
       "region_fit_score": 5.0,
-      "combined_score": 3.4,
+      "combined_score": 3.8,
       "recommended_format": "image",
-      "hook_angle": "Are you making the most of your tech tools today? (টেক টুলস ব্যবহারে কি আপনি পিছিয়ে আছেন?)",
+      "hook_angle": "технология এবং ডিজিটাল উৎপাদনশীলতা সম্পর্কে আপনার কি জানা আছে?",
       "raw_data": {
-        "approx_traffic": 500,
+        "approx_traffic": 2000,
         "related_queries": []
       }
     },
     {
       "rank": 4,
-      "topic": "prince yadav",
+      "topic": "india national cricket team vs west indies cricket team match scorecard",
       "source": "google_trends",
       "virality_score": 1.0,
       "niche_fit_score": 5.0,
       "region_fit_score": 5.0,
       "combined_score": 3.4,
-      "recommended_format": "image",
-      "hook_angle": "Tech tip বা budget gadget নিয়ে আপনার কী জানা দরকার? (What do you need to know about tech tips or budget gadgets?)",
+      "recommended_format": "text",
+      "hook_angle": "Tech tip বা budget tech সম্পর্কিত স্পষ্ট ট্রেন্ড ডেটা এখনো পাওয়া যায়নি।",
       "raw_data": {
-        "approx_traffic": 200,
+        "approx_traffic": 5000,
         "related_queries": []
       }
     },
@@ -72,22 +72,22 @@
       "region_fit_score": 5.0,
       "combined_score": 3.4,
       "recommended_format": "text",
-      "hook_angle": "техnology update-এর নতুন কিছু খুঁজছেন? (Looking for something new in tech updates?)",
+      "hook_angle": "Are you using your smartphone to its full potential? Discover hidden tech tips today!",
       "raw_data": {
-        "approx_traffic": 200,
+        "approx_traffic": 500,
         "related_queries": []
       }
     },
     {
       "rank": 6,
-      "topic": "সংবাদ",
+      "topic": "lecce vs bologna",
       "source": "google_trends",
       "virality_score": 1.0,
       "niche_fit_score": 5.0,
-      "region_fit_score": 3.0,
-      "combined_score": 2.9,
+      "region_fit_score": 5.0,
+      "combined_score": 3.4,
       "recommended_format": "text",
-      "hook_angle": "Are you looking to boost your daily productivity with smart tools? Let's explore practical tech tips! (টেক টিপস এবং ডিজিটাল প্রোডাক্টরটিভিটি বাড়াতে চান?)",
+      "hook_angle": "Are you looking for smarter ways to boost your daily digital productivity in Bangladesh? #TechTips",
       "raw_data": {
         "approx_traffic": 500,
         "related_queries": []
@@ -95,61 +95,61 @@
     },
     {
       "rank": 7,
-      "topic": "lazio vs monza",
+      "topic": "পঞ্চগড়",
       "source": "google_trends",
       "virality_score": 1.0,
       "niche_fit_score": 5.0,
-      "region_fit_score": 3.0,
-      "combined_score": 2.9,
-      "recommended_format": "image",
-      "hook_angle": "Are you looking for the best budget tech in Bangladesh? কম খরচে সেরা গ্যাজেট খুঁজছেন?",
+      "region_fit_score": 5.0,
+      "combined_score": 3.4,
+      "recommended_format": "text",
+      "hook_angle": "Tech tips and software tutorials for young adults in Bangladesh",
       "raw_data": {
-        "approx_traffic": 200,
+        "approx_traffic": 100,
         "related_queries": []
       }
     },
     {
       "rank": 8,
-      "topic": "south africa champions",
+      "topic": "সৌদি আরব",
       "source": "google_trends",
       "virality_score": 1.0,
       "niche_fit_score": 5.0,
       "region_fit_score": 3.0,
       "combined_score": 2.9,
       "recommended_format": "text",
-      "hook_angle": "Are you using your smartphone to its full potential? চলুন জেনে নেওয়া যাক কিছু দরকারি টেক টিপস।",
+      "hook_angle": "Tech tips & digital productivity hacks - আপনার দৈনন্দিন কাজ সহজ করার জন্য",
       "raw_data": {
-        "approx_traffic": 200,
+        "approx_traffic": 500,
         "related_queries": []
       }
     },
     {
       "rank": 9,
-      "topic": "lecce vs bologna",
+      "topic": "f1",
       "source": "google_trends",
       "virality_score": 1.0,
-      "niche_fit_score": 4.0,
+      "niche_fit_score": 5.0,
       "region_fit_score": 3.0,
-      "combined_score": 2.55,
+      "combined_score": 2.9,
       "recommended_format": "text",
-      "hook_angle": "Tech tips and budget gadgets সম্পর্কে জানতে চান? (Want to know about tech tips and budget gadgets?)",
+      "hook_angle": "Are you looking for ways to boost your daily digital productivity? Let's talk tech tips! (আপনার প্রতিদিনের কাজের গতি বাড়াতে কি নতুন টেক টিপস খুঁজছেন?)",
       "raw_data": {
-        "approx_traffic": 200,
+        "approx_traffic": 500,
         "related_queries": []
       }
     },
     {
       "rank": 10,
-      "topic": "pakistan national cricket team vs sri lanka national cricket team match scorecard",
+      "topic": "nice vs strasbourg",
       "source": "google_trends",
       "virality_score": 1.0,
-      "niche_fit_score": 0.0,
-      "region_fit_score": 0.0,
-      "combined_score": 0.4,
+      "niche_fit_score": 5.0,
+      "region_fit_score": 3.0,
+      "combined_score": 2.9,
       "recommended_format": "text",
-      "hook_angle": "Tech tip ba software update niye kichu khujchen? (Are you looking for tech tips or software updates?)",
+      "hook_angle": "Tech tip বা budget gadget update সম্পর্কে আপনার কি জানা আছে?",
       "raw_data": {
-        "approx_traffic": 5000,
+        "approx_traffic": 200,
         "related_queries": []
       }
     }
