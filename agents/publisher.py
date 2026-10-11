@@ -32,7 +32,9 @@ from utils.rate_limiter import FACEBOOK_LIMITER
 log = get_logger("publisher")
 
 # ── Constants ────────────────────────────────────────────────────────────────
-SCHEDULE_WINDOW_MINUTES = 10          # publish if within ±10 min of scheduled time
+# The image/text pipeline takes time; tolerate a bounded delay after the slot.
+SCHEDULE_EARLY_TOLERANCE_MINUTES = 5
+SCHEDULE_LATE_TOLERANCE_MINUTES = 60
 RETRY_MAX_ATTEMPTS = 3
 RETRY_BASE_DELAY = 5                  # seconds
 MAX_REEL_SIZE_MB = 100
@@ -53,16 +55,39 @@ def _now_utc() -> datetime:
     return datetime.now(timezone.utc)
 
 
-def _is_within_window(scheduled_iso: str, window_minutes: int = SCHEDULE_WINDOW_MINUTES) -> bool:
-    """Return True if the current UTC time is within ±window_minutes of scheduled_iso."""
+def _is_within_window(
+    scheduled_iso: str,
+    window_minutes: int | None = None,
+    *,
+    now: datetime | None = None,
+) -> bool:
+    """Return whether a slot is due, with bounded late tolerance.
+
+    The default allows up to 5 minutes early and 60 minutes late because the
+    workflow generates content and images before it reaches the publisher.
+    Passing window_minutes preserves the old symmetric-window behavior for
+    callers and tests that explicitly need it.
+    """
     try:
-        scheduled = datetime.fromisoformat(scheduled_iso)
+        scheduled = datetime.fromisoformat(scheduled_iso.replace("Z", "+00:00"))
         if scheduled.tzinfo is None:
             scheduled = scheduled.replace(tzinfo=timezone.utc)
-        delta = abs((_now_utc() - scheduled).total_seconds())
-        return delta <= window_minutes * 60
-    except Exception as exc:
-        log.warning(f"Could not parse scheduled_time '{scheduled_iso}': {exc}")
+
+        current = now or _now_utc()
+        if current.tzinfo is None:
+            current = current.replace(tzinfo=timezone.utc)
+
+        seconds_until_scheduled = (scheduled - current).total_seconds()
+        if window_minutes is not None:
+            return abs(seconds_until_scheduled) <= window_minutes * 60
+
+        return (
+            -SCHEDULE_LATE_TOLERANCE_MINUTES * 60
+            <= seconds_until_scheduled
+            <= SCHEDULE_EARLY_TOLERANCE_MINUTES * 60
+        )
+    except (TypeError, ValueError, OverflowError) as exc:
+        log.warning("Could not parse scheduled_time %r: %s", scheduled_iso, exc)
         return False
 
 
@@ -278,14 +303,23 @@ def run_publishing_loop(
     fb: FacebookClient,
     content: list[dict],
     schedule_map: dict[str, dict],
+    publish_now: bool = False,
 ) -> tuple[list[dict], list[dict], list[dict]]:
     """
-    Iterate over ready content items and publish those in the schedule window.
+    Publish ready content whose slot is due. For deliberate manual testing,
+    publish_now=True bypasses the schedule check for every ready item.
 
     Returns: (published_items, failed_items, skipped_items)
     """
     published, failed, skipped = [], [], []
+    deferred_count = 0
     now = _now_utc()
+
+    if publish_now:
+        log.warning(
+            "Immediate publish override enabled: schedule checks are bypassed "
+            "for all ready content items."
+        )
 
     for item in content:
         pid = item.get("post_id", "")
@@ -307,13 +341,15 @@ def run_publishing_loop(
             skipped.append({"post_id": pid, "format": fmt, "status": "skipped", "reason": "no_scheduled_time"})
             continue
 
-        if not _is_within_window(scheduled_time):
+        if not publish_now and not _is_within_window(scheduled_time, now=now):
+            deferred_count += 1
             log.info(
-                "Post outside publishing window — "
-                "scheduled_time=%s, current_utc=%s, window=±%s minutes",
+                "Post deferred outside publishing window — "
+                "scheduled_time=%s, current_utc=%s, allowed_early=%s min, allowed_late=%s min",
                 scheduled_time,
-                _now_utc().isoformat(),
-                SCHEDULE_WINDOW_MINUTES,
+                now.isoformat(),
+                SCHEDULE_EARLY_TOLERANCE_MINUTES,
+                SCHEDULE_LATE_TOLERANCE_MINUTES,
             )
             continue
 
@@ -341,6 +377,12 @@ def run_publishing_loop(
         _append_post_history(fb_post_id, item, plan_entry)
         published.append({"post_id": fb_post_id, "format": fmt, "status": "published"})
 
+    if deferred_count:
+        log.info(
+            "Deferred %d ready item(s): no Facebook request was made for those items.",
+            deferred_count,
+        )
+
     return published, failed, skipped
 
 
@@ -352,8 +394,9 @@ def main() -> None:
     """PublisherAgent entry point."""
     log.info("══ PublisherAgent starting ══")
     run_at = _now_utc()
-
-
+    publish_now = os.environ.get("FACE_PUBLISH_NOW", "").strip().lower() in {
+        "1", "true", "yes", "on"
+    }
 
     # ── Pre-flight: token validity check ─────────────────────────────────
     try:
@@ -387,7 +430,9 @@ def main() -> None:
     log.info(f"Loaded {len(content_items)} content items; {len(schedule_map)} plan entries")
 
     # ── Publishing loop ───────────────────────────────────────────────────
-    published, failed, skipped = run_publishing_loop(fb, content_items, schedule_map)
+    published, failed, skipped = run_publishing_loop(
+        fb, content_items, schedule_map, publish_now=publish_now
+    )
 
     # ── Persist updated generated_content (status changes) ───────────────
     try:
