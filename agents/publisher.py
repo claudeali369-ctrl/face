@@ -308,7 +308,13 @@ def run_publishing_loop(
             continue
 
         if not _is_within_window(scheduled_time):
-            log.debug(f"[{pid}] Not in publish window (scheduled={scheduled_time}) — skipping this run")
+            log.info(
+                "Post outside publishing window — "
+                "scheduled_time=%s, current_utc=%s, window=±%s minutes",
+                scheduled_time,
+                _now_utc().isoformat(),
+                SCHEDULE_WINDOW_MINUTES,
+            )
             continue
 
         log.info(f"[{pid}] In publish window — attempting {fmt} post…")
