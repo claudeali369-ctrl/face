@@ -280,34 +280,46 @@ def _generate_story_content(
         log_exception(log, exc, f"[{post_id}] Story Gemini call failed")
         return None
 
-    slides = result.get("slides", [])
-    if not slides:
-        # Build minimal fallback from result keys
-        slides = [
-            {
-                "slide_number": 1,
-                "text": result.get("hook", "Check this out!"),
-                "sticker_suggestions": [],
-            },
-            {
-                "slide_number": 2,
-                "text": result.get("body", ""),
-                "sticker_suggestions": [],
-            },
-            {
-                "slide_number": 3,
-                "text": result.get("cta", "Follow for more!"),
-                "sticker_suggestions": result.get("sticker_suggestions", []),
-            },
-        ]
+    
+    raw_slides = result.get("slides") or []
+    slides = []
+
+    for index, raw_slide in enumerate(raw_slides[:3], start=1):
+        if not isinstance(raw_slide, dict):
+            continue
+
+        slide_text = str(
+            raw_slide.get("text")
+            or raw_slide.get("text_content")
+            or ""
+        ).strip()
+
+        if not slide_text:
+            continue
+
+        slide = dict(raw_slide)
+        slide["slide_number"] = slide.get("slide_number") or index
+        slide["text"] = slide_text
+        slides.append(slide)
+
+    # Do not mark an incomplete story as ready to publish.
+    if len(slides) != 3:
+        log.warning(
+            "[%s] Story generation returned %d valid slides; expected 3",
+            post_id,
+            len(slides),
+        )
+        return None
+
     return {
-        "story_slides": slides[:3],   # cap at 3 slides
-        "caption": result.get("caption", ""),
-        "hook": slides[0].get("text", "") if slides else "",
+        "story_slides": slides,
+        "caption": str(result.get("caption") or ""),
+        "hook": slides[0]["text"],
         "hashtags": _validate_hashtags(result.get("hashtags", [])),
-        "cta": slides[-1].get("text", "") if slides else "",
+        "cta": slides[-1]["text"],
         "alt_text": "",
     }
+
 
 
 def _generate_reel_script(
