@@ -733,6 +733,139 @@ def main() -> None:
             pid, provider_used, qa_score, final_path,
         )
 
+    
+    # Generate one vertical image for each Story slide.
+    for story_entry in content_plan.get("stories", []):
+        pid = story_entry.get("post_id")
+        story_content = content_by_id.get(pid)
+    
+        if not pid or not story_content:
+            log.warning("Story content missing for plan item %s", pid)
+            continue
+    
+        source_slides = story_content.get("story_slides") or []
+    
+        if len(source_slides) != 3:
+            log.error(
+                "[%s] Expected 3 story slides, got %d",
+                pid,
+                len(source_slides),
+            )
+            content_updates[pid] = {
+                "story_slides": source_slides,
+                "image_ready": False,
+            }
+            continue
+    
+        rendered_slides = []
+    
+        for index, source_slide in enumerate(source_slides, start=1):
+            slide = dict(source_slide)
+            slide_text = str(
+                slide.get("text") or slide.get("text_content") or ""
+            ).strip()
+    
+            slide["text"] = slide_text
+            slide_id = f"{pid}_slide{index}"
+    
+            if not slide_text:
+                slide["image_path"] = ""
+                rendered_slides.append(slide)
+                log.error("[%s] Slide %d has no text", pid, index)
+                continue
+    
+            # Give each slide its own visual brief and unique output filename.
+            slide_plan = {
+                **story_entry,
+                "post_id": slide_id,
+                "format": "story",
+                "trend_topic": (
+                    f"{story_entry.get('trend_topic', '')}; "
+                    f"{slide.get('slide_type', 'story slide')}; "
+                    f"{slide_text}"
+                ),
+            }
+    
+            slide_content = {
+                **story_content,
+                "caption": slide_text,
+                "hook": slide_text,
+                "story_slides": [slide],
+            }
+    
+            try:
+                brief = _generate_visual_brief(
+                    gemini,
+                    slide_plan,
+                    slide_content,
+                    visual_style,
+                    config,
+                    context,
+                )
+                visual_briefs[slide_id] = brief
+    
+                approved_path, provider_used, qa_score, attempts = (
+                    _generate_image(
+                        brief=brief,
+                        post_id=slide_id,
+                        fmt="story",
+                        config=config,
+                        gemini=gemini,
+                        qa_records=qa_records,
+                        min_score=min_score,
+                    )
+                )
+    
+                if approved_path is None:
+                    raise RuntimeError("No image provider produced a usable image")
+    
+                final_path = _apply_text_overlay(
+                    approved_path,
+                    slide_id,
+                    slide_content,
+                    brief,
+                    config,
+                )
+    
+                slide["image_path"] = str(final_path)
+                slide["image_provider_used"] = provider_used
+                slide["qa_score"] = qa_score
+    
+                log.info(
+                    "[%s] Story slide %d/3 ready: %s",
+                    pid,
+                    index,
+                    final_path,
+                )
+    
+            except Exception as exc:
+                log_exception(
+                    log,
+                    f"Story slide {index} failed for {pid}",
+                    exc,
+                )
+                slide["image_path"] = ""
+    
+            rendered_slides.append(slide)
+    
+        all_slides_ready = (
+            len(rendered_slides) == 3
+            and all(
+                bool(slide.get("image_path"))
+                and Path(slide["image_path"]).is_file()
+                for slide in rendered_slides
+            )
+        )
+    
+        content_updates[pid] = {
+            "story_slides": rendered_slides,
+            "image_ready": all_slides_ready,
+        }
+    
+        if not all_slides_ready:
+            log.error("[%s] Story is incomplete; it must not publish", pid)
+
+
     # ── Step 5: Patch generated_content.json ─────────────────────────────────
     log.info("Step 5: Patching state/generated_content.json...")
     current_content = read_state("generated_content.json")
