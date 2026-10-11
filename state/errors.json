@@ -1,37 +1,28 @@
-[
-  {
-    "timestamp": "2026-10-10T18:05:09.986184+00:00",
-    "session_id": "85952bfa",
-    "agent_name": "publisher",
-    "message": "Facebook token is invalid or expired — halting publisher.",
-    "exc_info": null
-  },
-  {
-    "timestamp": "2026-10-10T19:13:24.676612+00:00",
-    "session_id": "3a5a4d07",
-    "agent_name": "publisher",
-    "message": "Facebook token is invalid or expired — halting publisher.",
-    "exc_info": null
-  },
-  {
-    "timestamp": "2026-10-11T03:09:46.132664+00:00",
-    "session_id": "0a9be9d3",
-    "agent_name": "publisher",
-    "message": "Facebook token is invalid or expired — halting publisher.",
-    "exc_info": null
-  },
-  {
-    "timestamp": "2026-10-11T07:11:07.687459+00:00",
-    "session_id": "aa855a84",
-    "agent_name": "publisher",
-    "message": "Facebook token is invalid or expired — halting publisher.",
-    "exc_info": null
-  },
-  {
-    "timestamp": "2026-10-11T14:08:48.029712+00:00",
-    "session_id": "1952069a",
-    "agent_name": "publisher",
-    "message": "Facebook token is invalid or expired — halting publisher.",
-    "exc_info": null
-  }
-]
+{
+  "errors": [
+    {
+      "post_id": "72edaa5a-38b9-4f6f-b95b-bfb70dd8a64c",
+      "error": "image_ready=False or missing image_path for 72edaa5a-38b9-4f6f-b95b-bfb70dd8a64c",
+      "timestamp": "2026-10-11T21:01:59.699528+00:00",
+      "agent": "publisher"
+    },
+    {
+      "post_id": "e6f9a6e5-b15d-4eec-b7a3-3da513a0a7d5",
+      "error": "image_ready=False or missing image_path for e6f9a6e5-b15d-4eec-b7a3-3da513a0a7d5",
+      "timestamp": "2026-10-11T21:02:34.702661+00:00",
+      "agent": "publisher"
+    },
+    {
+      "post_id": "b9dd8c9b-0fb0-408d-90a1-60cbd4a9f9d4",
+      "error": "Story slide 1 has missing image_path: ''",
+      "timestamp": "2026-10-11T21:03:13.586548+00:00",
+      "agent": "publisher"
+    },
+    {
+      "post_id": "0082dacc-e757-44ea-8d96-500742abea8a",
+      "error": "Story slide 1 has missing image_path: ''",
+      "timestamp": "2026-10-11T21:03:48.589826+00:00",
+      "agent": "publisher"
+    }
+  ]
+}

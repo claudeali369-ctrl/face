@@ -1,122 +1,158 @@
 {
-  "generated_at": "2026-10-11T20:18:02.777127+00:00",
+  "generated_at": "2026-10-11T21:01:23.913916+00:00",
   "date": "2026-10-11",
   "records": [
     {
-      "post_id": "205b496c-5f49-4c0a-ae19-f2f3f0c9b6ba",
+      "post_id": "72edaa5a-38b9-4f6f-b95b-bfb70dd8a64c",
       "attempt": 1,
       "provider": "Pollinations",
       "score": 3.0,
       "policy_safe": true,
       "improvement_instructions": "",
-      "timestamp": "2026-10-11T20:11:04.113299+00:00"
+      "timestamp": "2026-10-11T20:53:47.409132+00:00"
     },
     {
-      "post_id": "205b496c-5f49-4c0a-ae19-f2f3f0c9b6ba",
+      "post_id": "72edaa5a-38b9-4f6f-b95b-bfb70dd8a64c",
       "attempt": 4,
       "provider": "Pixabay",
       "score": 6.0,
       "policy_safe": true,
       "improvement_instructions": "",
-      "timestamp": "2026-10-11T20:11:49.839822+00:00",
+      "timestamp": "2026-10-11T20:54:29.340445+00:00",
       "fallback": true
     },
     {
-      "post_id": "594555f0-d316-42c0-9280-92a49e6ba425",
-      "attempt": 4,
-      "provider": "Pixabay",
-      "score": 6.0,
+      "post_id": "e6f9a6e5-b15d-4eec-b7a3-3da513a0a7d5",
+      "attempt": 1,
+      "provider": "Pollinations",
+      "score": 3.0,
       "policy_safe": true,
       "improvement_instructions": "",
-      "timestamp": "2026-10-11T20:12:34.262783+00:00",
-      "fallback": true
+      "timestamp": "2026-10-11T20:54:35.498578+00:00"
     },
     {
-      "post_id": "9e4b088b-81fd-4c6b-949d-51a3deee3072",
-      "attempt": 4,
-      "provider": "Pixabay",
-      "score": 6.0,
-      "policy_safe": true,
-      "improvement_instructions": "",
-      "timestamp": "2026-10-11T20:13:16.861958+00:00",
-      "fallback": true
-    },
-    {
-      "post_id": "7efc9e14-ddb4-430b-8b65-f861dd3b2dda_slide1",
+      "post_id": "e6f9a6e5-b15d-4eec-b7a3-3da513a0a7d5",
       "attempt": 4,
       "provider": "Pixabay",
       "score": 3.0,
       "policy_safe": true,
       "improvement_instructions": "",
-      "timestamp": "2026-10-11T20:14:02.976355+00:00",
+      "timestamp": "2026-10-11T20:55:18.416387+00:00",
       "fallback": true
     },
     {
-      "post_id": "7efc9e14-ddb4-430b-8b65-f861dd3b2dda_slide2",
+      "post_id": "ed6d5876-782b-492c-9c70-89db2101abd9",
+      "attempt": 1,
+      "provider": "Pollinations",
+      "score": 2.0,
+      "policy_safe": true,
+      "improvement_instructions": "",
+      "timestamp": "2026-10-11T20:55:40.663221+00:00"
+    },
+    {
+      "post_id": "ed6d5876-782b-492c-9c70-89db2101abd9",
+      "attempt": 4,
+      "provider": "Pixabay",
+      "score": 7.0,
+      "policy_safe": true,
+      "improvement_instructions": "",
+      "timestamp": "2026-10-11T20:56:24.050742+00:00",
+      "fallback": true
+    },
+    {
+      "post_id": "b9dd8c9b-0fb0-408d-90a1-60cbd4a9f9d4_slide1",
+      "attempt": 1,
+      "provider": "Pollinations",
+      "score": 3.0,
+      "policy_safe": true,
+      "improvement_instructions": "",
+      "timestamp": "2026-10-11T20:56:32.002950+00:00"
+    },
+    {
+      "post_id": "b9dd8c9b-0fb0-408d-90a1-60cbd4a9f9d4_slide1",
+      "attempt": 4,
+      "provider": "Pixabay",
+      "score": 2.0,
+      "policy_safe": true,
+      "improvement_instructions": "",
+      "timestamp": "2026-10-11T20:57:15.844829+00:00",
+      "fallback": true
+    },
+    {
+      "post_id": "b9dd8c9b-0fb0-408d-90a1-60cbd4a9f9d4_slide2",
+      "attempt": 1,
+      "provider": "Pollinations",
+      "score": 3.0,
+      "policy_safe": true,
+      "improvement_instructions": "",
+      "timestamp": "2026-10-11T20:57:27.458052+00:00"
+    },
+    {
+      "post_id": "b9dd8c9b-0fb0-408d-90a1-60cbd4a9f9d4_slide2",
       "attempt": 4,
       "provider": "Pixabay",
       "score": 3.0,
       "policy_safe": true,
       "improvement_instructions": "",
-      "timestamp": "2026-10-11T20:14:48.865083+00:00",
+      "timestamp": "2026-10-11T20:58:09.778963+00:00",
       "fallback": true
     },
     {
-      "post_id": "7efc9e14-ddb4-430b-8b65-f861dd3b2dda_slide3",
+      "post_id": "b9dd8c9b-0fb0-408d-90a1-60cbd4a9f9d4_slide3",
+      "attempt": 4,
+      "provider": "Pixabay",
+      "score": 3.0,
+      "policy_safe": true,
+      "improvement_instructions": "",
+      "timestamp": "2026-10-11T20:58:55.678268+00:00",
+      "fallback": true
+    },
+    {
+      "post_id": "0082dacc-e757-44ea-8d96-500742abea8a_slide1",
       "attempt": 1,
       "provider": "Pollinations",
       "score": 6.0,
       "policy_safe": true,
       "improvement_instructions": "",
-      "timestamp": "2026-10-11T20:14:56.125849+00:00"
+      "timestamp": "2026-10-11T20:59:03.332806+00:00"
     },
     {
-      "post_id": "7efc9e14-ddb4-430b-8b65-f861dd3b2dda_slide3",
+      "post_id": "0082dacc-e757-44ea-8d96-500742abea8a_slide1",
       "attempt": 4,
       "provider": "Pixabay",
       "score": 3.0,
       "policy_safe": true,
       "improvement_instructions": "",
-      "timestamp": "2026-10-11T20:15:39.303910+00:00",
+      "timestamp": "2026-10-11T20:59:45.241678+00:00",
       "fallback": true
     },
     {
-      "post_id": "e14d8705-4aea-465a-ab18-fc517f07f931_slide1",
+      "post_id": "0082dacc-e757-44ea-8d96-500742abea8a_slide2",
       "attempt": 4,
       "provider": "Pixabay",
       "score": 3.0,
       "policy_safe": true,
       "improvement_instructions": "",
-      "timestamp": "2026-10-11T20:16:25.627033+00:00",
+      "timestamp": "2026-10-11T21:00:31.547453+00:00",
       "fallback": true
     },
     {
-      "post_id": "e14d8705-4aea-465a-ab18-fc517f07f931_slide2",
-      "attempt": 4,
-      "provider": "Pixabay",
-      "score": 3.0,
-      "policy_safe": true,
-      "improvement_instructions": "",
-      "timestamp": "2026-10-11T20:17:11.980066+00:00",
-      "fallback": true
-    },
-    {
-      "post_id": "e14d8705-4aea-465a-ab18-fc517f07f931_slide3",
+      "post_id": "0082dacc-e757-44ea-8d96-500742abea8a_slide3",
       "attempt": 1,
       "provider": "Pollinations",
       "score": 4.0,
       "policy_safe": true,
       "improvement_instructions": "",
-      "timestamp": "2026-10-11T20:17:19.734109+00:00"
+      "timestamp": "2026-10-11T21:00:40.730222+00:00"
     },
     {
-      "post_id": "e14d8705-4aea-465a-ab18-fc517f07f931_slide3",
+      "post_id": "0082dacc-e757-44ea-8d96-500742abea8a_slide3",
       "attempt": 4,
       "provider": "Pixabay",
-      "score": 6.0,
+      "score": 3.0,
       "policy_safe": true,
       "improvement_instructions": "",
-      "timestamp": "2026-10-11T20:18:02.772316+00:00",
+      "timestamp": "2026-10-11T21:01:23.909096+00:00",
       "fallback": true
     }
   ]

@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "post_id": "796782446859518_122142327267061297",
+      "internal_id": "ed6d5876-782b-492c-9c70-89db2101abd9",
+      "published_at": "2026-10-11T21:02:38.583542+00:00",
+      "format": "single_image",
+      "trend_topic": "palmeiras vs corinthians",
+      "content_pillar": "Hidden Gems",
+      "hook_type": "curiosity",
+      "caption_length": 265,
+      "hashtag_count": 17,
+      "image_provider": "pixabay",
+      "visual_style": "futuristic minimalist",
+      "has_text_overlay": true,
+      "is_reel": false,
+      "scheduled_time": "2026-10-11T14:00:00+00:00",
+      "actual_publish_time": "2026-10-11T21:02:38.583552+00:00",
+      "insights": null
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 {
   "date": "2026-10-11",
-  "generated_at": "2026-10-11T20:09:51.928399+00:00",
+  "generated_at": "2026-10-11T20:52:35.358767+00:00",
   "posts": [
     {
-      "post_id": "205b496c-5f49-4c0a-ae19-f2f3f0c9b6ba",
+      "post_id": "72edaa5a-38b9-4f6f-b95b-bfb70dd8a64c",
       "slot": 1,
       "scheduled_time_utc": "2026-10-11T03:00:00+00:00",
       "format": "single_image",
@@ -15,24 +15,24 @@
       "status": "planned"
     },
     {
-      "post_id": "594555f0-d316-42c0-9280-92a49e6ba425",
+      "post_id": "e6f9a6e5-b15d-4eec-b7a3-3da513a0a7d5",
       "slot": 2,
       "scheduled_time_utc": "2026-10-11T07:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "atlético mineiro vs santos",
+      "trend_topic": "troyes vs marseille",
       "content_pillar": "Hidden Gems",
-      "hook_type": "local_relevance",
+      "hook_type": "curiosity",
       "cta_type": "save_or_share",
       "dominant_emotion": "curiosity",
       "status": "planned"
     },
     {
-      "post_id": "9e4b088b-81fd-4c6b-949d-51a3deee3072",
+      "post_id": "ed6d5876-782b-492c-9c70-89db2101abd9",
       "slot": 3,
       "scheduled_time_utc": "2026-10-11T14:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "world championship of legends",
-      "content_pillar": "Budget Travel Tips",
+      "trend_topic": "palmeiras vs corinthians",
+      "content_pillar": "Hidden Gems",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
       "dominant_emotion": "curiosity",
@@ -41,7 +41,7 @@
   ],
   "stories": [
     {
-      "post_id": "7efc9e14-ddb4-430b-8b65-f861dd3b2dda",
+      "post_id": "b9dd8c9b-0fb0-408d-90a1-60cbd4a9f9d4",
       "slot": 1,
       "scheduled_time_utc": "2026-10-11T03:00:00+00:00",
       "format": "story",
@@ -50,20 +50,20 @@
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "205b496c-5f49-4c0a-ae19-f2f3f0c9b6ba",
+      "parent_post_id": "72edaa5a-38b9-4f6f-b95b-bfb70dd8a64c",
       "status": "planned"
     },
     {
-      "post_id": "e14d8705-4aea-465a-ab18-fc517f07f931",
+      "post_id": "0082dacc-e757-44ea-8d96-500742abea8a",
       "slot": 2,
       "scheduled_time_utc": "2026-10-11T07:00:00+00:00",
       "format": "story",
-      "trend_topic": "atlético mineiro vs santos",
+      "trend_topic": "troyes vs marseille",
       "content_pillar": "inspirational",
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "594555f0-d316-42c0-9280-92a49e6ba425",
+      "parent_post_id": "e6f9a6e5-b15d-4eec-b7a3-3da513a0a7d5",
       "status": "planned"
     }
   ],
