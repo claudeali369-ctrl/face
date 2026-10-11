@@ -587,6 +587,18 @@ def main() -> None:
     generated_content_list: list[dict] = read_state("generated_content.json").get(
         "content", []
     )
+    
+    # Normalize format names once, before any agent filters the plan.
+    for section in ("posts", "stories", "reels"):
+        for entry in content_plan.get(section, []):
+            fmt = str(entry.get("format", "single_image")).strip().lower()
+    
+            if fmt == "image":
+                entry["format"] = "single_image"
+    
+    # Keep the saved plan consistent for later stages.
+    write_state("content_plan.json", content_plan)
+
 
     # Build lookup: post_id → content
     content_by_id: dict[str, dict] = {
