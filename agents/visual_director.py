@@ -53,10 +53,10 @@ for _d in (ASSETS_RAW, ASSETS_APPROVED, ASSETS_FINAL):
 
 # ── HuggingFace model endpoints ────────────────────────────────────────────────
 HF_FLUX_URL = (
-    "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell"
+    "https://huggingface.co"
 )
 HF_SDXL_URL = (
-    "https://api-inference.huggingface.co/models/"
+    "https://huggingface.co"
     "stabilityai/stable-diffusion-xl-base-1.0"
 )
 
