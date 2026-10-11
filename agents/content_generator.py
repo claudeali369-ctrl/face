@@ -198,7 +198,7 @@ def _generate_post_caption(
             hook_type=plan_item.get("hook_type", "question"),
             cta_type=plan_item.get("cta_type", "comment"),
             dominant_emotion=plan_item.get("dominant_emotion", "curiosity"),
-            post_format=plan_item.get("format", "single_image"),
+            content_format=plan_item.get("format", "single_image"),
         )
     except GeminiQuotaExhaustedError:
         raise
