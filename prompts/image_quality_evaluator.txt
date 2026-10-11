@@ -1,6 +1,8 @@
 Evaluate the supplied generated image for suitability for a Facebook Page post.
 
 Page niche: {niche}
+Target region: {target_region}
+Target audience age range: {audience_age_range}
 Image file reference: {image_path}
 
 Score only what can be judged from the image. Do not claim you checked Facebook policy databases or external sources. Assess relevance to the niche, visual clarity, composition, legibility of embedded text, cultural/contextual appropriateness for the target audience, and obvious safety or rights concerns. If you cannot confidently assess a criterion, mention that uncertainty.
