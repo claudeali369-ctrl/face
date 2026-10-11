@@ -334,5 +334,29 @@
     "source_id": "407108",
     "contributor": "SplitShire",
     "contributor_id": "364019"
+  },
+  "stock_photo::pixabay_photo_865091": {
+    "asset_id": "pixabay_photo_865091",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_865091.jpg",
+    "cached_at": "2026-10-11T21:46:14.428649+00:00",
+    "source_url": "https://pixabay.com/get/g2b8b228b7c5fc7a4c0a22cd47e9df1b280d1eb8cab78869314ee017618b5dcef05b7b9a153e2b1ecef3c8cbc5850841d7e5e8978fe39d27a6883c703e7f66dae_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/office-desk-smartphone-modern-865091/",
+    "source_id": "865091",
+    "contributor": "picjumbo_com",
+    "contributor_id": "2130229"
+  },
+  "stock_photo::pixabay_photo_10371066": {
+    "asset_id": "pixabay_photo_10371066",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_10371066.jpg",
+    "cached_at": "2026-10-11T21:55:09.863532+00:00",
+    "source_url": "https://pixabay.com/get/ga67a1c16da1381820070a34a224a5c60681a0630590b069548cbf429d178acce66b6f7f4e56c2ee65a289db6b68a22bf7620eca5add4b20a0a29704cb6995d36_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/iguana-fijian-iguana-reptile-exotic-10371066/",
+    "source_id": "10371066",
+    "contributor": "DavidClode",
+    "contributor_id": "43394210"
   }
 }

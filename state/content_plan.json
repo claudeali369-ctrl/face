@@ -1,13 +1,13 @@
 {
   "date": "2026-10-11",
-  "generated_at": "2026-10-11T20:52:35.358767+00:00",
+  "generated_at": "2026-10-11T21:43:23.774877+00:00",
   "posts": [
     {
-      "post_id": "72edaa5a-38b9-4f6f-b95b-bfb70dd8a64c",
+      "post_id": "67188860-ec70-4284-b15a-ef90bca31c6d",
       "slot": 1,
       "scheduled_time_utc": "2026-10-11T03:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "racing santander vs valencia",
+      "trend_topic": "juventus",
       "content_pillar": "Hidden Gems",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
@@ -15,11 +15,11 @@
       "status": "planned"
     },
     {
-      "post_id": "e6f9a6e5-b15d-4eec-b7a3-3da513a0a7d5",
+      "post_id": "6366dac7-0a22-4d8d-b2c8-c9e7ae12c9ee",
       "slot": 2,
       "scheduled_time_utc": "2026-10-11T07:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "troyes vs marseille",
+      "trend_topic": "palmeiras vs corinthians",
       "content_pillar": "Hidden Gems",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
@@ -27,11 +27,11 @@
       "status": "planned"
     },
     {
-      "post_id": "ed6d5876-782b-492c-9c70-89db2101abd9",
+      "post_id": "71d97d78-421a-4854-9955-67453a6ae7d7",
       "slot": 3,
       "scheduled_time_utc": "2026-10-11T14:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "palmeiras vs corinthians",
+      "trend_topic": "flamengo vs fluminense",
       "content_pillar": "Hidden Gems",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
@@ -41,29 +41,29 @@
   ],
   "stories": [
     {
-      "post_id": "b9dd8c9b-0fb0-408d-90a1-60cbd4a9f9d4",
+      "post_id": "fc3c26f2-573b-43e6-9b53-0066dc6abae7",
       "slot": 1,
       "scheduled_time_utc": "2026-10-11T03:00:00+00:00",
       "format": "story",
-      "trend_topic": "racing santander vs valencia",
+      "trend_topic": "juventus",
       "content_pillar": "entertainment",
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "72edaa5a-38b9-4f6f-b95b-bfb70dd8a64c",
+      "parent_post_id": "67188860-ec70-4284-b15a-ef90bca31c6d",
       "status": "planned"
     },
     {
-      "post_id": "0082dacc-e757-44ea-8d96-500742abea8a",
+      "post_id": "65a75fbe-c8b2-4e99-8e72-b57c237c7c5c",
       "slot": 2,
       "scheduled_time_utc": "2026-10-11T07:00:00+00:00",
       "format": "story",
-      "trend_topic": "troyes vs marseille",
+      "trend_topic": "palmeiras vs corinthians",
       "content_pillar": "inspirational",
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "e6f9a6e5-b15d-4eec-b7a3-3da513a0a7d5",
+      "parent_post_id": "6366dac7-0a22-4d8d-b2c8-c9e7ae12c9ee",
       "status": "planned"
     }
   ],

@@ -1,444 +1,299 @@
 {
-  "generated_at": "2026-10-11T21:01:23.910876+00:00",
+  "generated_at": "2026-10-11T21:56:41.126230+00:00",
   "date": "2026-10-11",
   "briefs": {
-    "72edaa5a-38b9-4f6f-b95b-bfb70dd8a64c": {
-      "post_id": "72edaa5a-38b9-4f6f-b95b-bfb70dd8a64c",
+    "67188860-ec70-4284-b15a-ef90bca31c6d": {
+      "post_id": "67188860-ec70-4284-b15a-ef90bca31c6d",
       "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style creates a dramatic, high-energy sports atmosphere that stops the scroll for 18-30 sports enthusiasts in Bangladesh, combining stadium lighting with emotional depth suited for a hidden gems curiosity angle on a classic Spanish football match.",
+      "visual_style_rationale": "Cinematic style creates a high-end, aspirational atmosphere that stops the scroll for 18-30 youth in Bangladesh, bridging the gap between global football passion and local tech-savvy appreciation.",
       "composition": "rule_of_thirds",
-      "composition_rationale": "Placing the main dramatic stadium elements on the intersection points leaves the left third completely clean and atmospheric for the hook text overlay.",
-      "primary_subject": "historic football stadium floodlights glowing dramatically against a twilight sky",
-      "background_environment": "misty green pitch with subtle stadium seating and glowing digital match analytics graphics floating in the air",
+      "composition_rationale": "Placing the main visual anchor on the intersecting points allows for dynamic visual weight while leaving a clean, uninterrupted third of the frame for the hook text overlay.",
+      "primary_subject": "A modern smartphone displaying a sleek, minimalist digital app interface with classic Juventus black and white vertical stripes aesthetics",
+      "background_environment": "A dimly lit, ambient-glowing creative desk setup in a contemporary Dhaka apartment, featuring subtle traditional cane-work desk accessories and a warm amber desk lamp casting soft shadows",
       "color_palette": {
-        "primary": "#0F172A",
-        "secondary": "#1E293B",
-        "accent": "#F59E0B",
-        "rationale": "Deep slate blue conveys modern tech and football analytics trust, while warm amber gold sparks intense curiosity and passion among football fans in Bangladesh."
+        "primary": "#0B1D3A",
+        "secondary": "#1E2229",
+        "accent": "#C9B037",
+        "rationale": "Deep midnight blue represents night-time digital engagement, dark charcoal reflects modern tech aesthetics, and muted gold adds the aspirational luxury touch associated with elite football history."
       },
       "dominant_emotion": "curiosity",
       "region_visual_cues": [
-        "warm ambient stadium lighting reminiscent of packed Dhaka stadium viewing parties",
-        "subtle misty atmospheric depth representing monsoon evenings",
-        "digital HUD overlays showing tactical data for tech-savvy young fans"
+        "Dhaka apartment interior aesthetics",
+        "local handcrafted cane or bamboo desk decor",
+        "warm ambient lighting typical of urban Bangladeshi homes"
       ],
       "cultural_elements_to_include": [
-        "modern smartphone glowing in a fan's hand reflecting match stats",
-        "immersive stadium atmosphere with dramatic lens flare",
-        "clean minimalist digital layout aesthetics popular among urban youth"
+        "Subtle local artisan desk decor elements",
+        "Contemporary urban youth workspace vibe in Bangladesh"
       ],
       "cultural_elements_to_avoid": [
-        "generic European generic stock photos without local tech vibe",
-        "inaccurate team logos or copyrighted symbols",
-        "overly bright daylight that kills the suspenseful football match mood"
+        "Generic Western-only office setups",
+        "Misrepresented European or Latin American street backgrounds",
+        "Overly sterile, non-relatable sci-fi tech aesthetics",
+        "Political symbols or unauthorized brand logos"
       ],
-      "text_overlay_space": "left_third",
+      "text_overlay_space": "top_third",
       "text_overlay_color": "#FFFFFF",
       "text_overlay_background": "semi_dark",
-      "lighting_mood": "dramatic stadium floodlights with moody blue and warm gold contrast",
-      "time_of_day_depicted": "blue_hour",
-      "generation_prompt_pollinations": "historic football stadium at blue hour, cinematic, rule_of_thirds, moody stadium floodlights, misty green pitch, deep slate blue and warm gold color palette, curiosity atmosphere, professional sports photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic shot of a historic football stadium during blue hour with dramatic floodlights cutting through a misty evening air. The pitch is lush green, illuminated by a sophisticated blend of deep slate blue shadows and warm amber gold highlights. Floating digital tactical graphics hint at an untold story between Racing Santander and Valencia, creating an atmosphere of intense curiosity for young football fans. The composition utilizes the rule of thirds, leaving the left side dark and clean for typography.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, daytime, bright sun",
+      "lighting_mood": "Moody, high-contrast chiaroscuro with warm rim lighting and deep shadow details",
+      "time_of_day_depicted": "night",
+      "generation_prompt_pollinations": "smartphone displaying minimal Juventus aesthetic UI, cinematic style, rule_of_thirds composition, Dhaka apartment workspace, subtle local cane decor, deep midnight blue and warm gold color palette, curiosity atmosphere, professional technology photography, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic shot of a modern smartphone resting on a stylish Dhaka apartment desk, displaying a sleek minimalist app interface with Juventus black and white design motifs. The room is lit with warm ambient lighting from a desk lamp, casting a moody glow with deep midnight blue and muted gold tones. The composition follows the rule of thirds, leaving the top third clean and dark for text overlay.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, Indian imagery, daytime lighting",
       "quality_keywords": [
-        "8k resolution",
-        "hyper-detailed",
         "cinematic lighting",
-        "professional sports photography",
+        "ultra detailed",
+        "8k resolution",
+        "professional photography",
+        "moody atmosphere"
+      ],
+      "image_dimensions": "1080x1350",
+      "seed_suggestion": 4242,
+      "provider_preference": "pollinations"
+    },
+    "6366dac7-0a22-4d8d-b2c8-c9e7ae12c9ee": {
+      "post_id": "6366dac7-0a22-4d8d-b2c8-c9e7ae12c9ee",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style creates a dramatic, high-energy mood that captures the intense rivalry of Palmeiras vs Corinthians, blending sports passion with a sleek digital technology presentation suitable for tech-savvy youth in Bangladesh.",
+      "composition": "rule_of_thirds",
+      "composition_rationale": "Placing the main elements along the upper and left grid lines leaves the right third clean and uncluttered for the hook text overlay, ensuring high readability.",
+      "primary_subject": "A glowing digital tactical football pitch projection on a dark obsidian glass table with neon green and deep emerald light trails representing intense rivalry analytics",
+      "background_environment": "A dimly lit, high-tech modern analytics studio with ambient blue and green atmospheric glow, subtly incorporating architectural textures inspired by traditional Bangladeshi terracotta patterns integrated into modern tech panels",
+      "color_palette": {
+        "primary": "#0A2342",
+        "secondary": "#1CA7EC",
+        "accent": "#00FF66",
+        "rationale": "Deep navy represents trust and digital depth, bright cyan brings tech innovation, and electric emerald provides the curiosity-inducing stadium energy that resonates with young sports and tech fans."
+      },
+      "dominant_emotion": "curiosity",
+      "region_visual_cues": [
+        "subtle terracotta geometric motif patterns",
+        "urban Dhaka night-sky neon gradient ambient lighting",
+        "modern Bangladeshi tech lounge aesthetic"
+      ],
+      "cultural_elements_to_include": [
+        "Local urban studio aesthetics with subtle geometric patterns",
+        "High-tech ambient lighting reflecting local night-time city vibes"
+      ],
+      "cultural_elements_to_avoid": [
+        "Generic stock sports graphics with non-local elements",
+        "Overly Western-centric pub or sports bar clichés",
+        "Misrepresented regional flags or symbols",
+        "Political symbols or weapons"
+      ],
+      "text_overlay_space": "right_half",
+      "text_overlay_color": "#FFFFFF",
+      "text_overlay_background": "semi_dark",
+      "lighting_mood": "Dramatic neon glow with deep shadows and sharp light accents",
+      "time_of_day_depicted": "night",
+      "generation_prompt_pollinations": "digital tactical football pitch projection on obsidian glass, cinematic, rule_of_thirds, subtle terracotta geometric motif patterns, urban Dhaka night-sky neon gradient, deep navy and electric emerald color palette, curiosity atmosphere, professional sports tech photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic high-tech studio scene at night featuring a glowing digital tactical football pitch projected on an obsidian glass surface with neon green and deep blue light trails. The background has subtle geometric terracotta patterns integrated into modern tech panels, creating an atmosphere of intense curiosity and advanced analytics, tailored for young tech enthusiasts in Bangladesh.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, daytime lighting, traditional grass pitch",
+      "quality_keywords": [
+        "hyper-detailed",
+        "8k resolution",
+        "cinematic lighting",
+        "ray tracing",
         "octane render"
       ],
       "image_dimensions": "1080x1350",
       "seed_suggestion": 4242,
       "provider_preference": "pollinations"
     },
-    "e6f9a6e5-b15d-4eec-b7a3-3da513a0a7d5": {
-      "post_id": "e6f9a6e5-b15d-4eec-b7a3-3da513a0a7d5",
+    "71d97d78-421a-4854-9955-67453a6ae7d7": {
+      "post_id": "71d97d78-421a-4854-9955-67453a6ae7d7",
       "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style captures the high-stakes, dramatic emotion of a football clash between Troyes and Marseille, driving high engagement and curiosity among young tech-savvy sports fans in Bangladesh who appreciate dramatic sports broadcasting aesthetics.",
-      "composition": "layered_depth",
-      "composition_rationale": "Layered depth creates a dramatic, stadium-like atmosphere while leaving a clean, darkened negative space in the upper third for the hook text overlay, ensuring high readability on mobile feeds.",
-      "primary_subject": "A glowing tactical stadium turf under dramatic stadium floodlights with subtle digital overlay graphics representing match stats and hidden insights",
-      "background_environment": "A dimly lit, atmospheric football stadium at night with a blurred, moody crowd and glowing neon-blue tech HUD elements floating in the air",
+      "visual_style_rationale": "Cinematic style captures the electric atmosphere of a historic football derby like Fla-Flu while integrating a tech-infused viewing culture popular among youth in Bangladesh.",
+      "composition": "negative_space",
+      "composition_rationale": "Negative space allows the bold hook text to stand out clearly against the dramatic stadium-inspired background, keeping the focal points balanced for mobile scrolling.",
+      "primary_subject": "A glowing digital tactical setup on a smartphone screen showing a football pitch formation in a dimly lit room",
+      "background_environment": "A modern Dhaka apartment interior at night with neon ambient lighting and a blurred view of the city skyline through the window",
       "color_palette": {
-        "primary": "#0D1B2A",
-        "secondary": "#1B263B",
-        "accent": "#00E5FF",
-        "rationale": "Deep navy and midnight blue represent professional sports broadcasting and technology trust, while electric cyan provides the exact psychological trigger for curiosity and high contrast against the dark background, resonating well with Gen Z and millennial audiences in Bangladesh."
+        "primary": "#C8102E",
+        "secondary": "#000000",
+        "accent": "#FFD700",
+        "rationale": "Crimson and black mirror the iconic Flamengo colors while gold adds a layer of prestige and curiosity, fitting the high-stakes tech-meets-football culture."
       },
       "dominant_emotion": "curiosity",
       "region_visual_cues": [
-        "modern smartphone screen reflection showing live tactical match analytics",
-        "urban Dhaka café rooftop setting with ambient string lights where youth gather to watch late-night European football",
-        "vibrant cyan and deep blue color grading mimicking popular Bangladeshi sports streaming apps"
+        "Dhaka skyline at dusk",
+        "Smartphones displaying live sports feeds",
+        "Modern urban youth room setup"
       ],
       "cultural_elements_to_include": [
-        "subtle smartphone or tablet interface displaying tactical football stats",
-        "warm ambient string lights typical of modern Dhaka hangout spots"
+        "Modern tech setup common among urban Bangladeshi youth",
+        "Subtle ambient lighting reflecting football jersey colors",
+        "Clean minimalist desk arrangement"
       ],
       "cultural_elements_to_avoid": [
-        "generic American football gear",
-        "culturally inappropriate attire",
-        "Indian or Western regional landmarks not relevant to Bangladesh urban youth culture",
-        "overly cluttered graphics that obscure the main subject"
+        "Indian imagery misrepresenting Bangladesh",
+        "Generic American suburban backgrounds",
+        "Political symbols",
+        "Overused stock photo aesthetics"
       ],
       "text_overlay_space": "top_third",
       "text_overlay_color": "#FFFFFF",
       "text_overlay_background": "semi_dark",
-      "lighting_mood": "dramatic stadium floodlights with electric cyan technological glow",
+      "lighting_mood": "Moody and high-contrast with vibrant neon accents",
       "time_of_day_depicted": "night",
-      "generation_prompt_pollinations": "tactical football pitch under dramatic stadium lights, cinematic style, layered depth, modern smartphone screen reflection, urban Dhaka rooftop vibe, deep navy and electric cyan color palette, curiosity atmosphere, professional sports photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic nighttime view of a football pitch under dramatic stadium floodlights, glowing with electric cyan digital tactical analytics overlays, set against a moody background with deep navy tones, capturing an atmosphere of intense curiosity and modern sports technology.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, american football, day lighting, bright sunlight",
+      "generation_prompt_pollinations": "A glowing smartphone displaying a football tactical map, cinematic style, negative space composition, Dhaka skyline at dusk, modern indoor tech setup, rich crimson black and gold color palette, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic shot of a glowing smartphone resting on a dark wooden desk, displaying a glowing tactical football formation for the Flamengo vs Fluminense match. The background features a moody Dhaka skyline at night with soft ambient neon red and gold lighting. The composition leaves ample negative space at the top for text overlay, capturing a high-tech curiosity-driven atmosphere.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, daytime lighting, daytime sky",
       "quality_keywords": [
-        "hyper-detailed",
-        "8k resolution",
-        "cinematic lighting",
-        "ray tracing",
-        "professional color grading"
-      ],
-      "image_dimensions": "1080x1350",
-      "seed_suggestion": 42789,
-      "provider_preference": "pollinations"
-    },
-    "ed6d5876-782b-492c-9c70-89db2101abd9": {
-      "post_id": "ed6d5876-782b-492c-9c70-89db2101abd9",
-      "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style builds high curiosity and bridges the gap between global sports spectacles (like the Brazilian derby) and passionate local football fandom in Bangladesh, especially among 18-30 youth who resonate with dramatic lighting and high-end sports aesthetics.",
-      "composition": "rule_of_thirds",
-      "composition_rationale": "Places the dramatic focal point on the intersecting elements while reserving a clean upper-third area for the hook text overlay to grab attention immediately in the Facebook feed.",
-      "primary_subject": "A glowing smartphone displaying a live football tactical analysis screen with vibrant green and white team colors",
-      "background_environment": "A dimly lit modern Dhaka tech lounge or cafe with atmospheric ambient neon glow, subtle brick walls, and out-of-focus city lights through a rain-streaked window",
-      "color_palette": {
-        "primary": "#0D1B2A",
-        "secondary": "#1B4332",
-        "accent": "#00F5D4",
-        "rationale": "Dark navy and deep emerald green reflect both tech aesthetics and football turf, while the vibrant teal accent creates visual tension and curiosity for young tech-savvy sports fans."
-      },
-      "dominant_emotion": "curiosity",
-      "region_visual_cues": [
-        "Dhaka urban café ambience with warm indoor lighting",
-        "Rain-streaked window depicting the monsoon-heavy Bangladesh climate",
-        "Local smartphone usage culture among youth"
-      ],
-      "cultural_elements_to_include": [
-        "Modern smartphone displaying data",
-        "Atmospheric urban indoor setting popular with youth",
-        "Subtle football passion motifs"
-      ],
-      "cultural_elements_to_avoid": [
-        "Generic American or European living room settings",
-        "Outdated or stereotypical rural tropes",
-        "Political symbols or explicit club jerseys that might violate copyright or trigger regional bias",
-        "Suppressed pure black backgrounds"
-      ],
-      "text_overlay_space": "top_third",
-      "text_overlay_color": "#FFFFFF",
-      "text_overlay_background": "semi_dark",
-      "lighting_mood": "Moody dramatic lighting with vibrant neon accents and soft background bokeh",
-      "time_of_day_depicted": "night",
-      "generation_prompt_pollinations": "A glowing smartphone displaying football analytics, cinematic, rule_of_thirds, Dhaka urban cafe atmosphere, rain-streaked window, deep navy and emerald green palette, vibrant teal accent, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic shot of a modern smartphone resting on a dark surface inside a moody Dhaka cafe at night, displaying a glowing tactical football analysis screen with vibrant green and teal data graphics. The background features soft bokeh of city lights through a rain-streaked window, evoking high curiosity and a tech-forward sports atmosphere.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, daylight, rural setting, bright sunlight",
-      "quality_keywords": [
-        "8k resolution",
-        "photorealistic",
         "cinematic lighting",
         "octane render",
-        "highly detailed"
-      ],
-      "image_dimensions": "1080x1350",
-      "seed_suggestion": 4242,
-      "provider_preference": "pollinations"
-    },
-    "b9dd8c9b-0fb0-408d-90a1-60cbd4a9f9d4_slide1": {
-      "post_id": "b9dd8c9b-0fb0-408d-90a1-60cbd4a9f9d4_slide1",
-      "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style creates high emotional engagement and curiosity suitable for a late-night football viewing hook, blending sports passion with immersive tech-stream viewing aesthetics popular among Gen-Z in Bangladesh.",
-      "composition": "rule_of_thirds",
-      "composition_rationale": "Places the glowing mobile/laptop screen displaying the match off-center, creating natural depth and leaving the left third completely clean for bilingual hook text overlay.",
-      "primary_subject": "A glowing modern smartphone and sleek laptop displaying a live football match stream in a dimly lit contemporary Dhaka apartment room",
-      "background_environment": "A moody urban room in Dhaka at night, with out-of-focus city lights visible through a large window, creating an intimate late-night streaming atmosphere.",
-      "color_palette": {
-        "primary": "#0A192F",
-        "secondary": "#1E3A8A",
-        "accent": "#F59E0B",
-        "rationale": "Deep navy and midnight blue reflect night-time tech viewing and trust, while vibrant amber/gold adds an energetic curiosity trigger associated with live sports excitement."
-      },
-      "dominant_emotion": "curiosity",
-      "region_visual_cues": [
-        "Dhaka skyline at night through apartment window",
-        "Warm indoor ambient lighting typical of urban Bangladeshi homes",
-        "Modern minimalist interior styling popular among urban youth"
-      ],
-      "cultural_elements_to_include": [
-        "Late-night football viewing setup common among young Bangladeshi fans",
-        "Modern tech gadgets (smartphone, headphones) arranged naturally"
-      ],
-      "cultural_elements_to_avoid": [
-        "Generic Western-only room aesthetics",
-        "Indian or European architectural backgrounds",
-        "Overly sterile or unrealistic studio setups",
-        "Watermarks and random text"
-      ],
-      "text_overlay_space": "left_third",
-      "text_overlay_color": "#FFFFFF",
-      "text_overlay_background": "semi_dark",
-      "lighting_mood": "Moody, dramatic screen glow with warm ambient undertones",
-      "time_of_day_depicted": "night",
-      "generation_prompt_pollinations": "A glowing smartphone and laptop displaying a football match in a dimly lit modern Dhaka room at night, cinematic, rule of thirds, deep navy blue and amber color palette, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic shot of a modern smartphone and laptop resting on a sleek wooden table, both glowing with the live broadcast of a football match inside a contemporary urban apartment in Dhaka at night. The room features a moody atmosphere with deep navy shadows and warm amber ambient light reflecting off the devices. The city lights twinkle softly in the background through a large window. The composition utilizes the rule of thirds, leaving a clean, dark negative space on the left side. High-end technology aesthetic, realistic textures, no text or watermarks.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, daylight, outdoor sports field",
-      "quality_keywords": [
-        "cinematic lighting",
-        "bokeh",
-        "ultra detailed",
         "8k resolution",
-        "photorealistic",
+        "photorealistic tech details",
         "moody atmosphere"
       ],
       "image_dimensions": "1080x1350",
-      "seed_suggestion": 42789,
+      "seed_suggestion": 4278,
       "provider_preference": "pollinations"
     },
-    "b9dd8c9b-0fb0-408d-90a1-60cbd4a9f9d4_slide2": {
-      "post_id": "b9dd8c9b-0fb0-408d-90a1-60cbd4a9f9d4_slide2",
+    "fc3c26f2-573b-43e6-9b53-0066dc6abae7_slide1": {
+      "post_id": "fc3c26f2-573b-43e6-9b53-0066dc6abae7_slide1",
       "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style captures the high-stakes drama of a massive cup upset between Racing Santander and Valencia. It builds tension and curiosity, resonating strongly with young sports and tech-savvy fans in Bangladesh who appreciate dramatic, high-production visual storytelling.",
-      "composition": "layered_depth",
-      "composition_rationale": "Layered depth creates a dramatic, stadium-like atmosphere while keeping the background softly out of focus, providing a clean and uncluttered space for the hook text overlay.",
-      "primary_subject": "A glowing digital tactical football pitch projection blending with stadium lights and intense sports energy",
-      "background_environment": "A dimly lit modern digital sports broadcasting studio with subtle neon green and deep indigo ambient lighting",
-      "color_palette": {
-        "primary": "#0A0F1D",
-        "secondary": "#1E3A8A",
-        "accent": "#00FF66",
-        "rationale": "Deep navy and midnight blue represent technology and depth, while the vibrant electric green acts as an accent triggering curiosity and high-energy sports engagement relevant to the Bangladesh tech and gaming audience."
-      },
-      "dominant_emotion": "curiosity",
-      "region_visual_cues": [
-        "Modern smartphone screen glowing with live match stats",
-        "Subtle integration of urban Dhaka café night ambiance through a blurred window reflection",
-        "Contemporary digital interface elements popular among Bangladeshi youth"
-      ],
-      "cultural_elements_to_include": [
-        "Smartphone interface showing live streaming apps",
-        "Modern LED lighting trends seen in Dhaka's tech hubs",
-        "Youthful sports enthusiast setting"
-      ],
-      "cultural_elements_to_avoid": [
-        "Generic European-only winter aesthetics that feel disconnected from Bangladesh",
-        "Outdated CRT televisions or old tech",
-        "Overused AI-generated distorted hands or artifacts",
-        "Political symbols or team logos that infringe copyright"
-      ],
-      "text_overlay_space": "top_third",
-      "text_overlay_color": "#FFFFFF",
-      "text_overlay_background": "semi_dark",
-      "lighting_mood": "High contrast dramatic stadium lighting with vibrant neon accents",
-      "time_of_day_depicted": "night",
-      "generation_prompt_pollinations": "Glowing digital tactical football pitch projection, cinematic style, layered depth, modern sports tech aesthetic, vibrant electric green and deep navy color palette, curiosity atmosphere, professional sports broadcast design, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic shot of a glowing digital tactical football pitch projection blending with modern stadium lighting, set against a deep navy and electric green technological environment. The atmosphere is charged with tension and curiosity, perfect for a high-stakes sports match announcement, featuring rich lighting and a clean top third for text placement.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, daytime, bright sunlight, poor lighting",
-      "quality_keywords": [
-        "hyper-detailed",
-        "cinematic lighting",
-        "8k resolution",
-        "octane render",
-        "professional color grading"
-      ],
-      "image_dimensions": "1080x1350",
-      "seed_suggestion": 4242,
-      "provider_preference": "pollinations"
-    },
-    "b9dd8c9b-0fb0-408d-90a1-60cbd4a9f9d4_slide3": {
-      "post_id": "b9dd8c9b-0fb0-408d-90a1-60cbd4a9f9d4_slide3",
-      "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style creates high emotional engagement and curiosity, fitting for a live sports entertainment update targeted at tech-savvy youth in Bangladesh who appreciate dramatic, high-production sports aesthetics.",
+      "visual_style_rationale": "Cinematic style creates a dramatic, high-end feel that hooks the 18-30 demographic instantly, perfectly matching the curiosity-driven narrative of a secret historical football fact.",
       "composition": "rule_of_thirds",
-      "composition_rationale": "Places the main dramatic football stadium action on one side while keeping the upper-right area clean and uncluttered for the hook text overlay.",
-      "primary_subject": "A glowing modern digital sports streaming interface integrated with a moody football stadium turf lit under dramatic stadium floodlights",
-      "background_environment": "A hazy, atmospheric night stadium with deep blue and emerald green tones, subtly hinting at digital live data streams overlaying the pitch",
+      "composition_rationale": "Places the main subject in the lower and right frame, leaving the upper-left third completely clean and uncluttered for the Bangla hook text overlay.",
+      "primary_subject": "A glowing iconic black and white striped Juventus football jersey seamlessly integrated with intricate traditional Bangladeshi Jamdani textile geometric patterns",
+      "background_environment": "A moody, atmospheric Dhaka street art wall at twilight with faint glowing neon accents and soft bokeh from distant city lights",
       "color_palette": {
-        "primary": "#0A192F",
-        "secondary": "#00FF66",
-        "accent": "#FF3366",
-        "rationale": "Deep navy represents the tech streaming environment, vibrant electric green signifies the football pitch and live energy, and energetic neon pink/red triggers curiosity and urgency for the live match."
-      },
-      "dominant_emotion": "curiosity",
-      "region_visual_cues": [
-        "Dhaka youth night hangout culture smartphone screens glowing",
-        "urban LED billboard lighting reflections on wet pavement",
-        "modern smartphone streaming UI integration"
-      ],
-      "cultural_elements_to_include": [
-        "Smartphone screen displaying live match analytics",
-        "Atmospheric stadium lighting popular in regional football fan meetups"
-      ],
-      "cultural_elements_to_avoid": [
-        "Generic American football elements",
-        "Indian or European regional landmarks not relevant to Bangladesh",
-        "Overused AI watermarks and distorted hands"
-      ],
-      "text_overlay_space": "top_third",
-      "text_overlay_color": "#FFFFFF",
-      "text_overlay_background": "semi_dark",
-      "lighting_mood": "Dramatic stadium floodlights with neon digital accent glows",
-      "time_of_day_depicted": "night",
-      "generation_prompt_pollinations": "Cinematic football stadium at night, digital live streaming interface overlay, rule of thirds composition, dark navy blue and electric green color palette, neon pink accents, high tech aesthetic, curiosity atmosphere, professional sports photography, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic night view of a glowing football stadium turf under dramatic floodlights, integrated with subtle digital streaming graphics and live match data elements. The atmosphere is charged with high-tech energy, using a deep navy and electric green color palette with striking neon accents, leaving the top third clean for text.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, daylight, American football",
-      "quality_keywords": [
-        "ultra detailed",
-        "8k resolution",
-        "professional sports photography",
-        "cinematic lighting",
-        "hyper-realistic"
-      ],
-      "image_dimensions": "1080x1350",
-      "seed_suggestion": 4242,
-      "provider_preference": "pollinations"
-    },
-    "0082dacc-e757-44ea-8d96-500742abea8a_slide1": {
-      "post_id": "0082dacc-e757-44ea-8d96-500742abea8a_slide1",
-      "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style captures the high-stakes, dramatic tension of a football upset. It resonates with young Bangladeshi sports fans who consume global football content through a high-production lens, evoking strong curiosity and excitement.",
-      "composition": "negative_space",
-      "composition_rationale": "Negative space composition directs the viewer's eye to the dramatic subject while providing a clean, uncluttered area specifically designed for the overlay of the Bengali-English hook text.",
-      "primary_subject": "A glowing tactical football analytics screen in a dimly lit modern sports lounge",
-      "background_environment": "A moody, high-tech sports viewing lounge in Dhaka with subtle ambient lighting and out-of-focus city lights visible through a large glass window",
-      "color_palette": {
-        "primary": "#0A192F",
+        "primary": "#0B1D3A",
         "secondary": "#1E3A8A",
-        "accent": "#00FF66",
-        "rationale": "Deep navy and tech blue establish the modern analytical sports theme, while vibrant neon green (curiosity and tactical surprise accent) draws the eye and triggers engagement among 18-30-year-old tech-savvy fans in Bangladesh."
+        "accent": "#FFD700",
+        "rationale": "Deep midnight blue builds mystery and tech-forward trust, while vibrant gold/yellow acts as a cultural accent and curiosity trigger that resonates strongly in Bangladesh."
       },
       "dominant_emotion": "curiosity",
       "region_visual_cues": [
-        "Modern Dhaka upscale café or sports lounge interior",
-        "Subtle ambient lighting reflecting urban nightlife",
-        "Youthful sports culture atmosphere specific to urban Bangladesh"
+        "Jamdani textile geometric motifs",
+        "Dhaka urban alleyway texture at twilight",
+        "Warm atmospheric haze reflecting local street ambiance"
       ],
       "cultural_elements_to_include": [
-        "Modern smartphone or tablet displaying live match statistics in Bengali and English",
-        "Aspirational urban youth hangout setting popular in Dhaka or Chattogram"
+        "Subtle traditional handloom weave textures blended into modern sports apparel",
+        "Warm ambient lighting reflecting local dusk tones"
       ],
       "cultural_elements_to_avoid": [
-        "Generic Western pub settings that lack local urban Bangladesh relevance",
-        "Outdated technology or low-resolution interface designs",
-        "Political symbols or unauthorized club logos that violate copyright"
+        "Generic European stadium backgrounds",
+        "Indian or Western architectural elements misrepresenting Bangladesh",
+        "Overused AI plastic textures",
+        "Political symbols or unauthorized brand logos"
       ],
       "text_overlay_space": "top_third",
       "text_overlay_color": "#FFFFFF",
       "text_overlay_background": "semi_dark",
-      "lighting_mood": "Moody, dramatic neon glow with high contrast",
-      "time_of_day_depicted": "night",
-      "generation_prompt_pollinations": "A glowing tactical football analytics screen in a dimly lit modern sports lounge, cinematic, negative_space, modern Dhaka upscale café interior, subtle ambient lighting reflecting urban nightlife, deep navy #0A192F, tech blue #1E3A8A, vibrant neon green accent #00FF66, curiosity atmosphere, professional sports photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic shot of a glowing tactical football analytics screen inside a modern, dimly lit sports lounge in Dhaka at night. The atmosphere is filled with suspense and curiosity, illuminated by deep navy and tech blue tones with a striking neon green accent light. The composition features ample negative space in the upper portion for text overlay, capturing the high-energy anticipation of a major football upset.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, daytime, bright lighting, empty stadium, soccer ball close-ups",
+      "lighting_mood": "Dramatic cinematic low-key lighting with high contrast and golden highlights",
+      "time_of_day_depicted": "blue_hour",
+      "generation_prompt_pollinations": "A glowing Juventus football jersey blended with intricate Jamdani textile patterns, cinematic, rule_of_thirds, Dhaka urban alleyway texture at twilight, warm ambient lighting, deep midnight blue and gold color palette, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic high-end visual showing an iconic Juventus jersey subtly interwoven with traditional Bangladeshi Jamdani textile patterns, set against a moody Dhaka street art wall at blue hour. The lighting is dramatic and low-key with rich midnight blue and warm gold accents, creating an aura of mystery and deep historical curiosity for young sports fans.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, stadium background, green pitch, european architecture",
       "quality_keywords": [
-        "cinematic lighting",
         "ultra detailed",
         "8k resolution",
+        "cinematic lighting",
         "photorealistic texture",
-        "professional color grading"
-      ],
-      "image_dimensions": "1080x1350",
-      "seed_suggestion": 42789,
-      "provider_preference": "pollinations"
-    },
-    "0082dacc-e757-44ea-8d96-500742abea8a_slide2": {
-      "post_id": "0082dacc-e757-44ea-8d96-500742abea8a_slide2",
-      "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style builds high curiosity and high engagement for sports analysis and head-to-head stats content in Bangladesh, where fans deeply appreciate dramatic, high-stakes sports aesthetics similar to UEFA Champions League broadcasts.",
-      "composition": "rule_of_thirds",
-      "composition_rationale": "Placing the main visual focal point on the right intersection leaves the left-third completely clean and uncluttered for heavy Bangla/English hook text overlay.",
-      "primary_subject": "Dramatic football stadium atmosphere under floodlights with tactical analysis data glowing subtly in the background",
-      "background_environment": "Deep blue night stadium with glowing pitch lines and misty atmosphere",
-      "color_palette": {
-        "primary": "#0A192F",
-        "secondary": "#1E3A8A",
-        "accent": "#F59E0B",
-        "rationale": "Deep navy blue and royal blue convey tech-driven sports analytics and professional broadcasting, while vibrant amber/gold triggers curiosity and high-energy excitement popular among youth in Bangladesh."
-      },
-      "dominant_emotion": "curiosity",
-      "region_visual_cues": [
-        "Dhaka urban night glow ambience",
-        "modern smartphone screen reflection showing live stats",
-        "youthful sports enthusiast aesthetic"
-      ],
-      "cultural_elements_to_include": [
-        "modern tech-integrated sports viewing setup",
-        "vibrant lighting reminiscent of popular local sports adda spaces"
-      ],
-      "cultural_elements_to_avoid": [
-        "incorrect club logos or unauthorized trademarks",
-        "Indian or generic South Asian cricket motifs for a football topic",
-        "overly washed out or low-contrast visuals",
-        "AI-clichéd distorted hands or floating objects"
-      ],
-      "text_overlay_space": "left_third",
-      "text_overlay_color": "#FFFFFF",
-      "text_overlay_background": "semi_dark",
-      "lighting_mood": "High contrast dramatic stadium floodlights with glowing data overlays",
-      "time_of_day_depicted": "night",
-      "generation_prompt_pollinations": "dramatic football stadium night view, cinematic, rule_of_thirds, dark blue atmosphere, glowing tactical lines, vibrant amber highlights, curiosity atmosphere, professional sports photography, sports tech aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic night view of a modern football stadium under dramatic floodlights with glowing blue and gold tactical stats floating in the air, creating a high-curiosity sports analytics atmosphere with clean negative space on the left.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, daytime, cricket elements",
-      "quality_keywords": [
-        "ultra detailed",
-        "8k resolution",
-        "professional sports photography",
-        "cinematic lighting",
         "high contrast"
       ],
       "image_dimensions": "1080x1350",
-      "seed_suggestion": 4242,
+      "seed_suggestion": 42789,
       "provider_preference": "pollinations"
     },
-    "0082dacc-e757-44ea-8d96-500742abea8a_slide3": {
-      "post_id": "0082dacc-e757-44ea-8d96-500742abea8a_slide3",
+    "fc3c26f2-573b-43e6-9b53-0066dc6abae7_slide2": {
+      "post_id": "fc3c26f2-573b-43e6-9b53-0066dc6abae7_slide2",
       "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style creates a dramatic, high-stakes atmosphere that instantly hooks 18-30 sports fans in Bangladesh, blending the intense energy of football with modern technological data aesthetics.",
-      "composition": "rule_of_thirds",
-      "composition_rationale": "Places the main focal point on the right intersection, leaving the left third completely clean and uncluttered to seamlessly overlay the bilingual hook text.",
-      "primary_subject": "Glowing tactical football pitch hologram integrated with advanced data analytics streams",
-      "background_environment": "A moody, dimly lit stadium at night with atmospheric floodlights piercing through a slight mist, blending digital blue and gold neon traces",
+      "visual_style_rationale": "Cinematic style amplifies the epic, legendary nature of Juventus while resonating with the cinematic appreciation among 18-30 year olds in Bangladesh. It balances the high-energy entertainment pillar with deep curiosity through dramatic, moody lighting.",
+      "composition": "layered_depth",
+      "composition_rationale": "Layered depth creates a dramatic, stadium-like atmosphere that draws the eye inward while leaving a clean upper-third negative space specifically engineered for bold bilingual text overlays.",
+      "primary_subject": "A glowing Juventus crest integrated with subtle modern tech holographic elements, surrounded by passionate fans in a dimly lit stadium",
+      "background_environment": "An atmospheric, fog-filled football stadium at night with stadium lights piercing through haze, blending old Dhaka night street texture aesthetics",
       "color_palette": {
-        "primary": "#0A192F",
-        "secondary": "#1E3A8A",
-        "accent": "#F59E0B",
-        "rationale": "Deep navy (#0A192F) and electric blue (#1E3A8A) establish tech trustworthiness, while warm gold (#F59E0B) triggers excitement and curiosity, highly engaging for the young Bangladesh demographic."
+        "primary": "#0A0A0A",
+        "secondary": "#EFEFEF",
+        "accent": "#1B4D3E",
+        "rationale": "Deep obsidian black and stark white reflect the iconic Juventus identity, while a deep historic teal/green accent brings in a sophisticated Bangladeshi cultural resonance of resilience and night energy."
       },
       "dominant_emotion": "curiosity",
       "region_visual_cues": [
-        "Subtle integration of traditional geometric Rickshaw art line patterns into the digital HUD interface",
-        "Atmospheric Dhaka night sky tint visible through stadium arches",
-        "Warm skin tones and natural expressions if people are present, though focusing on moody stadium tech"
+        "Dhaka night street texture aesthetics",
+        "warm brown skin tones of local fans",
+        "subtle rickshaw-art inspired neon line accents"
       ],
       "cultural_elements_to_include": [
-        "Rickshaw art inspired vector lines",
-        "Deep night ambiance matching local football viewing culture"
+        "Diverse young Bangladeshi football fans watching intensely",
+        "Subtle glowing geometric patterns reminiscent of traditional Jamdani motifs blended with modern tech lines"
       ],
       "cultural_elements_to_avoid": [
-        "Generic European or American sports graphics lacking local flavor",
-        "Offensive symbols or political flags",
-        "Overly saturated plastic AI looks",
-        "Indian imagery misattributed to Bangladesh"
+        "Indian imagery or clothing styles",
+        "Generic stock stadium backdrops that look overly westernized",
+        "Politically sensitive symbols",
+        "Overused AI plastic textures"
       ],
-      "text_overlay_space": "left_third",
+      "text_overlay_space": "top_third",
       "text_overlay_color": "#FFFFFF",
       "text_overlay_background": "semi_dark",
-      "lighting_mood": "Moody and high-contrast with glowing holographic elements",
+      "lighting_mood": "Dramatic low-key lighting with high contrast and sharp volumetric light beams",
       "time_of_day_depicted": "night",
-      "generation_prompt_pollinations": "Glowing tactical football pitch hologram integrated with advanced data analytics streams, cinematic, rule_of_thirds, subtle rickshaw art motifs, moody stadium at night, deep navy and electric blue palette with warm gold accents, curiosity atmosphere, professional sports photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic and immersive night view of a football stadium illuminated by dramatic floodlights and glowing digital tactical holograms with subtle geometric patterns inspired by local rickshaw art. The color palette features deep navy and electric blue contrasted with warm golden accent light, creating a mysterious and curiosity-inducing atmosphere designed to stop the scroll of young sports fans in Bangladesh.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, Indian flags, weapons, political symbols",
+      "generation_prompt_pollinations": "Juventus crest holographic projection, cinematic, layered_depth, Dhaka night street texture aesthetics, warm brown skin tones of local fans, obsidian black and stark white color palette with deep teal accents, curiosity atmosphere, professional sports cinematography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people unless specifically needed",
+      "generation_prompt_huggingface": "A cinematic and immersive scene featuring a glowing holographic Juventus crest floating in a moody, atmospheric stadium at night. Volumetric stadium lights pierce through a soft haze, illuminating diverse young Bangladeshi football fans watching with intense passion. The composition uses layered depth with deep obsidian blacks, stark whites, and subtle deep teal accents, capturing an inspiring and curiosity-evoking mood.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, Indian imagery, daytime, flat lighting",
       "quality_keywords": [
-        "ultra detailed",
         "8k resolution",
-        "professional sports photography",
+        "masterpiece",
+        "photorealistic lighting",
+        "cinematic depth of field",
+        "volumetric rays",
+        "hyper-detailed"
+      ],
+      "image_dimensions": "1080x1350",
+      "seed_suggestion": 4242,
+      "provider_preference": "pollinations"
+    },
+    "fc3c26f2-573b-43e6-9b53-0066dc6abae7_slide3": {
+      "post_id": "fc3c26f2-573b-43e6-9b53-0066dc6abae7_slide3",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style creates high emotional resonance and curiosity, perfectly matching the inspirational page tone and the massive passionate football fanbase among 18-30-year-olds in Bangladesh.",
+      "composition": "rule_of_thirds",
+      "composition_rationale": "Placing the main visual focal point on the power intersection leaves the upper left third completely clean and uncluttered for the hook text overlay.",
+      "primary_subject": "A glowing iconic black and white Juventus club crest reflecting in a modern smartphone screen held in a youth's hand during a rainy Dhaka evening",
+      "background_environment": "A softly blurred urban Dhaka street at dusk with glowing neon lights, warm streetlamps, and subtle hints of rickshaw light trails",
+      "color_palette": {
+        "primary": "#0A1128",
+        "secondary": "#1D3557",
+        "accent": "#E63946",
+        "rationale": "Deep navy and midnight blue build the high-tech, trustworthy foundation, while striking Juventus-inspired vibrant red and crisp white accents instantly trigger football passion and curiosity among Bangladeshi youth."
+      },
+      "dominant_emotion": "curiosity",
+      "region_visual_cues": [
+        "Dhaka street ambience at dusk with warm bokeh lights",
+        "Authentic youth hand holding a modern smartphone",
+        "Subtle urban rain reflections on asphalt"
+      ],
+      "cultural_elements_to_include": [
+        "Modern smartphone displaying football aesthetics",
+        "Rainy tropical urban evening atmosphere common in Bangladesh",
+        "Youthful passionate sports fan setting"
+      ],
+      "cultural_elements_to_avoid": [
+        "Generic European street settings",
+        "Inaccurate geographic landmarks",
+        "Overused AI plastic textures or distorted hands"
+      ],
+      "text_overlay_space": "top_third",
+      "text_overlay_color": "#FFFFFF",
+      "text_overlay_background": "semi_dark",
+      "lighting_mood": "Dramatic neon glow mixed with moody twilight blue hour and sharp smartphone screen illumination",
+      "time_of_day_depicted": "blue_hour",
+      "generation_prompt_pollinations": "A glowing Juventus football club crest reflecting on a smartphone screen, cinematic, rule_of_thirds, Dhaka street ambience at dusk with warm bokeh lights, authentic youth hand holding a modern smartphone, deep navy and vibrant red color palette, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people faces",
+      "generation_prompt_huggingface": "Cinematic close-up shot of a glowing Juventus football club crest reflecting vividly on a modern smartphone screen held by a passionate young fan. The background shows a moody, rain-kissed Dhaka street at dusk with blurred warm bokeh lights and vibrant neon reflections. The lighting is dramatic with deep navy blues and striking red accents, evoking a strong sense of mystery, inspiration, and football passion tailored for Bangladeshi youth.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, Indian imagery, daytime lighting",
+      "quality_keywords": [
+        "masterpiece",
+        "hyperdetailed",
+        "8k resolution",
         "cinematic lighting",
-        "high-end tech aesthetic"
+        "professional color grading",
+        "sharp focus"
       ],
       "image_dimensions": "1080x1350",
       "seed_suggestion": 4242,

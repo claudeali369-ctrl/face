@@ -1,0 +1,11 @@
+{
+  "skipped": [
+    {
+      "post_id": "65a75fbe-c8b2-4e99-8e72-b57c237c7c5c",
+      "skipped_at": "2026-10-11T21:44:20.011441+00:00",
+      "reason": "unsafe_content_or_generation_failure",
+      "format": "story",
+      "topic": "palmeiras vs corinthians"
+    }
+  ]
+}
