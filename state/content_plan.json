@@ -1,13 +1,13 @@
 {
   "date": "2026-10-11",
-  "generated_at": "2026-10-11T03:06:29.333570+00:00",
+  "generated_at": "2026-10-11T07:07:53.355174+00:00",
   "posts": [
     {
-      "post_id": "81672b03-e97e-4558-ac08-ef9eab4ef565",
+      "post_id": "2b889909-0e37-4139-9cbf-8c684c284a65",
       "slot": 1,
       "scheduled_time_utc": "2026-10-11T03:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "philadelphia union vs real salt lake standings",
+      "trend_topic": "china",
       "content_pillar": "Hidden Gems",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
@@ -15,11 +15,11 @@
       "status": "planned"
     },
     {
-      "post_id": "21236193-c532-42a6-bc39-14044aa2cfc4",
+      "post_id": "4a614320-7578-42a3-a0d7-1fe9d0dd15e0",
       "slot": 2,
       "scheduled_time_utc": "2026-10-11T07:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "luis suárez",
+      "trend_topic": "সেনাপ্রধান",
       "content_pillar": "Hidden Gems",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
@@ -27,11 +27,11 @@
       "status": "planned"
     },
     {
-      "post_id": "3a12b654-5814-4f25-8487-aec1f8bcb17f",
+      "post_id": "7fe4dbed-8e86-4d4f-bb2d-34787a93d0ce",
       "slot": 3,
       "scheduled_time_utc": "2026-10-11T14:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "atlanta united vs cincinnati",
+      "trend_topic": "prakash raj",
       "content_pillar": "Hidden Gems",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
@@ -41,29 +41,29 @@
   ],
   "stories": [
     {
-      "post_id": "9b04fe9e-25da-4070-b675-509a7974eeda",
+      "post_id": "c9c9afbd-1f22-4d7c-aa9a-164b56bfa293",
       "slot": 1,
       "scheduled_time_utc": "2026-10-11T03:00:00+00:00",
       "format": "story",
-      "trend_topic": "philadelphia union vs real salt lake standings",
+      "trend_topic": "china",
       "content_pillar": "entertainment",
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "81672b03-e97e-4558-ac08-ef9eab4ef565",
+      "parent_post_id": "2b889909-0e37-4139-9cbf-8c684c284a65",
       "status": "planned"
     },
     {
-      "post_id": "7206709c-dd14-474d-a8fd-d782ec1d1579",
+      "post_id": "f0a76d2e-3406-4c44-9b05-7c10b92e2cff",
       "slot": 2,
       "scheduled_time_utc": "2026-10-11T07:00:00+00:00",
       "format": "story",
-      "trend_topic": "luis suárez",
+      "trend_topic": "সেনাপ্রধান",
       "content_pillar": "inspirational",
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "21236193-c532-42a6-bc39-14044aa2cfc4",
+      "parent_post_id": "4a614320-7578-42a3-a0d7-1fe9d0dd15e0",
       "status": "planned"
     }
   ],

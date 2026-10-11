@@ -1,53 +1,53 @@
 {
-  "generated_at": "2026-10-11T03:09:44.961490+00:00",
+  "generated_at": "2026-10-11T07:11:06.728985+00:00",
   "date": "2026-10-11",
   "records": [
     {
-      "post_id": "81672b03-e97e-4558-ac08-ef9eab4ef565",
+      "post_id": "2b889909-0e37-4139-9cbf-8c684c284a65",
       "attempt": 1,
       "provider": "Pollinations",
       "score": 5.0,
       "policy_safe": true,
       "improvement_instructions": "QA evaluation failed; using fallback score.",
-      "timestamp": "2026-10-11T03:07:39.169194+00:00"
+      "timestamp": "2026-10-11T07:09:01.402051+00:00"
     },
     {
-      "post_id": "81672b03-e97e-4558-ac08-ef9eab4ef565",
+      "post_id": "2b889909-0e37-4139-9cbf-8c684c284a65",
       "attempt": 4,
       "provider": "Pixabay",
       "score": 5.0,
       "policy_safe": true,
       "improvement_instructions": "QA evaluation failed; using fallback score.",
-      "timestamp": "2026-10-11T03:08:19.704133+00:00",
+      "timestamp": "2026-10-11T07:09:42.083397+00:00",
       "fallback": true
     },
     {
-      "post_id": "21236193-c532-42a6-bc39-14044aa2cfc4",
+      "post_id": "4a614320-7578-42a3-a0d7-1fe9d0dd15e0",
       "attempt": 4,
       "provider": "Pixabay",
       "score": 5.0,
       "policy_safe": true,
       "improvement_instructions": "QA evaluation failed; using fallback score.",
-      "timestamp": "2026-10-11T03:09:00.969913+00:00",
+      "timestamp": "2026-10-11T07:10:23.262727+00:00",
       "fallback": true
     },
     {
-      "post_id": "3a12b654-5814-4f25-8487-aec1f8bcb17f",
+      "post_id": "7fe4dbed-8e86-4d4f-bb2d-34787a93d0ce",
       "attempt": 1,
       "provider": "Pollinations",
       "score": 5.0,
       "policy_safe": true,
       "improvement_instructions": "QA evaluation failed; using fallback score.",
-      "timestamp": "2026-10-11T03:09:04.404434+00:00"
+      "timestamp": "2026-10-11T07:10:26.288522+00:00"
     },
     {
-      "post_id": "3a12b654-5814-4f25-8487-aec1f8bcb17f",
+      "post_id": "7fe4dbed-8e86-4d4f-bb2d-34787a93d0ce",
       "attempt": 4,
       "provider": "Pixabay",
       "score": 5.0,
       "policy_safe": true,
       "improvement_instructions": "QA evaluation failed; using fallback score.",
-      "timestamp": "2026-10-11T03:09:44.957672+00:00",
+      "timestamp": "2026-10-11T07:11:06.724793+00:00",
       "fallback": true
     }
   ]

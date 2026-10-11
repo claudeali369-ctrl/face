@@ -70,5 +70,29 @@
     "source_id": "3404535",
     "contributor": "jplenio",
     "contributor_id": "7645255"
+  },
+  "stock_photo::pixabay_photo_5195052": {
+    "asset_id": "pixabay_photo_5195052",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_5195052.jpg",
+    "cached_at": "2026-10-11T07:09:42.080394+00:00",
+    "source_url": "https://pixabay.com/get/ge5229bdee4fadf4ec18ff8e9963b1b50a55496a7a3165df6f48cfd599f1c9ad5463c26ca106a15980a210bac3907794d6fb623ea73a20def14040db8ee74f4b9_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/mountain-mist-landscape-nature-5195052/",
+    "source_id": "5195052",
+    "contributor": "Baptiste_lheurette",
+    "contributor_id": "15407445"
+  },
+  "stock_photo::pixabay_photo_1866784": {
+    "asset_id": "pixabay_photo_1866784",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_1866784.jpg",
+    "cached_at": "2026-10-11T07:10:23.259846+00:00",
+    "source_url": "https://pixabay.com/get/g399fc1084ea44ed229a5f7ef30ced3046d6f96916ef1aab7c9c44a1be46c3a6f69ac605055f4bafbd2205154ad6f7b6653d0f3d21306a346ed2bafe11828f7b1_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/man-chair-computer-desk-sit-1866784/",
+    "source_id": "1866784",
+    "contributor": "Pexels",
+    "contributor_id": "2286921"
   }
 }
