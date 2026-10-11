@@ -1,13 +1,13 @@
 {
   "date": "2026-10-11",
-  "generated_at": "2026-10-11T19:57:47.697792+00:00",
+  "generated_at": "2026-10-11T20:09:51.928399+00:00",
   "posts": [
     {
-      "post_id": "99a0c5cd-ac76-4f5b-abcf-9b8a1d4bfed1",
+      "post_id": "205b496c-5f49-4c0a-ae19-f2f3f0c9b6ba",
       "slot": 1,
       "scheduled_time_utc": "2026-10-11T03:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "atlético mineiro vs santos",
+      "trend_topic": "racing santander vs valencia",
       "content_pillar": "Hidden Gems",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
@@ -15,24 +15,24 @@
       "status": "planned"
     },
     {
-      "post_id": "697f1a1b-18c9-4f0f-b92f-bf57f9b476f5",
+      "post_id": "594555f0-d316-42c0-9280-92a49e6ba425",
       "slot": 2,
       "scheduled_time_utc": "2026-10-11T07:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "sassuolo vs ac milan standings",
+      "trend_topic": "atlético mineiro vs santos",
       "content_pillar": "Hidden Gems",
-      "hook_type": "curiosity",
+      "hook_type": "local_relevance",
       "cta_type": "save_or_share",
       "dominant_emotion": "curiosity",
       "status": "planned"
     },
     {
-      "post_id": "5a2ba9e5-ecf3-479d-9c92-eb576976b7f0",
+      "post_id": "9e4b088b-81fd-4c6b-949d-51a3deee3072",
       "slot": 3,
       "scheduled_time_utc": "2026-10-11T14:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "wcl 2026",
-      "content_pillar": "Hidden Gems",
+      "trend_topic": "world championship of legends",
+      "content_pillar": "Budget Travel Tips",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
       "dominant_emotion": "curiosity",
@@ -41,29 +41,29 @@
   ],
   "stories": [
     {
-      "post_id": "c8f4ab32-cbe8-4dc2-b61c-cf20fb122c26",
+      "post_id": "7efc9e14-ddb4-430b-8b65-f861dd3b2dda",
       "slot": 1,
       "scheduled_time_utc": "2026-10-11T03:00:00+00:00",
       "format": "story",
-      "trend_topic": "atlético mineiro vs santos",
+      "trend_topic": "racing santander vs valencia",
       "content_pillar": "entertainment",
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "99a0c5cd-ac76-4f5b-abcf-9b8a1d4bfed1",
+      "parent_post_id": "205b496c-5f49-4c0a-ae19-f2f3f0c9b6ba",
       "status": "planned"
     },
     {
-      "post_id": "20a2dda4-2171-40fc-87d6-e9de1ef33942",
+      "post_id": "e14d8705-4aea-465a-ab18-fc517f07f931",
       "slot": 2,
       "scheduled_time_utc": "2026-10-11T07:00:00+00:00",
       "format": "story",
-      "trend_topic": "sassuolo vs ac milan standings",
+      "trend_topic": "atlético mineiro vs santos",
       "content_pillar": "inspirational",
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "697f1a1b-18c9-4f0f-b92f-bf57f9b476f5",
+      "parent_post_id": "594555f0-d316-42c0-9280-92a49e6ba425",
       "status": "planned"
     }
   ],

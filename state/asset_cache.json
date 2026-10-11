@@ -298,5 +298,17 @@
     "source_id": "5121782",
     "contributor": "Excellentcc",
     "contributor_id": "15820328"
+  },
+  "stock_photo::pixabay_photo_569515": {
+    "asset_id": "pixabay_photo_569515",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_569515.jpg",
+    "cached_at": "2026-10-11T20:18:00.407985+00:00",
+    "source_url": "https://pixabay.com/get/g045b75bb410839a8e30197b008976dc83a150db798147d302db326351cdae67510a43db0a41388f455a2ab6591a227504c6ce8ba9610578f50badcfbb31b5a0d_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/screen-smartphone-mobile-phone-569515/",
+    "source_id": "569515",
+    "contributor": "geralt",
+    "contributor_id": "9301"
   }
 }
