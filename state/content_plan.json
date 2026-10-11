@@ -1,13 +1,13 @@
 {
   "date": "2026-10-11",
-  "generated_at": "2026-10-11T14:59:14.754151+00:00",
+  "generated_at": "2026-10-11T17:29:55.350541+00:00",
   "posts": [
     {
-      "post_id": "280c8b9a-6c65-4f00-9286-941786d99ecc",
+      "post_id": "9c199304-93e6-467a-acc9-cc9087880b5a",
       "slot": 1,
       "scheduled_time_utc": "2026-10-11T03:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "india vs west indies",
+      "trend_topic": "sherfane rutherford",
       "content_pillar": "Hidden Gems",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
@@ -15,11 +15,11 @@
       "status": "planned"
     },
     {
-      "post_id": "be36a2b9-7296-4b39-b5b2-91a221527516",
+      "post_id": "9140bb67-9e90-4103-a0cd-0c6014f4a716",
       "slot": 2,
       "scheduled_time_utc": "2026-10-11T07:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "lazio vs monza",
+      "trend_topic": "real betis",
       "content_pillar": "Hidden Gems",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
@@ -27,11 +27,11 @@
       "status": "planned"
     },
     {
-      "post_id": "757482fa-2d73-4d9e-9358-0e76f618187f",
+      "post_id": "b328118c-8460-4e23-8f04-d2774537e30a",
       "slot": 3,
       "scheduled_time_utc": "2026-10-11T14:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "sociedad vs deportivo",
+      "trend_topic": "jantar mantar protest",
       "content_pillar": "Hidden Gems",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
@@ -41,29 +41,29 @@
   ],
   "stories": [
     {
-      "post_id": "b8a683d0-bc06-4494-b7a7-abb914ba8ea7",
+      "post_id": "d2f4ccae-30f8-4ce4-bd69-f268dd6c0358",
       "slot": 1,
       "scheduled_time_utc": "2026-10-11T03:00:00+00:00",
       "format": "story",
-      "trend_topic": "india vs west indies",
+      "trend_topic": "sherfane rutherford",
       "content_pillar": "entertainment",
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "280c8b9a-6c65-4f00-9286-941786d99ecc",
+      "parent_post_id": "9c199304-93e6-467a-acc9-cc9087880b5a",
       "status": "planned"
     },
     {
-      "post_id": "b2876e55-eeb8-4adb-a5d0-58d62c70db3b",
+      "post_id": "2ffd9002-a039-4905-b330-6cf1c7beae10",
       "slot": 2,
       "scheduled_time_utc": "2026-10-11T07:00:00+00:00",
       "format": "story",
-      "trend_topic": "lazio vs monza",
+      "trend_topic": "real betis",
       "content_pillar": "inspirational",
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "be36a2b9-7296-4b39-b5b2-91a221527516",
+      "parent_post_id": "9140bb67-9e90-4103-a0cd-0c6014f4a716",
       "status": "planned"
     }
   ],

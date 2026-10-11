@@ -142,5 +142,65 @@
     "source_id": "3088775",
     "contributor": "Darkmoon_Art",
     "contributor_id": "1664300"
+  },
+  "stock_photo::pixabay_photo_95607": {
+    "asset_id": "pixabay_photo_95607",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_95607.jpg",
+    "cached_at": "2026-10-11T17:31:51.258081+00:00",
+    "source_url": "https://pixabay.com/get/g76e63671d9f1d9ff7b42678d3f547cfd1c4cb89d8ae3b9241955d9a8cba01e907099c6c6b94d9bc17acd5c0430091dd3_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/basketball-sports-athlete-player-95607/",
+    "source_id": "95607",
+    "contributor": "12019",
+    "contributor_id": "12019"
+  },
+  "stock_photo::pixabay_photo_11188": {
+    "asset_id": "pixabay_photo_11188",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_11188.jpg",
+    "cached_at": "2026-10-11T17:33:16.815786+00:00",
+    "source_url": "https://pixabay.com/get/g5dab6725401069626484a83c881cf3baf884b62b439c32ca6f9ebb9daadc34eb8f128c2a5c8073f7580d8903e01c0330_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/galaxy-big-bang-explosion-space-11188/",
+    "source_id": "11188",
+    "contributor": "WikiImages",
+    "contributor_id": "1897"
+  },
+  "stock_photo::pixabay_photo_6551183": {
+    "asset_id": "pixabay_photo_6551183",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_6551183.jpg",
+    "cached_at": "2026-10-11T17:34:03.688115+00:00",
+    "source_url": "https://pixabay.com/get/g40ff81fb5b802171cb0b32019d865275154901d72785e1abd08a192d61c7d6bd6feff5d0e157ee9943f6713dd4bd4b904c1c4d4c6173a8a982eadae154bcf0b8_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/boat-river-woman-young-lake-6551183/",
+    "source_id": "6551183",
+    "contributor": "Sunriseforever",
+    "contributor_id": "6314823"
+  },
+  "stock_photo::pixabay_photo_6972297": {
+    "asset_id": "pixabay_photo_6972297",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_6972297.jpg",
+    "cached_at": "2026-10-11T17:35:35.403774+00:00",
+    "source_url": "https://pixabay.com/get/g0adf0ab4f4f2b9fe764da41d9953a5487aef2e54503028110e804d8b560931713e19f7906f7a0b1f1a944cea815244f1e7df2b8318b670dcf07e58cf94ef29a4_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/cricket-player-bat-cricketer-sport-6972297/",
+    "source_id": "6972297",
+    "contributor": "yogendras31",
+    "contributor_id": "12827898"
+  },
+  "stock_photo::pixabay_photo_4355589": {
+    "asset_id": "pixabay_photo_4355589",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_4355589.jpg",
+    "cached_at": "2026-10-11T17:36:20.218132+00:00",
+    "source_url": "https://pixabay.com/get/gf31b1fd086ecb8a20a01f3b28cb2b63004429343f172b8ff563386823288ecf687e252ab48fdd9491d6cdd2137ba2842c5f5977f0986135b00f201a134f4bb36_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/soccer-child-grass-football-player-4355589/",
+    "source_id": "4355589",
+    "contributor": "PhotoGrafix",
+    "contributor_id": "6324574"
   }
 }
