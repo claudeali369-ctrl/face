@@ -94,5 +94,29 @@
     "source_id": "1866784",
     "contributor": "Pexels",
     "contributor_id": "2286921"
+  },
+  "stock_photo::pixabay_photo_6962982": {
+    "asset_id": "pixabay_photo_6962982",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_6962982.jpg",
+    "cached_at": "2026-10-11T14:07:21.659254+00:00",
+    "source_url": "https://pixabay.com/get/gedd446e2c2442e15fa2176bbd7803630105234c3bac1be9c117c03958043d55ad3ceb1888c2a52d07ba5ca28b7a18472609e9e97d1ca9a72355a9671567814cb_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/parliament-architecture-building-6962982/",
+    "source_id": "6962982",
+    "contributor": "ValterM",
+    "contributor_id": "24820004"
+  },
+  "stock_photo::pixabay_photo_6565726": {
+    "asset_id": "pixabay_photo_6565726",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_6565726.jpg",
+    "cached_at": "2026-10-11T14:08:46.912311+00:00",
+    "source_url": "https://pixabay.com/get/g2760b64d0ea5845ae33d7630354c50bed5373a75440d21233446760922bd781f0e6efbeb24fedc4c32c7303e2654e0246698aba33b93ed0303588396063fddd0_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/beef-meat-dry-aged-meat-6565726/",
+    "source_id": "6565726",
+    "contributor": "Evilowl",
+    "contributor_id": "6246757"
   }
 }

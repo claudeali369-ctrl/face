@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-11T07:07:49.296663+00:00",
+  "generated_at": "2026-10-11T14:05:27.308993+00:00",
   "region": "Bangladesh",
   "niche": "technology",
   "trends": [
     {
       "rank": 1,
-      "topic": "china",
+      "topic": "nice vs strasbourg",
       "source": "google_trends",
-      "virality_score": 1.0,
+      "virality_score": 2.0,
       "niche_fit_score": 5.0,
       "region_fit_score": 5.0,
-      "combined_score": 3.4,
-      "recommended_format": "text",
-      "hook_angle": "Tech trends in Bangladesh: What should we explore next? (টেকনোলজি ট্রেন্ডস: সামনে আমরা কি দেখতে পাব?)",
+      "combined_score": 3.8,
+      "recommended_format": "image",
+      "hook_angle": "Tech tips and digital productivity updates for young professionals in Bangladesh.",
       "raw_data": {
         "approx_traffic": 1000,
         "related_queries": []
@@ -20,14 +20,14 @@
     },
     {
       "rank": 2,
-      "topic": "সেনাপ্রধান",
+      "topic": "sociedad vs deportivo",
       "source": "google_trends",
-      "virality_score": 1.0,
+      "virality_score": 2.0,
       "niche_fit_score": 5.0,
-      "region_fit_score": 5.0,
-      "combined_score": 3.4,
-      "recommended_format": "text",
-      "hook_angle": "Tech tips & digital productivity update (টেক টিপস এবং ডিজিটাল প্রোডাক্টিভিটি)",
+      "region_fit_score": 4.0,
+      "combined_score": 3.55,
+      "recommended_format": "image",
+      "hook_angle": "Are you using your smartphone and apps to their full potential? Discover hidden tech tips today!",
       "raw_data": {
         "approx_traffic": 500,
         "related_queries": []
@@ -35,14 +35,14 @@
     },
     {
       "rank": 3,
-      "topic": "prakash raj",
+      "topic": "গরুর মাংস",
       "source": "google_trends",
       "virality_score": 1.0,
       "niche_fit_score": 5.0,
       "region_fit_score": 5.0,
       "combined_score": 3.4,
       "recommended_format": "image",
-      "hook_angle": "Tech tips and digital productivity in Bangladesh (టెక్ టిప్స్)",
+      "hook_angle": "Are you making the most of your tech tools today? (টেক টুলস ব্যবহারে কি আপনি পিছিয়ে আছেন?)",
       "raw_data": {
         "approx_traffic": 500,
         "related_queries": []
@@ -50,74 +50,74 @@
     },
     {
       "rank": 4,
-      "topic": "fatal influence",
+      "topic": "prince yadav",
       "source": "google_trends",
       "virality_score": 1.0,
       "niche_fit_score": 5.0,
       "region_fit_score": 5.0,
       "combined_score": 3.4,
       "recommended_format": "image",
-      "hook_angle": "Are you looking for the best tech tools in Bangladesh? Let's explore!",
+      "hook_angle": "Tech tip বা budget gadget নিয়ে আপনার কী জানা দরকার? (What do you need to know about tech tips or budget gadgets?)",
       "raw_data": {
-        "approx_traffic": 100,
+        "approx_traffic": 200,
         "related_queries": []
       }
     },
     {
       "rank": 5,
-      "topic": "hasan mahmud",
+      "topic": "চাচ্চু",
       "source": "google_trends",
-      "virality_score": 2.0,
+      "virality_score": 1.0,
       "niche_fit_score": 5.0,
-      "region_fit_score": 3.0,
-      "combined_score": 3.3,
-      "recommended_format": "image",
-      "hook_angle": "Tech & Productivity Tips: আপনার দৈনন্দিন কাজ সহজ করার স্মার্ট উপায়!",
+      "region_fit_score": 5.0,
+      "combined_score": 3.4,
+      "recommended_format": "text",
+      "hook_angle": "техnology update-এর নতুন কিছু খুঁজছেন? (Looking for something new in tech updates?)",
       "raw_data": {
-        "approx_traffic": 1000,
+        "approx_traffic": 200,
         "related_queries": []
       }
     },
     {
       "rank": 6,
-      "topic": "২২ ক্যারেট স্বর্ণের দাম",
-      "source": "google_trends",
-      "virality_score": 2.0,
-      "niche_fit_score": 5.0,
-      "region_fit_score": 3.0,
-      "combined_score": 3.3,
-      "recommended_format": "image",
-      "hook_angle": "Are you making the most of your daily tech and apps? Let's check out some essential digital productivity tips! | আপনার দৈনন্দিন টেক এবং অ্যাপস কি সঠিকভাবে ব্যবহার করছেন? চলুন জেনে নেওয়া যাক কিছু দরকারি ডিজিটাল প্রডাক্টিভিটি টিপস!",
-      "raw_data": {
-        "approx_traffic": 1000,
-        "related_queries": []
-      }
-    },
-    {
-      "rank": 7,
-      "topic": "nepal vs canada",
-      "source": "google_trends",
-      "virality_score": 1.0,
-      "niche_fit_score": 5.0,
-      "region_fit_score": 3.0,
-      "combined_score": 2.9,
-      "recommended_format": "image",
-      "hook_angle": "Tech tips and digital productivity updates for students and young professionals in Bangladesh.",
-      "raw_data": {
-        "approx_traffic": 1000,
-        "related_queries": []
-      }
-    },
-    {
-      "rank": 8,
-      "topic": "bhutan vs qatar",
+      "topic": "সংবাদ",
       "source": "google_trends",
       "virality_score": 1.0,
       "niche_fit_score": 5.0,
       "region_fit_score": 3.0,
       "combined_score": 2.9,
       "recommended_format": "text",
-      "hook_angle": "Are you using your smartphone to its full potential? Discover hidden productivity tips today!",
+      "hook_angle": "Are you looking to boost your daily productivity with smart tools? Let's explore practical tech tips! (টেক টিপস এবং ডিজিটাল প্রোডাক্টরটিভিটি বাড়াতে চান?)",
+      "raw_data": {
+        "approx_traffic": 500,
+        "related_queries": []
+      }
+    },
+    {
+      "rank": 7,
+      "topic": "lazio vs monza",
+      "source": "google_trends",
+      "virality_score": 1.0,
+      "niche_fit_score": 5.0,
+      "region_fit_score": 3.0,
+      "combined_score": 2.9,
+      "recommended_format": "image",
+      "hook_angle": "Are you looking for the best budget tech in Bangladesh? কম খরচে সেরা গ্যাজেট খুঁজছেন?",
+      "raw_data": {
+        "approx_traffic": 200,
+        "related_queries": []
+      }
+    },
+    {
+      "rank": 8,
+      "topic": "south africa champions",
+      "source": "google_trends",
+      "virality_score": 1.0,
+      "niche_fit_score": 5.0,
+      "region_fit_score": 3.0,
+      "combined_score": 2.9,
+      "recommended_format": "text",
+      "hook_angle": "Are you using your smartphone to its full potential? চলুন জেনে নেওয়া যাক কিছু দরকারি টেক টিপস।",
       "raw_data": {
         "approx_traffic": 200,
         "related_queries": []
@@ -125,14 +125,14 @@
     },
     {
       "rank": 9,
-      "topic": "américa vs monterrey",
+      "topic": "lecce vs bologna",
       "source": "google_trends",
       "virality_score": 1.0,
-      "niche_fit_score": 5.0,
+      "niche_fit_score": 4.0,
       "region_fit_score": 3.0,
-      "combined_score": 2.9,
+      "combined_score": 2.55,
       "recommended_format": "text",
-      "hook_angle": "Tech tips and digital productivity updates for students and young professionals in Bangladesh.",
+      "hook_angle": "Tech tips and budget gadgets সম্পর্কে জানতে চান? (Want to know about tech tips and budget gadgets?)",
       "raw_data": {
         "approx_traffic": 200,
         "related_queries": []
@@ -140,14 +140,14 @@
     },
     {
       "rank": 10,
-      "topic": "sobhana mostary",
+      "topic": "pakistan national cricket team vs sri lanka national cricket team match scorecard",
       "source": "google_trends",
       "virality_score": 1.0,
-      "niche_fit_score": 2.0,
-      "region_fit_score": 1.0,
-      "combined_score": 1.35,
+      "niche_fit_score": 0.0,
+      "region_fit_score": 0.0,
+      "combined_score": 0.4,
       "recommended_format": "text",
-      "hook_angle": "Tech tip ba AI tool niye ki apnara kichu khujchen? (Are you looking for tech tips or AI tools?)",
+      "hook_angle": "Tech tip ba software update niye kichu khujchen? (Are you looking for tech tips or software updates?)",
       "raw_data": {
         "approx_traffic": 5000,
         "related_queries": []

@@ -1,25 +1,25 @@
 {
   "date": "2026-10-11",
-  "generated_at": "2026-10-11T07:07:53.355174+00:00",
+  "generated_at": "2026-10-11T14:05:31.670980+00:00",
   "posts": [
     {
-      "post_id": "2b889909-0e37-4139-9cbf-8c684c284a65",
+      "post_id": "1a4542be-0b18-4822-b7e0-7195adfd9256",
       "slot": 1,
       "scheduled_time_utc": "2026-10-11T03:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "china",
+      "trend_topic": "nice vs strasbourg",
       "content_pillar": "Hidden Gems",
-      "hook_type": "curiosity",
+      "hook_type": "local_relevance",
       "cta_type": "save_or_share",
       "dominant_emotion": "curiosity",
       "status": "planned"
     },
     {
-      "post_id": "4a614320-7578-42a3-a0d7-1fe9d0dd15e0",
+      "post_id": "8b3f2bd0-9c41-47ea-946a-b76ae6409535",
       "slot": 2,
       "scheduled_time_utc": "2026-10-11T07:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "সেনাপ্রধান",
+      "trend_topic": "sociedad vs deportivo",
       "content_pillar": "Hidden Gems",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
@@ -27,13 +27,13 @@
       "status": "planned"
     },
     {
-      "post_id": "7fe4dbed-8e86-4d4f-bb2d-34787a93d0ce",
+      "post_id": "621d530b-614e-473c-8ae8-1962b7b15bc0",
       "slot": 3,
       "scheduled_time_utc": "2026-10-11T14:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "prakash raj",
+      "trend_topic": "গরুর মাংস",
       "content_pillar": "Hidden Gems",
-      "hook_type": "curiosity",
+      "hook_type": "local_relevance",
       "cta_type": "save_or_share",
       "dominant_emotion": "curiosity",
       "status": "planned"
@@ -41,29 +41,29 @@
   ],
   "stories": [
     {
-      "post_id": "c9c9afbd-1f22-4d7c-aa9a-164b56bfa293",
+      "post_id": "1addf592-57a0-4485-a87e-273b6ffd9553",
       "slot": 1,
       "scheduled_time_utc": "2026-10-11T03:00:00+00:00",
       "format": "story",
-      "trend_topic": "china",
+      "trend_topic": "nice vs strasbourg",
       "content_pillar": "entertainment",
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "2b889909-0e37-4139-9cbf-8c684c284a65",
+      "parent_post_id": "1a4542be-0b18-4822-b7e0-7195adfd9256",
       "status": "planned"
     },
     {
-      "post_id": "f0a76d2e-3406-4c44-9b05-7c10b92e2cff",
+      "post_id": "644aa9bd-91c4-4293-9b05-c04bd71804a0",
       "slot": 2,
       "scheduled_time_utc": "2026-10-11T07:00:00+00:00",
       "format": "story",
-      "trend_topic": "সেনাপ্রধান",
+      "trend_topic": "sociedad vs deportivo",
       "content_pillar": "inspirational",
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "4a614320-7578-42a3-a0d7-1fe9d0dd15e0",
+      "parent_post_id": "8b3f2bd0-9c41-47ea-946a-b76ae6409535",
       "status": "planned"
     }
   ],
