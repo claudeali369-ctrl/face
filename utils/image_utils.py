@@ -177,7 +177,7 @@ def add_text_overlay(
     bar_y1 = min(height, bar_y1)
 
     # Auto-contrast: sample the backdrop region to pick text colour
-    if color is None:
+    if color is None or (isinstance(color, str) and color.strip().lower() == "auto"):
         crop_box = (0, bar_y0, width, bar_y1)
         region = img.crop(crop_box).convert("RGB")
         avg_lum = _region_luminance(region)

@@ -17,6 +17,7 @@ Responsibilities:
 from __future__ import annotations
 
 import json
+import io
 import os
 import random
 import time
@@ -26,6 +27,7 @@ from pathlib import Path
 from typing import Any
 
 import requests
+from huggingface_hub import InferenceClient
 
 from utils.asset_cache import get_asset_cache
 from utils.config_loader import build_prompt_context, get_config
@@ -52,13 +54,10 @@ for _d in (ASSETS_RAW, ASSETS_APPROVED, ASSETS_FINAL):
     _d.mkdir(parents=True, exist_ok=True)
 
 # ── HuggingFace model endpoints ────────────────────────────────────────────────
-HF_FLUX_URL = (
-    "https://huggingface.co"
-)
-HF_SDXL_URL = (
-    "https://huggingface.co"
-    "stabilityai/stable-diffusion-xl-base-1.0"
-)
+# Model IDs are routed through Hugging Face Inference Providers.
+# The provider is selected automatically by huggingface_hub's InferenceClient.
+HF_FLUX_MODEL = "black-forest-labs/FLUX.1-schnell"
+HF_SDXL_MODEL = "stabilityai/stable-diffusion-xl-base-1.0"
 
 # ── Format → (width, height) map ──────────────────────────────────────────────
 FORMAT_DIMENSIONS: dict[str, tuple[int, int]] = {
@@ -186,7 +185,7 @@ def _provider_pollinations(
 
 
 def _provider_hf(
-    api_url: str,
+    model_id: str,
     prompt: str,
     width: int,
     height: int,
@@ -194,45 +193,70 @@ def _provider_hf(
     attempt: int,
     provider_tag: str,
 ) -> Path | None:
+    """Generate an image through Hugging Face Inference Providers.
+
+    InferenceClient handles provider routing; the token must have Inference
+    Providers permission and the account must have any required credits.
+    Returns a local JPEG path on success, or None if all retries fail.
     """
-    Generic HuggingFace Inference API image provider.
-    Handles 503 model-loading with up to 3 retries (30 s apart).
-    Returns local path on success, None on failure.
-    """
-    hf_token = os.environ.get("HF_TOKEN", "")
+    hf_token = os.environ.get("HF_TOKEN", "").strip()
     if not hf_token:
         log.warning("[%s] HF_TOKEN not set — skipping", provider_tag)
         return None
 
-    headers = {"Authorization": f"Bearer {hf_token}"}
-    payload = {"inputs": prompt, "parameters": {"width": width, "height": height}}
+    try:
+        client = InferenceClient(api_key=hf_token, timeout=120)
+    except Exception as exc:
+        log.warning("[%s] Could not initialize Hugging Face client: %s", provider_tag, exc)
+        return None
+
+    # Keep requests within a conservative 1024-pixel longest side and use
+    # dimensions divisible by 8, which is safer across hosted image models.
+    target_width, target_height = int(width), int(height)
+    scale = min(1.0, 1024.0 / max(target_width, target_height))
+    request_width = max(64, (int(target_width * scale) // 8) * 8)
+    request_height = max(64, (int(target_height * scale) // 8) * 8)
 
     for retry in range(1, 4):
         HF_LIMITER.acquire()
         log.info(
-            "[%s] Requesting image for post %s (retry %d/3)", provider_tag, post_id, retry
+            "[%s] Requesting model %s for post %s (retry %d/3)",
+            provider_tag, model_id, post_id, retry,
         )
         try:
-            resp = requests.post(api_url, headers=headers, json=payload, timeout=120)
-            if resp.status_code == 503:
-                log.warning(
-                    "[%s] Model loading (503), waiting 30 s...", provider_tag
-                )
-                time.sleep(30)
-                continue
-            resp.raise_for_status()
-            content = resp.content
+            image = client.text_to_image(
+                prompt,
+                model=model_id,
+                width=request_width,
+                height=request_height,
+            )
+            # InferenceClient returns a PIL image, not a raw requests.Response.
+            # Restore the requested social-media dimensions after generation.
+            if image.size != (target_width, target_height):
+                from PIL import Image
+                resampling = getattr(Image, "Resampling", Image)
+                image = image.resize((target_width, target_height), resampling.LANCZOS)
+
+            # Encode explicitly as JPEG so the cached file extension matches.
+            buffer = io.BytesIO()
+            image.convert("RGB").save(buffer, format="JPEG", quality=95)
+            content = buffer.getvalue()
+            buffer.close()
             if not content or len(content) < 1000:
-                log.warning("[%s] Response too small", provider_tag)
+                log.warning("[%s] Image response too small for post %s", provider_tag, post_id)
                 return None
             return _save_raw(content, post_id, attempt)
         except Exception as exc:
+            response = getattr(exc, "response", None)
+            status_code = getattr(response, "status_code", None)
+            if status_code == 503 and retry < 3:
+                log.warning("[%s] Provider/model temporarily unavailable (503); retrying in 30 s", provider_tag)
+                time.sleep(30)
+                continue
             log.warning("[%s] Attempt %d failed: %s", provider_tag, retry, exc)
             if retry < 3:
                 time.sleep(10)
-
     return None
-
 
 def _provider_pexels(
     query: str, orientation: str, post_id: str, attempt: int
@@ -399,8 +423,8 @@ def _generate_image(
     # Provider order for generation attempts
     providers = [
         ("Pollinations", lambda att: _provider_pollinations(prompt_flux, w, h, post_id, att)),
-        ("HF-FLUX", lambda att: _provider_hf(HF_FLUX_URL, prompt_hf, w, h, post_id, att, "P2-FLUX")),
-        ("HF-SDXL", lambda att: _provider_hf(HF_SDXL_URL, prompt_hf, w, h, post_id, att, "P3-SDXL")),
+        ("HF-FLUX", lambda att: _provider_hf(HF_FLUX_MODEL, prompt_hf, w, h, post_id, att, "P2-FLUX")),
+        ("HF-SDXL", lambda att: _provider_hf(HF_SDXL_MODEL, prompt_hf, w, h, post_id, att, "P3-SDXL")),
     ]
 
     attempt = 0
@@ -560,7 +584,7 @@ def _apply_text_overlay(
             text=text,
             position=position,
             font_size=84,
-            color="auto",
+            color=None,
             shadow=True,
             backdrop=bg_busy,
         )
