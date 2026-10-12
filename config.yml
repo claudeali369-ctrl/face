@@ -155,9 +155,9 @@ api:
   # The rate limiter will auto-space calls to stay under this.
   gemini_rpm_limit: 12
 
-  # Hugging Face Inference API: 1,000 requests/day free.
-  # Agent 4 uses this for FLUX.1-schnell image generation.
-  huggingface_daily_limit: 1000
+  # Hugging Face Inference Providers free accounts receive a small monthly
+  # credit allowance (currently $0.10, subject to change), not 1,000 free
+  # image requests/day. After HTTP 402, FACE skips HF until the next UTC month.
 
   # Pexels API: 200 requests/hour, 20,000/month free.
   pexels_hourly_limit: 200

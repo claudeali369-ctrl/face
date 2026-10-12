@@ -59,6 +59,10 @@ for _d in (ASSETS_RAW, ASSETS_APPROVED, ASSETS_FINAL):
 HF_FLUX_MODEL = "black-forest-labs/FLUX.1-schnell"
 HF_SDXL_MODEL = "stabilityai/stable-diffusion-xl-base-1.0"
 
+# Avoid futile routed-inference requests after free credits are exhausted.
+HF_CREDITS_EXHAUSTED_THIS_RUN = False
+HF_CREDIT_STATUS_FILE = "hf_inference_status.json"
+
 # ── Format → (width, height) map ──────────────────────────────────────────────
 FORMAT_DIMENSIONS: dict[str, tuple[int, int]] = {
     "single_image": (1200, 628),
@@ -184,6 +188,52 @@ def _provider_pollinations(
         return None
 
 
+def _hf_free_credits_exhausted() -> bool:
+    """Return True if HF's free routed-inference credits were exhausted this UTC month.
+
+    The marker is stored in state/ so it survives later GitHub Actions runs via
+    FACE's state branch. A new calendar month automatically permits another try.
+    """
+    global HF_CREDITS_EXHAUSTED_THIS_RUN
+    if HF_CREDITS_EXHAUSTED_THIS_RUN:
+        return True
+
+    month = datetime.now(timezone.utc).strftime("%Y-%m")
+    try:
+        status = read_state(HF_CREDIT_STATUS_FILE)
+    except Exception as exc:
+        log.debug("Could not read Hugging Face credit status: %s", exc)
+        status = {}
+
+    if status.get("month") == month and status.get("credits_exhausted") is True:
+        HF_CREDITS_EXHAUSTED_THIS_RUN = True
+        return True
+    return False
+
+
+def _mark_hf_free_credits_exhausted(model_id: str, error: str) -> None:
+    """Disable HF calls until next month without buying or attempting paid credits."""
+    global HF_CREDITS_EXHAUSTED_THIS_RUN
+    HF_CREDITS_EXHAUSTED_THIS_RUN = True
+    month = datetime.now(timezone.utc).strftime("%Y-%m")
+    try:
+        write_state(
+            HF_CREDIT_STATUS_FILE,
+            {
+                "month": month,
+                "credits_exhausted": True,
+                "model": model_id,
+                "reason": "http_402_payment_required",
+                "updated_at": datetime.now(timezone.utc).isoformat(),
+                "message": error[:500],
+            },
+        )
+    except Exception as exc:
+        # The in-memory guard still prevents repeated calls during this run even
+        # if state persistence fails. Log so the next run can still be diagnosed.
+        log.warning("Could not persist HF exhausted-credit marker: %s", exc)
+
+
 def _provider_hf(
     model_id: str,
     prompt: str,
@@ -193,12 +243,20 @@ def _provider_hf(
     attempt: int,
     provider_tag: str,
 ) -> Path | None:
-    """Generate an image through Hugging Face Inference Providers.
+    """Generate through Hugging Face Inference Providers without paid retries.
 
-    InferenceClient handles provider routing; the token must have Inference
-    Providers permission and the account must have any required credits.
-    Returns a local JPEG path on success, or None if all retries fail.
+    Free accounts have a small monthly routed-inference credit allowance, not an
+    unlimited daily image quota. A 402 means the balance is exhausted: skip HF
+    for the rest of the month and allow free stock-photo fallback providers.
     """
+    if _hf_free_credits_exhausted():
+        log.info(
+            "[%s] Skipping Hugging Face: free inference credits are exhausted "
+            "for this month; using the next configured fallback.",
+            provider_tag,
+        )
+        return None
+
     hf_token = os.environ.get("HF_TOKEN", "").strip()
     if not hf_token:
         log.warning("[%s] HF_TOKEN not set — skipping", provider_tag)
@@ -220,7 +278,7 @@ def _provider_hf(
     for retry in range(1, 4):
         HF_LIMITER.acquire()
         log.info(
-            "[%s] Requesting model %s for post %s (retry %d/3)",
+            "[%s] Requesting model %s for post %s (attempt %d/3)",
             provider_tag, model_id, post_id, retry,
         )
         try:
@@ -230,14 +288,11 @@ def _provider_hf(
                 width=request_width,
                 height=request_height,
             )
-            # InferenceClient returns a PIL image, not a raw requests.Response.
-            # Restore the requested social-media dimensions after generation.
             if image.size != (target_width, target_height):
                 from PIL import Image
                 resampling = getattr(Image, "Resampling", Image)
                 image = image.resize((target_width, target_height), resampling.LANCZOS)
 
-            # Encode explicitly as JPEG so the cached file extension matches.
             buffer = io.BytesIO()
             image.convert("RGB").save(buffer, format="JPEG", quality=95)
             content = buffer.getvalue()
@@ -249,13 +304,47 @@ def _provider_hf(
         except Exception as exc:
             response = getattr(exc, "response", None)
             status_code = getattr(response, "status_code", None)
+            message = str(exc).lower()
+
+            # Permanent billing error: do not retry and don't try a second HF model.
+            if (
+                status_code == 402
+                or "402 payment required" in message
+                or "no remaining credits" in message
+            ):
+                _mark_hf_free_credits_exhausted(model_id, str(exc))
+                log.warning(
+                    "[%s] Hugging Face returned HTTP 402: free inference credits are "
+                    "exhausted. HF calls are disabled for the rest of this month; "
+                    "no retry or paid-credit purchase will be attempted. Falling back. Error: %s",
+                    provider_tag, exc,
+                )
+                return None
+
+            # Don't burn retries on auth, model access, or malformed-request errors.
+            if status_code in (400, 401, 403, 404):
+                log.warning(
+                    "[%s] Non-retryable Hugging Face HTTP %s for model %s: %s",
+                    provider_tag, status_code, model_id, exc,
+                )
+                return None
+
+            # Retain retry behavior only for likely temporary service failures.
             if status_code == 503 and retry < 3:
-                log.warning("[%s] Provider/model temporarily unavailable (503); retrying in 30 s", provider_tag)
+                log.warning(
+                    "[%s] Provider/model temporarily unavailable (503); retrying in 30 s",
+                    provider_tag,
+                )
                 time.sleep(30)
                 continue
+            if status_code is not None and status_code < 500:
+                log.warning("[%s] Non-retryable HF error on attempt %d: %s", provider_tag, retry, exc)
+                return None
+
             log.warning("[%s] Attempt %d failed: %s", provider_tag, retry, exc)
             if retry < 3:
                 time.sleep(10)
+
     return None
 
 def _provider_pexels(
