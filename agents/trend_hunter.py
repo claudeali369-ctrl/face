@@ -581,13 +581,13 @@ def main() -> None:
         if scored_trend:
             scored.append(scored_trend)
 
-    if not scored:
-    log.error(
-        "No trends passed configured pillar/type validation. "
-        "Writing an empty trends file and stopping safely."
-    )
-    _write_trends(region, niche, [])
-    raise SystemExit(1)
+        if not scored:
+        log.error(
+            "No trends passed configured pillar/type validation. "
+            "Writing an empty trends file and stopping safely."
+        )
+        _write_trends(region, niche, [])
+        raise SystemExit(1)
 
     # ── Step 4: Rank and write top 10 ──────────────────────────────────────
     log.info("Step 4/4 — Ranking and writing state/trends.json")
