@@ -7,7 +7,11 @@ Sub-niches: {sub_niches}
 Target region: {target_region}
 Target language: {target_language}
 Audience age range: {audience_age_range}
-Content pillars: {content_pillars}
+Configured content pillar definitions:
+{content_pillar_definitions}
+
+Approved topic types:
+{approved_topic_types}
 
 Raw trend evidence (JSON or text):
 {trend_raw_data}
@@ -21,6 +25,9 @@ Return ONLY one valid JSON object with exactly these top-level fields (do not wr
   "region_fit_score": 0,
   "recommended_format": "image",
   "hook_angle": "specific audience hook, in the target language when appropriate",
+  "content_pillar": "exact configured pillar name",
+  "topic_type": "exact approved topic type",
+  "relevance_rationale": "why the topic fits this pillar",
   "why_trending": "brief evidence-based explanation",
   "claims_to_verify": [],
   "confidence": 0.0
@@ -33,3 +40,14 @@ Rules:
 - trend_source must not be fabricated. Use "unknown" if no source is provided.
 - claims_to_verify must be a JSON array of strings, which can be empty.
 - Never invent or imply access to private Facebook ranking signals.
+- content_pillar must exactly match a configured pillar name,
+  including capitalization and spacing.
+- topic_type must be one of the approved topic types belonging
+  to that exact pillar.
+- Select a pillar based on the actual topic, not the posting time
+  or a desire to fill the calendar.
+- Explain the concrete relevance in relevance_rationale.
+- If the topic is unrelated to the configured pillars, return
+  null for content_pillar and topic_type and assign a
+  niche_fit_score below 6.5.
+- Never invent a classification to make an unrelated trend fit.
