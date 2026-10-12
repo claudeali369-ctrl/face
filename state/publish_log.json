@@ -1,20 +1,39 @@
 {
   "date": "2026-10-12",
-  "run_at": "2026-10-12T07:19:18.256595+00:00",
-  "published_count": 1,
-  "failed_count": 1,
+  "run_at": "2026-10-12T19:18:11.851520+00:00",
+  "published_count": 0,
+  "failed_count": 5,
   "skipped_count": 0,
   "items": [
     {
-      "post_id": "796782446859518_122142370707061297",
+      "post_id": "9e4e78ba-67cf-4622-8f28-0d3badd01fff",
       "format": "single_image",
-      "status": "published"
+      "status": "failed",
+      "error": "image_ready=False or missing image_path for 9e4e78ba-67cf-4622-8f28-0d3badd01fff"
     },
     {
-      "post_id": "3a0e87d3-00e4-4c83-bf2e-35147bb6e8a8",
+      "post_id": "48f004f1-cfc0-4d39-ac7d-c1965ddff1d2",
+      "format": "single_image",
+      "status": "failed",
+      "error": "image_ready=False or missing image_path for 48f004f1-cfc0-4d39-ac7d-c1965ddff1d2"
+    },
+    {
+      "post_id": "d9e63d22-9306-411a-b080-ad66c1586d03",
+      "format": "single_image",
+      "status": "failed",
+      "error": "image_ready=False or missing image_path for d9e63d22-9306-411a-b080-ad66c1586d03"
+    },
+    {
+      "post_id": "584d2280-20d4-4914-8877-0e0f1ba10b60",
       "format": "story",
       "status": "failed",
-      "error": "Story slide 2 has missing image_path: ''"
+      "error": "Story slide 1 has missing image_path: ''"
+    },
+    {
+      "post_id": "7bc54f02-de95-40d7-8b9e-710abfb7b2f3",
+      "format": "story",
+      "status": "failed",
+      "error": "Story slide 1 has missing image_path: ''"
     }
   ]
 }

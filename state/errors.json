@@ -53,6 +53,36 @@
       "error": "Story slide 2 has missing image_path: ''",
       "timestamp": "2026-10-12T07:19:57.029974+00:00",
       "agent": "publisher"
+    },
+    {
+      "post_id": "9e4e78ba-67cf-4622-8f28-0d3badd01fff",
+      "error": "image_ready=False or missing image_path for 9e4e78ba-67cf-4622-8f28-0d3badd01fff",
+      "timestamp": "2026-10-12T19:18:47.212707+00:00",
+      "agent": "publisher"
+    },
+    {
+      "post_id": "48f004f1-cfc0-4d39-ac7d-c1965ddff1d2",
+      "error": "image_ready=False or missing image_path for 48f004f1-cfc0-4d39-ac7d-c1965ddff1d2",
+      "timestamp": "2026-10-12T19:19:22.216656+00:00",
+      "agent": "publisher"
+    },
+    {
+      "post_id": "d9e63d22-9306-411a-b080-ad66c1586d03",
+      "error": "image_ready=False or missing image_path for d9e63d22-9306-411a-b080-ad66c1586d03",
+      "timestamp": "2026-10-12T19:19:57.221848+00:00",
+      "agent": "publisher"
+    },
+    {
+      "post_id": "584d2280-20d4-4914-8877-0e0f1ba10b60",
+      "error": "Story slide 1 has missing image_path: ''",
+      "timestamp": "2026-10-12T19:20:32.225788+00:00",
+      "agent": "publisher"
+    },
+    {
+      "post_id": "7bc54f02-de95-40d7-8b9e-710abfb7b2f3",
+      "error": "Story slide 1 has missing image_path: ''",
+      "timestamp": "2026-10-12T19:21:07.229688+00:00",
+      "agent": "publisher"
     }
   ]
 }

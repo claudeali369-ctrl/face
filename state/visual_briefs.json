@@ -1,452 +1,456 @@
 {
-  "generated_at": "2026-10-12T07:19:17.835896+00:00",
+  "generated_at": "2026-10-12T19:18:11.441335+00:00",
   "date": "2026-10-12",
   "briefs": {
-    "80e24f3a-9102-4881-aa64-1c8e8ec04e88": {
-      "post_id": "80e24f3a-9102-4881-aa64-1c8e8ec04e88",
+    "9e4e78ba-67cf-4622-8f28-0d3badd01fff": {
+      "post_id": "9e4e78ba-67cf-4622-8f28-0d3badd01fff",
       "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style establishes deep curiosity and wonder, blending ancient historic architecture with a mysterious tech-forward atmosphere that resonates well with 18-30 demographic in Bangladesh seeking unique global discoveries.",
-      "composition": "rule_of_thirds",
-      "composition_rationale": "Placing the primary architectural subject along the right grid line creates an asymmetrical, engaging frame that naturally draws the eye while leaving the left side open for the hook text overlay.",
-      "primary_subject": "Ancient multi-story mud-brick skyscraper architecture of Shibam Yemen under a twilight sky with subtle glowing digital horizon accents",
-      "background_environment": "A vast, mystical ancient city skyline fading into a hazy, starlit desert horizon with atmospheric mist",
+      "visual_style_rationale": "Cinematic style creates a high-end, dramatic mood that immediately captures the attention of 18-34 tech audiences. It balances realism with a slightly heightened, investigative atmosphere perfectly suited for a story about digital intrusion into physical infrastructure.",
+      "composition": "negative_space",
+      "composition_rationale": "Utilizing negative space ensures the frame has an uncluttered area specifically dedicated to the hook text overlay, maximizing readability and stopping the scroll in the Facebook feed.",
+      "primary_subject": "A modern European supermarket refrigerated aisle with condensation on the glass doors",
+      "background_environment": "A dimly lit, sleek high-end grocery store corridor with polished floors reflecting cool ambient lighting",
       "color_palette": {
-        "primary": "#1A365D",
-        "secondary": "#C59B27",
-        "accent": "#00D2C4",
-        "rationale": "Deep midnight blue builds mystery and tech trust, warm golden ochre mirrors traditional mud architecture and rich cultural resonance, and vibrant teal adds a modern curiosity-inducing contrast."
+        "primary": "#0A192F",
+        "secondary": "#1E3A8A",
+        "accent": "#00F5D4",
+        "rationale": "Deep navy and slate blue represent digital infrastructure and cold environments, while the electric cyan accent triggers curiosity and represents unauthorized digital intervention."
       },
       "dominant_emotion": "curiosity",
       "region_visual_cues": [
-        "intricate geometric lattice window designs",
-        "towering earthen cliffside urban structures",
-        "ancient desert haze and starlit atmosphere"
+        "European supermarket aisle layout with standard multi-deck refrigerated display cases",
+        "Pricing labels and product arrangements typical of contemporary European retail stores",
+        "Architectural ceiling lighting and polished concrete flooring common in modern urban retail design"
       ],
       "cultural_elements_to_include": [
-        "intricate wooden window shutters",
-        "warm lantern lighting on mud-brick walls",
-        "mysterious atmospheric dust particles in air"
+        "Realistic condensation patterns on glass fridge doors",
+        "Subtle digital glitch artifacts or glowing UI elements subtly reflecting on the glass",
+        "Clean, premium retail aesthetic"
       ],
       "cultural_elements_to_avoid": [
-        "using generic European castle architecture",
-        "inaccurate Middle Eastern clichés that look like stock photography",
-        "bright neon green or harsh red colors",
-        "any political flags or modern military elements"
+        "Generic American-style massive wholesale club imagery",
+        "Cartoony hacker hoodies or glowing green matrix text floating in mid-air",
+        "Overly staged or fake-looking stock models",
+        "Visible human faces unless naturally blurred for atmosphere"
+      ],
+      "text_overlay_space": "top_third",
+      "text_overlay_color": "#FFFFFF",
+      "text_overlay_background": "semi_dark",
+      "lighting_mood": "Moody, high-contrast, cool cinematic illumination with an eerie cyan glow emanating from the fridge panels",
+      "time_of_day_depicted": "night",
+      "generation_prompt_pollinations": "modern European supermarket refrigerated aisle at night, cinematic style, negative space composition, European retail architecture, glass doors with condensation, cool blue tones, electric cyan accent, curiosity atmosphere, professional cinematography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic shot of a modern European supermarket refrigerated aisle during night hours. The atmosphere is mysterious and sleek, featuring rows of glass-door fridges with delicate condensation forming on the panes. The lighting is dominated by deep navy and slate tones, punctuated by an unexpected, subtle electric cyan glow reflecting off the polished floor. The composition leaves generous negative space at the top for text overlay, evoking a sense of high-tech intrigue and digital mystery.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, green matrix code, hacker clichés",
+      "quality_keywords": [
+        "hyper-detailed",
+        "cinematic lighting",
+        "photorealistic texture",
+        "award-winning cinematography",
+        "8k"
+      ],
+      "image_dimensions": "1080x1350",
+      "seed_suggestion": 4242,
+      "provider_preference": "pollinations"
+    },
+    "48f004f1-cfc0-4d39-ac7d-c1965ddff1d2": {
+      "post_id": "48f004f1-cfc0-4d39-ac7d-c1965ddff1d2",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style perfectly bridges the curiosity and credibility needed for a complex tech topic like LLM capability gaps. It engages 18-34 tech-savvy audiences by creating an atmospheric, high-end feel that avoids generic AI flatness and feels premium.",
+      "composition": "negative_space",
+      "composition_rationale": "Using negative space draws the viewer's eye to the conceptual tension of the image while explicitly leaving a clean, unobstructed zone for the hook text overlay.",
+      "primary_subject": "A glowing minimalist abstract wireframe bridge spanning a subtle digital divide in a modern workspace",
+      "background_environment": "A dimly lit contemporary tech studio with soft ambient lighting and subtle global architectural textures integrated into the background glass panels",
+      "color_palette": {
+        "primary": "#0F172A",
+        "secondary": "#38BDF8",
+        "accent": "#F43F5E",
+        "rationale": "Deep slate blue (#0F172A) provides a credible, authoritative tech foundation. Electric cyan (#38BDF8) represents clarity and digital innovation, while a sharp coral accent (#F43F5E) triggers curiosity by highlighting the exact point of divergence."
+      },
+      "dominant_emotion": "curiosity",
+      "region_visual_cues": [
+        "modern minimalist interior design popular in global urban tech hubs",
+        "subtle geometric patterns inspired by contemporary architecture",
+        "clean ambient lighting reflecting off matte metallic surfaces"
+      ],
+      "cultural_elements_to_include": [
+        "modern minimalist workspace aesthetics",
+        "abstract representation of data and cognitive gaps",
+        "clean architectural lines"
+      ],
+      "cultural_elements_to_avoid": [
+        "generic sci-fi tropes with floating green matrix code",
+        "overly cluttered desk setups",
+        "staged stock photos of people pointing at screens",
+        "unrealistic robotic imagery"
       ],
       "text_overlay_space": "left_third",
       "text_overlay_color": "#FFFFFF",
       "text_overlay_background": "semi_dark",
-      "lighting_mood": "Mysterious twilight with warm internal glows and cool ambient tones",
+      "lighting_mood": "moody and focused with high contrast rim lighting",
       "time_of_day_depicted": "blue_hour",
-      "generation_prompt_pollinations": "ancient mud-brick skyscrapers of Shibam Yemen, cinematic, rule_of_thirds, intricate geometric lattice window designs, towering earthen cliffside urban structures, deep midnight blue #1A365D, warm golden ochre #C59B27, vibrant teal #00D2C4, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic wide shot of the ancient mud-brick skyscraper architecture of Shibam Yemen during blue hour, featuring towering earthen buildings with intricate geometric window designs under a starlit twilight sky, bathed in a mysterious atmosphere with a sophisticated deep blue and warm gold color palette, perfectly composed using rule of thirds with clean negative space on the left.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, modern skyscrapers, cars, bright daylight",
+      "generation_prompt_pollinations": "A glowing minimalist abstract wireframe bridge spanning a subtle digital divide, cinematic visual style, negative space composition, modern minimalist workspace aesthetics, clean architectural lines, deep slate blue, electric cyan and coral accent color palette, curiosity atmosphere, professional technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic shot of a glowing minimalist abstract wireframe bridge spanning a subtle digital divide in a modern tech workspace during the blue hour. The lighting is moody and focused with high contrast rim lighting using deep slate blue, electric cyan, and sharp coral accents. The composition utilizes negative space on the left third for text placement, creating an atmosphere of curiosity and high-end technological depth. Highly detailed, professional photography, clean aesthetic.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, matrix code, floating glowing spheres, cluttered background",
       "quality_keywords": [
+        "cinematic lighting",
+        "hyper-detailed wireframe",
+        "professional technology aesthetic",
+        "8k resolution",
+        "clean composition"
+      ],
+      "image_dimensions": "1080x1350",
+      "seed_suggestion": 42891,
+      "provider_preference": "pollinations"
+    },
+    "d9e63d22-9306-411a-b080-ad66c1586d03": {
+      "post_id": "d9e63d22-9306-411a-b080-ad66c1586d03",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style creates immediate intrigue and high production value, perfectly matching the curiosity-driven tech angle while standing out among standard feed clutter for 18-34 audiences.",
+      "composition": "negative_space",
+      "composition_rationale": "Utilizing expansive negative space draws the eye to the central tension of the image while providing a deliberate, clean area for the hook text overlay.",
+      "primary_subject": "A glowing holographic cascade of raw code streaming endlessly downwards, abruptly transforming midway into a tangled, chaotic knot instead of a structured software architecture",
+      "background_environment": "A dimly lit, modern minimalist workspace with soft ambient blue and purple LED backlighting, hinting at a late-night coding session in a contemporary global tech hub",
+      "color_palette": {
+        "primary": "#0F172A",
+        "secondary": "#38BDF8",
+        "accent": "#F43F5E",
+        "rationale": "Deep slate blue (#0F172A) establishes a trustworthy tech foundation, electric cyan (#38BDF8) signals innovation, and vibrant coral-pink (#F43F5E) disrupts the palette to trigger curiosity and highlight the core problem."
+      },
+      "dominant_emotion": "curiosity",
+      "region_visual_cues": [
+        "minimalist desk setup with mechanical keyboard glow",
+        "contemporary global urban tech aesthetic",
+        "abstract data visualization patterns"
+      ],
+      "cultural_elements_to_include": [
+        "modern developer workspace elements",
+        "abstract architectural wireframes transitioning into confusion",
+        "sleek digital interface elements"
+      ],
+      "cultural_elements_to_avoid": [
+        "generic matrix falling green code cliché",
+        "overly cartoonish illustrations",
+        "stock photo tropes of people pointing at screens",
+        "culturally insensitive or region-mismatched symbols"
+      ],
+      "text_overlay_space": "top_third",
+      "text_overlay_color": "#FFFFFF",
+      "text_overlay_background": "semi_dark",
+      "lighting_mood": "moody and atmospheric with high-contrast glowing elements",
+      "time_of_day_depicted": "night",
+      "generation_prompt_pollinations": "Cinematic shot of a glowing holographic cascade of raw code streaming downwards and turning into a tangled knot, negative space on top, modern tech workspace, #0F172A deep slate background, #38BDF8 electric cyan accents, #F43F5E coral highlight, curiosity atmosphere, professional digital art, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic, high-end digital art piece capturing a modern tech workspace at night. In the center, a dense cascade of luminous code streams downward, but intriguingly unravels into an intricate, chaotic knot rather than a clean software architecture. The lighting is moody with deep slate blue tones, contrasted by electric cyan and sharp coral accents. The upper portion of the image features expansive negative space with smooth gradients, designed to evoke curiosity and contemplation.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, matrix rain, green code, cartoon, childish",
+      "quality_keywords": [
+        "masterpiece",
         "ultra detailed",
         "8k resolution",
         "cinematic lighting",
+        "award-winning digital art",
+        "hyper-realistic textures"
+      ],
+      "image_dimensions": "1080x1350",
+      "seed_suggestion": 4289,
+      "provider_preference": "huggingface_flux"
+    },
+    "584d2280-20d4-4914-8877-0e0f1ba10b60_slide1": {
+      "post_id": "584d2280-20d4-4914-8877-0e0f1ba10b60_slide1",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style creates a high-end, dramatic tension necessary to convey a cyber-attack on critical infrastructure, appealing strongly to the 18-34 tech-savvy demographic seeking credible and engaging evidence.",
+      "composition": "negative_space",
+      "composition_rationale": "Negative space allows the dramatic subject to sit on one side while providing a clean, uncluttered area specifically designed for the hook text overlay.",
+      "primary_subject": "A modern, sleek European supermarket refrigerated aisle with mist and condensation glowing ominously from unexpected temperature drops",
+      "background_environment": "A dimly lit, contemporary European grocery store interior with subtle digital glitch artifacts reflecting off polished floors",
+      "color_palette": {
+        "primary": "#0A192F",
+        "secondary": "#64FFDA",
+        "accent": "#FF5722",
+        "rationale": "Deep navy (#0A192F) establishes a high-tech, secure digital atmosphere; cyan (#64FFDA) represents refrigeration and modern tech; accent orange (#FF5722) triggers immediate curiosity and a sense of an anomaly or alert."
+      },
+      "dominant_emotion": "curiosity",
+      "region_visual_cues": [
+        "Typical European supermarket layout and minimalist shelving design",
+        "Multilingual price tags blurred in the background",
+        "Standard European glass-door upright display freezers"
+      ],
+      "cultural_elements_to_include": [
+        "Sleek European retail architectural aesthetics",
+        "Realistic condensation patterns on commercial refrigeration units"
+      ],
+      "cultural_elements_to_avoid": [
+        "American-style open-deck supermarket dairy cases",
+        "Generic stock photo aesthetics with smiling shoppers",
+        "Overly bright, flat lighting",
+        "Exaggerated sci-fi hacker matrix code screens"
+      ],
+      "text_overlay_space": "top_third",
+      "text_overlay_color": "#FFFFFF",
+      "text_overlay_background": "semi_dark",
+      "lighting_mood": "Moody and atmospheric with cold blue undertones punctuated by a sharp warning accent light",
+      "time_of_day_depicted": "night",
+      "generation_prompt_pollinations": "Cinematic shot of a modern European supermarket refrigerated aisle, unexpected frost and mist covering glass doors, cool blue and dark navy tones with neon cyan reflections, dramatic tech thriller atmosphere, negative space in top third for text overlay, professional cinematography, 8k resolution, photorealistic, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic, wide-angle shot inside a contemporary European supermarket after hours. Rows of sleek glass-door refrigerators are suddenly covered in thick, unexpected frost and condensation, glowing with an eerie cyan light against a dark, moody navy background. The lighting creates a tense, high-tech atmosphere of a cyber incident, leaving a clean, dark negative space in the upper portion of the frame.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, daytime lighting, shoppers, warm grocery lighting",
+      "quality_keywords": [
+        "cinematic lighting",
+        "photorealistic",
+        "8k resolution",
+        "ultra detailed",
+        "commercial photography",
+        "depth of field"
+      ],
+      "image_dimensions": "1080x1350",
+      "seed_suggestion": 4242,
+      "provider_preference": "pollinations"
+    },
+    "584d2280-20d4-4914-8877-0e0f1ba10b60_slide2": {
+      "post_id": "584d2280-20d4-4914-8877-0e0f1ba10b60_slide2",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style creates immediate high-end tension and curiosity, moving away from generic tech stock imagery. For an audience aged 18-34, a moody, filmic look conveys a cyber-thriller atmosphere that stops the scroll.",
+      "composition": "negative_space",
+      "composition_rationale": "Places the main subject off-center with intentional dark, foggy negative space on the left third to seamlessly accommodate the text overlay with high legibility.",
+      "primary_subject": "A modern European supermarket aisle with condensation dripping from glowing glass-door refrigerators displaying frost and warning indicator lights",
+      "background_environment": "A dimly lit, sleek European retail grocery store at night, aisle shelving fading into atmospheric shadows with distant ambient blue security lighting",
+      "color_palette": {
+        "primary": "#1A2530",
+        "secondary": "#2C3E50",
+        "accent": "#E74C3C",
+        "rationale": "Deep charcoal and industrial slate blues convey cold industrial technology and digital security threats, while a stark warning red accent triggers immediate curiosity and tension."
+      },
+      "dominant_emotion": "curiosity",
+      "region_visual_cues": [
+        "European retail interior architecture with stainless steel refrigeration units",
+        "Multilingual price tag rail moldings typical of Western European supermarkets",
+        "Modern energy-efficient glass door refrigerator design prevalent in European chains"
+      ],
+      "cultural_elements_to_include": [
+        "Realistic frost accumulation on glass doors",
+        "Subtle digital glitch lines or code overlay reflections on the glass",
+        "Condensation droplets trickling down the chilled panels"
+      ],
+      "cultural_elements_to_avoid": [
+        "American-style open-air massive dairy bins uncharacteristic of strict European eco-fridges",
+        "Generic stock hacker in a hoodie typing in a dark room",
+        "Overly bright corporate supermarket lighting that kills the suspenseful mood"
+      ],
+      "text_overlay_space": "left_third",
+      "text_overlay_color": "#FFFFFF",
+      "text_overlay_background": "semi_dark",
+      "lighting_mood": "Moody, cold, cyber-thriller atmosphere with high contrast and glowing warning indicators",
+      "time_of_day_depicted": "night",
+      "generation_prompt_pollinations": "A modern European supermarket aisle at night, glowing glass-door refrigerators with condensation and frost, emergency warning lights, cinematic style, negative space composition, dark slate blue and charcoal palette with striking red accent, cyber thriller atmosphere, professional cinematography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic wide shot of a modern European supermarket interior at night, focusing on a row of high-end glass-door refrigerators. Heavy frost and condensation cover the glass panels, catching the ominous glow of red warning indicator lights. The aisle is cast in deep slate blue shadows and industrial tones, creating a tense, high-end cyber-thriller atmosphere with ample negative space on the left side.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, bright daylight, cartoonish hacker, people",
+      "quality_keywords": [
+        "cinematic lighting",
+        "hyper-detailed textures",
+        "8k resolution",
+        "photorealistic condensation",
+        "depth of field"
+      ],
+      "image_dimensions": "1080x1350",
+      "seed_suggestion": 48291,
+      "provider_preference": "pollinations"
+    },
+    "584d2280-20d4-4914-8877-0e0f1ba10b60_slide3": {
+      "post_id": "584d2280-20d4-4914-8877-0e0f1ba10b60_slide3",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style creates immediate intrigue and high production value, perfectly suited for a tech-security narrative targeting 18-34 audiences who consume high-end thriller aesthetics.",
+      "composition": "negative_space",
+      "composition_rationale": "Negative space allows the viewer's eye to be drawn to the subject while providing a clean, uncluttered area specifically reserved for the hook text overlay.",
+      "primary_subject": "Modern commercial supermarket glass-door refrigeration aisle with visible frost melting in a strange digital pattern",
+      "background_environment": "A sleek, slightly dimly lit European grocery store interior with subtle ambient blue and teal LED lighting reflecting off polished tile floors",
+      "color_palette": {
+        "primary": "#0A2342",
+        "secondary": "#2CA58D",
+        "accent": "#F46036",
+        "rationale": "Deep midnight blue (#0A2342) conveys secure digital environments, teal (#2CA58D) represents cooling and refrigeration, and sharp accent orange (#F46036) triggers alertness and curiosity."
+      },
+      "dominant_emotion": "curiosity",
+      "region_visual_cues": [
+        "European supermarket aisle layout with standard multi-deck chillers",
+        "Multilingual price tags blurred in the deep background",
+        "Modern minimalist European interior architecture"
+      ],
+      "cultural_elements_to_include": [
+        "Standard European glass-front dairy and produce refrigerators",
+        "Sleek minimalist pricing displays common in Western retail",
+        "Clean, contemporary grocery store aesthetic"
+      ],
+      "cultural_elements_to_avoid": [
+        "American-style open-air supermarket bins",
+        "Generic stock photo aesthetics",
+        "Overly dramatic sci-fi hack-matrix green waterfalls of text",
+        "Visible human faces to maintain focus on the environmental anomaly"
+      ],
+      "text_overlay_space": "top_third",
+      "text_overlay_color": "#FFFFFF",
+      "text_overlay_background": "semi_dark",
+      "lighting_mood": "Eerie, high-contrast, cool neon glow mixed with dramatic shadows",
+      "time_of_day_depicted": "night",
+      "generation_prompt_pollinations": "Modern European supermarket refrigeration aisle, cinematic, negative_space, European supermarket layout, sleek minimalist retail, deep midnight blue and teal color palette with orange accents, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic shot of a modern European supermarket refrigeration aisle at night, featuring glass-door fridges with strange, unnatural condensation and frost melting in patterns. The lighting is moody with deep midnight blue and cool teal tones, contrasted by a subtle warning orange glow from a digital panel. The composition utilizes negative space at the top third for text, creating an intriguing, high-end digital security thriller aesthetic.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, open-air coolers, daytime lighting, green matrix code",
+      "quality_keywords": [
+        "photorealistic",
+        "8k resolution",
+        "hyper-detailed",
+        "cinematic lighting",
+        "commercial photography",
+        "depth of field"
+      ],
+      "image_dimensions": "1080x1350",
+      "seed_suggestion": 4242,
+      "provider_preference": "pollinations"
+    },
+    "7bc54f02-de95-40d7-8b9e-710abfb7b2f3_slide1": {
+      "post_id": "7bc54f02-de95-40d7-8b9e-710abfb7b2f3_slide1",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style is chosen to stop the scroll for 18-34 tech enthusiasts in Global, blending high-end digital aesthetics with emotional depth, perfectly matching the curiosity-driven narrative of the widening AI gap.",
+      "composition": "negative_space",
+      "composition_rationale": "Using negative space creates a striking imbalance visually, symbolizing the growing capability gap while providing a clean, uncluttered area for the hook text overlay.",
+      "primary_subject": "A sleek, minimalist glass-pane interface floating in a modern workspace, displaying abstract neural network pathways with one side sharply focused and the other fading into mist",
+      "background_environment": "An architectural urban office with floor-to-ceiling windows showing a modern global metropolis at twilight, soft ambient blue and amber lighting",
+      "color_palette": {
+        "primary": "#1A2E40",
+        "secondary": "#E0A96D",
+        "accent": "#4EA8DE",
+        "rationale": "Deep navy blue establishes tech trust and credibility, warm amber triggers curiosity and engagement, and bright cyan provides a modern AI accent tailored for the 18-34 demographic."
+      },
+      "dominant_emotion": "curiosity",
+      "region_visual_cues": [
+        "modern cosmopolitan architecture",
+        "contemporary minimalist interior design",
+        "ambient urban dusk lighting"
+      ],
+      "cultural_elements_to_include": [
+        "modern tech-forward workspace elements",
+        "global metropolitan aesthetic"
+      ],
+      "cultural_elements_to_avoid": [
+        "generic stock photo handshakes",
+        "overly cartoonish robot illustrations",
+        "outdated computer hardware",
+        "culturally inappropriate iconography"
+      ],
+      "text_overlay_space": "left_third",
+      "text_overlay_color": "#FFFFFF",
+      "text_overlay_background": "semi_dark",
+      "lighting_mood": "Moody and contemplative with sharp contrast between illuminated and shadowed areas",
+      "time_of_day_depicted": "blue_hour",
+      "generation_prompt_pollinations": "A sleek minimalist glass-pane interface with abstract neural network pathways showing a widening capability gap, cinematic, negative_space composition, modern cosmopolitan architecture, contemporary minimalist interior, deep navy blue and warm amber color palette, curiosity atmosphere, professional technology photography, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic shot of a sleek minimalist glass-pane interface floating in a modern workspace, displaying abstract neural network pathways that illustrate a widening gap. The background features a contemporary urban office with floor-to-ceiling windows at blue hour. The color palette combines deep navy blue, warm amber, and bright cyan accents to evoke a strong sense of curiosity and technological depth. Clean negative space is left on the left side for text overlay.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, bright daylight, cluttered composition",
+      "quality_keywords": [
+        "hyper-detailed",
+        "cinematic lighting",
+        "octane render",
+        "8k resolution",
+        "award-winning photography"
+      ],
+      "image_dimensions": "1080x1350",
+      "seed_suggestion": 4289,
+      "provider_preference": "pollinations"
+    },
+    "7bc54f02-de95-40d7-8b9e-710abfb7b2f3_slide2": {
+      "post_id": "7bc54f02-de95-40d7-8b9e-710abfb7b2f3_slide2",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style builds high production value and curiosity, ideal for tech-savvy audiences aged 18-34 who appreciate sophisticated, non-generic imagery.",
+      "composition": "negative_space",
+      "composition_rationale": "Negative space composition provides an expansive, clean area for the hook text overlay while focusing the subject to emphasize depth and curiosity.",
+      "primary_subject": "A modern minimalist desk setup with a sleek tablet displaying abstract glowing neural network lines, bridging into a warm ambient workspace",
+      "background_environment": "A softly blurred modern home office in a cosmopolitan urban setting with large windows showing subtle dusk light and city lights",
+      "color_palette": {
+        "primary": "#0F172A",
+        "secondary": "#3B82F6",
+        "accent": "#F59E0B",
+        "rationale": "Deep slate blue provides trust and tech credibility, vibrant electric blue represents active LLM capability, and warm amber triggers curiosity and practical value."
+      },
+      "dominant_emotion": "curiosity",
+      "region_visual_cues": [
+        "Modern minimalist interior design",
+        "Cosmopolitan urban aesthetic",
+        "Warm ambient lighting"
+      ],
+      "cultural_elements_to_include": [
+        "Sleek modern tech devices",
+        "Clean workspace minimalism",
+        "Subtle abstract data visualization"
+      ],
+      "cultural_elements_to_avoid": [
+        "Generic stock photo aesthetics",
+        "Overly cluttered desks",
+        "Pure black backgrounds",
+        "Inappropriate local symbols or misrepresentations"
+      ],
+      "text_overlay_space": "top_third",
+      "text_overlay_color": "#FFFFFF",
+      "text_overlay_background": "semi_dark",
+      "lighting_mood": "Warm ambient desk lighting contrasted with cool screen glow, creating depth and focus",
+      "time_of_day_depicted": "blue_hour",
+      "generation_prompt_pollinations": "A sleek modern desk setup with a tablet displaying glowing abstract data lines, cinematic lighting, negative space top third for text, deep slate blue and warm amber color palette, curiosity atmosphere, professional technology photography, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic shot of a modern minimalist desk setup during the blue hour, featuring a sleek tablet with glowing abstract neural network lines that symbolize advanced AI capability. The composition uses generous negative space in the top third for text overlay. The color palette blends deep slate blue with vibrant electric blue and warm amber accents, evoking a sense of curiosity and high-end technology.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, cluttered background, pure black background",
+      "quality_keywords": [
+        "ultra detailed",
+        "8k resolution",
+        "professional photography",
+        "cinematic lighting",
+        "high-end tech aesthetic"
+      ],
+      "image_dimensions": "1080x1350",
+      "seed_suggestion": 42918,
+      "provider_preference": "pollinations"
+    },
+    "7bc54f02-de95-40d7-8b9e-710abfb7b2f3_slide3": {
+      "post_id": "7bc54f02-de95-40d7-8b9e-710abfb7b2f3_slide3",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style creates a high-end, thoughtful, and professional atmosphere that immediately stops the scroll for tech-savvy 18-34 year olds, perfectly matching the credible yet engaging page tone.",
+      "composition": "negative_space",
+      "composition_rationale": "Using negative space on the top third allows the hook text to be overlaid seamlessly while keeping the visual focus sharp and uncluttered.",
+      "primary_subject": "A modern minimalist desk setup with a glowing holographic interface visualizing a growing knowledge gap and AI neural network connections",
+      "background_environment": "A dimly lit, sophisticated tech workspace with subtle ambient blue and amber lighting reflecting off a sleek wooden surface",
+      "color_palette": {
+        "primary": "#0F172A",
+        "secondary": "#38BDF8",
+        "accent": "#F59E0B",
+        "rationale": "Deep slate blue establishes trust and a high-tech feel, electric cyan represents AI capability, and warm amber acts as a curiosity trigger."
+      },
+      "dominant_emotion": "curiosity",
+      "region_visual_cues": [
+        "modern urban workspace aesthetic common among Global tech professionals",
+        "minimalist ergonomic desk architecture",
+        "contemporary ambient lighting design"
+      ],
+      "cultural_elements_to_include": [
+        "global contemporary tech workspace",
+        "multicultural tech-forward environment vibe",
+        "sleek modern hardware"
+      ],
+      "cultural_elements_to_avoid": [
+        "generic outdated computer hardware",
+        "overly cluttered stereotypical hacker rooms",
+        "culturally inappropriate imagery",
+        "watermarks and floating unreadable text"
+      ],
+      "text_overlay_space": "top_third",
+      "text_overlay_color": "#FFFFFF",
+      "text_overlay_background": "semi_dark",
+      "lighting_mood": "moody with dramatic neon accents and soft volumetric glow",
+      "time_of_day_depicted": "blue_hour",
+      "generation_prompt_pollinations": "modern minimalist desk setup, glowing holographic AI neural network, cinematic style, negative space composition, deep slate blue and electric cyan color palette, curiosity atmosphere, professional technology photography, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic shot of a modern minimalist desk setup in a dimly lit tech workspace during the blue hour. A glowing holographic interface visualizes complex AI neural networks with deep slate blue and electric cyan tones, contrasted with warm amber accent lighting. The composition features ample negative space at the top, creating a professional, high-end atmosphere designed to spark curiosity about artificial intelligence.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, cluttered desk, bright daylight",
+      "quality_keywords": [
+        "hyper-realistic",
+        "volumetric lighting",
+        "ray tracing",
+        "8k resolution",
         "professional color grading",
         "sharp focus"
       ],
       "image_dimensions": "1080x1350",
-      "seed_suggestion": 45892,
-      "provider_preference": "pollinations"
-    },
-    "cc19a6dd-02fb-49f3-ae1c-77b6a4eabc79": {
-      "post_id": "cc19a6dd-02fb-49f3-ae1c-77b6a4eabc79",
-      "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style creates the mystery and intrigue needed to spark curiosity about a niche topic like Katie Zacharia in the tech space, aligning well with high-end tech storytelling favored by 18-30-year-olds in Bangladesh.",
-      "composition": "negative_space",
-      "composition_rationale": "Utilizing negative space ensures the hook text overlay remains prominent, clean, and easily readable against a balanced, distraction-free backdrop.",
-      "primary_subject": "A glowing holographic interface displaying abstract global data connections and mysterious archival fragments",
-      "background_environment": "A dimly lit, modern tech workspace in Dhaka with soft ambient neon glow and subtle traditional architectural silhouette visible through a large glass window",
-      "color_palette": {
-        "primary": "#0A192F",
-        "secondary": "#64FFDA",
-        "accent": "#FFB703",
-        "rationale": "Deep navy (#0A192F) establishes trust and tech authority, vibrant teal (#64FFDA) represents digital innovation, and warm gold (#FFB703) provides a culturally resonant accent that triggers curiosity and warmth."
-      },
-      "dominant_emotion": "curiosity",
-      "region_visual_cues": [
-        "Dhaka skyline silhouette at dusk",
-        "Subtle geometric patterns inspired by Jamdani textile integrated into the UI design",
-        "Warm indoor ambient lighting reflecting local urban settings"
-      ],
-      "cultural_elements_to_include": [
-        "Subtle Jamdani-inspired digital grid lines",
-        "Modern tech workspace aesthetic popular among urban Bangladeshi youth"
-      ],
-      "cultural_elements_to_avoid": [
-        "Generic Western-only office setups lacking local context",
-        "Misrepresented regional architecture",
-        "Overused AI visual clichés and floating meaningless code text"
-      ],
-      "text_overlay_space": "top_third",
-      "text_overlay_color": "#FFFFFF",
-      "text_overlay_background": "semi_dark",
-      "lighting_mood": "Moody and atmospheric with a high-tech blue and gold accent glow",
-      "time_of_day_depicted": "blue_hour",
-      "generation_prompt_pollinations": "A glowing holographic interface displaying abstract global data connections, cinematic, negative space composition, Dhaka skyline silhouette at dusk, subtle Jamdani-inspired digital grid lines, deep navy and vibrant teal color palette with warm gold accents, curiosity atmosphere, professional technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic and moody shot of a glowing holographic interface showing abstract global data connections inside a modern Dhaka tech workspace during the blue hour. The background features a subtle silhouette of the city skyline through a window. The color palette blends deep navy and vibrant teal with warm gold accents, evoking a sense of deep mystery and curiosity. Ample negative space is preserved at the top for text overlay. The aesthetic is clean, professional, and tailored for tech-savvy young adults.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, Indian imagery, bright daylight",
-      "quality_keywords": [
-        "masterpiece",
-        "high-end production",
-        "ray tracing",
-        "volumetric lighting",
-        "sharp focus",
-        "award-winning digital art"
-      ],
-      "image_dimensions": "1080x1350",
-      "seed_suggestion": 4242,
-      "provider_preference": "pollinations"
-    },
-    "feabd8a7-ce7c-4bff-a3f4-ab26192882ae": {
-      "post_id": "feabd8a7-ce7c-4bff-a3f4-ab26192882ae",
-      "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style is chosen because Bigg Boss content thrives on high drama, mystery, and reality-tv glamour. For the 18-30 demographic in Bangladesh who consume global entertainment media, a polished cinematic look bridges the gap between international standard aesthetics and local viewing habits, perfectly sparking curiosity.",
-      "composition": "negative_space",
-      "composition_rationale": "Negative space composition is essential here to deliberately draw the viewer's eye into the frame while providing an uncluttered zone for the impactful hook text overlay.",
-      "primary_subject": "A glowing, futuristic television screen glowing with reality TV stage lights in a dimly lit contemporary room",
-      "background_environment": "A modern Dhaka apartment living room at dusk with subtle ambient neon blue and warm gold lighting reflecting on indoor plants and a minimalist interior",
-      "color_palette": {
-        "primary": "#111827",
-        "secondary": "#1E3A8A",
-        "accent": "#F59E0B",
-        "rationale": "Dark navy blue (#111827 and #1E3A8A) represents the mystery, technology, and late-night binge-watching culture of reality TV, while the warm gold accent (#F59E0B) injects the excitement, glamour, and curiosity of the Bigg Boss stage lights."
-      },
-      "dominant_emotion": "curiosity",
-      "region_visual_cues": [
-        "Dhaka skyline viewable through a modern apartment window at dusk",
-        "Subtle integration of local indoor aesthetics like cane or bamboo woven decor accents",
-        "Warm indoor ambient lighting typical of urban Bangladeshi households"
-      ],
-      "cultural_elements_to_include": [
-        "Modern urban Bangladeshi living room setup",
-        "Smart TV screen displaying abstract reality show stage visuals",
-        "Ambient dusk cityscape lighting"
-      ],
-      "cultural_elements_to_avoid": [
-        "Indian or Western generic living room sets that do not resonate with urban Bangladeshi lifestyles",
-        "Direct copyright logos or characters from Bigg Boss to avoid policy flags",
-        "Overly sterile, western-minimalist spaces with zero cultural warmth"
-      ],
-      "text_overlay_space": "top_third",
-      "text_overlay_color": "#FFFFFF",
-      "text_overlay_background": "semi_dark",
-      "lighting_mood": "Moody, dramatic dusk lighting with glowing neon and warm highlights",
-      "time_of_day_depicted": "blue_hour",
-      "generation_prompt_pollinations": "A glowing futuristic television screen showing a mysterious reality TV stage, cinematic style, negative space composition, Dhaka skyline through a modern apartment window, warm bamboo decor accents, deep navy and warm gold color palette, curiosity atmosphere, professional cinematography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic shot of a modern urban apartment in Dhaka during the blue hour, featuring a glowing smart television screen with dramatic reality show stage lighting. The room is styled with subtle local bamboo decor elements and a view of the hazy city skyline outside the window. The color palette consists of deep midnight blue tones contrasted with vibrant warm gold accent lighting, creating a mysterious, high-end atmosphere that evokes intense curiosity.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, low resolution, cheap illustration",
-      "quality_keywords": [
-        "cinematic lighting",
-        "hyper-detailed",
-        "8k resolution",
-        "professional color grading",
-        "depth of field"
-      ],
-      "image_dimensions": "1080x1350",
-      "seed_suggestion": 45892,
-      "provider_preference": "pollinations"
-    },
-    "1c96aad6-6726-424f-90f5-f045374dfe34_slide1": {
-      "post_id": "1c96aad6-6726-424f-90f5-f045374dfe34_slide1",
-      "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style creates a sense of epic discovery and mystery, perfectly matching the curiosity-driven content about ancient secrets, while maintaining high visual engagement for the 18-30 demographic in Bangladesh who consume premium streaming and digital content.",
-      "composition": "negative_space",
-      "composition_rationale": "Utilizing negative space ensures the composition draws the viewer's eye to the main subject while providing a clean, uncluttered area specifically designated for the hook text overlay.",
-      "primary_subject": "an ancient, mystical stone architecture blending with ethereal digital light projections",
-      "background_environment": "mysterious desert landscape under a twilight sky with subtle glowing holographic data fragments",
-      "color_palette": {
-        "primary": "#0A2540",
-        "secondary": "#D97706",
-        "accent": "#0D9488",
-        "rationale": "Deep navy (#0A2540) represents the mystery of the unknown, warm amber (#D97706) evokes Middle Eastern heritage and warmth, and teal (#0D9488) bridges the tech curiosity niche with modern digital aesthetics, resonating well with young Bangladeshi digital natives."
-      },
-      "dominant_emotion": "curiosity",
-      "region_visual_cues": [
-        "intricate geometric lattice patterns inspired by traditional terracotta and woodwork",
-        "warm earthy soil tones combined with starlight",
-        "subtle textures reminiscent of ancient manuscript calligraphy"
-      ],
-      "cultural_elements_to_include": [
-        "geometric archways",
-        "warm lantern-like illumination",
-        "dust particles floating in dramatic light rays"
-      ],
-      "cultural_elements_to_avoid": [
-        "generic western desert stereotypes",
-        "inaccurate architectural styles",
-        "overly bright neon lights that break the historical mystery aesthetic",
-        "political symbols or religious misappropriations"
-      ],
-      "text_overlay_space": "top_third",
-      "text_overlay_color": "#FFFFFF",
-      "text_overlay_background": "semi_dark",
-      "lighting_mood": "mysterious dramatic twilight with glowing volumetric light beams",
-      "time_of_day_depicted": "blue_hour",
-      "generation_prompt_pollinations": "ancient mystical architecture, cinematic style, negative_space composition, intricate geometric lattice patterns, warm earthy soil tones, deep navy and warm amber color palette, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic shot of a mysterious ancient architectural structure during blue hour, illuminated by warm amber lantern light and subtle teal digital glows. The composition features vast negative space in the upper portion for text. The atmosphere is deeply curious and awe-inspiring, with dust motes floating in dramatic light rays and intricate geometric patterns visible on the stone walls.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, modern skyscrapers, western imagery, bright daytime",
-      "quality_keywords": [
-        "ultra detailed",
-        "8k resolution",
-        "professional photography",
-        "volumetric lighting",
-        "cinematic depth of field"
-      ],
-      "image_dimensions": "1080x1350",
-      "seed_suggestion": 42789,
-      "provider_preference": "pollinations"
-    },
-    "1c96aad6-6726-424f-90f5-f045374dfe34_slide2": {
-      "post_id": "1c96aad6-6726-424f-90f5-f045374dfe34_slide2",
-      "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style creates a grand, awe-inspiring atmosphere that naturally triggers curiosity and fits the architectural marvel of ancient mud skyscrapers, while appealing to the tech-savvy 18-30 demographic looking for high-quality, non-stock aesthetics.",
-      "composition": "wide_establishing",
-      "composition_rationale": "A wide establishing shot captures the scale of the ancient multi-story mud brick architecture against a dramatic sky, while leaving the upper portion completely uncluttered for the hook text overlay.",
-      "primary_subject": "ancient multi-story mud brick skyscrapers of Shibam Hadramawt, towering geometric mud architecture",
-      "background_environment": "vast desert valley landscape under a dramatic twilight sky with warm golden hour light hitting the intricate mud facades",
-      "color_palette": {
-        "primary": "#C86D33",
-        "secondary": "#2C3E50",
-        "accent": "#F4A623",
-        "rationale": "Terracotta and warm gold mimic the earthen tones of the ancient structures and desert landscape, paired with a deep twilight blue for contrast, evoking mystery, historical depth, and modern tech-aesthetic appeal."
-      },
-      "dominant_emotion": "curiosity",
-      "region_visual_cues": [
-        "geometric mud-brick building facades with white lime plaster details",
-        "traditional desert valley landscape with warm atmospheric haze",
-        "intricate lattice wooden windows integrated into ancient architecture"
-      ],
-      "cultural_elements_to_include": [
-        "authentic mud skyscraper architecture",
-        "traditional Middle Eastern desert valley topography",
-        "warm atmospheric dust and golden lighting"
-      ],
-      "cultural_elements_to_avoid": [
-        "South Asian architectural elements which do not fit the Yemen topic",
-        "generic stock photo overlays",
-        "overly saturated neon colors",
-        "modern skyscrapers that ruin the ancient aesthetic"
-      ],
-      "text_overlay_space": "top_third",
-      "text_overlay_color": "#F5F5F0",
-      "text_overlay_background": "semi_dark",
-      "lighting_mood": "dramatic golden hour lighting with long shadows and warm highlights",
-      "time_of_day_depicted": "golden_hour",
-      "generation_prompt_pollinations": "ancient multi-story mud brick skyscrapers of Shibam Hadramawt, cinematic, wide_establishing, geometric mud architecture, traditional desert valley landscape, terracotta and deep blue color palette, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A breathtaking cinematic wide establishing shot of the ancient multi-story mud brick skyscrapers of Shibam Hadramawt rising dramatically from a desert valley. The scene is illuminated by warm golden hour light casting long shadows across the intricate mud facades and white lime plaster details. The color palette features rich terracotta, warm gold, and deep twilight blue, creating an atmosphere of mystery and wonder tailored for a tech-savvy audience.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, modern buildings, green lush vegetation",
-      "quality_keywords": [
-        "hyper-detailed",
-        "cinematic lighting",
-        "8k resolution",
-        "award-winning photography",
-        "sharp focus",
-        "atmospheric depth"
-      ],
-      "image_dimensions": "1080x1350",
-      "seed_suggestion": 45892,
-      "provider_preference": "pollinations"
-    },
-    "1c96aad6-6726-424f-90f5-f045374dfe34_slide3": {
-      "post_id": "1c96aad6-6726-424f-90f5-f045374dfe34_slide3",
-      "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style creates a high-end, mysterious documentary feel that immediately sparks curiosity among young tech-savvy audiences in Bangladesh, aligning with viral entertainment content.",
-      "composition": "negative_space",
-      "composition_rationale": "Negative space places the subject off-center, creating a mysterious, expansive mood while leaving a dedicated clean zone for the hook text overlay.",
-      "primary_subject": "an ancient mysterious manuscript glowing with faint digital holographic lines",
-      "background_environment": "an atmospheric, misty ancient chamber combined with subtle futuristic tech UI elements, blending history and technology",
-      "color_palette": {
-        "primary": "#0F172A",
-        "secondary": "#0E7490",
-        "accent": "#F59E0B",
-        "rationale": "Deep slate blue and vibrant teal represent tech and mystery, while warm amber gold evokes historical treasures and catches the Bangladeshi eye for engagement."
-      },
-      "dominant_emotion": "curiosity",
-      "region_visual_cues": [
-        "intricate geometric lattice patterns inspired by traditional architecture",
-        "dust motes dancing in warm slanted light resembling old library archives",
-        "subtle textures of weathered parchment"
-      ],
-      "cultural_elements_to_include": [
-        "intricate geometric lattice patterns",
-        "atmospheric lighting with warm golden highlights",
-        "mysterious ancient textures"
-      ],
-      "cultural_elements_to_avoid": [
-        "generic western fantasy elements",
-        "inaccurate Middle Eastern clichés not fitting the context",
-        "overly saturated neon colors",
-        "political symbols or religious iconography",
-        "watermarks or text in the generated image"
-      ],
-      "text_overlay_space": "top_third",
-      "text_overlay_color": "#FFFFFF",
-      "text_overlay_background": "semi_dark",
-      "lighting_mood": "mysterious dramatic lighting with glowing cyan tech accents and warm amber backlights",
-      "time_of_day_depicted": "night",
-      "generation_prompt_pollinations": "an ancient mysterious manuscript glowing with faint digital holographic lines, cinematic, negative_space, intricate geometric lattice patterns, dust motes dancing in warm slanted light, deep slate blue #0F172A, vibrant teal #0E7490, warm amber gold #F59E0B, curiosity atmosphere, professional cinematography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic and atmospheric scene featuring an ancient mysterious manuscript glowing with faint digital holographic lines in a dark chamber. The lighting combines deep slate blue and vibrant teal shadows with a warm amber gold accent light highlighting intricate geometric lattice patterns and floating dust motes. The composition utilizes negative space at the top for text overlay, evoking a deep sense of curiosity and hidden secrets.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, Indian imagery, weapons, political flags",
-      "quality_keywords": [
-        "ultra detailed",
-        "8k resolution",
-        "professional cinematography",
-        "cinematic lighting",
-        "hyper-realistic textures"
-      ],
-      "image_dimensions": "1080x1350",
-      "seed_suggestion": 4242,
-      "provider_preference": "pollinations"
-    },
-    "3a0e87d3-00e4-4c83-bf2e-35147bb6e8a8_slide1": {
-      "post_id": "3a0e87d3-00e4-4c83-bf2e-35147bb6e8a8_slide1",
-      "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style creates an aura of intrigue and high-value storytelling, perfect for a curiosity-driven post about an enigmatic tech figure like Katie Zacharia, engaging the tech-savvy 18-30 demographic in Bangladesh.",
-      "composition": "negative_space",
-      "composition_rationale": "Using negative space allows the heavy curiosity hook text to be prominently displayed without cluttering the main focal point, ensuring high scroll-stopping power in the Facebook feed.",
-      "primary_subject": "A glowing holographic silhouette of a visionary tech innovator surrounded by floating data streams and subtle geometric network nodes",
-      "background_environment": "A dimly lit, futuristic workspace blending modern cyberpunk neon accents with traditional geometric architectural shadows reminiscent of Dhaka's contemporary tech hubs at dusk",
-      "color_palette": {
-        "primary": "#0A192F",
-        "secondary": "#64FFDA",
-        "accent": "#FFB703",
-        "rationale": "Deep navy represents trust and technology depth, vibrant teal triggers modern curiosity and digital relevance, and warm gold adds an inspirational Bangladeshi cultural resonance."
-      },
-      "dominant_emotion": "curiosity",
-      "region_visual_cues": [
-        "Dhaka skyline silhouette at dusk",
-        "subtle geometric motifs inspired by Jamdani textile patterns",
-        "warm ambient lighting reflecting local urban evening tones"
-      ],
-      "cultural_elements_to_include": [
-        "Subtle local tech workspace elements",
-        "Ambient dusk lighting typical of urban Bangladesh",
-        "Abstract geometric lattice patterns nodding to traditional weaving"
-      ],
-      "cultural_elements_to_avoid": [
-        "Generic Western-only office aesthetics without local context",
-        "Indian or other regional misrepresentations",
-        "Overused AI plastic textures and distorted hands"
-      ],
-      "text_overlay_space": "top_third",
-      "text_overlay_color": "#FFFFFF",
-      "text_overlay_background": "semi_dark",
-      "lighting_mood": "mysterious, high-contrast, glowing neon highlights against deep shadows",
-      "time_of_day_depicted": "blue_hour",
-      "generation_prompt_pollinations": "Glowing holographic silhouette of a visionary tech innovator, cinematic, negative_space, Dhaka skyline silhouette at dusk, subtle Jamdani geometric patterns, deep navy and vibrant teal color palette, curiosity atmosphere, professional technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic and mysterious tech-themed visual featuring a glowing holographic silhouette of an innovator amidst floating data streams, set against a dark moody background with subtle Dhaka skyline silhouettes at dusk and geometric patterns inspired by local textiles, lit with vibrant teal and warm gold accents creating a deep sense of curiosity.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, Indian imagery, weapons, political symbols",
-      "quality_keywords": [
-        "cinematic lighting",
-        "hyper-detailed",
-        "8k resolution",
-        "professional color grading",
-        "curiosity-inducing atmosphere"
-      ],
-      "image_dimensions": "1080x1350",
-      "seed_suggestion": 4242,
-      "provider_preference": "pollinations"
-    },
-    "3a0e87d3-00e4-4c83-bf2e-35147bb6e8a8_slide2": {
-      "post_id": "3a0e87d3-00e4-4c83-bf2e-35147bb6e8a8_slide2",
-      "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style is chosen because it bridges the gap between high-end global technology aesthetics and local inspirational storytelling, effectively capturing curiosity and ambition for an 18-30 demographic in Bangladesh.",
-      "composition": "negative_space",
-      "composition_rationale": "Negative space composition creates a dramatic, modern tech-focused atmosphere while leaving an uncluttered area perfectly designated for bold bilingual text overlays.",
-      "primary_subject": "A focused young female tech innovator of South Asian descent looking thoughtfully at a futuristic holographic interface displaying circuit patterns and global connectivity lines",
-      "background_environment": "A modern Dhaka co-working space subtly blending contemporary architecture with traditional Jamdani geometric pattern motifs etched on glass panels",
-      "color_palette": {
-        "primary": "#0F172A",
-        "secondary": "#0ea5e9",
-        "accent": "#F59E0B",
-        "rationale": "Deep slate blue (#0F172A) and vibrant tech cyan (#0ea5e9) establish a trustworthy global tech tone, while warm amber (#F59E0B) adds a culturally resonant golden glow that triggers curiosity and regional warmth."
-      },
-      "dominant_emotion": "curiosity",
-      "region_visual_cues": [
-        "modern Dhaka urban skyline blurred softly in the background",
-        "subtle Jamdani textile geometric patterns integrated into interior glass architecture",
-        "South Asian professional woman with natural warm skin tones and confident posture"
-      ],
-      "cultural_elements_to_include": [
-        "South Asian professional woman with natural warm skin tones",
-        "Subtle Jamdani-inspired geometric motifs",
-        "Modern progressive tech workspace reflecting Dhaka's startup boom"
-      ],
-      "cultural_elements_to_avoid": [
-        "Using generic Western stock models that do not resonate with local Bangladesh youth",
-        "Incorporating foreign architectural landmarks like Indian monuments",
-        "Overused artificial intelligence cliches with glowing floating magical spheres"
-      ],
-      "text_overlay_space": "top_third",
-      "text_overlay_color": "#FFFFFF",
-      "text_overlay_background": "semi_dark",
-      "lighting_mood": "Dramatic volumetric lighting with blue tech glow and warm golden accent rim light",
-      "time_of_day_depicted": "blue_hour",
-      "generation_prompt_pollinations": "A focused young female South Asian tech innovator, cinematic, negative space, modern Dhaka co-working space background, Jamdani geometric patterns on glass, deep slate blue, vibrant cyan, warm amber accent, curiosity atmosphere, professional technology aesthetic, ultra detailed, 8k resolution, no text, no watermark",
-      "generation_prompt_huggingface": "A cinematic shot of a confident young South Asian woman working in a modern tech environment in Dhaka, illuminated by soft blue and warm amber light with subtle traditional Jamdani geometric patterns in the background, creating an inspiring and curious atmosphere with plenty of negative space for text overlays.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, Indian architecture, Western settings",
-      "quality_keywords": [
-        "ultra detailed",
-        "8k resolution",
-        "cinematic lighting",
-        "professional photography",
-        "hyper-realistic"
-      ],
-      "image_dimensions": "1080x1350",
-      "seed_suggestion": 4242,
-      "provider_preference": "pollinations"
-    },
-    "3a0e87d3-00e4-4c83-bf2e-35147bb6e8a8_slide3": {
-      "post_id": "3a0e87d3-00e4-4c83-bf2e-35147bb6e8a8_slide3",
-      "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style creates a high-production, awe-inspiring atmosphere that instantly stops the scroll for tech-savvy youth in Bangladesh while elevating the inspirational storytelling of Katie Zacharia.",
-      "composition": "negative_space",
-      "composition_rationale": "Using generous negative space on the upper third ensures the hook text 'Everyone's saving this ⚡' is crystal clear and readable without visual clutter.",
-      "primary_subject": "A focused young South Asian woman software developer working on a dual-monitor laptop setup in a modern co-working space",
-      "background_environment": "A dimly lit, futuristic tech studio with subtle ambient blue and warm gold lighting, soft bokeh lights, and a hint of a Dhaka urban skyline visible through a large glass window",
-      "color_palette": {
-        "primary": "#0A2540",
-        "secondary": "#20639B",
-        "accent": "#F6D55C",
-        "rationale": "Deep navy and tech blue build trust and industry relevance, while warm gold/yellow accents trigger curiosity, aspiration, and stand out on Facebook feeds in Bangladesh."
-      },
-      "dominant_emotion": "curiosity",
-      "region_visual_cues": [
-        "modern Dhaka tech workspace interior",
-        "subtle integration of geometric Rickshaw art inspired patterns on a glass wall partition",
-        "authentic South Asian warm skin tones and natural expressions"
-      ],
-      "cultural_elements_to_include": [
-        "South Asian professional woman in tech",
-        "modern urban workspace reflecting Bangladesh's growing tech hub scene"
-      ],
-      "cultural_elements_to_avoid": [
-        "generic western office stock imagery",
-        "misrepresented regional attire or architecture",
-        "plastic-looking AI-generated faces",
-        "text or watermarks"
-      ],
-      "text_overlay_space": "top_third",
-      "text_overlay_color": "#FFFFFF",
-      "text_overlay_background": "semi_dark",
-      "lighting_mood": "Moody cinematic tech glow with warm highlights",
-      "time_of_day_depicted": "blue_hour",
-      "generation_prompt_pollinations": "A focused young South Asian woman software developer working in a modern tech workspace, cinematic, negative_space, modern Dhaka tech workspace, subtle geometric rickshaw art pattern on glass, deep navy and warm gold color palette, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people looking at camera",
-      "generation_prompt_huggingface": "Cinematic shot of a dedicated young South Asian female tech innovator working on dual monitors in a moody, modern Dhaka tech hub during blue hour. The lighting casts a soft professional glow with deep navy tones and striking warm gold accents. The composition features ample negative space at the top for text overlay, blending high-tech aesthetics with subtle local cultural design motifs on the glass partitions.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, Indian flags, western rustic barns",
-      "quality_keywords": [
-        "ultra detailed",
-        "8k resolution",
-        "cinematic lighting",
-        "professional color grading",
-        "photorealistic"
-      ],
-      "image_dimensions": "1080x1350",
-      "seed_suggestion": 4242,
+      "seed_suggestion": 4289,
       "provider_preference": "pollinations"
     }
   }
