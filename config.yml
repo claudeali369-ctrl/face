@@ -21,12 +21,11 @@ niche: "technology"
 # Examples for travel: ["budget travel", "Southeast Asia backpacking"]
 # Examples for tech:   ["AI tools", "smartphone reviews", "coding tips"]
 sub_niches:
-  - "tech tips, software tutorials and digital productivity"
-  - "smartphone, gadget and app updates"
-  - "emerging technology and future innovations"
-  - "AI tools and practical AI use cases"
-  - "budget tech"
-  - "hidden gems"
+  - "Practical AI tools and workflows"
+  - "Smartphone, gadget and app explainers"
+  - "Software tutorials and digital productivity"
+  - "Cybersecurity, online privacy and scam awareness"
+  - "Emerging technology explained simply"
 
 # ───────────────────────────────────────────────────────────────────────────
 # AUDIENCE DEFINITION
@@ -35,17 +34,17 @@ sub_niches:
 # Primary geographic target for content cultural relevance.
 # This directly affects image generation, cultural cues, and language style.
 # Examples: "Bangladesh", "South Asia", "Nigeria", "Philippines", "Global"
-target_region: "Bangladesh"
+target_region: "Global"
 
 # Content language.
 # Options: "English", "Bangla", "Bilingual (English + Bangla)",
 #          "Hindi", "Tagalog", "Arabic", "French", "Spanish"
 # For "Bilingual": English captions with Bangla sub-text in images/reels.
-target_language: "Bilingual (English + Bangla)"
+target_language: "English"
 
 # Age range of your primary audience — used to tune content tone and
 # cultural references. Format: "18-24", "25-34", "18-35", "35-50"
-audience_age_range: "18-30"
+audience_age_range: "18-34"
 
 # ───────────────────────────────────────────────────────────────────────────
 # POSTING SCHEDULE
@@ -70,17 +69,17 @@ posting_schedule:
 # The voice and personality of all written content.
 # Options: "inspirational", "humorous", "educational", "conversational",
 #          "authoritative", "playful", "motivational", "documentary"
-tone: "inspirational"
+tone: "Curious, credible, practical, conversational and evidence-first"
 
 # Content pillars — the 3-5 themes your page rotates through.
 # ContentStrategyAgent ensures no pillar repeats consecutively.
 # Recommended: 4-5 pillars for variety.
 content_pillars:
-  - "Travel Inspiration"        # Aspirational destination content
-  - "Budget Travel Tips"        # Practical money-saving advice
-  - "Hidden Gems"               # Lesser-known spots discovery
-  - "Cultural Experiences"      # Local food, people, traditions
-  - "Travel Stories"            # Personal narrative / community UGC style
+  - "Practical AI Tools"
+  - "Tech Tips and Tutorials"
+  - "Gadgets and App Explainers"
+  - "Digital Safety and Privacy"
+  - "Emerging Technology Explained"
 
 # ───────────────────────────────────────────────────────────────────────────
 # VISUAL SETTINGS
@@ -91,17 +90,17 @@ visual:
   # Options: "photorealistic", "cinematic", "digital_art",
   #          "flat_illustration", "bold_typographic", "documentary_photo"
   # Note: VisualDirectorAgent may override this per-post based on content type.
-  preferred_style: "cinematic"
+  preferred_style: "photorealistic"
 
   # Overall color mood for the page's visual identity.
   # Options: "warm" (oranges, golds), "cool" (blues, greens),
   #          "vibrant" (high saturation), "muted" (desaturated, film-grain),
   #          "dark" (deep tones, dramatic), "pastel" (soft, light)
-  color_mood: "warm"
+  color_mood: "cool"
 
   # Whether to include regional cultural visual elements in images.
   # Strongly recommended: true — makes content feel local and authentic.
-  use_regional_visual_cues: true
+  use_regional_visual_cues: false
 
   # Whether to burn subtitles into reels.
   burn_subtitles: true
