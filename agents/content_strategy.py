@@ -18,7 +18,12 @@ import uuid
 from datetime import datetime, timezone, timedelta
 from typing import Any
 
-from utils.config_loader import get_config, build_prompt_context, get_posting_times_utc
+from utils.config_loader import (
+    get_config,
+    build_prompt_context,
+    get_posting_times_utc,
+    get_content_pillars,
+)
 from utils.gemini_client import get_gemini_client, GeminiQuotaExhaustedError
 from utils.logger import get_logger, log_exception
 from utils.rate_limiter import GEMINI_LIMITER
@@ -27,19 +32,7 @@ from utils.state_manager import read_state, write_state, state_exists
 # ── Logger ────────────────────────────────────────────────────────────────────
 log = get_logger("content_strategy")
 
-# ── Constants ─────────────────────────────────────────────────────────────────
 
-# Content pillar pool — rotated to avoid back-to-back repeats
-CONTENT_PILLARS = [
-    "educational",
-    "entertainment",
-    "inspirational",
-    "promotional",
-    "community",
-    "behind_the_scenes",
-    "user_generated",
-    "trending_commentary",
-]
 
 # Time-of-day → preferred content character
 TIME_SLOT_PROFILE: dict[str, dict] = {
@@ -47,25 +40,21 @@ TIME_SLOT_PROFILE: dict[str, dict] = {
         "preferred_formats": ["single_image", "carousel", "text"],
         "hook_types": ["question", "statistic", "bold_claim"],
         "dominant_emotions": ["curiosity", "aspiration", "trust"],
-        "pillars": ["educational", "inspirational"],
     },
     "afternoon": {   # 12:00–17:59 UTC
         "preferred_formats": ["carousel", "reel", "single_image"],
         "hook_types": ["listicle", "question", "bold_claim"],
         "dominant_emotions": ["curiosity", "urgency", "joy"],
-        "pillars": ["entertainment", "trending_commentary", "community"],
     },
     "evening":   {   # 18:00–23:59 UTC
         "preferred_formats": ["reel", "story", "single_image"],
         "hook_types": ["story", "bold_claim", "question"],
         "dominant_emotions": ["nostalgia", "joy", "aspiration"],
-        "pillars": ["entertainment", "behind_the_scenes", "community"],
     },
     "night":     {   # 00:00–04:59 UTC
         "preferred_formats": ["text", "single_image"],
         "hook_types": ["question", "statistic"],
         "dominant_emotions": ["trust", "curiosity"],
-        "pillars": ["educational", "inspirational"],
     },
 }
 
@@ -88,7 +77,7 @@ DEFAULT_ALGORITHM_RULES: dict = {
 # Default performance report fallback
 DEFAULT_PERF_REPORT: dict = {
     "top_performing_formats": ["carousel", "reel"],
-    "top_performing_pillars": ["educational", "entertainment"],
+    "top_performing_pillars": [],
     "avg_engagement_rate": 0.0,
     "recommendations": [],
 }
@@ -108,26 +97,60 @@ def _time_of_day(hour_utc: int) -> str:
     return "night"
 
 
+
 def _pick_pillar(
     slot_idx: int,
     prev_pillar: str | None,
-    slot_profile: dict,
+    pillar_definitions: list[dict],
+    topic_type: str,
     preferred_pillars: list[str],
+    trend_pillar: str | None = None,
 ) -> str:
-    """
-    Choose a content pillar for this slot.
-    Avoid repeating the previous pillar. Prefer pillars suggested by
-    the slot profile and the performance report.
-    """
-    candidates = list(slot_profile.get("pillars", CONTENT_PILLARS))
-    # Add performance-preferred pillars to front of candidate list
-    for p in reversed(preferred_pillars):
-        if p not in candidates:
-            candidates.insert(0, p)
-    # Remove previous pillar to avoid back-to-back repeat
-    if prev_pillar and len(candidates) > 1:
-        candidates = [p for p in candidates if p != prev_pillar]
-    return candidates[slot_idx % len(candidates)] if candidates else "educational"
+    """Choose a configured pillar that approves this topic type."""
+
+    candidates = [
+        pillar["name"]
+        for pillar in pillar_definitions
+        if topic_type in pillar["approved_topic_types"]
+    ]
+
+    if not candidates:
+        raise ValueError(
+            f"No configured content pillar approves "
+            f"topic type {topic_type!r}"
+        )
+
+    # Keep the trend's validated classification when it is eligible.
+    if trend_pillar is not None:
+        if trend_pillar not in candidates:
+            raise ValueError(
+                f"Trend pillar {trend_pillar!r} does not approve "
+                f"topic type {topic_type!r}"
+            )
+        return trend_pillar
+
+    # Performance can influence selection only among eligible pillars.
+    ordered = [
+        name for name in preferred_pillars
+        if name in candidates
+    ]
+
+    ordered.extend(
+        name for name in candidates
+        if name not in ordered
+    )
+
+    # Avoid consecutive repeats when another eligible pillar exists.
+    if prev_pillar and len(ordered) > 1:
+        alternatives = [
+            name for name in ordered
+            if name != prev_pillar
+        ]
+        if alternatives:
+            ordered = alternatives
+
+    return ordered[slot_idx % len(ordered)]
+
 
 
 def _assign_format(
@@ -262,8 +285,11 @@ def _build_content_plan(
     Build the full daily content calendar dict.
     """
     today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    pillar_definitions = get_content_pillars(cfg)
+    
     client = get_gemini_client()
-    ctx    = build_prompt_context()
+    ctx = build_prompt_context()
 
     reel_day   = _is_reel_day(cfg)
     algo_formats = algo_rules.get("recommended_formats", [])
@@ -314,13 +340,29 @@ def _build_content_plan(
         if assigned_format == "reel":
             reel_assigned = True
 
-        # Pillar
-        pillar = _pick_pillar(slot_idx, prev_pillar, slot_profile, preferred_pillars)
-        prev_pillar = pillar
-
-        # Trend selection
+        
+        # Select the trend first so its topic type controls pillar eligibility.
         trend = _trend_for_slot(slot_idx, trends, used_topics)
         used_topics.add(trend["topic"])
+        
+        topic_type = trend.get("topic_type")
+        if not isinstance(topic_type, str) or not topic_type:
+            raise ValueError(
+                f"Trend {trend.get('topic', '<unknown>')!r} "
+                "is missing a valid topic_type"
+            )
+        
+        # Select from configured pillars, never from time-slot defaults.
+        pillar = _pick_pillar(
+            slot_idx=slot_idx,
+            prev_pillar=prev_pillar,
+            pillar_definitions=pillar_definitions,
+            topic_type=topic_type,
+            preferred_pillars=preferred_pillars,
+            trend_pillar=trend.get("content_pillar"),
+        )
+        prev_pillar = pillar
+
 
         slot_info = {
             "slot": slot_num,
