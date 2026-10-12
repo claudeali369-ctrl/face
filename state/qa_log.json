@@ -1,139 +1,112 @@
 {
-  "generated_at": "2026-10-12T03:15:32.882650+00:00",
+  "generated_at": "2026-10-12T07:19:17.839819+00:00",
   "date": "2026-10-12",
   "records": [
     {
-      "post_id": "ab6845eb-4458-4b35-986f-29f3fb8ec6e1",
+      "post_id": "80e24f3a-9102-4881-aa64-1c8e8ec04e88",
       "attempt": 1,
       "provider": "Pollinations",
-      "score": 8.0,
-      "policy_safe": true,
-      "improvement_instructions": "",
-      "timestamp": "2026-10-12T03:08:41.591845+00:00"
-    },
-    {
-      "post_id": "0da077df-e6a5-4aba-83b9-58e8b935d7a7",
-      "attempt": 4,
-      "provider": "Pixabay",
-      "score": 6.0,
-      "policy_safe": true,
-      "improvement_instructions": "",
-      "timestamp": "2026-10-12T03:09:26.129411+00:00",
-      "fallback": true
-    },
-    {
-      "post_id": "4d250e9e-42bf-4718-b07d-79ecc69fc2a7",
-      "attempt": 1,
-      "provider": "Pollinations",
-      "score": 4.0,
-      "policy_safe": true,
-      "improvement_instructions": "",
-      "timestamp": "2026-10-12T03:09:30.381828+00:00"
-    },
-    {
-      "post_id": "4d250e9e-42bf-4718-b07d-79ecc69fc2a7",
-      "attempt": 4,
-      "provider": "Pixabay",
-      "score": 7.0,
-      "policy_safe": true,
-      "improvement_instructions": "",
-      "timestamp": "2026-10-12T03:10:13.452127+00:00",
-      "fallback": true
-    },
-    {
-      "post_id": "699b0c9f-b4dd-42ba-a1d4-9bf7d6bcab20_slide1",
-      "attempt": 1,
-      "provider": "Pollinations",
-      "score": 6.0,
-      "policy_safe": true,
-      "improvement_instructions": "",
-      "timestamp": "2026-10-12T03:10:20.288459+00:00"
-    },
-    {
-      "post_id": "699b0c9f-b4dd-42ba-a1d4-9bf7d6bcab20_slide1",
-      "attempt": 4,
-      "provider": "Pixabay",
-      "score": 7.0,
-      "policy_safe": true,
-      "improvement_instructions": "",
-      "timestamp": "2026-10-12T03:11:05.770067+00:00",
-      "fallback": true
-    },
-    {
-      "post_id": "699b0c9f-b4dd-42ba-a1d4-9bf7d6bcab20_slide2",
-      "attempt": 4,
-      "provider": "Pixabay",
-      "score": 6.0,
-      "policy_safe": true,
-      "improvement_instructions": "",
-      "timestamp": "2026-10-12T03:11:52.734434+00:00",
-      "fallback": true
-    },
-    {
-      "post_id": "699b0c9f-b4dd-42ba-a1d4-9bf7d6bcab20_slide3",
-      "attempt": 4,
-      "provider": "Pixabay",
-      "score": 6.0,
-      "policy_safe": true,
-      "improvement_instructions": "",
-      "timestamp": "2026-10-12T03:12:40.608963+00:00",
-      "fallback": true
-    },
-    {
-      "post_id": "670c8b3c-8b6a-4753-8ec9-5f4c836a1c1c_slide1",
-      "attempt": 1,
-      "provider": "Pollinations",
-      "score": 3.0,
-      "policy_safe": true,
-      "improvement_instructions": "",
-      "timestamp": "2026-10-12T03:12:47.938355+00:00"
-    },
-    {
-      "post_id": "670c8b3c-8b6a-4753-8ec9-5f4c836a1c1c_slide1",
-      "attempt": 4,
-      "provider": "Pixabay",
-      "score": 4.0,
-      "policy_safe": true,
-      "improvement_instructions": "",
-      "timestamp": "2026-10-12T03:13:30.833628+00:00",
-      "fallback": true
-    },
-    {
-      "post_id": "670c8b3c-8b6a-4753-8ec9-5f4c836a1c1c_slide2",
-      "attempt": 1,
-      "provider": "Pollinations",
-      "score": 3.0,
-      "policy_safe": true,
-      "improvement_instructions": "",
-      "timestamp": "2026-10-12T03:13:39.079457+00:00"
-    },
-    {
-      "post_id": "670c8b3c-8b6a-4753-8ec9-5f4c836a1c1c_slide2",
-      "attempt": 4,
-      "provider": "Pixabay",
-      "score": 3.0,
-      "policy_safe": true,
-      "improvement_instructions": "",
-      "timestamp": "2026-10-12T03:14:26.966106+00:00",
-      "fallback": true
-    },
-    {
-      "post_id": "670c8b3c-8b6a-4753-8ec9-5f4c836a1c1c_slide3",
-      "attempt": 1,
-      "provider": "Pollinations",
-      "score": 3.0,
-      "policy_safe": true,
-      "improvement_instructions": "",
-      "timestamp": "2026-10-12T03:14:34.588905+00:00"
-    },
-    {
-      "post_id": "670c8b3c-8b6a-4753-8ec9-5f4c836a1c1c_slide3",
-      "attempt": 4,
-      "provider": "Pixabay",
       "score": 2.0,
       "policy_safe": true,
       "improvement_instructions": "",
-      "timestamp": "2026-10-12T03:15:32.877055+00:00",
+      "timestamp": "2026-10-12T07:17:08.455396+00:00"
+    },
+    {
+      "post_id": "80e24f3a-9102-4881-aa64-1c8e8ec04e88",
+      "attempt": 4,
+      "provider": "Pixabay",
+      "score": 6.0,
+      "policy_safe": true,
+      "improvement_instructions": "",
+      "timestamp": "2026-10-12T07:17:11.566274+00:00",
+      "fallback": true
+    },
+    {
+      "post_id": "cc19a6dd-02fb-49f3-ae1c-77b6a4eabc79",
+      "attempt": 4,
+      "provider": "Pixabay",
+      "score": 8.0,
+      "policy_safe": true,
+      "improvement_instructions": "",
+      "timestamp": "2026-10-12T07:17:44.432822+00:00",
+      "fallback": true
+    },
+    {
+      "post_id": "feabd8a7-ce7c-4bff-a3f4-ab26192882ae",
+      "attempt": 4,
+      "provider": "Pixabay",
+      "score": 9.0,
+      "policy_safe": true,
+      "improvement_instructions": "",
+      "timestamp": "2026-10-12T07:17:48.090421+00:00",
+      "fallback": true
+    },
+    {
+      "post_id": "1c96aad6-6726-424f-90f5-f045374dfe34_slide1",
+      "attempt": 1,
+      "provider": "Pollinations",
+      "score": 3.0,
+      "policy_safe": true,
+      "improvement_instructions": "",
+      "timestamp": "2026-10-12T07:17:56.954128+00:00"
+    },
+    {
+      "post_id": "1c96aad6-6726-424f-90f5-f045374dfe34_slide1",
+      "attempt": 4,
+      "provider": "Pixabay",
+      "score": 3.0,
+      "policy_safe": true,
+      "improvement_instructions": "",
+      "timestamp": "2026-10-12T07:18:11.749158+00:00",
+      "fallback": true
+    },
+    {
+      "post_id": "1c96aad6-6726-424f-90f5-f045374dfe34_slide2",
+      "attempt": 4,
+      "provider": "Pixabay",
+      "score": 6.0,
+      "policy_safe": true,
+      "improvement_instructions": "",
+      "timestamp": "2026-10-12T07:18:17.782585+00:00",
+      "fallback": true
+    },
+    {
+      "post_id": "1c96aad6-6726-424f-90f5-f045374dfe34_slide3",
+      "attempt": 4,
+      "provider": "Pixabay",
+      "score": 3.0,
+      "policy_safe": true,
+      "improvement_instructions": "",
+      "timestamp": "2026-10-12T07:18:48.058593+00:00",
+      "fallback": true
+    },
+    {
+      "post_id": "3a0e87d3-00e4-4c83-bf2e-35147bb6e8a8_slide1",
+      "attempt": 1,
+      "provider": "Pollinations",
+      "score": 7.0,
+      "policy_safe": true,
+      "improvement_instructions": "",
+      "timestamp": "2026-10-12T07:18:56.701016+00:00"
+    },
+    {
+      "post_id": "3a0e87d3-00e4-4c83-bf2e-35147bb6e8a8_slide2",
+      "attempt": 4,
+      "provider": "Pixabay",
+      "score": 4.0,
+      "policy_safe": true,
+      "improvement_instructions": "",
+      "timestamp": "2026-10-12T07:19:11.439632+00:00",
+      "fallback": true
+    },
+    {
+      "post_id": "3a0e87d3-00e4-4c83-bf2e-35147bb6e8a8_slide3",
+      "attempt": 4,
+      "provider": "Pixabay",
+      "score": 3.0,
+      "policy_safe": true,
+      "improvement_instructions": "",
+      "timestamp": "2026-10-12T07:19:17.579113+00:00",
       "fallback": true
     }
   ]

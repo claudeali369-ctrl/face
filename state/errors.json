@@ -47,6 +47,12 @@
       "error": "Story slide 2 has missing image_path: ''",
       "timestamp": "2026-10-12T03:16:10.364388+00:00",
       "agent": "publisher"
+    },
+    {
+      "post_id": "3a0e87d3-00e4-4c83-bf2e-35147bb6e8a8",
+      "error": "Story slide 2 has missing image_path: ''",
+      "timestamp": "2026-10-12T07:19:57.029974+00:00",
+      "agent": "publisher"
     }
   ]
 }

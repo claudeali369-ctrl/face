@@ -1,13 +1,13 @@
 {
   "date": "2026-10-12",
-  "generated_at": "2026-10-12T03:07:29.055113+00:00",
+  "generated_at": "2026-10-12T07:15:56.372356+00:00",
   "posts": [
     {
-      "post_id": "ab6845eb-4458-4b35-986f-29f3fb8ec6e1",
+      "post_id": "80e24f3a-9102-4881-aa64-1c8e8ec04e88",
       "slot": 1,
       "scheduled_time_utc": "2026-10-12T03:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "x",
+      "trend_topic": "ইয়েমেন",
       "content_pillar": "Hidden Gems",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
@@ -15,25 +15,25 @@
       "status": "planned"
     },
     {
-      "post_id": "0da077df-e6a5-4aba-83b9-58e8b935d7a7",
+      "post_id": "cc19a6dd-02fb-49f3-ae1c-77b6a4eabc79",
       "slot": 2,
       "scheduled_time_utc": "2026-10-12T07:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "palmeiras vs corinthians",
+      "trend_topic": "katie zacharia",
       "content_pillar": "Hidden Gems",
-      "hook_type": "local_relevance",
+      "hook_type": "curiosity",
       "cta_type": "save_or_share",
       "dominant_emotion": "curiosity",
       "status": "planned"
     },
     {
-      "post_id": "4d250e9e-42bf-4718-b07d-79ecc69fc2a7",
+      "post_id": "feabd8a7-ce7c-4bff-a3f4-ab26192882ae",
       "slot": 3,
       "scheduled_time_utc": "2026-10-12T14:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "pumas unam vs cruz azul",
+      "trend_topic": "bigg boss",
       "content_pillar": "Hidden Gems",
-      "hook_type": "relatable_problem",
+      "hook_type": "local_relevance",
       "cta_type": "save_or_share",
       "dominant_emotion": "curiosity",
       "status": "planned"
@@ -41,29 +41,29 @@
   ],
   "stories": [
     {
-      "post_id": "699b0c9f-b4dd-42ba-a1d4-9bf7d6bcab20",
+      "post_id": "1c96aad6-6726-424f-90f5-f045374dfe34",
       "slot": 1,
       "scheduled_time_utc": "2026-10-12T03:00:00+00:00",
       "format": "story",
-      "trend_topic": "x",
+      "trend_topic": "ইয়েমেন",
       "content_pillar": "entertainment",
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "ab6845eb-4458-4b35-986f-29f3fb8ec6e1",
+      "parent_post_id": "80e24f3a-9102-4881-aa64-1c8e8ec04e88",
       "status": "planned"
     },
     {
-      "post_id": "670c8b3c-8b6a-4753-8ec9-5f4c836a1c1c",
+      "post_id": "3a0e87d3-00e4-4c83-bf2e-35147bb6e8a8",
       "slot": 2,
       "scheduled_time_utc": "2026-10-12T07:00:00+00:00",
       "format": "story",
-      "trend_topic": "palmeiras vs corinthians",
+      "trend_topic": "katie zacharia",
       "content_pillar": "inspirational",
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "0da077df-e6a5-4aba-83b9-58e8b935d7a7",
+      "parent_post_id": "cc19a6dd-02fb-49f3-ae1c-77b6a4eabc79",
       "status": "planned"
     }
   ],

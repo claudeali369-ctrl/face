@@ -1,447 +1,452 @@
 {
-  "generated_at": "2026-10-12T03:15:32.879149+00:00",
+  "generated_at": "2026-10-12T07:19:17.835896+00:00",
   "date": "2026-10-12",
   "briefs": {
-    "ab6845eb-4458-4b35-986f-29f3fb8ec6e1": {
-      "post_id": "ab6845eb-4458-4b35-986f-29f3fb8ec6e1",
+    "80e24f3a-9102-4881-aa64-1c8e8ec04e88": {
+      "post_id": "80e24f3a-9102-4881-aa64-1c8e8ec04e88",
       "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style is chosen because it creates high emotional engagement and mystery, perfect for the curiosity angle and hidden gems pillar. It aligns with current Gen-Z and millennial tech-content trends in Bangladesh that favor moody, high-production-value visuals over flat illustrations.",
-      "composition": "negative_space",
-      "composition_rationale": "Using negative space draws the eye to the subject while providing a clean, uncluttered area specifically designated for the hook text overlay, ensuring high readability on mobile screens.",
-      "primary_subject": "A futuristic holographic interface revealing hidden technological architecture seamlessly blended with traditional Bengali terracotta and modern glass",
-      "background_environment": "A dimly lit, mysterious modern tech incubator in Dhaka with subtle architectural nods to historic brickwork and soft atmospheric haze",
-      "color_palette": {
-        "primary": "#0F172A",
-        "secondary": "#0ea5e9",
-        "accent": "#f59e0b",
-        "rationale": "Deep slate blue (#0F172A) provides tech authority, electric cyan (#0ea5e9) triggers futuristic curiosity, and warm amber (#f59e0b) offers a cultural nod to traditional terracotta and golden Bengal aesthetics."
-      },
-      "dominant_emotion": "curiosity",
-      "region_visual_cues": [
-        "subtle terracotta brick textures reminiscent of historic Dhaka architecture",
-        "ambient blue and gold lighting mirroring traditional jamdani color warmth",
-        "modern minimalist tech workspace contextualized in urban Bangladesh"
-      ],
-      "cultural_elements_to_include": [
-        "Subtle geometric patterns inspired by local architectural heritage",
-        "Warm atmospheric lighting that reflects local golden hour moods"
-      ],
-      "cultural_elements_to_avoid": [
-        "Indian imagery misrepresenting Bangladesh",
-        "Generic Silicon Valley glass-box clichés without local context",
-        "Overused AI plastic textures and distorted human elements",
-        "Weapons, political symbols, and religious imagery"
-      ],
-      "text_overlay_space": "top_third",
-      "text_overlay_color": "#FFFFFF",
-      "text_overlay_background": "semi_dark",
-      "lighting_mood": "Moody, atmospheric, and high-contrast with glowing accents",
-      "time_of_day_depicted": "blue_hour",
-      "generation_prompt_pollinations": "futuristic holographic technology interface, hidden gems concept, cinematic, negative space composition, Dhaka urban tech aesthetic, subtle terracotta texture integration, deep slate blue and electric cyan color palette with warm amber accents, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic, moody shot of a futuristic holographic tech interface blending seamlessly with subtle historic terracotta architectural elements in a modern Dhaka workspace. The color palette features deep slate blue and electric cyan contrasted with warm amber accents. The composition utilizes heavy negative space in the top third for text overlay. The atmosphere is mysterious and intriguing, evoking deep curiosity and tech aspiration for young adults in Bangladesh.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, Indian imagery, bright daylight, flat lighting",
-      "quality_keywords": [
-        "masterwork",
-        "highly detailed",
-        "cinematic lighting",
-        "depth of field",
-        "8k resolution",
-        "photorealistic rendering"
-      ],
-      "image_dimensions": "1080x1350",
-      "seed_suggestion": 4242,
-      "provider_preference": "pollinations"
-    },
-    "0da077df-e6a5-4aba-83b9-58e8b935d7a7": {
-      "post_id": "0da077df-e6a5-4aba-83b9-58e8b935d7a7",
-      "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style bridges the global passion of a historic football derby like Palmeiras vs Corinthians with the vibrant, atmospheric night culture in Bangladesh, creating high curiosity and engagement for 18-30 youth.",
-      "composition": "layered_depth",
-      "composition_rationale": "Layered depth creates a dramatic foreground and background separation, drawing the viewer's eye into the scene while providing an uncluttered area for text.",
-      "primary_subject": "A glowing smartphone displaying a live football match stream in a vibrant Dhaka tea stall setting",
-      "background_environment": "A dimly lit, atmospheric local tea stall (tahir dokan) at night with warm hanging incandescent bulbs, steam rising from tea glasses, and out-of-focus city lights",
-      "color_palette": {
-        "primary": "#0B4F6C",
-        "secondary": "#F4A623",
-        "accent": "#1A936F",
-        "rationale": "Deep teal and warm gold evoke the cozy, electric night atmosphere of urban Bangladesh, while tech-associated emerald green adds a modern digital edge that triggers curiosity."
-      },
-      "dominant_emotion": "curiosity",
-      "region_visual_cues": [
-        "traditional glass tea tumblers",
-        "hanging warm incandescent bulbs in a roadside stall",
-        "bamboo and corrugated tin structural elements"
-      ],
-      "cultural_elements_to_include": [
-        "Local Bangladeshi tea stall ambiance",
-        "Warm skin tones",
-        "Authentic local seating"
-      ],
-      "cultural_elements_to_avoid": [
-        "Western bar or pub settings",
-        "Generic stock imagery",
-        "Culturally inaccurate clothing or architecture"
-      ],
-      "text_overlay_space": "top_third",
-      "text_overlay_color": "#FFFFFF",
-      "text_overlay_background": "semi_dark",
-      "lighting_mood": "Moody, warm, and atmospheric with dramatic glow from a smartphone screen",
-      "time_of_day_depicted": "night",
-      "generation_prompt_pollinations": "A glowing smartphone displaying a football match, cinematic, layered depth, local Bangladeshi tea stall ambiance, hanging warm incandescent bulbs, deep teal and warm gold color palette, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark",
-      "generation_prompt_huggingface": "A cinematic shot of a glowing smartphone resting on a wooden table in a dimly lit Bangladeshi tea stall at night, streaming a live football match. Warm golden light from hanging bulbs illuminates tea glasses with steam rising, casting a cozy and mysterious glow. The background shows soft out-of-focus urban life, creating a deep layered depth with rich teal and gold tones evoking high curiosity.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, western pub, daylight",
-      "quality_keywords": [
-        "cinematic lighting",
-        "hyper-realistic",
-        "8k resolution",
-        "depth of field",
-        "moody atmosphere"
-      ],
-      "image_dimensions": "1080x1350",
-      "seed_suggestion": 42518,
-      "provider_preference": "pollinations"
-    },
-    "4d250e9e-42bf-4718-b07d-79ecc69fc2a7": {
-      "post_id": "4d250e9e-42bf-4718-b07d-79ecc69fc2a7",
-      "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style creates a high-production value look that stops the scroll for the 18-30 tech-savvy demographic in Bangladesh, blending the intense competitive emotion of an international football rivalry with a sophisticated, mysterious technological atmosphere.",
+      "visual_style_rationale": "Cinematic style establishes deep curiosity and wonder, blending ancient historic architecture with a mysterious tech-forward atmosphere that resonates well with 18-30 demographic in Bangladesh seeking unique global discoveries.",
       "composition": "rule_of_thirds",
-      "composition_rationale": "Places the main subject off-center following the rule of thirds, creating dynamic visual tension and leaving a dedicated, uncluttered area on the left side for the hook text overlay.",
-      "primary_subject": "A glowing holographic tactical football formation map suspended over a modern sleek smartphone, blending Liga MX team colors with futuristic digital data visualization",
-      "background_environment": "A dimly lit, moody room in Dhaka with a soft neon ambient glow reflecting off a polished wooden desk, blending modern tech aesthetics with subtle local cultural textures in the soft-focus background",
+      "composition_rationale": "Placing the primary architectural subject along the right grid line creates an asymmetrical, engaging frame that naturally draws the eye while leaving the left side open for the hook text overlay.",
+      "primary_subject": "Ancient multi-story mud-brick skyscraper architecture of Shibam Yemen under a twilight sky with subtle glowing digital horizon accents",
+      "background_environment": "A vast, mystical ancient city skyline fading into a hazy, starlit desert horizon with atmospheric mist",
       "color_palette": {
-        "primary": "#0B2545",
-        "secondary": "#134074",
-        "accent": "#EE6C4D",
-        "rationale": "Deep navy and slate blue represent the trust and depth of the technology niche, while the vibrant burnt orange/coral accent triggers immediate curiosity and stands out sharply on Facebook feeds in Bangladesh."
+        "primary": "#1A365D",
+        "secondary": "#C59B27",
+        "accent": "#00D2C4",
+        "rationale": "Deep midnight blue builds mystery and tech trust, warm golden ochre mirrors traditional mud architecture and rich cultural resonance, and vibrant teal adds a modern curiosity-inducing contrast."
       },
       "dominant_emotion": "curiosity",
       "region_visual_cues": [
-        "Subtle ambient lighting mimicking Dhaka's urban twilight blue hour",
-        "Local artisan-crafted cane desk organizer visible in soft background blur",
-        "Warm skin tone hands interacting subtly with the tech interface"
+        "intricate geometric lattice window designs",
+        "towering earthen cliffside urban structures",
+        "ancient desert haze and starlit atmosphere"
       ],
       "cultural_elements_to_include": [
-        "Urban Dhaka indoor modern tech setup",
-        "Subtle warm ambient lighting common in Bangladeshi urban homes",
-        "Local aesthetic details in desk accessories"
+        "intricate wooden window shutters",
+        "warm lantern lighting on mud-brick walls",
+        "mysterious atmospheric dust particles in air"
       ],
       "cultural_elements_to_avoid": [
-        "Generic Western-only sterile office environments",
-        "Misrepresented South American local flags or imagery that feels disconnected",
-        "Overused AI plastic textures and generic stock photo cliches"
+        "using generic European castle architecture",
+        "inaccurate Middle Eastern clichés that look like stock photography",
+        "bright neon green or harsh red colors",
+        "any political flags or modern military elements"
       ],
       "text_overlay_space": "left_third",
       "text_overlay_color": "#FFFFFF",
       "text_overlay_background": "semi_dark",
-      "lighting_mood": "Moody, high-contrast, dramatic tech-focused lighting with vibrant neon accents",
+      "lighting_mood": "Mysterious twilight with warm internal glows and cool ambient tones",
       "time_of_day_depicted": "blue_hour",
-      "generation_prompt_pollinations": "holographic tactical football display, cinematic, rule_of_thirds, urban Dhaka modern workspace, subtle cane desk organizer, deep navy and burnt orange color palette, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic shot of a glowing holographic tactical football formation map suspended over a sleek modern smartphone on a polished wooden desk in a moody Dhaka room during blue hour. The background features a subtle, soft-focus urban interior with warm ambient lighting. The color palette consists of deep navy blue and slate blue tones accented by striking burnt orange highlights. The composition uses the rule of thirds, leaving a clean, uncluttered space on the left side for typography. The atmosphere is mysterious and curiosity-inducing, combining cutting-edge technology aesthetics with authentic local touches.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, daytime, bright harsh lighting, Indian imagery",
-      "quality_keywords": [
-        "hyper-detailed",
-        "cinematic lighting",
-        "ray tracing",
-        "8k resolution",
-        "award-winning digital art",
-        "sharp focus"
-      ],
-      "image_dimensions": "1080x1350",
-      "seed_suggestion": 42789,
-      "provider_preference": "pollinations"
-    },
-    "699b0c9f-b4dd-42ba-a1d4-9bf7d6bcab20_slide1": {
-      "post_id": "699b0c9f-b4dd-42ba-a1d4-9bf7d6bcab20_slide1",
-      "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style creates high contrast and an intriguing, mysterious atmosphere that naturally stops the thumb-scroll for 18-30 demographic in Bangladesh, amplifying curiosity for a hidden tech secret.",
-      "composition": "negative_space",
-      "composition_rationale": "Negative space composition balances the modern tech aesthetic with a clean, uncluttered area specifically reserved for the bold Bangla hook text overlay.",
-      "primary_subject": "A glowing futuristic smartphone interface revealing abstract glowing code and data streams",
-      "background_environment": "A dimly lit modern Dhaka indoor workspace with subtle out-of-focus urban night lights visible through a large glass window",
-      "color_palette": {
-        "primary": "#0A192F",
-        "secondary": "#64FFDA",
-        "accent": "#FFB703",
-        "rationale": "Deep navy represents trustworthy technology, electric cyan triggers high curiosity and tech relevance, and warm gold adds a vibrant cultural resonance fitting the energetic Bangladeshi youth."
-      },
-      "dominant_emotion": "curiosity",
-      "region_visual_cues": [
-        "Dhaka skyline bokeh at dusk",
-        "Warm brown skin tones if hands are visible",
-        "Subtle geometric patterns inspired by local architecture"
-      ],
-      "cultural_elements_to_include": [
-        "Subtle glowing geometric patterns inspired by regional motifs",
-        "Modern urban Bangladeshi tech-enthusiast aesthetic"
-      ],
-      "cultural_elements_to_avoid": [
-        "Indian or Western-specific landmarks",
-        "Generic stock photo aesthetics",
-        "Overused AI plastic-looking textures",
-        "Political or religious symbols"
-      ],
-      "text_overlay_space": "top_third",
-      "text_overlay_color": "#FFFFFF",
-      "text_overlay_background": "semi_dark",
-      "lighting_mood": "Moody with vibrant neon glows and sharp contrast",
-      "time_of_day_depicted": "blue_hour",
-      "generation_prompt_pollinations": "A glowing futuristic smartphone interface revealing abstract glowing data streams, cinematic, negative space, Dhaka skyline bokeh at dusk, subtle geometric patterns, deep navy and electric cyan palette, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic shot of a glowing futuristic smartphone interface projecting abstract glowing data streams against a moody background featuring subtle Dhaka skyline bokeh at dusk. The color palette uses deep navy blue combined with electric cyan and warm gold accents. The composition employs generous negative space in the upper portion for text overlay, creating a mysterious and highly engaging technology atmosphere tailored for young tech enthusiasts in Bangladesh.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, Indian landmarks, weapons, political symbols",
+      "generation_prompt_pollinations": "ancient mud-brick skyscrapers of Shibam Yemen, cinematic, rule_of_thirds, intricate geometric lattice window designs, towering earthen cliffside urban structures, deep midnight blue #1A365D, warm golden ochre #C59B27, vibrant teal #00D2C4, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic wide shot of the ancient mud-brick skyscraper architecture of Shibam Yemen during blue hour, featuring towering earthen buildings with intricate geometric window designs under a starlit twilight sky, bathed in a mysterious atmosphere with a sophisticated deep blue and warm gold color palette, perfectly composed using rule of thirds with clean negative space on the left.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, modern skyscrapers, cars, bright daylight",
       "quality_keywords": [
         "ultra detailed",
         "8k resolution",
-        "professional lighting",
-        "cinematic composition",
-        "sharp focus"
-      ],
-      "image_dimensions": "1080x1350",
-      "seed_suggestion": 4242,
-      "provider_preference": "pollinations"
-    },
-    "699b0c9f-b4dd-42ba-a1d4-9bf7d6bcab20_slide2": {
-      "post_id": "699b0c9f-b4dd-42ba-a1d4-9bf7d6bcab20_slide2",
-      "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style creates a high-end, aspirational look that immediately captures the attention of 18-30 tech enthusiasts in Bangladesh while conveying the cutting-edge nature of AI features and fast workflows.",
-      "composition": "negative_space",
-      "composition_rationale": "Negative space composition directs the viewer's focus to the key subject while leaving a clean, uncluttered area designated specifically for the high-impact hook text overlay.",
-      "primary_subject": "A modern smartphone displaying glowing abstract AI neural network patterns on screen",
-      "background_environment": "A dimly lit contemporary workspace in Dhaka with soft bokeh city lights in the background",
-      "color_palette": {
-        "primary": "#0F172A",
-        "secondary": "#3B82F6",
-        "accent": "#10B981",
-        "rationale": "Deep slate blue conveys professional technology and trust, vibrant electric blue represents smart AI capabilities, and emerald green adds a localized touch while triggering curiosity and aspiration."
-      },
-      "dominant_emotion": "curiosity",
-      "region_visual_cues": [
-        "Dhaka skyline bokeh",
-        "subtle geometric motifs inspired by traditional terracotta patterns",
-        "warm ambient lighting reflecting local indoor aesthetics"
-      ],
-      "cultural_elements_to_include": [
-        "Modern urban Bangladeshi tech lifestyle aesthetic",
-        "Contemporary desk setup with local elements like a ceramic tea cup"
-      ],
-      "cultural_elements_to_avoid": [
-        "Indian imagery misrepresenting Bangladesh",
-        "Generic Western stock office setups",
-        "Overused AI clichés and plastic-looking textures"
-      ],
-      "text_overlay_space": "top_third",
-      "text_overlay_color": "#FFFFFF",
-      "text_overlay_background": "semi_dark",
-      "lighting_mood": "Moody, high-contrast tech lighting with vibrant neon accents and soft shadows",
-      "time_of_day_depicted": "night",
-      "generation_prompt_pollinations": "A sleek modern smartphone displaying glowing AI neural network patterns, cinematic, negative space, Dhaka skyline bokeh background, subtle geometric terracotta-inspired motifs, deep slate blue and electric blue color palette with emerald green accents, curiosity atmosphere, professional technology photography, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic shot of a modern smartphone resting on a dark surface in a contemporary Dhaka workspace at night, displaying glowing abstract AI neural network patterns on the screen. The background features a soft bokeh of the city skyline. The lighting is moody with deep slate blue tones and vibrant electric blue and emerald green highlights, creating an atmosphere of mystery and high-tech curiosity with ample clean space in the upper portion.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, Indian architecture, bright daylight",
-      "quality_keywords": [
-        "ultra detailed",
-        "8k resolution",
-        "professional technology photography",
         "cinematic lighting",
-        "octane render"
-      ],
-      "image_dimensions": "1080x1350",
-      "seed_suggestion": 4278,
-      "provider_preference": "pollinations"
-    },
-    "699b0c9f-b4dd-42ba-a1d4-9bf7d6bcab20_slide3": {
-      "post_id": "699b0c9f-b4dd-42ba-a1d4-9bf7d6bcab20_slide3",
-      "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style is chosen to create an atmosphere of mystery and discovery. It works best for technology curiosity posts targeting young adults in Bangladesh by elevating everyday tech into something intriguing and high-end.",
-      "composition": "negative_space",
-      "composition_rationale": "Negative space composition directs the viewer's eye to a central focal point while leaving an uncluttered, distraction-free area perfectly suited for bold hook text overlays.",
-      "primary_subject": "A glowing modern smartphone displaying cryptic holographic code floating above a sleek wooden desk",
-      "background_environment": "A dimly lit room in a modern Dhaka apartment with soft ambient blue and gold lighting, subtle urban bokeh visible through a large window",
-      "color_palette": {
-        "primary": "#0A2540",
-        "secondary": "#20639B",
-        "accent": "#F6D55C",
-        "rationale": "Deep navy and tech blue build the technology authority, while warm gold and amber evoke curiosity and the ambient glow of Dhaka evenings."
-      },
-      "dominant_emotion": "curiosity",
-      "region_visual_cues": [
-        "Dhaka skyline bokeh through glass",
-        "Warm indoor ambient lighting typical of urban Bangladeshi homes",
-        "Traditional bamboo accent decor blended with modern minimalist desk setup"
-      ],
-      "cultural_elements_to_include": [
-        "Subtle warm indoor lighting aesthetics",
-        "Modern urban Bangladeshi middle-class tech enthusiast workspace setup"
-      ],
-      "cultural_elements_to_avoid": [
-        "Generic Western-only office aesthetics",
-        "Indian or other non-Bangladeshi cultural symbols",
-        "Overused AI plastic textures and distorted digital artifacts"
-      ],
-      "text_overlay_space": "top_third",
-      "text_overlay_color": "#FFFFFF",
-      "text_overlay_background": "semi_dark",
-      "lighting_mood": "Moody and cinematic with sharp focus on the glowing device and soft background falloff",
-      "time_of_day_depicted": "night",
-      "generation_prompt_pollinations": "A glowing modern smartphone displaying cryptic holographic code, cinematic, negative_space, Dhaka skyline bokeh, warm indoor ambient lighting, deep navy #0A2540 and warm gold #F6D55C color palette, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic shot of a glowing modern smartphone displaying cryptic holographic code floating above a sleek desk in a dimly lit modern Dhaka apartment. The background features soft urban bokeh through a large window at night. The color palette combines deep tech blue and warm amber gold, creating a mysterious and curiosity-inducing atmosphere with clean negative space at the top for text overlay.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, Indian elements, weapons, political symbols, bright daylight",
-      "quality_keywords": [
-        "masterpiece",
-        "ultra detailed",
-        "8k resolution",
-        "photorealistic lighting",
-        "cinematic depth of field"
-      ],
-      "image_dimensions": "1080x1350",
-      "seed_suggestion": 4242,
-      "provider_preference": "pollinations"
-    },
-    "670c8b3c-8b6a-4753-8ec9-5f4c836a1c1c_slide1": {
-      "post_id": "670c8b3c-8b6a-4753-8ec9-5f4c836a1c1c_slide1",
-      "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style is chosen to capture the raw passion and high-energy atmosphere of a major football derby, perfectly aligning with the inspirational and curiosity-driven angle for the 18-30 demographic in Bangladesh who are massive global football fans.",
-      "composition": "rule_of_thirds",
-      "composition_rationale": "Places the dramatic stadium energy along the intersecting lines while leaving an expansive, dark negative space in the upper third for the Bangla and English hook text overlay.",
-      "primary_subject": "A glowing modern stadium under night lights with intense green pitch and dramatic flare",
-      "background_environment": "Packed stadium stands filled with atmospheric smoke and passionate fans illuminated by stadium floodlights",
-      "color_palette": {
-        "primary": "#0A192F",
-        "secondary": "#00FF66",
-        "accent": "#FF4B2B",
-        "rationale": "Deep midnight navy provides high contrast for the feed, electric green represents the turf and tech-forward energy, and vibrant red-orange triggers excitement and curiosity."
-      },
-      "dominant_emotion": "curiosity",
-      "region_visual_cues": [
-        "Dhaka youth gathering spots vibe with smartphone screens glowing",
-        "futuristic digital stadium aesthetic popular in urban Bangladesh tech cafes",
-        "vibrant neon lighting reminiscent of Dhaka's modern night hubs"
-      ],
-      "cultural_elements_to_include": [
-        "Passionate football fan culture elements adapted universally",
-        "Modern tech-integrated viewing environment"
-      ],
-      "cultural_elements_to_avoid": [
-        "Generic Western stock imagery",
-        "Inaccurate local geography",
-        "Political symbols or unauthorized club logos that violate copyright"
-      ],
-      "text_overlay_space": "top_third",
-      "text_overlay_color": "#FFFFFF",
-      "text_overlay_background": "semi_dark",
-      "lighting_mood": "High contrast stadium floodlights with dramatic atmospheric glow",
-      "time_of_day_depicted": "night",
-      "generation_prompt_pollinations": "A glowing modern football stadium at night, cinematic, rule_of_thirds, intense green turf, vibrant neon lighting, deep midnight navy and electric green color palette, curiosity atmosphere, professional sports photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic shot of a modern football stadium glowing intensely at night under dramatic floodlights. The pitch is a vibrant electric green, contrasting sharply against a deep midnight navy background environment. The atmosphere is charged with passion and curiosity, styled with a modern technology aesthetic, ultra-detailed 8k resolution, with clean negative space at the top.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, daytime, empty stadium",
-      "quality_keywords": [
-        "hyper-detailed",
-        "cinematic lighting",
-        "8k resolution",
-        "professional sports photography",
+        "professional color grading",
         "sharp focus"
       ],
       "image_dimensions": "1080x1350",
       "seed_suggestion": 45892,
       "provider_preference": "pollinations"
     },
-    "670c8b3c-8b6a-4753-8ec9-5f4c836a1c1c_slide2": {
-      "post_id": "670c8b3c-8b6a-4753-8ec9-5f4c836a1c1c_slide2",
+    "cc19a6dd-02fb-49f3-ae1c-77b6a4eabc79": {
+      "post_id": "cc19a6dd-02fb-49f3-ae1c-77b6a4eabc79",
       "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style captures the electric, high-energy atmosphere of 'স্টেডিয়ামে আগুন পরিবেশ' and the fierce rivalry of Brazilian football, bridging sports passion with digital-native visual trends for young adults in Bangladesh.",
-      "composition": "layered_depth",
-      "composition_rationale": "Layered depth creates a dramatic stadium perspective with a blurred foreground and an intense, glowing focal point in the middle ground, leaving a deliberate clean upper-third space for the hook text overlay.",
-      "primary_subject": "A glowing, high-contrast football on a rain-slicked stadium pitch under dramatic stadium floodlights",
-      "background_environment": "A massive, packed football stadium at night with blurred cheering crowds and rising pyrotechnic smoke creating an electric atmosphere",
+      "visual_style_rationale": "Cinematic style creates the mystery and intrigue needed to spark curiosity about a niche topic like Katie Zacharia in the tech space, aligning well with high-end tech storytelling favored by 18-30-year-olds in Bangladesh.",
+      "composition": "negative_space",
+      "composition_rationale": "Utilizing negative space ensures the hook text overlay remains prominent, clean, and easily readable against a balanced, distraction-free backdrop.",
+      "primary_subject": "A glowing holographic interface displaying abstract global data connections and mysterious archival fragments",
+      "background_environment": "A dimly lit, modern tech workspace in Dhaka with soft ambient neon glow and subtle traditional architectural silhouette visible through a large glass window",
       "color_palette": {
         "primary": "#0A192F",
-        "secondary": "#1E3A8A",
-        "accent": "#FF5722",
-        "rationale": "Deep navy and royal blue establish the intense night stadium mood and modern tech-adjacent aesthetic, while vibrant fiery orange/red cuts through to trigger curiosity and capture the 'আগুন পরিবেশ' energy."
+        "secondary": "#64FFDA",
+        "accent": "#FFB703",
+        "rationale": "Deep navy (#0A192F) establishes trust and tech authority, vibrant teal (#64FFDA) represents digital innovation, and warm gold (#FFB703) provides a culturally resonant accent that triggers curiosity and warmth."
       },
       "dominant_emotion": "curiosity",
       "region_visual_cues": [
-        "crowded local football screening atmosphere with energetic youth",
-        "vibrant neon-lit urban viewing hub aesthetics common in Dhaka",
-        "passionate crowd silhouettes raising phones capturing the moment"
+        "Dhaka skyline silhouette at dusk",
+        "Subtle geometric patterns inspired by Jamdani textile integrated into the UI design",
+        "Warm indoor ambient lighting reflecting local urban settings"
       ],
       "cultural_elements_to_include": [
-        "passionate youth energy",
-        "vibrant stadium lighting effects",
-        "dramatic smoky pitch atmosphere"
+        "Subtle Jamdani-inspired digital grid lines",
+        "Modern tech workspace aesthetic popular among urban Bangladeshi youth"
       ],
       "cultural_elements_to_avoid": [
-        "generic European football imagery lacking South American flair",
-        "culturally inappropriate religious symbols",
-        "Indian cricket stadium cues mistakenly applied to a football post",
-        "overly washed out or sterile stock photo aesthetics"
+        "Generic Western-only office setups lacking local context",
+        "Misrepresented regional architecture",
+        "Overused AI visual clichés and floating meaningless code text"
       ],
       "text_overlay_space": "top_third",
       "text_overlay_color": "#FFFFFF",
       "text_overlay_background": "semi_dark",
-      "lighting_mood": "High-contrast dramatic stadium floodlighting with fiery orange accent glows and misty atmosphere",
-      "time_of_day_depicted": "night",
-      "generation_prompt_pollinations": "Cinematic football stadium at night, layered depth composition, glowing football on rain-slicked pitch, dramatic floodlights, pyrotechnic smoke, intense fiery orange and deep navy blue color palette, curiosity atmosphere, professional sports photography, 8k resolution, no text, no watermark",
-      "generation_prompt_huggingface": "A cinematic wide shot of a packed football stadium at night during an intense match. The pitch is rain-slicked, reflecting bright stadium floodlights and a dramatic fiery orange and deep navy color grading. Wisps of smoke rise from the crowd, creating a high-energy, electrifying atmosphere with a clean dark space in the upper third for text.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, daylight, cricket pitch",
+      "lighting_mood": "Moody and atmospheric with a high-tech blue and gold accent glow",
+      "time_of_day_depicted": "blue_hour",
+      "generation_prompt_pollinations": "A glowing holographic interface displaying abstract global data connections, cinematic, negative space composition, Dhaka skyline silhouette at dusk, subtle Jamdani-inspired digital grid lines, deep navy and vibrant teal color palette with warm gold accents, curiosity atmosphere, professional technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic and moody shot of a glowing holographic interface showing abstract global data connections inside a modern Dhaka tech workspace during the blue hour. The background features a subtle silhouette of the city skyline through a window. The color palette blends deep navy and vibrant teal with warm gold accents, evoking a sense of deep mystery and curiosity. Ample negative space is preserved at the top for text overlay. The aesthetic is clean, professional, and tailored for tech-savvy young adults.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, Indian imagery, bright daylight",
       "quality_keywords": [
-        "cinematic lighting",
-        "hyper-detailed stadium",
-        "volumetric smoke",
-        "ray-traced reflections",
-        "8k resolution",
-        "professional sports grade"
+        "masterpiece",
+        "high-end production",
+        "ray tracing",
+        "volumetric lighting",
+        "sharp focus",
+        "award-winning digital art"
       ],
       "image_dimensions": "1080x1350",
       "seed_suggestion": 4242,
       "provider_preference": "pollinations"
     },
-    "670c8b3c-8b6a-4753-8ec9-5f4c836a1c1c_slide3": {
-      "post_id": "670c8b3c-8b6a-4753-8ec9-5f4c836a1c1c_slide3",
+    "feabd8a7-ce7c-4bff-a3f4-ab26192882ae": {
+      "post_id": "feabd8a7-ce7c-4bff-a3f4-ab26192882ae",
       "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style captures the electric, high-stakes energy of a global football derby while resonating with 18-30 sports enthusiasts in Bangladesh who consume high-production sports media.",
-      "composition": "layered_depth",
-      "composition_rationale": "Layered depth creates a dramatic, stadium-like atmosphere while maintaining a clean, out-of-focus background that naturally isolates the foreground and leaves generous negative space for the bilingual hook text.",
-      "primary_subject": "A glowing football resting on a rain-slicked pitch under dramatic stadium floodlights",
-      "background_environment": "A massive, smoky, atmospheric stadium bowl filled with blurred cheering crowds and dynamic green laser lights",
+      "visual_style_rationale": "Cinematic style is chosen because Bigg Boss content thrives on high drama, mystery, and reality-tv glamour. For the 18-30 demographic in Bangladesh who consume global entertainment media, a polished cinematic look bridges the gap between international standard aesthetics and local viewing habits, perfectly sparking curiosity.",
+      "composition": "negative_space",
+      "composition_rationale": "Negative space composition is essential here to deliberately draw the viewer's eye into the frame while providing an uncluttered zone for the impactful hook text overlay.",
+      "primary_subject": "A glowing, futuristic television screen glowing with reality TV stage lights in a dimly lit contemporary room",
+      "background_environment": "A modern Dhaka apartment living room at dusk with subtle ambient neon blue and warm gold lighting reflecting on indoor plants and a minimalist interior",
       "color_palette": {
-        "primary": "#0A2342",
-        "secondary": "#1CA7EC",
-        "accent": "#FFD700",
-        "rationale": "Deep navy represents night match tension, electric blue brings the modern tech-infused sports broadcast vibe, and vibrant gold/yellow acts as the ultimate curiosity and excitement trigger."
+        "primary": "#111827",
+        "secondary": "#1E3A8A",
+        "accent": "#F59E0B",
+        "rationale": "Dark navy blue (#111827 and #1E3A8A) represents the mystery, technology, and late-night binge-watching culture of reality TV, while the warm gold accent (#F59E0B) injects the excitement, glamour, and curiosity of the Bigg Boss stage lights."
       },
       "dominant_emotion": "curiosity",
       "region_visual_cues": [
-        "Dhaka street-side tea stall television gathering aesthetic",
-        "vibrant nocturnal city glow",
-        "youthful passionate sports fan community atmosphere"
+        "Dhaka skyline viewable through a modern apartment window at dusk",
+        "Subtle integration of local indoor aesthetics like cane or bamboo woven decor accents",
+        "Warm indoor ambient lighting typical of urban Bangladeshi households"
       ],
       "cultural_elements_to_include": [
-        "Subtle hints of smartphone screens glowing in a crowd",
-        "warm ambient street lighting typical of urban Bangladesh nights"
+        "Modern urban Bangladeshi living room setup",
+        "Smart TV screen displaying abstract reality show stage visuals",
+        "Ambient dusk cityscape lighting"
       ],
       "cultural_elements_to_avoid": [
-        "Generic American or European winter sports imagery",
-        "culturally inappropriate attire",
-        "pure black backgrounds",
-        "unnatural AI artifacts and distorted footballs"
+        "Indian or Western generic living room sets that do not resonate with urban Bangladeshi lifestyles",
+        "Direct copyright logos or characters from Bigg Boss to avoid policy flags",
+        "Overly sterile, western-minimalist spaces with zero cultural warmth"
       ],
       "text_overlay_space": "top_third",
       "text_overlay_color": "#FFFFFF",
       "text_overlay_background": "semi_dark",
-      "lighting_mood": "High contrast stadium floodlighting with dramatic volumetric light beams",
-      "time_of_day_depicted": "night",
-      "generation_prompt_pollinations": "glowing professional football on a rain-slicked pitch, cinematic, layered_depth, Dhaka street-side tea stall television gathering aesthetic, vibrant nocturnal city glow, deep navy #0A2342, electric blue #1CA7EC, accent gold #FFD700, curiosity atmosphere, professional sports photography, modern tech sports broadcast aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic shot of a glowing professional football resting on a rain-slicked stadium pitch at night, illuminated by dramatic volumetric floodlights. The background features a moody, atmospheric stadium bowl with electric blue and gold lighting accents, capturing the intense excitement of a major global football match popular among youth in Bangladesh.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, daylight, flat lighting",
+      "lighting_mood": "Moody, dramatic dusk lighting with glowing neon and warm highlights",
+      "time_of_day_depicted": "blue_hour",
+      "generation_prompt_pollinations": "A glowing futuristic television screen showing a mysterious reality TV stage, cinematic style, negative space composition, Dhaka skyline through a modern apartment window, warm bamboo decor accents, deep navy and warm gold color palette, curiosity atmosphere, professional cinematography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic shot of a modern urban apartment in Dhaka during the blue hour, featuring a glowing smart television screen with dramatic reality show stage lighting. The room is styled with subtle local bamboo decor elements and a view of the hazy city skyline outside the window. The color palette consists of deep midnight blue tones contrasted with vibrant warm gold accent lighting, creating a mysterious, high-end atmosphere that evokes intense curiosity.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, low resolution, cheap illustration",
       "quality_keywords": [
-        "hyper-realistic",
-        "volumetric lighting",
+        "cinematic lighting",
+        "hyper-detailed",
         "8k resolution",
-        "award-winning sports photography",
-        "sharp focus"
+        "professional color grading",
+        "depth of field"
+      ],
+      "image_dimensions": "1080x1350",
+      "seed_suggestion": 45892,
+      "provider_preference": "pollinations"
+    },
+    "1c96aad6-6726-424f-90f5-f045374dfe34_slide1": {
+      "post_id": "1c96aad6-6726-424f-90f5-f045374dfe34_slide1",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style creates a sense of epic discovery and mystery, perfectly matching the curiosity-driven content about ancient secrets, while maintaining high visual engagement for the 18-30 demographic in Bangladesh who consume premium streaming and digital content.",
+      "composition": "negative_space",
+      "composition_rationale": "Utilizing negative space ensures the composition draws the viewer's eye to the main subject while providing a clean, uncluttered area specifically designated for the hook text overlay.",
+      "primary_subject": "an ancient, mystical stone architecture blending with ethereal digital light projections",
+      "background_environment": "mysterious desert landscape under a twilight sky with subtle glowing holographic data fragments",
+      "color_palette": {
+        "primary": "#0A2540",
+        "secondary": "#D97706",
+        "accent": "#0D9488",
+        "rationale": "Deep navy (#0A2540) represents the mystery of the unknown, warm amber (#D97706) evokes Middle Eastern heritage and warmth, and teal (#0D9488) bridges the tech curiosity niche with modern digital aesthetics, resonating well with young Bangladeshi digital natives."
+      },
+      "dominant_emotion": "curiosity",
+      "region_visual_cues": [
+        "intricate geometric lattice patterns inspired by traditional terracotta and woodwork",
+        "warm earthy soil tones combined with starlight",
+        "subtle textures reminiscent of ancient manuscript calligraphy"
+      ],
+      "cultural_elements_to_include": [
+        "geometric archways",
+        "warm lantern-like illumination",
+        "dust particles floating in dramatic light rays"
+      ],
+      "cultural_elements_to_avoid": [
+        "generic western desert stereotypes",
+        "inaccurate architectural styles",
+        "overly bright neon lights that break the historical mystery aesthetic",
+        "political symbols or religious misappropriations"
+      ],
+      "text_overlay_space": "top_third",
+      "text_overlay_color": "#FFFFFF",
+      "text_overlay_background": "semi_dark",
+      "lighting_mood": "mysterious dramatic twilight with glowing volumetric light beams",
+      "time_of_day_depicted": "blue_hour",
+      "generation_prompt_pollinations": "ancient mystical architecture, cinematic style, negative_space composition, intricate geometric lattice patterns, warm earthy soil tones, deep navy and warm amber color palette, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic shot of a mysterious ancient architectural structure during blue hour, illuminated by warm amber lantern light and subtle teal digital glows. The composition features vast negative space in the upper portion for text. The atmosphere is deeply curious and awe-inspiring, with dust motes floating in dramatic light rays and intricate geometric patterns visible on the stone walls.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, modern skyscrapers, western imagery, bright daytime",
+      "quality_keywords": [
+        "ultra detailed",
+        "8k resolution",
+        "professional photography",
+        "volumetric lighting",
+        "cinematic depth of field"
       ],
       "image_dimensions": "1080x1350",
       "seed_suggestion": 42789,
+      "provider_preference": "pollinations"
+    },
+    "1c96aad6-6726-424f-90f5-f045374dfe34_slide2": {
+      "post_id": "1c96aad6-6726-424f-90f5-f045374dfe34_slide2",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style creates a grand, awe-inspiring atmosphere that naturally triggers curiosity and fits the architectural marvel of ancient mud skyscrapers, while appealing to the tech-savvy 18-30 demographic looking for high-quality, non-stock aesthetics.",
+      "composition": "wide_establishing",
+      "composition_rationale": "A wide establishing shot captures the scale of the ancient multi-story mud brick architecture against a dramatic sky, while leaving the upper portion completely uncluttered for the hook text overlay.",
+      "primary_subject": "ancient multi-story mud brick skyscrapers of Shibam Hadramawt, towering geometric mud architecture",
+      "background_environment": "vast desert valley landscape under a dramatic twilight sky with warm golden hour light hitting the intricate mud facades",
+      "color_palette": {
+        "primary": "#C86D33",
+        "secondary": "#2C3E50",
+        "accent": "#F4A623",
+        "rationale": "Terracotta and warm gold mimic the earthen tones of the ancient structures and desert landscape, paired with a deep twilight blue for contrast, evoking mystery, historical depth, and modern tech-aesthetic appeal."
+      },
+      "dominant_emotion": "curiosity",
+      "region_visual_cues": [
+        "geometric mud-brick building facades with white lime plaster details",
+        "traditional desert valley landscape with warm atmospheric haze",
+        "intricate lattice wooden windows integrated into ancient architecture"
+      ],
+      "cultural_elements_to_include": [
+        "authentic mud skyscraper architecture",
+        "traditional Middle Eastern desert valley topography",
+        "warm atmospheric dust and golden lighting"
+      ],
+      "cultural_elements_to_avoid": [
+        "South Asian architectural elements which do not fit the Yemen topic",
+        "generic stock photo overlays",
+        "overly saturated neon colors",
+        "modern skyscrapers that ruin the ancient aesthetic"
+      ],
+      "text_overlay_space": "top_third",
+      "text_overlay_color": "#F5F5F0",
+      "text_overlay_background": "semi_dark",
+      "lighting_mood": "dramatic golden hour lighting with long shadows and warm highlights",
+      "time_of_day_depicted": "golden_hour",
+      "generation_prompt_pollinations": "ancient multi-story mud brick skyscrapers of Shibam Hadramawt, cinematic, wide_establishing, geometric mud architecture, traditional desert valley landscape, terracotta and deep blue color palette, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A breathtaking cinematic wide establishing shot of the ancient multi-story mud brick skyscrapers of Shibam Hadramawt rising dramatically from a desert valley. The scene is illuminated by warm golden hour light casting long shadows across the intricate mud facades and white lime plaster details. The color palette features rich terracotta, warm gold, and deep twilight blue, creating an atmosphere of mystery and wonder tailored for a tech-savvy audience.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, modern buildings, green lush vegetation",
+      "quality_keywords": [
+        "hyper-detailed",
+        "cinematic lighting",
+        "8k resolution",
+        "award-winning photography",
+        "sharp focus",
+        "atmospheric depth"
+      ],
+      "image_dimensions": "1080x1350",
+      "seed_suggestion": 45892,
+      "provider_preference": "pollinations"
+    },
+    "1c96aad6-6726-424f-90f5-f045374dfe34_slide3": {
+      "post_id": "1c96aad6-6726-424f-90f5-f045374dfe34_slide3",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style creates a high-end, mysterious documentary feel that immediately sparks curiosity among young tech-savvy audiences in Bangladesh, aligning with viral entertainment content.",
+      "composition": "negative_space",
+      "composition_rationale": "Negative space places the subject off-center, creating a mysterious, expansive mood while leaving a dedicated clean zone for the hook text overlay.",
+      "primary_subject": "an ancient mysterious manuscript glowing with faint digital holographic lines",
+      "background_environment": "an atmospheric, misty ancient chamber combined with subtle futuristic tech UI elements, blending history and technology",
+      "color_palette": {
+        "primary": "#0F172A",
+        "secondary": "#0E7490",
+        "accent": "#F59E0B",
+        "rationale": "Deep slate blue and vibrant teal represent tech and mystery, while warm amber gold evokes historical treasures and catches the Bangladeshi eye for engagement."
+      },
+      "dominant_emotion": "curiosity",
+      "region_visual_cues": [
+        "intricate geometric lattice patterns inspired by traditional architecture",
+        "dust motes dancing in warm slanted light resembling old library archives",
+        "subtle textures of weathered parchment"
+      ],
+      "cultural_elements_to_include": [
+        "intricate geometric lattice patterns",
+        "atmospheric lighting with warm golden highlights",
+        "mysterious ancient textures"
+      ],
+      "cultural_elements_to_avoid": [
+        "generic western fantasy elements",
+        "inaccurate Middle Eastern clichés not fitting the context",
+        "overly saturated neon colors",
+        "political symbols or religious iconography",
+        "watermarks or text in the generated image"
+      ],
+      "text_overlay_space": "top_third",
+      "text_overlay_color": "#FFFFFF",
+      "text_overlay_background": "semi_dark",
+      "lighting_mood": "mysterious dramatic lighting with glowing cyan tech accents and warm amber backlights",
+      "time_of_day_depicted": "night",
+      "generation_prompt_pollinations": "an ancient mysterious manuscript glowing with faint digital holographic lines, cinematic, negative_space, intricate geometric lattice patterns, dust motes dancing in warm slanted light, deep slate blue #0F172A, vibrant teal #0E7490, warm amber gold #F59E0B, curiosity atmosphere, professional cinematography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic and atmospheric scene featuring an ancient mysterious manuscript glowing with faint digital holographic lines in a dark chamber. The lighting combines deep slate blue and vibrant teal shadows with a warm amber gold accent light highlighting intricate geometric lattice patterns and floating dust motes. The composition utilizes negative space at the top for text overlay, evoking a deep sense of curiosity and hidden secrets.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, Indian imagery, weapons, political flags",
+      "quality_keywords": [
+        "ultra detailed",
+        "8k resolution",
+        "professional cinematography",
+        "cinematic lighting",
+        "hyper-realistic textures"
+      ],
+      "image_dimensions": "1080x1350",
+      "seed_suggestion": 4242,
+      "provider_preference": "pollinations"
+    },
+    "3a0e87d3-00e4-4c83-bf2e-35147bb6e8a8_slide1": {
+      "post_id": "3a0e87d3-00e4-4c83-bf2e-35147bb6e8a8_slide1",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style creates an aura of intrigue and high-value storytelling, perfect for a curiosity-driven post about an enigmatic tech figure like Katie Zacharia, engaging the tech-savvy 18-30 demographic in Bangladesh.",
+      "composition": "negative_space",
+      "composition_rationale": "Using negative space allows the heavy curiosity hook text to be prominently displayed without cluttering the main focal point, ensuring high scroll-stopping power in the Facebook feed.",
+      "primary_subject": "A glowing holographic silhouette of a visionary tech innovator surrounded by floating data streams and subtle geometric network nodes",
+      "background_environment": "A dimly lit, futuristic workspace blending modern cyberpunk neon accents with traditional geometric architectural shadows reminiscent of Dhaka's contemporary tech hubs at dusk",
+      "color_palette": {
+        "primary": "#0A192F",
+        "secondary": "#64FFDA",
+        "accent": "#FFB703",
+        "rationale": "Deep navy represents trust and technology depth, vibrant teal triggers modern curiosity and digital relevance, and warm gold adds an inspirational Bangladeshi cultural resonance."
+      },
+      "dominant_emotion": "curiosity",
+      "region_visual_cues": [
+        "Dhaka skyline silhouette at dusk",
+        "subtle geometric motifs inspired by Jamdani textile patterns",
+        "warm ambient lighting reflecting local urban evening tones"
+      ],
+      "cultural_elements_to_include": [
+        "Subtle local tech workspace elements",
+        "Ambient dusk lighting typical of urban Bangladesh",
+        "Abstract geometric lattice patterns nodding to traditional weaving"
+      ],
+      "cultural_elements_to_avoid": [
+        "Generic Western-only office aesthetics without local context",
+        "Indian or other regional misrepresentations",
+        "Overused AI plastic textures and distorted hands"
+      ],
+      "text_overlay_space": "top_third",
+      "text_overlay_color": "#FFFFFF",
+      "text_overlay_background": "semi_dark",
+      "lighting_mood": "mysterious, high-contrast, glowing neon highlights against deep shadows",
+      "time_of_day_depicted": "blue_hour",
+      "generation_prompt_pollinations": "Glowing holographic silhouette of a visionary tech innovator, cinematic, negative_space, Dhaka skyline silhouette at dusk, subtle Jamdani geometric patterns, deep navy and vibrant teal color palette, curiosity atmosphere, professional technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic and mysterious tech-themed visual featuring a glowing holographic silhouette of an innovator amidst floating data streams, set against a dark moody background with subtle Dhaka skyline silhouettes at dusk and geometric patterns inspired by local textiles, lit with vibrant teal and warm gold accents creating a deep sense of curiosity.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, Indian imagery, weapons, political symbols",
+      "quality_keywords": [
+        "cinematic lighting",
+        "hyper-detailed",
+        "8k resolution",
+        "professional color grading",
+        "curiosity-inducing atmosphere"
+      ],
+      "image_dimensions": "1080x1350",
+      "seed_suggestion": 4242,
+      "provider_preference": "pollinations"
+    },
+    "3a0e87d3-00e4-4c83-bf2e-35147bb6e8a8_slide2": {
+      "post_id": "3a0e87d3-00e4-4c83-bf2e-35147bb6e8a8_slide2",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style is chosen because it bridges the gap between high-end global technology aesthetics and local inspirational storytelling, effectively capturing curiosity and ambition for an 18-30 demographic in Bangladesh.",
+      "composition": "negative_space",
+      "composition_rationale": "Negative space composition creates a dramatic, modern tech-focused atmosphere while leaving an uncluttered area perfectly designated for bold bilingual text overlays.",
+      "primary_subject": "A focused young female tech innovator of South Asian descent looking thoughtfully at a futuristic holographic interface displaying circuit patterns and global connectivity lines",
+      "background_environment": "A modern Dhaka co-working space subtly blending contemporary architecture with traditional Jamdani geometric pattern motifs etched on glass panels",
+      "color_palette": {
+        "primary": "#0F172A",
+        "secondary": "#0ea5e9",
+        "accent": "#F59E0B",
+        "rationale": "Deep slate blue (#0F172A) and vibrant tech cyan (#0ea5e9) establish a trustworthy global tech tone, while warm amber (#F59E0B) adds a culturally resonant golden glow that triggers curiosity and regional warmth."
+      },
+      "dominant_emotion": "curiosity",
+      "region_visual_cues": [
+        "modern Dhaka urban skyline blurred softly in the background",
+        "subtle Jamdani textile geometric patterns integrated into interior glass architecture",
+        "South Asian professional woman with natural warm skin tones and confident posture"
+      ],
+      "cultural_elements_to_include": [
+        "South Asian professional woman with natural warm skin tones",
+        "Subtle Jamdani-inspired geometric motifs",
+        "Modern progressive tech workspace reflecting Dhaka's startup boom"
+      ],
+      "cultural_elements_to_avoid": [
+        "Using generic Western stock models that do not resonate with local Bangladesh youth",
+        "Incorporating foreign architectural landmarks like Indian monuments",
+        "Overused artificial intelligence cliches with glowing floating magical spheres"
+      ],
+      "text_overlay_space": "top_third",
+      "text_overlay_color": "#FFFFFF",
+      "text_overlay_background": "semi_dark",
+      "lighting_mood": "Dramatic volumetric lighting with blue tech glow and warm golden accent rim light",
+      "time_of_day_depicted": "blue_hour",
+      "generation_prompt_pollinations": "A focused young female South Asian tech innovator, cinematic, negative space, modern Dhaka co-working space background, Jamdani geometric patterns on glass, deep slate blue, vibrant cyan, warm amber accent, curiosity atmosphere, professional technology aesthetic, ultra detailed, 8k resolution, no text, no watermark",
+      "generation_prompt_huggingface": "A cinematic shot of a confident young South Asian woman working in a modern tech environment in Dhaka, illuminated by soft blue and warm amber light with subtle traditional Jamdani geometric patterns in the background, creating an inspiring and curious atmosphere with plenty of negative space for text overlays.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, Indian architecture, Western settings",
+      "quality_keywords": [
+        "ultra detailed",
+        "8k resolution",
+        "cinematic lighting",
+        "professional photography",
+        "hyper-realistic"
+      ],
+      "image_dimensions": "1080x1350",
+      "seed_suggestion": 4242,
+      "provider_preference": "pollinations"
+    },
+    "3a0e87d3-00e4-4c83-bf2e-35147bb6e8a8_slide3": {
+      "post_id": "3a0e87d3-00e4-4c83-bf2e-35147bb6e8a8_slide3",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style creates a high-production, awe-inspiring atmosphere that instantly stops the scroll for tech-savvy youth in Bangladesh while elevating the inspirational storytelling of Katie Zacharia.",
+      "composition": "negative_space",
+      "composition_rationale": "Using generous negative space on the upper third ensures the hook text 'Everyone's saving this ⚡' is crystal clear and readable without visual clutter.",
+      "primary_subject": "A focused young South Asian woman software developer working on a dual-monitor laptop setup in a modern co-working space",
+      "background_environment": "A dimly lit, futuristic tech studio with subtle ambient blue and warm gold lighting, soft bokeh lights, and a hint of a Dhaka urban skyline visible through a large glass window",
+      "color_palette": {
+        "primary": "#0A2540",
+        "secondary": "#20639B",
+        "accent": "#F6D55C",
+        "rationale": "Deep navy and tech blue build trust and industry relevance, while warm gold/yellow accents trigger curiosity, aspiration, and stand out on Facebook feeds in Bangladesh."
+      },
+      "dominant_emotion": "curiosity",
+      "region_visual_cues": [
+        "modern Dhaka tech workspace interior",
+        "subtle integration of geometric Rickshaw art inspired patterns on a glass wall partition",
+        "authentic South Asian warm skin tones and natural expressions"
+      ],
+      "cultural_elements_to_include": [
+        "South Asian professional woman in tech",
+        "modern urban workspace reflecting Bangladesh's growing tech hub scene"
+      ],
+      "cultural_elements_to_avoid": [
+        "generic western office stock imagery",
+        "misrepresented regional attire or architecture",
+        "plastic-looking AI-generated faces",
+        "text or watermarks"
+      ],
+      "text_overlay_space": "top_third",
+      "text_overlay_color": "#FFFFFF",
+      "text_overlay_background": "semi_dark",
+      "lighting_mood": "Moody cinematic tech glow with warm highlights",
+      "time_of_day_depicted": "blue_hour",
+      "generation_prompt_pollinations": "A focused young South Asian woman software developer working in a modern tech workspace, cinematic, negative_space, modern Dhaka tech workspace, subtle geometric rickshaw art pattern on glass, deep navy and warm gold color palette, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people looking at camera",
+      "generation_prompt_huggingface": "Cinematic shot of a dedicated young South Asian female tech innovator working on dual monitors in a moody, modern Dhaka tech hub during blue hour. The lighting casts a soft professional glow with deep navy tones and striking warm gold accents. The composition features ample negative space at the top for text overlay, blending high-tech aesthetics with subtle local cultural design motifs on the glass partitions.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, Indian flags, western rustic barns",
+      "quality_keywords": [
+        "ultra detailed",
+        "8k resolution",
+        "cinematic lighting",
+        "professional color grading",
+        "photorealistic"
+      ],
+      "image_dimensions": "1080x1350",
+      "seed_suggestion": 4242,
       "provider_preference": "pollinations"
     }
   }

@@ -1,0 +1,8 @@
+{
+  "month": "2026-10",
+  "credits_exhausted": true,
+  "model": "black-forest-labs/FLUX.1-schnell",
+  "reason": "http_402_payment_required",
+  "updated_at": "2026-10-12T07:17:08.778196+00:00",
+  "message": "Client error '402 Payment Required' for url 'https://router.huggingface.co/nscale/v1/images/generations' (Request ID: Root=1-6acc8974-478ffebc3ddb0a71044b338a;d5088c29-4c09-4785-9ea7-a7f8152716e1)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+}

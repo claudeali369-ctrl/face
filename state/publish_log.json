@@ -1,17 +1,17 @@
 {
   "date": "2026-10-12",
-  "run_at": "2026-10-12T03:15:33.281637+00:00",
+  "run_at": "2026-10-12T07:19:18.256595+00:00",
   "published_count": 1,
   "failed_count": 1,
   "skipped_count": 0,
   "items": [
     {
-      "post_id": "796782446859518_122142354927061297",
+      "post_id": "796782446859518_122142370707061297",
       "format": "single_image",
       "status": "published"
     },
     {
-      "post_id": "699b0c9f-b4dd-42ba-a1d4-9bf7d6bcab20",
+      "post_id": "3a0e87d3-00e4-4c83-bf2e-35147bb6e8a8",
       "format": "story",
       "status": "failed",
       "error": "Story slide 2 has missing image_path: ''"

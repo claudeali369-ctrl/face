@@ -394,5 +394,89 @@
     "source_id": "5009982",
     "contributor": "congerdesign",
     "contributor_id": "509903"
+  },
+  "stock_photo::pixabay_photo_2185510": {
+    "asset_id": "pixabay_photo_2185510",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_2185510.jpg",
+    "cached_at": "2026-10-12T07:17:09.330426+00:00",
+    "source_url": "https://pixabay.com/get/ga3a74d1bbf42455a01d00a88177ee3dee47a37d9daeff02c718212720e86dffb50a1dd0baeaf24f4d0b845b052a2f0fef7c0e103ce92e4ab71891252ae45ff7d_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/tianjin-sunset-city-aerial-view-2185510/",
+    "source_id": "2185510",
+    "contributor": "asmuSe",
+    "contributor_id": "3280612"
+  },
+  "stock_photo::pixabay_photo_695164": {
+    "asset_id": "pixabay_photo_695164",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_695164.jpg",
+    "cached_at": "2026-10-12T07:17:12.515398+00:00",
+    "source_url": "https://pixabay.com/get/ge37512c31eb4bb51ffb4c7cf9029dc9c0654c4d859069b2b20f5b539d65ad6831ac724a2cea4b9d321bda9c8e4cfdd67e226a33ce33722d36830b52d36c6106d_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/smartphone-mobile-touch-finger-695164/",
+    "source_id": "695164",
+    "contributor": "geralt",
+    "contributor_id": "9301"
+  },
+  "stock_photo::pixabay_photo_7499160": {
+    "asset_id": "pixabay_photo_7499160",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_7499160.jpg",
+    "cached_at": "2026-10-12T07:17:45.860872+00:00",
+    "source_url": "https://pixabay.com/get/g19dfc25d12208931a627f8f09eb7a9c8fc8598ecf6fb6b77f719afa332c19ccdc4a5e048a314097d205d2de7570dba61a0ff604f6f7793588dd4185bf186523f_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/xr-mr-mixed-reality-virtual-reality-7499160/",
+    "source_id": "7499160",
+    "contributor": "BrianPenny",
+    "contributor_id": "29844978"
+  },
+  "stock_photo::pixabay_photo_5807013": {
+    "asset_id": "pixabay_photo_5807013",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_5807013.jpg",
+    "cached_at": "2026-10-12T07:18:09.604122+00:00",
+    "source_url": "https://pixabay.com/get/g8e37d8aa46e3fba1ad857ed71448543a150a9ac7a9c9ba88ca31dd0de14d94b2285b7c9177b4c95ae844fc3415870b7b2b16dfa6e3e8ee1245919d0e53882c0b_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/smoke-art-abstract-smoke-incense-5807013/",
+    "source_id": "5807013",
+    "contributor": "Konyvesotto",
+    "contributor_id": "13230314"
+  },
+  "stock_photo::pixabay_photo_9226515": {
+    "asset_id": "pixabay_photo_9226515",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_9226515.jpg",
+    "cached_at": "2026-10-12T07:18:15.552968+00:00",
+    "source_url": "https://pixabay.com/get/g6e715f34fcb50d1e8b999dfc5292bf1111d61c0d22f607186ca33934f2968be8ad3d6a9b19a608d4c11fad8e9525b7b6b70f6e56c9622353c1472a1e4c3820ff_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/skyscraper-architecture-city-facade-9226515/",
+    "source_id": "9226515",
+    "contributor": "Pana68",
+    "contributor_id": "33188895"
+  },
+  "stock_photo::pixabay_photo_3746423": {
+    "asset_id": "pixabay_photo_3746423",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_3746423.jpg",
+    "cached_at": "2026-10-12T07:18:45.707321+00:00",
+    "source_url": "https://pixabay.com/get/g8f0b73a4bd81a02a16f8e4a0690d6d3e167a9cdb07d34d76e0c883e419eb02191ac473d7a0b1d62455c448eec7ca89df84a74f8819e321728837cf69bbd2f1de_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/ruin-castle-middle-ages-dramatic-3746423/",
+    "source_id": "3746423",
+    "contributor": "Darkmoon_Art",
+    "contributor_id": "1664300"
+  },
+  "stock_photo::pixabay_photo_5653200": {
+    "asset_id": "pixabay_photo_5653200",
+    "asset_type": "stock_photo",
+    "local_path": "/home/runner/work/face/face/state/temp/pixabay_photo_5653200.jpg",
+    "cached_at": "2026-10-12T07:19:09.314464+00:00",
+    "source_url": "https://pixabay.com/get/gad28515f684c7e30c6a37134b32ec9df723bbe04d7b083e38aefff8f96f1a98fdc7fe2f79e6ed5035daeaf0a163745985b41e47e0fc5eac76b4f3e8f17fa876c_1280.jpg",
+    "source_provider": "Pixabay",
+    "source_page_url": "https://pixabay.com/photos/man-portrait-cafe-young-man-asian-5653200/",
+    "source_id": "5653200",
+    "contributor": "juno1412",
+    "contributor_id": "7661763"
   }
 }
