@@ -6,7 +6,9 @@ Target region: {target_region}
 Target language: {target_language}
 Audience age range: {audience_age_range}
 Tone: {tone}
-Content pillars: {content_pillars}
+Configured content pillars: {content_pillars}
+Pre-approved pillar for this slot: {approved_content_pillar}
+Trend topic type: {trend_topic_type}
 
 Trend topic: {trend_topic}
 Trend source: {trend_source}
@@ -22,7 +24,7 @@ Algorithm/policy guidance: {algorithm_rules}
 Return ONLY one valid JSON object, without Markdown, with these fields:
 {
   "format": "image",
-  "content_pillar": "one configured content pillar",
+  "content_pillar": "exact value of the pre-approved pillar above",
   "hook_type": "curiosity",
   "cta_type": "save_or_share",
   "dominant_emotion": "curiosity",
@@ -34,7 +36,12 @@ Return ONLY one valid JSON object, without Markdown, with these fields:
 
 Constraints:
 - format must be one of: image, text, story, reel. Do not return carousel because current publisher support does not reliably publish multi-image carousels.
-- content_pillar must match one of the supplied content pillars; if those are empty, choose a sensible niche-related pillar.
+- content_pillar must exactly equal the pre-approved pillar for this slot.
+- The pillar has already been validated against the trend's topic type.
+- Do not select, rename, or replace the pillar based on posting time,
+  format, performance preferences, or personal judgment.
+- You may choose the format, hook, CTA, and emotional angle, but
+  you must preserve the pre-approved content pillar.
 - hook_type should be a short label such as curiosity, surprising_fact, relatable_problem, before_after, myth_busting, or local_relevance.
 - cta_type should be a low-pressure label such as save_or_share, comment_with_experience, follow_for_more, or none. Avoid manipulative engagement bait.
 - optimal_post_time must equal the provided scheduled UTC time; do not invent another time.
