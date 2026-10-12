@@ -1,32 +1,20 @@
 {
-  "date": "2026-10-11",
-  "run_at": "2026-10-11T21:56:41.527333+00:00",
+  "date": "2026-10-12",
+  "run_at": "2026-10-12T03:15:33.281637+00:00",
   "published_count": 1,
-  "failed_count": 3,
+  "failed_count": 1,
   "skipped_count": 0,
   "items": [
     {
-      "post_id": "796782446859518_122142332247061297",
+      "post_id": "796782446859518_122142354927061297",
       "format": "single_image",
       "status": "published"
     },
     {
-      "post_id": "6366dac7-0a22-4d8d-b2c8-c9e7ae12c9ee",
-      "format": "single_image",
-      "status": "failed",
-      "error": "image_ready=False or missing image_path for 6366dac7-0a22-4d8d-b2c8-c9e7ae12c9ee"
-    },
-    {
-      "post_id": "71d97d78-421a-4854-9955-67453a6ae7d7",
-      "format": "single_image",
-      "status": "failed",
-      "error": "image_ready=False or missing image_path for 71d97d78-421a-4854-9955-67453a6ae7d7"
-    },
-    {
-      "post_id": "fc3c26f2-573b-43e6-9b53-0066dc6abae7",
+      "post_id": "699b0c9f-b4dd-42ba-a1d4-9bf7d6bcab20",
       "format": "story",
       "status": "failed",
-      "error": "Story slide 1 has missing image_path: ''"
+      "error": "Story slide 2 has missing image_path: ''"
     }
   ]
 }
