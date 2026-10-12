@@ -9,9 +9,9 @@ writes the top 10 to state/trends.json.
 
 Sources:
   1. Google Trends RSS  (no auth)
-  2. Reddit JSON API    (no auth)
-  3. YouTube Trending RSS (no auth)
-  4. Nitter RSS         (no auth, multiple fallback instances)
+  2. Reddit JSON API (may be blocked on hosted runners)
+  3. Hacker News top stories API (no auth; technology-focused fallback)
+  4. Nitter RSS (multiple fallback instances)
 
 Run:
     python agents/trend_hunter.py
@@ -40,7 +40,6 @@ from utils.config_loader import (
     get_content_pillars,
     is_approved_trend,
 )
-from utils.gemini_client import get_gemini_client, GeminiQuotaExhaustedError
 from utils.logger import get_logger, log_exception
 from utils.rate_limiter import GEMINI_LIMITER
 from utils.state_manager import write_state
@@ -65,6 +64,7 @@ NITTER_INSTANCES = [
 NICHE_SUBREDDITS: dict[str, list[str]] = {
     "travel":      ["travel", "solotravel", "backpacking"],
     "tech":        ["technology", "programming", "artificial"],
+    "technology":        ["technology", "programming", "artificial"],
     "food":        ["food", "recipes", "cooking"],
     "motivation":  ["GetMotivated", "selfimprovement", "DecidingToBeBetter"],
     "education":   ["learnprogramming", "todayilearned", "explainlikeimfive"],
@@ -272,57 +272,111 @@ def fetch_reddit(subreddits: list[str]) -> list[dict]:
     return trends
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Source 3 — YouTube Trending RSS
+# Source 3 — Hacker News top stories API
 # ─────────────────────────────────────────────────────────────────────────────
 
-def fetch_youtube_trending(country_code: str) -> list[dict]:
-    """
-    Fetch trending YouTube videos via the public Atom feed.
+HACKER_NEWS_API = "https://hacker-news.firebaseio.com/v0"
+MAX_HACKER_NEWS_STORIES = 30
 
-    Returns a list of raw trend dicts.
+
+def _fetch_hacker_news_item(story_id: int) -> dict | None:
+    """Fetch one Hacker News item, returning its JSON object when valid."""
+    url = f"{HACKER_NEWS_API}/item/{story_id}.json"
+    response = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
+    response.raise_for_status()
+    item = response.json()
+    return item if isinstance(item, dict) else None
+
+
+def fetch_hacker_news(limit: int = MAX_HACKER_NEWS_STORIES) -> list[dict]:
+    """Fetch ranked Hacker News stories as a technology-focused trend source.
+
+    This provides a no-key fallback when social feeds are blocked on hosted
+    runners. A failure for one story does not prevent other stories from being
+    considered.
     """
-    url = (
-        f"https://www.youtube.com/feeds/videos.xml"
-        f"?chart=trending&regionCode={country_code}&hl=en"
-    )
-    log.info("YouTube Trending: fetching %s", url)
+    log.info("Hacker News: fetching top story IDs")
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
-        resp.raise_for_status()
-    except requests.RequestException as exc:
-        log_exception(log, exc, "YouTube Trending fetch failed")
+        response = requests.get(
+            f"{HACKER_NEWS_API}/topstories.json",
+            headers=HEADERS,
+            timeout=REQUEST_TIMEOUT,
+        )
+        response.raise_for_status()
+        payload = response.json()
+    except (requests.RequestException, ValueError) as exc:
+        log_exception(log, exc, "Hacker News top stories fetch failed")
+        return []
+
+    if not isinstance(payload, list):
+        log.warning("Hacker News returned an unexpected top stories payload")
+        return []
+
+    story_ids = [
+        value for value in payload
+        if isinstance(value, int) and not isinstance(value, bool)
+    ][:max(0, limit)]
+    if not story_ids:
+        log.warning("Hacker News returned no story IDs")
         return []
 
     trends: list[dict] = []
-    try:
-        ns = {
-            "atom":  "http://www.w3.org/2005/Atom",
-            "media": "http://search.yahoo.com/mrss/",
-            "yt":    "http://www.youtube.com/xml/schemas/2015",
+    with ThreadPoolExecutor(max_workers=min(8, len(story_ids))) as pool:
+        futures = {
+            pool.submit(_fetch_hacker_news_item, story_id): story_id
+            for story_id in story_ids
         }
-        root = ET.fromstring(resp.content)
-        for entry in root.findall("atom:entry", ns):
-            title_el = entry.find("atom:title", ns)
-            published_el = entry.find("atom:published", ns)
-            summary_el = entry.find("media:group/media:description", ns)
-            title = _clean_text(title_el.text if title_el is not None else "")
-            published = (published_el.text or "") if published_el is not None else ""
-            summary = _clean_text(summary_el.text if summary_el is not None else "")
-            if not title:
+        for future in as_completed(futures):
+            story_id = futures[future]
+            try:
+                story = future.result()
+            except Exception as exc:  # noqa: BLE001
+                log_exception(log, exc, f"Hacker News item {story_id} fetch failed")
                 continue
+
+            if (
+                not isinstance(story, dict)
+                or story.get("type") != "story"
+                or story.get("deleted")
+                or story.get("dead")
+            ):
+                continue
+
+            topic = _clean_text(str(story.get("title") or ""))
+            if not topic:
+                continue
+            try:
+                score = max(0, int(story.get("score", 0) or 0))
+            except (TypeError, ValueError):
+                score = 0
+
+            timestamp = story.get("time")
+            published_at = ""
+            if isinstance(timestamp, (int, float)) and not isinstance(timestamp, bool):
+                try:
+                    published_at = datetime.fromtimestamp(
+                        timestamp, timezone.utc
+                    ).isoformat()
+                except (OverflowError, OSError, ValueError):
+                    published_at = ""
+
             trends.append({
-                "topic": title,
-                "source": "youtube",
-                "raw_score": 7.0,   # YouTube trending is already curated — flat score
+                "topic": topic,
+                "source": "hacker_news",
+                "raw_score": min(score / 100.0, 10.0),
                 "raw_data": {
-                    "published": published,
-                    "summary": summary[:200],
+                    "story_id": story.get("id", story_id),
+                    "score": score,
+                    "num_comments": story.get("descendants", 0),
+                    "url": story.get("url", ""),
+                    "published_at": published_at,
                 },
             })
-        log.info("YouTube Trending: collected %d items", len(trends))
-    except ET.ParseError as exc:
-        log_exception(log, exc, "YouTube Trending XML parse error")
+
+    trends.sort(key=lambda trend: trend["raw_score"], reverse=True)
+    log.info("Hacker News: collected %d stories", len(trends))
     return trends
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Source 4 — Nitter RSS
@@ -388,7 +442,7 @@ def _fetch_all_sources_parallel(cfg: dict) -> list[dict]:
     tasks = {
         "google_trends": (fetch_google_trends, (country_code,)),
         "reddit":        (fetch_reddit,         (subreddits,)),
-        "youtube":       (fetch_youtube_trending, (country_code,)),
+        "hacker_news": (fetch_hacker_news, ()),
         "nitter":        (fetch_nitter,          (niche,)),
     }
 
@@ -423,6 +477,11 @@ def _score_trend_with_gemini(
     Call Gemini trend_analysis.txt for a single trend topic.
     Returns enriched trend dict or None on failure.
     """
+    # Load Gemini lazily so source-fetching tests do not require its native
+    # dependencies to import successfully. The production scoring path still
+    # uses the same Gemini client and quota exception.
+    from utils.gemini_client import GeminiQuotaExhaustedError
+
     try:
         GEMINI_LIMITER.acquire()
         result = client.generate_json(
@@ -561,6 +620,10 @@ def main() -> None:
 
     # ── Step 3: Score with Gemini ───────────────────────────────────────────
     log.info("Step 3/4 — Scoring top candidates with Gemini")
+    from utils.gemini_client import (
+        get_gemini_client,
+        GeminiQuotaExhaustedError,
+    )
     client = get_gemini_client()
     scored: list[dict] = []
 
