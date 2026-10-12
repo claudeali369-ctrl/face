@@ -581,7 +581,7 @@ def main() -> None:
         if scored_trend:
             scored.append(scored_trend)
 
-        if not scored:
+    if not scored:
         log.error(
             "No trends passed configured pillar/type validation. "
             "Writing an empty trends file and stopping safely."

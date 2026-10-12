@@ -1,0 +1,23 @@
+name: Python Syntax Check
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+      - name: Compile project Python files
+        shell: bash
+        run: |
+          python -m compileall -q agents utils tests
+          python -m compileall -q apply_face_publisher_fix.py face_huggingface_fix.py
