@@ -260,9 +260,29 @@ def _strategy_for_slot(
             slot_number=str(slot_info["slot"]),
             scheduled_time_utc=slot_info["scheduled_time_utc"],
             algorithm_rules=json.dumps(algo_rules),
+            approved_content_pillar=slot_info["pillar"],
+            trend_topic_type=trend.get("topic_type", ""),
         )
-        # Merge: Gemini output wins, fallback fills missing keys
+        # Gemini may suggest creative details, but cannot change the pillar.
+        if not isinstance(result, dict):
+            raise ValueError("Gemini returned a non-object strategy response")
+
+        returned_pillar = result.get("content_pillar")
+
+        if returned_pillar != slot_info["pillar"]:
+            log.warning(
+                "Gemini returned pillar %r for slot %s; "
+                "keeping pre-approved pillar %r",
+                returned_pillar,
+                slot_info["slot"],
+                slot_info["pillar"],
+            )
+
         merged = {**fallback, **result}
+
+        # Enforce the approved value after merging Gemini's response.
+        merged["content_pillar"] = slot_info["pillar"]
+
         return merged
     except GeminiQuotaExhaustedError:
         raise   # propagate — caller halts loop
@@ -386,7 +406,7 @@ def _build_content_plan(
             "scheduled_time_utc": strategy.get("optimal_post_time", scheduled_time_utc),
             "format":             _normalize_format(strategy.get("format", assigned_format), assigned_format),
             "trend_topic":        trend["topic"],
-            "content_pillar":     strategy.get("content_pillar", pillar),
+            "content_pillar":     pillar,
             "hook_type":          strategy.get("hook_type", slot_profile["hook_types"][0]),
             "cta_type":           strategy.get("cta_type", "comment"),
             "dominant_emotion":   strategy.get("dominant_emotion",
