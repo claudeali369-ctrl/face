@@ -34,7 +34,12 @@ from urllib.parse import quote_plus
 import aiohttp
 import requests
 
-from utils.config_loader import get_config, build_prompt_context
+from utils.config_loader import (
+    get_config,
+    build_prompt_context,
+    get_content_pillars,
+    is_approved_trend,
+)
 from utils.gemini_client import get_gemini_client, GeminiQuotaExhaustedError
 from utils.logger import get_logger, log_exception
 from utils.rate_limiter import GEMINI_LIMITER
@@ -412,6 +417,7 @@ def _score_trend_with_gemini(
     client,
     trend: dict,
     ctx: dict,
+    pillars: list[dict],
 ) -> dict | None:
     """
     Call Gemini trend_analysis.txt for a single trend topic.
@@ -433,29 +439,77 @@ def _score_trend_with_gemini(
         log_exception(log, exc, f"Gemini scoring failed for topic: {trend['topic'][:60]}")
         return None
 
-    # Gemini must return: virality_score, niche_fit_score, region_fit_score,
-    # recommended_format, hook_angle
-    required = {"virality_score", "niche_fit_score", "region_fit_score",
-                "recommended_format", "hook_angle"}
-    if not required.issubset(result.keys()):
-        log.warning("Gemini response missing fields for topic %r: %s",
-                    trend["topic"][:60], result)
+    
+    required = {
+        "virality_score",
+        "niche_fit_score",
+        "region_fit_score",
+        "recommended_format",
+        "hook_angle",
+        "content_pillar",
+        "topic_type",
+        "relevance_rationale",
+    }
+
+    if not isinstance(result, dict) or not required.issubset(result):
+        log.warning(
+            "Gemini response missing required fields for topic %r",
+            trend["topic"][:60],
+        )
         return None
 
-    vs  = float(result["virality_score"])
-    ns  = float(result["niche_fit_score"])
-    rs  = float(result["region_fit_score"])
-    combined = round((vs * 0.4 + ns * 0.35 + rs * 0.25), 2)
+    try:
+        vs = float(result["virality_score"])
+        ns = float(result["niche_fit_score"])
+        rs = float(result["region_fit_score"])
+    except (TypeError, ValueError):
+        log.warning("Invalid trend scores for %r", trend["topic"][:60])
+        return None
+
+    import math
+
+    if any(
+        not math.isfinite(score) or not 0 <= score <= 10
+        for score in (vs, ns, rs)
+    ):
+        log.warning("Out-of-range trend scores for %r", trend["topic"][:60])
+        return None
+
+    classified = {
+        **trend,
+        "virality_score": vs,
+        "niche_fit_score": ns,
+        "region_fit_score": rs,
+        "content_pillar": result["content_pillar"],
+        "topic_type": result["topic_type"],
+        "relevance_rationale": str(
+            result.get("relevance_rationale") or ""
+        ).strip(),
+    }
+
+    if not classified["relevance_rationale"]:
+        log.info("Rejecting trend with no relevance rationale: %r", trend["topic"])
+        return None
+
+    if not is_approved_trend(classified, pillars):
+        log.info(
+            "Rejecting trend that fails configured pillar/type validation: %r",
+            trend["topic"][:80],
+        )
+        return None
+
+    combined = round(
+        vs * 0.4 + ns * 0.35 + rs * 0.25,
+        2,
+    )
 
     return {
-        **trend,
-        "virality_score":    vs,
-        "niche_fit_score":   ns,
-        "region_fit_score":  rs,
-        "combined_score":    combined,
+        **classified,
+        "combined_score": combined,
         "recommended_format": result["recommended_format"],
-        "hook_angle":         result.get("hook_angle", ""),
+        "hook_angle": str(result.get("hook_angle") or ""),
     }
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Main agent
@@ -473,9 +527,11 @@ def main() -> None:
         log_exception(log, exc, "Failed to load config — aborting")
         raise SystemExit(1)
 
-    niche  = cfg.get("niche", "general")
+    niche = cfg.get("niche", "general")
     region = cfg.get("target_region", "global")
-    ctx    = build_prompt_context()   # flat dict of all config placeholders
+    
+    pillars = get_content_pillars(cfg)
+    ctx = build_prompt_context()   # flat dict of all config placeholders
 
     log.info("Niche: %s | Region: %s", niche, region)
 
@@ -513,7 +569,12 @@ def main() -> None:
     for i, trend in enumerate(candidates, 1):
         log.debug("Scoring %d/%d: %s", i, len(candidates), trend["topic"][:60])
         try:
-            scored_trend = _score_trend_with_gemini(client, trend, ctx)
+            scored_trend = _score_trend_with_gemini(
+                client,
+                trend,
+                ctx,
+                pillars,
+            )
         except GeminiQuotaExhaustedError:
             log.critical("Stopping Gemini scoring due to quota exhaustion")
             break
@@ -521,24 +582,12 @@ def main() -> None:
             scored.append(scored_trend)
 
     if not scored:
-        log.error("No trends survived Gemini scoring — writing raw top 10 as fallback")
-        # Build fallback entries with placeholder scores
-        fallback: list[dict] = []
-        for i, t in enumerate(unique_trends[:TOP_N_TRENDS], 1):
-            fallback.append({
-                "rank": i,
-                "topic": t["topic"],
-                "source": t["source"],
-                "virality_score":   t.get("raw_score", 5.0),
-                "niche_fit_score":  5.0,
-                "region_fit_score": 5.0,
-                "combined_score":   t.get("raw_score", 5.0),
-                "recommended_format": "single_image",
-                "hook_angle": "General interest angle",
-                "raw_data": t.get("raw_data", {}),
-            })
-        _write_trends(region, niche, fallback)
-        return
+    log.error(
+        "No trends passed configured pillar/type validation. "
+        "Writing an empty trends file and stopping safely."
+    )
+    _write_trends(region, niche, [])
+    raise SystemExit(1)
 
     # ── Step 4: Rank and write top 10 ──────────────────────────────────────
     log.info("Step 4/4 — Ranking and writing state/trends.json")
