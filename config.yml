@@ -74,12 +74,62 @@ tone: "Curious, credible, practical, conversational and evidence-first"
 # Content pillars — the 3-5 themes your page rotates through.
 # ContentStrategyAgent ensures no pillar repeats consecutively.
 # Recommended: 4-5 pillars for variety.
+
 content_pillars:
-  - "Practical AI Tools"
-  - "Tech Tips and Tutorials"
-  - "Gadgets and App Explainers"
-  - "Digital Safety and Privacy"
-  - "Emerging Technology Explained"
+  - name: "Practical AI Tools"
+    description: "AI tools, useful workflows, prompts, and automation."
+    purpose: "Help the audience use AI to solve practical problems."
+    approved_topic_types:
+      - "ai_tool_review"
+      - "ai_workflow"
+      - "productivity_automation"
+      - "prompt_engineering"
+      - "practical_ai_use_case"
+      - "ai_product_update"
+      - "ai_safety_and_limitations"
+
+  - name: "Tech Tips and Tutorials"
+    description: "Actionable guidance for software, devices, apps, and digital productivity."
+    purpose: "Help the audience learn useful technical skills."
+    approved_topic_types:
+      - "software_how_to"
+      - "troubleshooting"
+      - "device_how_to"
+      - "productivity_tip"
+      - "coding_tutorial"
+      - "app_tutorial"
+
+  - name: "Gadgets and App Explainers"
+    description: "Consumer technology, product features, and application comparisons."
+    purpose: "Help people understand technology and make informed choices."
+    approved_topic_types:
+      - "gadget_explainer"
+      - "app_explainer"
+      - "product_comparison"
+      - "product_launch"
+      - "consumer_tech_news"
+
+  - name: "Digital Safety and Privacy"
+    description: "Cybersecurity, scams, privacy, and account protection."
+    purpose: "Help people recognize online risks and protect their accounts."
+    approved_topic_types:
+      - "cybersecurity_advisory"
+      - "scam_awareness"
+      - "privacy_tip"
+      - "account_security"
+      - "data_breach_explainer"
+      - "digital_safety_how_to"
+
+  - name: "Emerging Technology Explained"
+    description: "Emerging technologies, credible research, and industry developments."
+    purpose: "Explain new technology clearly without overstating the evidence."
+    approved_topic_types:
+      - "emerging_technology"
+      - "research_explainer"
+      - "tech_industry_news"
+      - "science_and_technology"
+      - "ai_research_explainer"
+
 
 # ───────────────────────────────────────────────────────────────────────────
 # VISUAL SETTINGS
