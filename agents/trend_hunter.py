@@ -605,8 +605,11 @@ def main() -> None:
             "region_fit_score":  round(t["region_fit_score"], 2),
             "combined_score":    round(t["combined_score"], 2),
             "recommended_format": t["recommended_format"],
-            "hook_angle":         t["hook_angle"],
-            "raw_data":           t.get("raw_data", {}),
+            "hook_angle": t["hook_angle"],
+            "content_pillar": t["content_pillar"],
+            "topic_type": t["topic_type"],
+            "relevance_rationale": t["relevance_rationale"],
+            "raw_data": t.get("raw_data", {}),
         })
 
     _write_trends(region, niche, output_trends)
