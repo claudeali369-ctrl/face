@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import logging
+import math
 import re
 from datetime import datetime, time, timezone
 from pathlib import Path
@@ -19,7 +20,7 @@ _CONFIG: dict[str, Any] | None = None
 _CONFIG_PATH = Path(__file__).resolve().parent.parent / "config.yml"
 _TIME_RE = re.compile(r"^(?:[01]\d|2[0-3]):[0-5]\d$")
 _DEFAULT_POSTING_TIMES_UTC = ["03:00", "07:00", "14:00"]
-
+MIN_TREND_NICHE_FIT_SCORE = 6.5
 
 def get_config() -> dict[str, Any]:
     """Return the cached config after validating the repository's real schema."""
@@ -45,30 +46,75 @@ def _load_and_validate() -> dict[str, Any]:
     except yaml.YAMLError as exc:
         raise ValueError(f"config.yml is invalid YAML: {exc}") from exc
 
-    if not isinstance(cfg, dict):
-        raise ValueError("config.yml must contain a YAML mapping at the top level")
+    raw_pillars = cfg.get("content_pillars")
 
-    required_top_level = (
-        "page_name", "niche", "target_region", "target_language",
-        "audience_age_range", "posting_schedule", "tone", "content_pillars",
-        "visual", "agents", "api", "quality_gate", "schedule",
-        "self_improvement",
-    )
-    missing = [key for key in required_top_level if key not in cfg]
-    if missing:
+    if not isinstance(raw_pillars, list) or not raw_pillars:
         raise ValueError(
-            "config.yml is missing required top-level keys matching the current "
-            f"schema: {', '.join(missing)}"
+            "config.yml content_pillars must be a non-empty list"
         )
-
-    for section in ("posting_schedule", "visual", "agents", "api", "quality_gate", "schedule", "self_improvement"):
-        if not isinstance(cfg.get(section), dict):
-            raise ValueError(f"config.yml [{section}] must be a mapping")
-
-    if not str(cfg.get("api", {}).get("gemini_model", "")).strip():
-        raise ValueError("config.yml [api].gemini_model must be a non-empty model ID")
-    if not isinstance(cfg.get("content_pillars"), list) or not cfg["content_pillars"]:
-        raise ValueError("config.yml content_pillars must be a non-empty list")
+    
+    pillar_names: set[str] = set()
+    
+    for index, pillar in enumerate(raw_pillars):
+        label = f"config.yml content_pillars[{index}]"
+    
+        if not isinstance(pillar, dict):
+            raise ValueError(
+                f"{label} must be a mapping with name, description, "
+                "purpose, and approved_topic_types"
+            )
+    
+        for field in ("name", "description", "purpose"):
+            value = pillar.get(field)
+            if not isinstance(value, str) or not value.strip():
+                raise ValueError(
+                    f"{label}.{field} must be a non-empty string"
+                )
+    
+        name = pillar["name"]
+    
+        if name in pillar_names:
+            raise ValueError(f"Duplicate content pillar name: {name!r}")
+    
+        pillar_names.add(name)
+    
+        topic_types = pillar.get("approved_topic_types")
+    
+        if (
+            not isinstance(topic_types, list)
+            or not topic_types
+            or any(
+                not isinstance(item, str) or not item.strip()
+                for item in topic_types
+            )
+            or len(topic_types) != len(set(topic_types))
+        ):
+            raise ValueError(
+                f"{label}.approved_topic_types must be a "
+                "non-empty list of unique strings"
+            )
+    
+        required_top_level = (
+            "page_name", "niche", "target_region", "target_language",
+            "audience_age_range", "posting_schedule", "tone", "content_pillars",
+            "visual", "agents", "api", "quality_gate", "schedule",
+            "self_improvement",
+        )
+        missing = [key for key in required_top_level if key not in cfg]
+        if missing:
+            raise ValueError(
+                "config.yml is missing required top-level keys matching the current "
+                f"schema: {', '.join(missing)}"
+            )
+    
+        for section in ("posting_schedule", "visual", "agents", "api", "quality_gate", "schedule", "self_improvement"):
+            if not isinstance(cfg.get(section), dict):
+                raise ValueError(f"config.yml [{section}] must be a mapping")
+    
+        if not str(cfg.get("api", {}).get("gemini_model", "")).strip():
+            raise ValueError("config.yml [api].gemini_model must be a non-empty model ID")
+        if not isinstance(cfg.get("content_pillars"), list) or not cfg["content_pillars"]:
+            raise ValueError("config.yml content_pillars must be a non-empty list")
 
     # Validate posting run-times without assuming these are local times.
     times = cfg.get("schedule", {}).get("daily_run_times_utc", [])
@@ -77,6 +123,134 @@ def _load_and_validate() -> dict[str, Any]:
             raise ValueError("config.yml [schedule].daily_run_times_utc must be a list of HH:MM UTC strings")
     logging.info("config.yml loaded and validated")
     return cfg
+
+
+
+def get_content_pillars(
+    cfg: dict[str, Any] | None = None,
+) -> list[dict[str, Any]]:
+    """Return validated content pillar definitions."""
+    source = cfg if cfg is not None else get_config()
+    raw_pillars = source.get("content_pillars", [])
+
+    if not isinstance(raw_pillars, list) or not raw_pillars:
+        raise ValueError("content_pillars must be a non-empty list")
+
+    pillars: list[dict[str, Any]] = []
+    seen_names: set[str] = set()
+
+    for index, item in enumerate(raw_pillars):
+        if not isinstance(item, dict):
+            raise ValueError(
+                f"content_pillars[{index}] must be a mapping"
+            )
+
+        name = item.get("name")
+        description = item.get("description")
+        purpose = item.get("purpose")
+        topic_types = item.get("approved_topic_types")
+
+        if not all(
+            isinstance(value, str) and value.strip()
+            for value in (name, description, purpose)
+        ):
+            raise ValueError(
+                f"content_pillars[{index}] has invalid metadata"
+            )
+
+        if name in seen_names:
+            raise ValueError(f"Duplicate content pillar name: {name!r}")
+
+        if (
+            not isinstance(topic_types, list)
+            or not topic_types
+            or any(
+                not isinstance(value, str) or not value.strip()
+                for value in topic_types
+            )
+            or len(topic_types) != len(set(topic_types))
+        ):
+            raise ValueError(
+                f"content_pillars[{index}].approved_topic_types "
+                "must contain unique, non-empty strings"
+            )
+
+        seen_names.add(name)
+        pillars.append({
+            "name": name,
+            "description": description,
+            "purpose": purpose,
+            "approved_topic_types": list(topic_types),
+        })
+
+    return pillars
+
+
+def format_content_pillar_definitions(
+    pillars: list[dict[str, Any]],
+) -> str:
+    """Format pillar definitions for the Gemini prompts."""
+    blocks = []
+
+    for pillar in pillars:
+        blocks.append(
+            f'- Exact name: {pillar["name"]}\n'
+            f'  Description: {pillar["description"]}\n'
+            f'  Purpose: {pillar["purpose"]}\n'
+            f'  Approved topic types: '
+            f'{", ".join(pillar["approved_topic_types"])}'
+        )
+
+    return "\n".join(blocks)
+
+
+def is_approved_trend(
+    trend: dict[str, Any],
+    pillars: list[dict[str, Any]] | None = None,
+    min_niche_fit_score: float = MIN_TREND_NICHE_FIT_SCORE,
+) -> bool:
+    """Reject trends without an exact, approved pillar/topic-type match."""
+    if (
+        not isinstance(trend, dict)
+        or not isinstance(trend.get("topic"), str)
+        or not trend["topic"].strip()
+    ):
+        return False
+
+    pillar_name = trend.get("content_pillar")
+    topic_type = trend.get("topic_type")
+
+    if not isinstance(pillar_name, str):
+        return False
+
+    if not isinstance(topic_type, str):
+        return False
+
+    definitions = (
+        pillars if pillars is not None else get_content_pillars()
+    )
+
+    matching_pillar = next(
+        (pillar for pillar in definitions
+         if pillar["name"] == pillar_name),
+        None,
+    )
+
+    if matching_pillar is None:
+        return False
+
+    if topic_type not in matching_pillar["approved_topic_types"]:
+        return False
+
+    try:
+        niche_fit = float(trend.get("niche_fit_score"))
+    except (TypeError, ValueError):
+        return False
+
+    return (
+        math.isfinite(niche_fit)
+        and min_niche_fit_score <= niche_fit <= 10.0
+    )
 
 
 def get_posting_times_utc() -> list[str]:
@@ -145,6 +319,19 @@ def build_prompt_context() -> dict[str, str]:
     visual = cfg.get("visual", {})
     agents = cfg.get("agents", {})
     schedule = cfg.get("schedule", {})
+
+    pillar_definitions = get_content_pillars(cfg)
+
+    pillar_names = ", ".join(
+        pillar["name"] for pillar in pillar_definitions
+    )
+    
+    approved_types = sorted({
+        topic_type
+        for pillar in pillar_definitions
+        for topic_type in pillar["approved_topic_types"]
+    })
+    
     flat.update({
         "page_name": str(cfg.get("page_name", "")),
         "niche": str(cfg.get("niche", "general")),
@@ -153,7 +340,12 @@ def build_prompt_context() -> dict[str, str]:
         "target_language": str(cfg.get("target_language", "English")),
         "audience_age_range": str(cfg.get("audience_age_range", "18+")),
         "tone": str(cfg.get("tone", "conversational")),
-        "content_pillars": ", ".join(map(str, cfg.get("content_pillars", []))),
+        "content_pillars": pillar_names,
+
+        "content_pillar_definitions":
+            format_content_pillar_definitions(pillar_definitions),
+        
+        "approved_topic_types": ", ".join(approved_types),
         "posts_per_day": str(posting.get("posts_per_day", 3)),
         "stories_per_day": str(posting.get("stories_per_day", 0)),
         "reels_per_week": str(posting.get("reels_per_week", 0)),
