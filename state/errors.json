@@ -95,6 +95,30 @@
       "error": "Story slide 1 has missing image_path: ''",
       "timestamp": "2026-10-13T03:14:30.416963+00:00",
       "agent": "publisher"
+    },
+    {
+      "post_id": "cc3fd91e-0006-4202-b45f-add49afaa476",
+      "error": "image_ready is not true",
+      "timestamp": "2026-10-13T04:44:44.799752+00:00",
+      "agent": "publisher"
+    },
+    {
+      "post_id": "cb236555-a47c-435c-888a-f41d28068b23",
+      "error": "image_ready is not true",
+      "timestamp": "2026-10-13T04:44:44.801587+00:00",
+      "agent": "publisher"
+    },
+    {
+      "post_id": "46976164-2740-413e-8910-2bb3b9c01a6b",
+      "error": "story image_ready is not true",
+      "timestamp": "2026-10-13T04:44:44.802882+00:00",
+      "agent": "publisher"
+    },
+    {
+      "post_id": "b194bed8-7426-45ac-852c-5b4b236f111e",
+      "error": "story image_ready is not true",
+      "timestamp": "2026-10-13T04:44:44.804062+00:00",
+      "agent": "publisher"
     }
   ]
 }

@@ -1,21 +1,34 @@
 {
   "date": "2026-10-13",
-  "run_at": "2026-10-13T03:13:20.044071+00:00",
+  "run_at": "2026-10-13T04:44:44.239710+00:00",
+  "github_run_id": "38347365701",
   "published_count": 0,
-  "failed_count": 2,
+  "failed_count": 4,
   "skipped_count": 0,
   "items": [
     {
-      "post_id": "aa8d98c2-a12d-4c9f-ac43-c635b3af65aa",
+      "post_id": "cc3fd91e-0006-4202-b45f-add49afaa476",
       "format": "single_image",
       "status": "failed",
-      "error": "image_ready=False or missing image_path for aa8d98c2-a12d-4c9f-ac43-c635b3af65aa"
+      "error": "image_ready is not true"
     },
     {
-      "post_id": "78de56cc-913a-48b5-9a7c-39194787ad2a",
+      "post_id": "cb236555-a47c-435c-888a-f41d28068b23",
+      "format": "single_image",
+      "status": "failed",
+      "error": "image_ready is not true"
+    },
+    {
+      "post_id": "46976164-2740-413e-8910-2bb3b9c01a6b",
       "format": "story",
       "status": "failed",
-      "error": "Story slide 1 has missing image_path: ''"
+      "error": "story image_ready is not true"
+    },
+    {
+      "post_id": "b194bed8-7426-45ac-852c-5b4b236f111e",
+      "format": "story",
+      "status": "failed",
+      "error": "story image_ready is not true"
     }
   ]
 }
