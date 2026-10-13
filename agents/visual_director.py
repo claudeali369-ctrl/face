@@ -6,7 +6,7 @@ FACE — Facebook Autonomous Content Engine
 
 Responsibilities:
   1. Generate visual briefs for every post (via Gemini)
-  2. Produce images via 4-provider waterfall (Pollinations → HF FLUX → HF SDXL → Pexels)
+  2. Produce images via Pollinations → HF FLUX → HF SDXL → Pixabay (Pexels temporarily disabled)
   3. Quality-gate each image with Gemini Vision (min score 7/10, up to 3 attempts)
   4. Apply text overlays (hook text, bilingual if configured)
   5. Write state/visual_briefs.json and state/qa_log.json
@@ -34,7 +34,7 @@ from utils.config_loader import build_prompt_context, get_config
 from utils.gemini_client import GeminiQuotaExhaustedError, get_gemini_client
 from utils.image_utils import add_text_overlay, resize_for_format
 from utils.logger import get_logger, log_exception
-from utils.rate_limiter import GEMINI_LIMITER, HF_LIMITER, PEXELS_LIMITER
+from utils.rate_limiter import GEMINI_LIMITER, HF_LIMITER
 from utils.state_manager import (
     append_to_state,
     read_state,
@@ -62,6 +62,9 @@ HF_SDXL_MODEL = "stabilityai/stable-diffusion-xl-base-1.0"
 # Avoid futile routed-inference requests after free credits are exhausted.
 HF_CREDITS_EXHAUSTED_THIS_RUN = False
 HF_CREDIT_STATUS_FILE = "hf_inference_status.json"
+
+# Disable an invalid/exhausted Pollinations provider after its first failure per run.
+POLLINATIONS_DISABLED_THIS_RUN = False
 
 # ── Format → (width, height) map ──────────────────────────────────────────────
 FORMAT_DIMENSIONS: dict[str, tuple[int, int]] = {
@@ -163,28 +166,101 @@ def _save_raw(data: bytes, post_id: str, attempt: int) -> Path:
 
 
 def _provider_pollinations(
-    prompt: str, width: int, height: int, post_id: str, attempt: int
+    prompt: str, width: int, height: int, post_id: str, attempt: int,
+    model: str = "flux",
 ) -> Path | None:
+    """Generate one image with the authenticated Pollinations image API.
+
+    Current endpoint: https://gen.pollinations.ai/image/{prompt}
+    The server-side API key is read only from POLLINATIONS_API_KEY. A missing
+    key or persistent auth/budget response disables Pollinations for this run,
+    avoiding repeated requests that cannot succeed.
     """
-    Provider 1 — Pollinations.ai FLUX (primary, no API key required).
-    Returns local path on success, None on failure.
-    """
+    global POLLINATIONS_DISABLED_THIS_RUN
+
+    if POLLINATIONS_DISABLED_THIS_RUN:
+        log.debug("[P1-Pollinations] Disabled for the remainder of this run")
+        return None
+
+    api_key = os.environ.get("POLLINATIONS_API_KEY", "").strip()
+    if not api_key:
+        POLLINATIONS_DISABLED_THIS_RUN = True
+        log.warning(
+            "[P1-Pollinations] POLLINATIONS_API_KEY is missing; skipping Pollinations. "
+            "Set it as a GitHub Actions repository secret."
+        )
+        return None
+
+    if os.environ.get("POLLINATIONS_API_DISABLED", "").strip().lower() in {"1", "true", "yes"}:
+        POLLINATIONS_DISABLED_THIS_RUN = True
+        log.warning("[P1-Pollinations] Provider preflight marked the key unavailable; skipping")
+        return None
+
     seed = random.randint(1, 999_999)
-    encoded = urllib.parse.quote(prompt)
-    url = (
-        f"https://image.pollinations.ai/prompt/{encoded}"
-        f"?model=flux&width={width}&height={height}&seed={seed}&nologo=true"
+    encoded = urllib.parse.quote(prompt, safe="")
+    url = f"https://gen.pollinations.ai/image/{encoded}"
+    params = {
+        "model": os.environ.get("POLLINATIONS_IMAGE_MODEL", "").strip() or model or "flux",
+        "width": int(width),
+        "height": int(height),
+        "seed": seed,
+        "nologo": "true",
+        "safe": "true",
+    }
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Accept": "image/*",
+        "User-Agent": "FACE/1.0 (Facebook Autonomous Content Engine)",
+    }
+    log.info(
+        "[P1-Pollinations] Requesting image for post %s (model=%s, seed=%d)",
+        post_id, params["model"], seed,
     )
-    log.info("[P1-Pollinations] Requesting image for post %s (seed=%d)", post_id, seed)
     try:
-        resp = requests.get(url, timeout=120)
+        resp = requests.get(url, params=params, headers=headers, timeout=(15, 120))
         resp.raise_for_status()
+        content_type = str(resp.headers.get("Content-Type", "")).lower()
+        if content_type and not content_type.startswith("image/"):
+            log.warning(
+                "[P1-Pollinations] Expected image response, received Content-Type=%s",
+                content_type,
+            )
+            return None
         if not resp.content or len(resp.content) < 1000:
-            log.warning("[P1-Pollinations] Response too small — likely an error page")
+            log.warning("[P1-Pollinations] Response too small to be a usable image")
             return None
         return _save_raw(resp.content, post_id, attempt)
-    except Exception as exc:
-        log.warning("[P1-Pollinations] Failed: %s", exc)
+    except requests.HTTPError as exc:
+        response = getattr(exc, "response", None)
+        status_code = getattr(response, "status_code", None)
+        if status_code in (401, 402, 403):
+            POLLINATIONS_DISABLED_THIS_RUN = True
+            if status_code == 402:
+                reason = "account or API-key budget is exhausted"
+            elif status_code == 401:
+                reason = "the API key is missing, invalid, or expired"
+            else:
+                reason = "the API key lacks permission for this request"
+            github_env = os.environ.get("GITHUB_ENV", "").strip()
+            if github_env:
+                try:
+                    with open(github_env, "a", encoding="utf-8") as env_file:
+                        env_file.write("POLLINATIONS_API_DISABLED=true\n")
+                except OSError as env_exc:
+                    log.warning("Could not pass Pollinations disable flag to later workflow steps: %s", env_exc)
+            log.error(
+                "[P1-Pollinations] HTTP %s: %s. Disabling Pollinations for this workflow run; "
+                "no further Pollinations requests will be made in subsequent agents.",
+                status_code, reason,
+            )
+        else:
+            log.warning("[P1-Pollinations] HTTP request failed: %s", exc)
+        return None
+    except requests.RequestException as exc:
+        log.warning("[P1-Pollinations] Network request failed: %s", exc)
+        return None
+    except (OSError, ValueError) as exc:
+        log.warning("[P1-Pollinations] Could not save/parse response: %s", exc)
         return None
 
 
@@ -347,30 +423,6 @@ def _provider_hf(
 
     return None
 
-def _provider_pexels(
-    query: str, orientation: str, post_id: str, attempt: int
-) -> Path | None:
-    """
-    Provider 4 — Pexels stock photo (final fallback).
-    Uses AssetCache to avoid redundant downloads.
-    Returns local path on success, None on failure.
-    """
-    PEXELS_LIMITER.acquire()
-    log.info(
-        "[P4-Pexels] Stock photo fallback for post %s | query: %s", post_id, query
-    )
-    try:
-        cache = get_asset_cache()
-        path = cache.download_pexels_photo(query=query, orientation=orientation)
-        if path:
-            return Path(path)
-        log.warning("[P4-Pexels] No photo found for query: %s", query)
-        return None
-    except Exception as exc:
-        log.warning("[P4-Pexels] Failed: %s", exc)
-        return None
-
-
 def _provider_pixabay(
     query: str,
     orientation: str,
@@ -509,28 +561,45 @@ def _generate_image(
         f"{config.get('niche', '')} {config.get('target_region', '')}"
     ).strip()
 
-    # Provider order for generation attempts
+    # Keep provider identity separate from the prompt so QA feedback is
+    # actually passed to the next provider instead of being logged and ignored.
     providers = [
-        ("Pollinations", lambda att: _provider_pollinations(prompt_flux, w, h, post_id, att)),
-        ("HF-FLUX", lambda att: _provider_hf(HF_FLUX_MODEL, prompt_hf, w, h, post_id, att, "P2-FLUX")),
-        ("HF-SDXL", lambda att: _provider_hf(HF_SDXL_MODEL, prompt_hf, w, h, post_id, att, "P3-SDXL")),
+        ("Pollinations", None, "P1-Pollinations"),
+        ("HF-FLUX", HF_FLUX_MODEL, "P2-FLUX"),
+        ("HF-SDXL", HF_SDXL_MODEL, "P3-SDXL"),
     ]
 
     attempt = 0
-    improved_prompt = prompt_flux  # evolves with QA feedback
+    improvement_suffix = ""
     final_score = 0.0
-    provider_used = "pexels"
+    provider_used = "none"
 
-    for provider_name, provider_fn in providers:
+    for provider_name, model_id, provider_tag in providers:
         attempt += 1
-        raw_path = provider_fn(attempt)
+        base_prompt = prompt_flux if model_id is None else (prompt_hf or prompt_flux)
+        provider_prompt = (
+            f"{base_prompt}. {improvement_suffix}"
+            if improvement_suffix
+            else base_prompt
+        )
+        if model_id is None:
+            pollinations_model = str(
+                config.get("api", {}).get("pollinations_image_model", "flux")
+            ).strip() or "flux"
+            raw_path = _provider_pollinations(
+                provider_prompt, w, h, post_id, attempt, model=pollinations_model
+            )
+        else:
+            raw_path = _provider_hf(
+                model_id, provider_prompt, w, h, post_id, attempt, provider_tag
+            )
         if raw_path is None:
             log.warning("Provider %s returned no image for %s", provider_name, post_id)
             continue
 
         qa = _run_quality_gate(gemini, raw_path, config)
         score = float(qa.get("overall_score", 0.0))
-        policy_safe = qa.get("policy_safe", True)
+        policy_safe = qa.get("policy_safe") is True
 
         if not policy_safe:
             score = 0.0
@@ -565,10 +634,10 @@ def _generate_image(
             return approved_path, provider_name, score, attempt
 
         # Improve prompt with QA feedback for next provider
-        improvement = qa.get("improvement_instructions", "")
+        improvement = str(qa.get("improvement_instructions") or "").strip()
         if improvement:
-            improved_prompt = f"{prompt_hf}. {improvement}"
-            log.debug("Improved prompt: %s", improved_prompt[:120])
+            improvement_suffix = improvement
+            log.debug("Improvement for next provider: %s", improvement_suffix[:120])
 
         # Try Pixabay before Pexels when all image-generation providers fail.
     pixabay_path = _provider_pixabay(
@@ -578,7 +647,7 @@ def _generate_image(
     if pixabay_path:
         qa = _run_quality_gate(gemini, pixabay_path, config)
         score = float(qa.get("overall_score", 0.0))
-        policy_safe = bool(qa.get("policy_safe", False))
+        policy_safe = qa.get("policy_safe") is True
 
         qa_records.append({
             "post_id": post_id,
@@ -609,30 +678,10 @@ def _generate_image(
             post_id,
         )
 
-    # ── All generative providers failed — force Pexels ──────────────────────
-    log.warning(
-        "All 3 generation providers failed quality gate for post %s — using Pexels",
+    log.error(
+        "All configured providers, including Pixabay, failed quality/safety checks for %s",
         post_id,
     )
-    pexels_path = _provider_pexels(pexels_query, orientation, post_id, attempt + 1)
-    if pexels_path:
-        qa = _run_quality_gate(gemini, pexels_path, config)
-        final_score = float(qa.get("overall_score", 5.0))
-        qa_records.append({
-            "post_id": post_id,
-            "attempt": attempt + 1,
-            "provider": "Pexels",
-            "score": final_score,
-            "policy_safe": qa.get("policy_safe", True),
-            "improvement_instructions": qa.get("improvement_instructions", ""),
-            "timestamp": datetime.now(timezone.utc).isoformat(),
-            "fallback": True,
-        })
-        approved_path = ASSETS_APPROVED / f"{post_id}.jpg"
-        pexels_path.replace(approved_path)
-        return approved_path, "pexels", final_score, attempt + 1
-
-    log.error("All providers (including Pexels) failed for post %s", post_id)
     return None, "none", 0.0, attempt + 1
 
 

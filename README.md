@@ -1,6 +1,6 @@
 # FACE — Facebook Autonomous Content Engine
 
-> **Fully autonomous, $0-cost Facebook Page management system powered by Google Gemini AI.**
+> **Automated Facebook Page management powered by Google Gemini AI, with provider quotas, API budgets, and GitHub Actions limits applying.**
 
 [![FACE Daily Pipeline](https://github.com/YOUR_USERNAME/face/actions/workflows/daily_pipeline.yml/badge.svg)](https://github.com/YOUR_USERNAME/face/actions/workflows/daily_pipeline.yml)
 
@@ -12,7 +12,7 @@ FACE is a complete, self-managing Facebook content system that runs entirely ins
 
 Every Sunday, the system analyzes the past week's engagement data from your page and rewrites its own AI prompts to improve performance. On the first of every month, a separate agent researches the current Facebook algorithm, updates its understanding of ranking signals, and adjusts content format weights accordingly. The only time you need to touch the system is every ~60 days when your Facebook token expires — the system creates a GitHub Issue to remind you.
 
-The entire system is built on free tiers: Gemini AI (1,500 calls/day free), Hugging Face (image generation, free), Pexels (stock images, free), GitHub Actions (2,000 minutes/month free), and edge-tts (Microsoft's TTS, completely free). The only requirement is a GitHub account, a Google account, a Facebook Page, and about 30 minutes of initial setup.
+The system uses Gemini, optional Hugging Face inference, Pollinations image generation (requires a configured API key and available budget), optional Pixabay stock images, GitHub Actions, and edge-tts. API and GitHub Actions limits/budgets apply. The only requirement is a GitHub account, a Google account, a Facebook Page, and about 30 minutes of initial setup.
 
 ---
 
@@ -43,9 +43,9 @@ The entire system is built on free tiers: Gemini AI (1,500 calls/day free), Hugg
 External APIs:
   ┌──────────────────────────────────────────────────────────────────┐
   │  Google Gemini API   — AI text/JSON generation (free 1500/day)   │
-  │  Pollinations.ai     — Image generation (no key, free)           │
+  │  Pollinations.ai     — image generation via gen.pollinations.ai (requires POLLINATIONS_API_KEY; budget applies)           │
   │  Hugging Face API    — FLUX.1 / SDXL image gen (free 1000/day)   │
-  │  Pexels API          — Stock image fallback (free 20k/month)     │
+  │  Pixabay API         — Optional stock-image fallback             │
   │  edge-tts            — Microsoft TTS for reel voiceover (free)   │
   │  yt-dlp              — Background music download (free)          │
   │  Facebook Graph API  — Post publishing and insights              │
@@ -60,7 +60,8 @@ External APIs:
 - **Google account** (free) — for Gemini API access
 - **Facebook account + Page** (free) — the page you want to automate
 - **Hugging Face account** (free) — for AI image generation
-- **Pexels account** (free) — for stock image fallback
+- **Pollinations API key** — server-side key stored as the `POLLINATIONS_API_KEY` GitHub Actions secret
+- **Pixabay API key** (optional) — stock-image fallback when configured
 
 No credit card required for any of the above.
 

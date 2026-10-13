@@ -7,7 +7,7 @@ FACE — Facebook Autonomous Content Engine
 Responsibilities:
   1. For each reel in content_plan.json, call Gemini to generate a shot list /
      visual direction plan (reel_script_visual_director.txt)
-  2. Gather per-segment assets: stock video (Pexels), generated images, or
+  2. Gather per-segment assets: stock video (Pixabay if configured), generated images, or
      text cards
   3. Generate TTS voiceover per segment, concatenate, and produce subtitle
      timings
@@ -29,7 +29,6 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-import requests
 
 from utils.asset_cache import get_asset_cache
 from utils.audio_utils import (
@@ -40,9 +39,12 @@ from utils.audio_utils import (
 )
 from utils.config_loader import build_prompt_context, get_config
 from utils.gemini_client import GeminiQuotaExhaustedError, get_gemini_client
+from agents.visual_director import (
+    HF_FLUX_MODEL, HF_SDXL_MODEL, _provider_hf, _provider_pollinations, _provider_pixabay,
+)
 from utils.image_utils import add_text_overlay
 from utils.logger import get_logger, log_exception
-from utils.rate_limiter import GEMINI_LIMITER, HF_LIMITER, PEXELS_LIMITER
+from utils.rate_limiter import GEMINI_LIMITER
 from utils.state_manager import (
     read_state,
     state_exists,
@@ -71,122 +73,69 @@ THUMB_FINAL = Path("assets/images/final")
 for _d in (REEL_FINAL, REEL_TEMP, AUDIO_TEMP, IMAGES_REEL, THUMB_FINAL):
     _d.mkdir(parents=True, exist_ok=True)
 
-# ── HuggingFace endpoints (reused from visual_director pattern) ───────────────
-HF_FLUX_URL = (
-    "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell"
-)
-HF_SDXL_URL = (
-    "https://api-inference.huggingface.co/models/"
-    "stabilityai/stable-diffusion-xl-base-1.0"
-)
-
-
 # ── Inline image generation for reel segments ─────────────────────────────────
-# (Mirror of visual_director waterfall but without text overlay and QA loop)
+# Reuse the same authenticated Pollinations/Hugging Face providers and credit checks
+# as VisualDirector, avoiding stale endpoints and repeated exhausted-credit retries.
 
-def _hf_generate_image(
-    api_url: str,
-    prompt: str,
-    output_path: Path,
-    tag: str,
-) -> bool:
+
+def _fit_image_for_reel(source_path: Path, output_path: Path) -> Path:
+    """Convert and crop any supported source image to the reel's 9:16 canvas."""
+    from PIL import Image, ImageOps
+
+    with Image.open(source_path) as source:
+        resampling = getattr(Image, "Resampling", Image)
+        frame = ImageOps.fit(
+            source.convert("RGB"), (1080, 1920), method=resampling.LANCZOS
+        )
+        frame.save(output_path, format="JPEG", quality=92, optimize=True)
+    return output_path
+
+
+def _generate_segment_image(
+    prompt: str, reel_id: str, seg_idx: int, config: dict | None = None
+) -> Path | None:
+    """Generate one vertical reel frame with the current provider waterfall.
+
+    Pexels is disabled. Pixabay is used only when its API key is configured.
     """
-    Call a HuggingFace image model. Returns True on success.
-    Handles 503 model-loading with up to 3 retries (30 s apart).
-    """
-    hf_token = os.environ.get("HF_TOKEN", "")
-    if not hf_token:
-        log.warning("[%s] HF_TOKEN not set", tag)
-        return False
-
-    headers = {"Authorization": f"Bearer {hf_token}"}
-    payload = {"inputs": prompt, "parameters": {"width": 1080, "height": 1920}}
-
-    for attempt in range(1, 4):
-        HF_LIMITER.acquire()
-        try:
-            resp = requests.post(api_url, headers=headers, json=payload, timeout=120)
-            if resp.status_code == 503:
-                log.warning("[%s] Model loading, waiting 30 s (attempt %d)", tag, attempt)
-                time.sleep(30)
-                continue
-            resp.raise_for_status()
-            if resp.content and len(resp.content) > 1000:
-                output_path.write_bytes(resp.content)
-                return True
-        except Exception as exc:
-            log.warning("[%s] Attempt %d failed: %s", tag, attempt, exc)
-            if attempt < 3:
-                time.sleep(10)
-    return False
-
-
-def _generate_segment_image(prompt: str, reel_id: str, seg_idx: int) -> Path | None:
-    """
-    Mini image waterfall for a single reel segment (no QA gate, no text overlay).
-    Order: Pollinations → HF FLUX → HF SDXL → Pexels.
-    """
-    import random
-    import urllib.parse
-
+    cfg = config or get_config()
     output_path = IMAGES_REEL / f"{reel_id}_seg{seg_idx}.jpg"
-
-    # Provider 1: Pollinations
-    encoded = urllib.parse.quote(prompt)
-    seed = random.randint(1, 999_999)
-    url = (
-        f"https://image.pollinations.ai/prompt/{encoded}"
-        f"?model=flux&width=1080&height=1920&seed={seed}&nologo=true"
+    provider_post_id = f"{reel_id}_seg{seg_idx}"
+    pollinations_model = (
+        os.environ.get("POLLINATIONS_IMAGE_MODEL", "").strip()
+        or str(cfg.get("api", {}).get("pollinations_image_model", "flux")).strip()
+        or "flux"
     )
-    try:
-        resp = requests.get(url, timeout=120)
-        resp.raise_for_status()
-        if resp.content and len(resp.content) > 1000:
-            output_path.write_bytes(resp.content)
-            log.info("Segment image via Pollinations: %s", output_path)
-            return output_path
-    except Exception as exc:
-        log.warning("[Seg-P1] Pollinations failed: %s", exc)
 
-    # Provider 2: HF FLUX
-    if _hf_generate_image(HF_FLUX_URL, prompt, output_path, "Seg-P2-FLUX"):
-        log.info("Segment image via HF FLUX: %s", output_path)
-        return output_path
-
-    # Provider 3: HF SDXL
-    if _hf_generate_image(HF_SDXL_URL, prompt, output_path, "Seg-P3-SDXL"):
-        log.info("Segment image via HF SDXL: %s", output_path)
-        return output_path
-
-        # Provider 4: Pixabay stock photo.
-    if os.environ.get("PIXABAY_API_KEY", "").strip():
-        try:
-            cache = get_asset_cache()
-            path = cache.download_pixabay_photo(
-                query=prompt[:100],
-                orientation="portrait",
+    raw_path = _provider_pollinations(
+        prompt, 1080, 1920, provider_post_id, 1, model=pollinations_model
+    )
+    if raw_path is None:
+        for attempt, (model_id, tag) in enumerate(
+            ((HF_FLUX_MODEL, "Seg-P2-FLUX"), (HF_SDXL_MODEL, "Seg-P3-SDXL")),
+            start=2,
+        ):
+            raw_path = _provider_hf(
+                model_id, prompt, 1080, 1920, provider_post_id, attempt, tag
             )
-            shutil.copy2(path, output_path)
-            log.info("Segment image via Pixabay: %s", output_path)
+            if raw_path is not None:
+                break
+
+    if raw_path is None and os.environ.get("PIXABAY_API_KEY", "").strip():
+        raw_path = _provider_pixabay(prompt[:100], "portrait", provider_post_id, 4)
+
+    if raw_path is not None:
+        try:
+            _fit_image_for_reel(Path(raw_path), output_path)
+            log.info("Reel segment image ready via shared provider: %s", output_path)
             return output_path
         except Exception as exc:
-            log.warning("[Seg-Pixabay] Failed: %s", exc)
+            log.warning("Could not prepare generated reel frame %s: %s", provider_post_id, exc)
 
-    # The existing Pexels fallback follows here as Provider 5.
-
-    # Provider 5: Pexels
-    PEXELS_LIMITER.acquire()
-    try:
-        cache = get_asset_cache()
-        path = cache.download_pexels_photo(query=prompt[:60], orientation="portrait")
-        if path:
-            shutil.copy2(path, output_path)
-            log.info("Segment image via Pexels: %s", output_path)
-            return output_path
-    except Exception as exc:
-        log.warning("[Seg-P4] Pexels failed: %s", exc)
-
-    log.error("All image providers failed for segment %d of reel %s", seg_idx, reel_id)
+    log.error(
+        "All configured non-Pexels image providers failed for segment %d of reel %s",
+        seg_idx, reel_id,
+    )
     return None
 
 
@@ -269,23 +218,8 @@ def _gather_segment_asset(
 
     if visual_type == "stock_video":
         query = segment.get("stock_video_search_query", config.get("niche", ""))
-        PEXELS_LIMITER.acquire()
-        try:
-            cache = get_asset_cache()
-            clip_path = cache.download_pexels_video(
-                query=query, orientation="portrait"
-            )
-            if clip_path:
-                log.info("Stock video downloaded: %s", clip_path)
-                return clip_path
-            log.warning(
-                "No stock video found for query '%s' (seg %d, reel %s)",
-                query, seg_idx, reel_id,
-            )
-        except Exception as exc:
-            log_exception(log, f"Stock video download failed seg {seg_idx}", exc)
 
-                # Alternative stock-video provider.
+        # Pixabay is optional; if no stock video is available, generate a frame instead.
         if os.environ.get("PIXABAY_API_KEY", "").strip():
             try:
                 cache = get_asset_cache()
@@ -309,7 +243,7 @@ def _gather_segment_asset(
         # Fallback: generate image instead
         log.info("Falling back to generated image for seg %d", seg_idx)
         prompt = segment.get("stock_video_search_query", config.get("niche", "scenic"))
-        path = _generate_segment_image(prompt, reel_id, seg_idx)
+        path = _generate_segment_image(prompt, reel_id, seg_idx, config=config)
         if path:
             segment["visual_type"] = "generated_image"
             segment["_asset_path"] = str(path)
@@ -317,7 +251,7 @@ def _gather_segment_asset(
 
     elif visual_type == "generated_image":
         prompt = segment.get("image_prompt", segment.get("voiceover_text", ""))
-        path = _generate_segment_image(prompt, reel_id, seg_idx)
+        path = _generate_segment_image(prompt, reel_id, seg_idx, config=config)
         if path:
             segment["_asset_path"] = str(path)
             return str(path)

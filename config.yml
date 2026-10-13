@@ -191,6 +191,8 @@ api:
   # Gemini model to use. Free tier model — do not change unless you have
   # a paid plan. gemini-1.5-flash: 15 RPM, 1M TPM, 1500 req/day (free).
   gemini_model: "gemini-3.5-flash-lite"
+  # Current Pollinations image-model alias used by the primary provider.
+  pollinations_image_model: "flux"
 
   # Maximum retry attempts for any API call that fails or rate-limits.
   max_retries: 3
@@ -204,12 +206,15 @@ api:
   # The rate limiter will auto-space calls to stay under this.
   gemini_rpm_limit: 12
 
+  # Pollinations image generation uses https://gen.pollinations.ai and requires the
+  # POLLINATIONS_API_KEY GitHub Actions repository secret (server-side secret key).
+  # Usage depends on the available Pollinations account/per-key budget.
+
   # Hugging Face Inference Providers free accounts receive a small monthly
   # credit allowance (currently $0.10, subject to change), not 1,000 free
   # image requests/day. After HTTP 402, FACE skips HF until the next UTC month.
 
-  # Pexels API: 200 requests/hour, 20,000/month free.
-  pexels_hourly_limit: 200
+  # Pexels is temporarily disabled in VisualDirector until API credentials are available.
 
   # Facebook Graph API: 200 calls/hour per page token.
   facebook_hourly_limit: 200
@@ -223,11 +228,11 @@ quality_gate:
   # Images scoring below this trigger regeneration. Recommended: 7.
   min_image_score: 7
 
-  # Maximum number of regeneration attempts before falling back to Pexels.
+  # Maximum regeneration attempts before the optional Pixabay stock fallback.
   # Attempt 1: same prompt, new seed
   # Attempt 2: switch provider
   # Attempt 3: simplified prompt + switch provider
-  # Attempt 4: Pexels stock photo fallback
+  # Final fallback: Pixabay stock photo when PIXABAY_API_KEY is configured.
   max_regeneration_attempts: 3
 
   # Minimum content safety score (0-10) for a caption to be published.
