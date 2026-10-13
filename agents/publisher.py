@@ -180,6 +180,47 @@ def _append_post_history(fb_post_id: str, item: dict, plan_entry: dict) -> None:
         log.error(f"Could not write post_history record for {fb_post_id}: {exc}")
 
 
+
+def _validate_item_assets(item: dict) -> str | None:
+    """Fail closed when a ready item lacks the media required by its format."""
+    fmt = str(item.get("format", "")).strip().lower()
+
+    if fmt in ("single_image", "carousel"):
+        if item.get("image_ready") is not True:
+            return "image_ready is not true"
+        image_path = str(item.get("image_path") or "").strip()
+        if not image_path or not Path(image_path).is_file():
+            return f"missing or nonexistent image_path: {image_path!r}"
+        return None
+
+    if fmt == "story":
+        if item.get("image_ready") is not True:
+            return "story image_ready is not true"
+        slides = item.get("story_slides")
+        if not isinstance(slides, list) or len(slides) != 3:
+            return "story must contain exactly 3 rendered slides"
+        for index, slide in enumerate(slides, start=1):
+            if not isinstance(slide, dict):
+                return f"story slide {index} is not an object"
+            image_path = str(slide.get("image_path") or "").strip()
+            if not image_path or not Path(image_path).is_file():
+                return f"story slide {index} has missing or nonexistent image_path: {image_path!r}"
+        return None
+
+    if fmt == "reel":
+        if item.get("reel_ready") is not True:
+            return "reel_ready is not true"
+        reel_path = str(item.get("reel_path") or "").strip()
+        if not reel_path or not Path(reel_path).is_file():
+            return f"missing or nonexistent reel_path: {reel_path!r}"
+        return None
+
+    if fmt == "text":
+        return None
+
+    return f"unsupported publish format: {fmt!r}"
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 # Format-specific publish functions
 # ─────────────────────────────────────────────────────────────────────────────
@@ -209,6 +250,10 @@ def _publish_story(fb: FacebookClient, item: dict) -> str:
     if not slides:
         raise ValueError(
             f"No story_slides for {item.get('post_id', 'unknown')}"
+        )
+    if item.get("image_ready") is not True:
+        raise ValueError(
+            f"Story images are not ready for {item.get('post_id', 'unknown')}"
         )
 
     # Validate the entire story before uploading any slide.
@@ -332,6 +377,22 @@ def run_publishing_loop(
             log.debug(f"[{pid}] status='{status}' — skipping")
             continue
 
+        # Validate media before making any Facebook request. Local validation
+        # failures are permanent for this item and must not consume upload retries.
+        asset_error = _validate_item_assets(item)
+        if asset_error:
+            log.error("[%s] Refusing to publish: %s", pid, asset_error)
+            item["status"] = "failed"
+            item["publish_error"] = asset_error
+            _write_error(pid, asset_error)
+            failed.append({
+                "post_id": pid,
+                "format": fmt,
+                "status": "failed",
+                "error": asset_error,
+            })
+            continue
+
         plan_entry = schedule_map.get(pid, {})
         scheduled_time = plan_entry.get("scheduled_time_utc", "")
 
@@ -445,6 +506,7 @@ def main() -> None:
     publish_log = {
         "date": run_at.strftime("%Y-%m-%d"),
         "run_at": run_at.isoformat(),
+        "github_run_id": os.environ.get("GITHUB_RUN_ID", ""),
         "published_count": len(published),
         "failed_count": len(failed),
         "skipped_count": len(skipped),

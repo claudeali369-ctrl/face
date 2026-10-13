@@ -104,7 +104,15 @@ jobs:
       - name: Run ContentGeneratorAgent
         run: python agents/content_generator.py
 
-      # ── Step 11: Run VisualDirectorAgent ─────────────────────────────────
+      # ── Step 11: Run VisualDirectorAgent ──────────────────────────────────
+      - name: Check stock-image fallback configuration
+        run: |
+          if [[ -z "$PIXABAY_API_KEY" ]]; then
+            echo "::warning::PIXABAY_API_KEY is empty; Pixabay fallback is disabled."
+          fi
+          if [[ -z "$PEXELS_API_KEY" ]]; then
+            echo "::warning::PEXELS_API_KEY is empty; final Pexels fallback is disabled."
+          fi
       - name: Run VisualDirectorAgent
         run: python agents/visual_director.py
 
@@ -178,6 +186,41 @@ jobs:
             echo "State committed and pushed successfully."
           fi
 
+
+      # State is committed before this gate so failures remain diagnosable.
+      - name: Fail workflow when PublisherAgent reports failed items
+        if: success()
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import sys
+          from pathlib import Path
+
+          path = Path("state/publish_log.json")
+          if not path.is_file():
+              print("::error::PublisherAgent did not write state/publish_log.json")
+              sys.exit(1)
+
+          try:
+              report = json.loads(path.read_text(encoding="utf-8"))
+              failed = int(report.get("failed_count", 0))
+              published = int(report.get("published_count", 0))
+              expected_run_id = os.environ.get("GITHUB_RUN_ID", "")
+              report_run_id = str(report.get("github_run_id", ""))
+          except (OSError, ValueError, TypeError) as exc:
+              print(f"::error::Could not validate publisher report: {exc}")
+              sys.exit(1)
+
+          if not expected_run_id or report_run_id != expected_run_id:
+              print("::error::Publisher report is missing or belongs to a different workflow run (publisher may have exited before writing a report).")
+              sys.exit(1)
+
+          print(f"Publisher outcome for run {report_run_id}: published={published}, failed={failed}")
+          if failed:
+              print(f"::error::PublisherAgent reported {failed} failed item(s). See state/errors.json and the job log.")
+              sys.exit(1)
+          PY
 
       # ── Step 16: Clean up large temp files ───────────────────────────────
       - name: Clean up temp files

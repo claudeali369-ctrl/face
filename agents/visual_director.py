@@ -509,28 +509,42 @@ def _generate_image(
         f"{config.get('niche', '')} {config.get('target_region', '')}"
     ).strip()
 
-    # Provider order for generation attempts
+    # Keep provider identity separate from the prompt so QA feedback is
+    # actually passed to the next provider instead of being logged and ignored.
     providers = [
-        ("Pollinations", lambda att: _provider_pollinations(prompt_flux, w, h, post_id, att)),
-        ("HF-FLUX", lambda att: _provider_hf(HF_FLUX_MODEL, prompt_hf, w, h, post_id, att, "P2-FLUX")),
-        ("HF-SDXL", lambda att: _provider_hf(HF_SDXL_MODEL, prompt_hf, w, h, post_id, att, "P3-SDXL")),
+        ("Pollinations", None, "P1-Pollinations"),
+        ("HF-FLUX", HF_FLUX_MODEL, "P2-FLUX"),
+        ("HF-SDXL", HF_SDXL_MODEL, "P3-SDXL"),
     ]
 
     attempt = 0
-    improved_prompt = prompt_flux  # evolves with QA feedback
+    improvement_suffix = ""
     final_score = 0.0
     provider_used = "pexels"
 
-    for provider_name, provider_fn in providers:
+    for provider_name, model_id, provider_tag in providers:
         attempt += 1
-        raw_path = provider_fn(attempt)
+        base_prompt = prompt_flux if model_id is None else (prompt_hf or prompt_flux)
+        provider_prompt = (
+            f"{base_prompt}. {improvement_suffix}"
+            if improvement_suffix
+            else base_prompt
+        )
+        if model_id is None:
+            raw_path = _provider_pollinations(
+                provider_prompt, w, h, post_id, attempt
+            )
+        else:
+            raw_path = _provider_hf(
+                model_id, provider_prompt, w, h, post_id, attempt, provider_tag
+            )
         if raw_path is None:
             log.warning("Provider %s returned no image for %s", provider_name, post_id)
             continue
 
         qa = _run_quality_gate(gemini, raw_path, config)
         score = float(qa.get("overall_score", 0.0))
-        policy_safe = qa.get("policy_safe", True)
+        policy_safe = qa.get("policy_safe") is True
 
         if not policy_safe:
             score = 0.0
@@ -565,10 +579,10 @@ def _generate_image(
             return approved_path, provider_name, score, attempt
 
         # Improve prompt with QA feedback for next provider
-        improvement = qa.get("improvement_instructions", "")
+        improvement = str(qa.get("improvement_instructions") or "").strip()
         if improvement:
-            improved_prompt = f"{prompt_hf}. {improvement}"
-            log.debug("Improved prompt: %s", improved_prompt[:120])
+            improvement_suffix = improvement
+            log.debug("Improvement for next provider: %s", improvement_suffix[:120])
 
         # Try Pixabay before Pexels when all image-generation providers fail.
     pixabay_path = _provider_pixabay(
@@ -578,7 +592,7 @@ def _generate_image(
     if pixabay_path:
         qa = _run_quality_gate(gemini, pixabay_path, config)
         score = float(qa.get("overall_score", 0.0))
-        policy_safe = bool(qa.get("policy_safe", False))
+        policy_safe = qa.get("policy_safe") is True
 
         qa_records.append({
             "post_id": post_id,
@@ -617,20 +631,28 @@ def _generate_image(
     pexels_path = _provider_pexels(pexels_query, orientation, post_id, attempt + 1)
     if pexels_path:
         qa = _run_quality_gate(gemini, pexels_path, config)
-        final_score = float(qa.get("overall_score", 5.0))
+        final_score = float(qa.get("overall_score", 0.0))
+        policy_safe = qa.get("policy_safe") is True
         qa_records.append({
             "post_id": post_id,
             "attempt": attempt + 1,
             "provider": "Pexels",
             "score": final_score,
-            "policy_safe": qa.get("policy_safe", True),
+            "policy_safe": policy_safe,
             "improvement_instructions": qa.get("improvement_instructions", ""),
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "fallback": True,
         })
-        approved_path = ASSETS_APPROVED / f"{post_id}.jpg"
-        pexels_path.replace(approved_path)
-        return approved_path, "pexels", final_score, attempt + 1
+        if policy_safe and final_score >= min_score:
+            approved_path = ASSETS_APPROVED / f"{post_id}.jpg"
+            pexels_path.replace(approved_path)
+            return approved_path, "pexels", final_score, attempt + 1
+
+        log.warning(
+            "Pexels image failed the quality/safety gate for post %s "
+            "(score=%.1f, policy_safe=%s).",
+            post_id, final_score, policy_safe,
+        )
 
     log.error("All providers (including Pexels) failed for post %s", post_id)
     return None, "none", 0.0, attempt + 1
