@@ -1,129 +1,27 @@
 {
   "errors": [
     {
-      "post_id": "72edaa5a-38b9-4f6f-b95b-bfb70dd8a64c",
-      "error": "image_ready=False or missing image_path for 72edaa5a-38b9-4f6f-b95b-bfb70dd8a64c",
-      "timestamp": "2026-10-11T21:01:59.699528+00:00",
-      "agent": "publisher"
-    },
-    {
-      "post_id": "e6f9a6e5-b15d-4eec-b7a3-3da513a0a7d5",
-      "error": "image_ready=False or missing image_path for e6f9a6e5-b15d-4eec-b7a3-3da513a0a7d5",
-      "timestamp": "2026-10-11T21:02:34.702661+00:00",
-      "agent": "publisher"
-    },
-    {
-      "post_id": "b9dd8c9b-0fb0-408d-90a1-60cbd4a9f9d4",
-      "error": "Story slide 1 has missing image_path: ''",
-      "timestamp": "2026-10-11T21:03:13.586548+00:00",
-      "agent": "publisher"
-    },
-    {
-      "post_id": "0082dacc-e757-44ea-8d96-500742abea8a",
-      "error": "Story slide 1 has missing image_path: ''",
-      "timestamp": "2026-10-11T21:03:48.589826+00:00",
-      "agent": "publisher"
-    },
-    {
-      "post_id": "6366dac7-0a22-4d8d-b2c8-c9e7ae12c9ee",
-      "error": "image_ready=False or missing image_path for 6366dac7-0a22-4d8d-b2c8-c9e7ae12c9ee",
-      "timestamp": "2026-10-11T21:57:19.545348+00:00",
-      "agent": "publisher"
-    },
-    {
-      "post_id": "71d97d78-421a-4854-9955-67453a6ae7d7",
-      "error": "image_ready=False or missing image_path for 71d97d78-421a-4854-9955-67453a6ae7d7",
-      "timestamp": "2026-10-11T21:57:54.549270+00:00",
-      "agent": "publisher"
-    },
-    {
-      "post_id": "fc3c26f2-573b-43e6-9b53-0066dc6abae7",
-      "error": "Story slide 1 has missing image_path: ''",
-      "timestamp": "2026-10-11T21:58:29.553177+00:00",
-      "agent": "publisher"
-    },
-    {
-      "post_id": "699b0c9f-b4dd-42ba-a1d4-9bf7d6bcab20",
-      "error": "Story slide 2 has missing image_path: ''",
-      "timestamp": "2026-10-12T03:16:10.364388+00:00",
-      "agent": "publisher"
-    },
-    {
-      "post_id": "3a0e87d3-00e4-4c83-bf2e-35147bb6e8a8",
-      "error": "Story slide 2 has missing image_path: ''",
-      "timestamp": "2026-10-12T07:19:57.029974+00:00",
-      "agent": "publisher"
-    },
-    {
-      "post_id": "9e4e78ba-67cf-4622-8f28-0d3badd01fff",
-      "error": "image_ready=False or missing image_path for 9e4e78ba-67cf-4622-8f28-0d3badd01fff",
-      "timestamp": "2026-10-12T19:18:47.212707+00:00",
-      "agent": "publisher"
-    },
-    {
-      "post_id": "48f004f1-cfc0-4d39-ac7d-c1965ddff1d2",
-      "error": "image_ready=False or missing image_path for 48f004f1-cfc0-4d39-ac7d-c1965ddff1d2",
-      "timestamp": "2026-10-12T19:19:22.216656+00:00",
-      "agent": "publisher"
-    },
-    {
-      "post_id": "d9e63d22-9306-411a-b080-ad66c1586d03",
-      "error": "image_ready=False or missing image_path for d9e63d22-9306-411a-b080-ad66c1586d03",
-      "timestamp": "2026-10-12T19:19:57.221848+00:00",
-      "agent": "publisher"
-    },
-    {
-      "post_id": "584d2280-20d4-4914-8877-0e0f1ba10b60",
-      "error": "Story slide 1 has missing image_path: ''",
-      "timestamp": "2026-10-12T19:20:32.225788+00:00",
-      "agent": "publisher"
-    },
-    {
-      "post_id": "7bc54f02-de95-40d7-8b9e-710abfb7b2f3",
-      "error": "Story slide 1 has missing image_path: ''",
-      "timestamp": "2026-10-12T19:21:07.229688+00:00",
-      "agent": "publisher"
-    },
-    {
-      "post_id": "aa8d98c2-a12d-4c9f-ac43-c635b3af65aa",
-      "error": "image_ready=False or missing image_path for aa8d98c2-a12d-4c9f-ac43-c635b3af65aa",
-      "timestamp": "2026-10-13T03:13:55.413671+00:00",
-      "agent": "publisher"
-    },
-    {
-      "post_id": "78de56cc-913a-48b5-9a7c-39194787ad2a",
-      "error": "Story slide 1 has missing image_path: ''",
-      "timestamp": "2026-10-13T03:14:30.416963+00:00",
-      "agent": "publisher"
-    },
-    {
-      "post_id": "cc3fd91e-0006-4202-b45f-add49afaa476",
+      "post_id": "d1413d47-2891-4d6d-9e4a-463ce58f95f3",
       "error": "image_ready is not true",
-      "timestamp": "2026-10-13T04:44:44.799752+00:00",
+      "timestamp": "2026-10-13T06:06:55.347543+00:00",
       "agent": "publisher"
     },
     {
-      "post_id": "cb236555-a47c-435c-888a-f41d28068b23",
+      "post_id": "fc9ff410-5664-4e69-b4d3-0352d9cfba39",
       "error": "image_ready is not true",
-      "timestamp": "2026-10-13T04:44:44.801587+00:00",
+      "timestamp": "2026-10-13T06:06:55.348776+00:00",
       "agent": "publisher"
     },
     {
-      "post_id": "46976164-2740-413e-8910-2bb3b9c01a6b",
-      "error": "story image_ready is not true",
-      "timestamp": "2026-10-13T04:44:44.802882+00:00",
+      "post_id": "fc6a895f-e102-44d2-be13-aba38df83443",
+      "error": "image_ready is not true",
+      "timestamp": "2026-10-13T06:06:55.349760+00:00",
       "agent": "publisher"
     },
     {
-      "post_id": "b194bed8-7426-45ac-852c-5b4b236f111e",
+      "post_id": "c53ba6c0-44a7-461d-94a7-358e663e6869",
       "error": "story image_ready is not true",
-      "timestamp": "2026-10-13T04:44:44.804062+00:00",
-      "agent": "publisher"
-    },
-    {
-      "post_id": "3e2e3eaa-7553-4e14-aa37-3ba227f2dee8",
-      "error": "story image_ready is not true",
-      "timestamp": "2026-10-13T05:49:35.742897+00:00",
+      "timestamp": "2026-10-13T06:06:55.350766+00:00",
       "agent": "publisher"
     }
   ]

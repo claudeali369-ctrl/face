@@ -6,6 +6,13 @@
       "reason": "unsafe_content_or_generation_failure",
       "format": "story",
       "topic": "palmeiras vs corinthians"
+    },
+    {
+      "post_id": "6e56f6ee-2207-44a6-93de-b10cb76ea62f",
+      "skipped_at": "2026-10-13T06:06:52.162555+00:00",
+      "reason": "gemini_quota_exhausted",
+      "format": "story",
+      "topic": "Muse Wonder"
     }
   ]
 }
