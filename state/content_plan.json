@@ -1,23 +1,11 @@
 {
   "date": "2026-10-13",
-  "generated_at": "2026-10-13T05:26:34.942705+00:00",
+  "generated_at": "2026-10-13T05:44:16.273224+00:00",
   "posts": [
     {
-      "post_id": "dca3bf3b-1316-4ae9-9c19-5f57c8772fea",
+      "post_id": "2f6e8d79-9074-4121-bbbb-ab50e0f0f8af",
       "slot": 1,
       "scheduled_time_utc": "2026-10-13T03:00:00+00:00",
-      "format": "single_image",
-      "trend_topic": "Muse Wonder",
-      "content_pillar": "Emerging Technology Explained",
-      "hook_type": "curiosity",
-      "cta_type": "save_or_share",
-      "dominant_emotion": "curiosity",
-      "status": "planned"
-    },
-    {
-      "post_id": "4602f73e-d9ef-4155-85c7-8d8c85cc3fe1",
-      "slot": 2,
-      "scheduled_time_utc": "2026-10-13T07:00:00+00:00",
       "format": "single_image",
       "trend_topic": "Hackers activate automatic defrosting in supermarket fridges across Europe",
       "content_pillar": "Digital Safety and Privacy",
@@ -27,11 +15,23 @@
       "status": "planned"
     },
     {
-      "post_id": "fb634b5b-49de-43d0-b5a5-aaa958335a00",
+      "post_id": "89a245f2-4bc5-469a-b757-4767b56a2f06",
+      "slot": 2,
+      "scheduled_time_utc": "2026-10-13T07:00:00+00:00",
+      "format": "single_image",
+      "trend_topic": "Muse Wonder",
+      "content_pillar": "Emerging Technology Explained",
+      "hook_type": "curiosity",
+      "cta_type": "save_or_share",
+      "dominant_emotion": "curiosity",
+      "status": "planned"
+    },
+    {
+      "post_id": "cf166210-f44f-427c-baca-40550def16f8",
       "slot": 3,
       "scheduled_time_utc": "2026-10-13T14:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "Show HN: Atticus – Hold-to-talk voice assistant for macOS that runs on Claude -p",
+      "trend_topic": "Janas: Run LLMs larger than RAM by streaming experts from SSD",
       "content_pillar": "Tech Tips and Tutorials",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
@@ -41,29 +41,29 @@
   ],
   "stories": [
     {
-      "post_id": "8322efa7-cbf7-4853-b63b-d84ed5dba4dc",
+      "post_id": "3e2e3eaa-7553-4e14-aa37-3ba227f2dee8",
       "slot": 1,
       "scheduled_time_utc": "2026-10-13T03:00:00+00:00",
-      "format": "story",
-      "trend_topic": "Muse Wonder",
-      "content_pillar": "Emerging Technology Explained",
-      "hook_type": "bold_claim",
-      "cta_type": "follow",
-      "dominant_emotion": "curiosity",
-      "parent_post_id": "dca3bf3b-1316-4ae9-9c19-5f57c8772fea",
-      "status": "planned"
-    },
-    {
-      "post_id": "13edff17-fb43-423c-87aa-c6d78de0f59d",
-      "slot": 2,
-      "scheduled_time_utc": "2026-10-13T07:00:00+00:00",
       "format": "story",
       "trend_topic": "Hackers activate automatic defrosting in supermarket fridges across Europe",
       "content_pillar": "Digital Safety and Privacy",
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "4602f73e-d9ef-4155-85c7-8d8c85cc3fe1",
+      "parent_post_id": "2f6e8d79-9074-4121-bbbb-ab50e0f0f8af",
+      "status": "planned"
+    },
+    {
+      "post_id": "e82e4d24-07df-4ca7-b2d4-92e99d8c72cd",
+      "slot": 2,
+      "scheduled_time_utc": "2026-10-13T07:00:00+00:00",
+      "format": "story",
+      "trend_topic": "Muse Wonder",
+      "content_pillar": "Emerging Technology Explained",
+      "hook_type": "bold_claim",
+      "cta_type": "follow",
+      "dominant_emotion": "curiosity",
+      "parent_post_id": "89a245f2-4bc5-469a-b757-4767b56a2f06",
       "status": "planned"
     }
   ],

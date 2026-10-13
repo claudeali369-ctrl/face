@@ -119,6 +119,12 @@
       "error": "story image_ready is not true",
       "timestamp": "2026-10-13T04:44:44.804062+00:00",
       "agent": "publisher"
+    },
+    {
+      "post_id": "3e2e3eaa-7553-4e14-aa37-3ba227f2dee8",
+      "error": "story image_ready is not true",
+      "timestamp": "2026-10-13T05:49:35.742897+00:00",
+      "agent": "publisher"
     }
   ]
 }
