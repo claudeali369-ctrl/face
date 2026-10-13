@@ -27,7 +27,7 @@ jobs:
       FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
       FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
       HF_TOKEN: ${{ secrets.HF_TOKEN }}
-      PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+      POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
       PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       GITHUB_REPOSITORY: ${{ github.repository }}
@@ -88,8 +88,7 @@ jobs:
         run: |
           git fetch origin state:state 2>/dev/null || true
           git checkout state -- state/ 2>/dev/null || mkdir -p state
-          mkdir -p state/logs state/.locks state/prompt_versions \
-                   state/pexels_cache state/schema
+          mkdir -p state/logs state/.locks state/prompt_versions state/schema
           echo "State restored or initialized."
 
       # ── Step 8: Run TrendHunterAgent ─────────────────────────────────────
@@ -105,13 +104,50 @@ jobs:
         run: python agents/content_generator.py
 
       # ── Step 11: Run VisualDirectorAgent ──────────────────────────────────
-      - name: Check stock-image fallback configuration
+      - name: Check image-provider configuration
         run: |
+          if [[ -z "$POLLINATIONS_API_KEY" ]]; then
+            echo "::warning::POLLINATIONS_API_KEY is empty; Pollinations will be skipped without sending a request."
+          else
+            python - <<'PY'
+          import json, os, requests
+          key = os.environ.get("POLLINATIONS_API_KEY", "").strip()
+          try:
+              response = requests.get(
+                  "https://gen.pollinations.ai/account/key",
+                  headers={"Authorization": f"Bearer {key}", "Accept": "application/json"},
+                  timeout=15,
+              )
+              if response.status_code == 200:
+                  data = response.json()
+                  if data.get("valid") is not True:
+                      print("::warning::Pollinations API key endpoint did not report this key as valid; Pollinations will be skipped.")
+                      with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as env:
+                          env.write("POLLINATIONS_API_DISABLED=true\n")
+                  elif data.get("type") != "secret":
+                      print("::warning::Pollinations key is not a server-side secret key. Use an sk_ secret key for GitHub Actions; Pollinations will be skipped.")
+                      with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as env:
+                          env.write("POLLINATIONS_API_DISABLED=true\n")
+                  else:
+                      print("Pollinations server-side secret key validated using the non-generation account/key endpoint.")
+              elif response.status_code == 401:
+                  print("::warning::Pollinations returned HTTP 401 for the configured key; skipping Pollinations this run.")
+                  with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as env:
+                      env.write("POLLINATIONS_API_DISABLED=true\n")
+              elif response.status_code == 402:
+                  print("::warning::Pollinations API reports HTTP 402; account/key budget is unavailable, so no image-generation requests will be sent this run.")
+                  with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as env:
+                      env.write("POLLINATIONS_API_DISABLED=true\n")
+              elif response.status_code == 403:
+                  print("::warning::Pollinations key validation endpoint denied metadata access (403); this does not prove image generation is forbidden, so the image provider will validate its own request.")
+              else:
+                  print(f"::warning::Pollinations key preflight returned HTTP {response.status_code}; continuing, and generation will report any provider-specific error.")
+          except (requests.RequestException, ValueError) as exc:
+              print(f"::warning::Could not verify Pollinations key without generating an image: {exc}")
+          PY
+          fi
           if [[ -z "$PIXABAY_API_KEY" ]]; then
             echo "::warning::PIXABAY_API_KEY is empty; Pixabay fallback is disabled."
-          fi
-          if [[ -z "$PEXELS_API_KEY" ]]; then
-            echo "::warning::PEXELS_API_KEY is empty; final Pexels fallback is disabled."
           fi
       - name: Run VisualDirectorAgent
         run: python agents/visual_director.py
@@ -171,6 +207,10 @@ jobs:
           rm -rf "$STATE_WORKTREE/state"
           mkdir -p "$STATE_WORKTREE/state"
           cp -a state/. "$STATE_WORKTREE/state/"
+
+          # Temporary downloaded media is a runtime artifact, not durable agent state.
+          # Excluding it keeps binary images out of the state branch and its Git history.
+          rm -rf "$STATE_WORKTREE/state/temp"
 
           git -C "$STATE_WORKTREE" config user.name "FACE Bot"
           git -C "$STATE_WORKTREE" config user.email "face-bot@github-actions"

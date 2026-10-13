@@ -55,7 +55,7 @@ class PublisherScheduleTests(unittest.TestCase):
             patch("agents.publisher._publish_with_retry") as publish,
         ):
             published, failed, skipped = run_publishing_loop(
-                fb=object(), content=content, schedule_map={}, publish_now=True
+                fb=object(), content=content, schedule_map={"broken-image": {"scheduled_time_utc": "2026-10-12T12:00:00+00:00"}}, publish_now=True
             )
         publish.assert_not_called()
         self.assertEqual(published, [])
@@ -76,7 +76,7 @@ class PublisherScheduleTests(unittest.TestCase):
             patch("agents.publisher._publish_with_retry") as publish,
         ):
             published, failed, skipped = run_publishing_loop(
-                fb=object(), content=content, schedule_map={}, publish_now=True
+                fb=object(), content=content, schedule_map={"broken-story": {"scheduled_time_utc": "2026-10-12T12:00:00+00:00"}}, publish_now=True
             )
         publish.assert_not_called()
         self.assertEqual(published, [])
@@ -87,6 +87,31 @@ class PublisherScheduleTests(unittest.TestCase):
 
     def test_text_post_does_not_require_an_image(self):
         self.assertIsNone(_validate_item_assets({"format": "text"}))
+
+    def test_future_item_with_missing_asset_is_deferred_not_failed(self):
+        content = [{
+            "post_id": "future-broken-image", "format": "single_image", "status": "ready",
+            "image_ready": False, "image_path": "", "caption": "Test", "hashtags": [],
+        }]
+        schedule = {
+            "future-broken-image": {
+                "scheduled_time_utc": (self.now + timedelta(minutes=20)).isoformat()
+            }
+        }
+        with (
+            patch("agents.publisher._now_utc", return_value=self.now),
+            patch("agents.publisher._write_error") as write_error,
+            patch("agents.publisher._publish_with_retry") as publish,
+        ):
+            published, failed, skipped = run_publishing_loop(
+                fb=object(), content=content, schedule_map=schedule, publish_now=False
+            )
+        write_error.assert_not_called()
+        publish.assert_not_called()
+        self.assertEqual(published, [])
+        self.assertEqual(failed, [])
+        self.assertEqual(skipped, [])
+        self.assertEqual(content[0]["status"], "ready")
 
     def test_default_mode_defers_old_content_without_calling_facebook(self):
         content = [{

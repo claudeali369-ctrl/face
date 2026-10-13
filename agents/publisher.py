@@ -377,22 +377,6 @@ def run_publishing_loop(
             log.debug(f"[{pid}] status='{status}' — skipping")
             continue
 
-        # Validate media before making any Facebook request. Local validation
-        # failures are permanent for this item and must not consume upload retries.
-        asset_error = _validate_item_assets(item)
-        if asset_error:
-            log.error("[%s] Refusing to publish: %s", pid, asset_error)
-            item["status"] = "failed"
-            item["publish_error"] = asset_error
-            _write_error(pid, asset_error)
-            failed.append({
-                "post_id": pid,
-                "format": fmt,
-                "status": "failed",
-                "error": asset_error,
-            })
-            continue
-
         plan_entry = schedule_map.get(pid, {})
         scheduled_time = plan_entry.get("scheduled_time_utc", "")
 
@@ -412,6 +396,22 @@ def run_publishing_loop(
                 SCHEDULE_EARLY_TOLERANCE_MINUTES,
                 SCHEDULE_LATE_TOLERANCE_MINUTES,
             )
+            continue
+
+        # Only validate assets when the item is due (or an explicit manual
+        # override is enabled). Future posts remain ready for their own slot.
+        asset_error = _validate_item_assets(item)
+        if asset_error:
+            log.error("[%s] Refusing to publish: %s", pid, asset_error)
+            item["status"] = "failed"
+            item["publish_error"] = asset_error
+            _write_error(pid, asset_error)
+            failed.append({
+                "post_id": pid,
+                "format": fmt,
+                "status": "failed",
+                "error": asset_error,
+            })
             continue
 
         log.info(f"[{pid}] In publish window — attempting {fmt} post…")
