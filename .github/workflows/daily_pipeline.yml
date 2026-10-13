@@ -227,8 +227,9 @@ jobs:
           fi
 
 
-      # State is committed before this gate so failures remain diagnosable.
-      - name: Fail workflow when PublisherAgent reports failed items
+      
+      # Validate publishing results without failing for partial item failures.
+      - name: Validate PublisherAgent results
         if: success()
         run: |
           python - <<'PY'
@@ -253,16 +254,18 @@ jobs:
               sys.exit(1)
 
           if not expected_run_id or report_run_id != expected_run_id:
-              print("::error::Publisher report is missing or belongs to a different workflow run (publisher may have exited before writing a report).")
+              print("::error::Publisher report is missing or belongs to a different workflow run.")
               sys.exit(1)
 
           print(f"Publisher outcome for run {report_run_id}: published={published}, failed={failed}")
-         if failed:
-            print(
-                f"::warning::PublisherAgent reported {failed} failed item(s). "
-                "See state/errors.json and the job log."
-            )
+
+          if failed:
+              print(
+                  f"::warning::PublisherAgent reported {failed} failed item(s). "
+                  "See state/errors.json and the job log."
+              )
           PY
+
 
       # ── Step 16: Clean up large temp files ───────────────────────────────
       - name: Clean up temp files
