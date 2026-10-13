@@ -35,6 +35,18 @@
       "error": "story image_ready is not true",
       "timestamp": "2026-10-13T06:42:57.088265+00:00",
       "agent": "publisher"
+    },
+    {
+      "post_id": "11241653-3731-419e-9e64-dceb2e25e4f3",
+      "error": "image_ready is not true",
+      "timestamp": "2026-10-13T07:11:37.629468+00:00",
+      "agent": "publisher"
+    },
+    {
+      "post_id": "b562c9e5-f3f5-405c-a53a-d6cd4a47e25e",
+      "error": "story image_ready is not true",
+      "timestamp": "2026-10-13T07:12:40.667376+00:00",
+      "agent": "publisher"
     }
   ]
 }

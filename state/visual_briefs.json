@@ -1,453 +1,452 @@
 {
-  "generated_at": "2026-10-13T06:41:53.290211+00:00",
+  "generated_at": "2026-10-13T07:11:37.034459+00:00",
   "date": "2026-10-13",
   "briefs": {
-    "5bc8964a-6d94-49ea-949c-950b5563a337": {
-      "post_id": "5bc8964a-6d94-49ea-949c-950b5563a337",
+    "11241653-3731-419e-9e64-dceb2e25e4f3": {
+      "post_id": "11241653-3731-419e-9e64-dceb2e25e4f3",
       "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style creates a moody, investigative atmosphere that stops scrolling for 18-34 tech enthusiasts, perfectly matching the curiosity-driven digital safety angle.",
+      "visual_style_rationale": "Cinematic realism creates high production value that stops the scroll for 18-34 tech-savvy audiences, framing a real-world cyberattack scenario with dramatic, suspenseful lighting suitable for the curiosity angle.",
       "composition": "negative_space",
-      "composition_rationale": "Negative space on the left third of the frame leaves clean, uncluttered area for the hook text overlay while keeping the subject grounded.",
-      "primary_subject": "A modern European supermarket aisle with glowing glass-door refrigerator units showing condensation and melting frost",
-      "background_environment": "A slightly dim, atmospheric European grocery store interior with polished concrete floors and subtle blue-tinted LED strip lighting reflecting off glass",
+      "composition_rationale": "Placing the main subject slightly off-center using negative space ensures clear, unobstructed room for the hook text overlay while drawing the viewer's eye through thoughtful framing.",
+      "primary_subject": "A modern European supermarket refrigerated aisle with digital temperature display panels glowing erratically, subtle condensation forming, and a faint blue digital glitch effect overlaid on the glass doors.",
+      "background_environment": "A dimly lit, sleek grocery store aisle featuring rows of commercial display fridges, glossy reflective flooring catching overhead cool fluorescent lights, and a sterile, high-tech atmosphere.",
       "color_palette": {
-        "primary": "#0D1B2A",
-        "secondary": "#1B263B",
-        "accent": "#00F5D4",
-        "rationale": "Dark navy and slate tones convey digital security and mystery, while electric cyan adds a high-tech accent that triggers curiosity and stands out in the feed."
+        "primary": "#1A2E40",
+        "secondary": "#2C4C64",
+        "accent": "#00E5FF",
+        "rationale": "Deep navy and steel blue convey the cold retail environment and tech security niche, while the electric cyan accent triggers curiosity and represents digital intrusion."
       },
       "dominant_emotion": "curiosity",
       "region_visual_cues": [
-        "European supermarket aisle layout with multi-deck glass door chillers",
-        "Multilingual price tag rails and European product packaging aesthetics",
-        "Subtle digital glitch artifacts overlaying the temperature display panels"
+        "European retail supermarket interior design",
+        "Modern sleek glass-door refrigeration units standard in Western Europe",
+        "Multilingual price tag rail placeholders typical of EU retail stores"
       ],
       "cultural_elements_to_include": [
-        "Modern European retail architecture",
-        "Sleek commercial refrigeration units",
-        "Subtle cyberpunk or digital intrusion visual hints like glowing error codes"
+        "European commercial store layout",
+        "Realistic industrial refrigeration hardware",
+        "Subtle digital UI artifacts indicating system override"
       ],
       "cultural_elements_to_avoid": [
-        "Generic American big-box store aesthetics",
-        "Cartoony hacker motifs like hooded figures in dark rooms",
-        "Overly bright, sterile lighting that kills the suspenseful mood"
+        "American-style giant warehouse wholesale clubs",
+        "Generic stock photo aesthetics",
+        "Cartoonish hacker imagery or glowing green matrix text",
+        "Misrepresented currency or store signage"
       ],
-      "text_overlay_space": "left_third",
+      "text_overlay_space": "top_third",
       "text_overlay_color": "#FFFFFF",
       "text_overlay_background": "semi_dark",
-      "lighting_mood": "Moody, high-contrast, atmospheric blue and cool white lighting with dramatic reflections on glass surfaces",
+      "lighting_mood": "Moody, cold industrial lighting with high contrast reflections and a subtle teal technological glow.",
       "time_of_day_depicted": "night",
-      "generation_prompt_pollinations": "Modern European supermarket aisle at night, cinematic style, negative space composition, rows of commercial glass-door refrigerators with condensation and melting frost, dark navy and electric cyan color palette, digital security breach atmosphere, professional cinematography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic, moody photograph of a modern European supermarket aisle at night. Rows of commercial glass-door refrigerators exhibit visible condensation and melting frost on the glass, illuminated by subtle blue-tinted LED lighting and eerie digital glitch effects on their temperature displays. The composition features ample negative space on the left side with a dark navy and slate environment, punctuated by striking electric cyan tech accents to evoke a sense of digital mystery and curiosity.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, cartoon, illustration, bright daylight, people",
+      "generation_prompt_pollinations": "modern European supermarket refrigerated aisle, cinematic style, negative space composition, commercial glass-door fridges with condensation, subtle digital glitch overlay, deep navy and steel blue color palette with electric cyan accents, curiosity atmosphere, professional cinematography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic shot of a modern European supermarket refrigerated aisle at night. The sleek glass-door display fridges are covered in light condensation, with their digital temperature control panels showing anomalous blue glitches. The color palette consists of deep industrial navy and steel blue tones contrasted with an electric cyan tech glow. The lighting is moody and dramatic, leaving a clean, dark negative space in the top portion of the frame for text overlay. The atmosphere is tense, curious, and deeply rooted in modern digital infrastructure reality.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, matrix green code, cartoon, illustration, people",
       "quality_keywords": [
         "photorealistic",
         "cinematic lighting",
         "8k resolution",
-        "octane render",
-        "highly detailed",
-        "commercial photography"
+        "detailed textures",
+        "commercial interior"
       ],
       "image_dimensions": "1080x1350",
-      "seed_suggestion": 42891,
+      "seed_suggestion": 42789,
       "provider_preference": "pollinations"
     },
-    "14f346fb-8efe-4bc4-a63e-62f226d61961": {
-      "post_id": "14f346fb-8efe-4bc4-a63e-62f226d61961",
+    "e5814d2b-782f-4208-ae52-108d8c3b2d16": {
+      "post_id": "e5814d2b-782f-4208-ae52-108d8c3b2d16",
       "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style creates immediate intrigue and high production value, capturing the curiosity of 18-34 tech enthusiasts through sleek, moody lighting that highlights modern developer setups.",
+      "visual_style_rationale": "Cinematic style captures the awe and wonder of 'Muse Wonder' by blending high-end technology aesthetics with moody, evocative lighting. This style resonates strongly with the 18-34 tech-savvy demographic globally who value high production quality and emotional depth over flat or sterile graphics.",
       "composition": "negative_space",
-      "composition_rationale": "Negative space allows the minimalist desk setup to breathe, providing a clean, uncluttered area specifically for the hook text overlay.",
-      "primary_subject": "a sleek minimalist macOS workspace with a mechanical keyboard and a subtle glowing audio waveform graphic on the screen",
-      "background_environment": "a modern dimly lit home office with soft ambient LED backlighting in deep indigo and warm amber, showing a blurred city skyline at dusk through the window",
+      "composition_rationale": "Negative space composition directs the viewer's eye to the primary subject while providing a clean, uncluttered area specifically designed for the hook text overlay, ensuring high readability and thumb-stopping power on social feeds.",
+      "primary_subject": "An advanced, minimalist generative AI interface artifact emitting a soft, ethereal blue-violet glow, resting on a sleek obsidian surface",
+      "background_environment": "A dimly lit, futuristic design studio with subtle architectural lines, soft atmospheric haze, and ambient backlighting",
       "color_palette": {
         "primary": "#0F172A",
-        "secondary": "#1E293B",
-        "accent": "#38BDF8",
-        "rationale": "Deep slate blue conveys professional technology and trust, dark navy provides a high-contrast nocturnal developer vibe, and electric cyan accentuates curiosity and AI innovation."
+        "secondary": "#3B82F6",
+        "accent": "#EC4899",
+        "rationale": "Deep slate blue (#0F172A) provides a credible tech foundation, electric blue (#3B82F6) signifies innovation and trust, and vibrant magenta/pink (#EC4899) sparks immediate curiosity and emotional engagement for the 18-34 demographic."
       },
       "dominant_emotion": "curiosity",
       "region_visual_cues": [
-        "minimalist modern desk setup popular among global digital nomads",
-        "high-end mechanical keyboard with tactile keycaps",
-        "contemporary urban apartment interior with warm ambient lighting"
+        "global contemporary minimalist architecture",
+        "sleek workspace design",
+        "modern ambient lighting fixtures"
       ],
       "cultural_elements_to_include": [
-        "modern ergonomic tech workspace",
-        "subtle glowing interface elements",
-        "clean cable management reflecting developer culture"
+        "minimalist tech aesthetics",
+        "futuristic workspace elements",
+        "ambient glowing interfaces"
       ],
       "cultural_elements_to_avoid": [
-        "generic stock photo corporate office aesthetics",
-        "overly complex or messy desk clutter",
-        "neon cyberpunk clichés that look unrealistic",
-        "visible faces or people to keep focus on the tool"
+        "generic stock photo corporate handshakes",
+        "overly complex sci-fi clutter",
+        "cheesy artificial lens flares",
+        "culturally insensitive symbols"
       ],
       "text_overlay_space": "top_third",
       "text_overlay_color": "#FFFFFF",
       "text_overlay_background": "semi_dark",
-      "lighting_mood": "moody, soft ambient glow, sophisticated contrast",
-      "time_of_day_depicted": "blue_hour",
-      "generation_prompt_pollinations": "sleek minimalist macOS workspace, mechanical keyboard, subtle glowing audio waveform on screen, cinematic, negative_space, modern home office, deep slate blue and electric cyan color palette, curiosity atmosphere, professional technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic shot of a sleek minimalist macOS workspace during the blue hour. A mechanical keyboard sits on a dark wood desk with a subtle glowing audio waveform visible on the screen. The background shows a modern home office with soft ambient LED backlighting in deep slate and electric cyan, with a blurred city skyline visible through the window. The composition features ample negative space in the top portion for text overlay, conveying a mood of high-tech curiosity and modern developer lifestyle.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, bright daylight, clutter, messy cables",
+      "lighting_mood": "Moody, high-contrast, atmospheric backlighting with soft glowing accents",
+      "time_of_day_depicted": "night",
+      "generation_prompt_pollinations": "An advanced minimalist generative AI interface artifact emitting an ethereal blue-violet glow on an obsidian surface, cinematic, negative space, modern architecture background, sleek workspace design, deep slate blue and electric blue color palette with magenta accents, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic, high-end photograph of an advanced minimalist generative AI interface artifact resting on a sleek obsidian surface, emitting an ethereal blue-violet glow. The background features a dimly lit modern studio with subtle architectural lines and atmospheric haze. The color palette consists of deep slate blue, electric blue, and vibrant magenta accents, creating a moody, curiosity-inducing atmosphere with plenty of negative space in the upper third for text overlay.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, bright daylight, clutter, messy background",
       "quality_keywords": [
-        "ultra detailed",
+        "hyper-detailed",
+        "volumetric lighting",
         "8k resolution",
-        "cinematic lighting",
-        "professional photography",
-        "depth of field"
+        "masterpiece",
+        "photorealistic"
       ],
       "image_dimensions": "1080x1350",
-      "seed_suggestion": 42891,
+      "seed_suggestion": 42789,
       "provider_preference": "pollinations"
     },
-    "45713404-9147-422a-8e57-a891ea4d4f3c": {
-      "post_id": "45713404-9147-422a-8e57-a891ea4d4f3c",
-      "visual_style": "digital_art",
-      "visual_style_rationale": "Digital art style allows abstract mathematical concepts like the Fourier transform to be visualized as glowing, intricate data streams and geometric waves, which perfectly matches the curiosity-driven tech niche for an 18-34 demographic.",
+    "f859c7df-2db6-4f1c-9116-eabb84b6be60": {
+      "post_id": "f859c7df-2db6-4f1c-9116-eabb84b6be60",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style builds high curiosity and professional tech credibility for an 18-34 demographic, utilizing dramatic lighting and depth to make complex mathematics feel tangible and awe-inspiring.",
       "composition": "negative_space",
-      "composition_rationale": "Negative space composition balances the complex math visuals on one side with clean, uncluttered space on the other, ensuring maximum readability for the hook text overlay.",
-      "primary_subject": "Abstract glowing mathematical Fourier transform wave patterns transforming into neural network nodes",
-      "background_environment": "Deep dark digital workspace with subtle ambient blue and violet particle effects",
+      "composition_rationale": "Negative space composition creates a clean, uncluttered area on the left third of the frame, ensuring the hook text overlay remains highly readable and impactful against a gradient atmospheric background.",
+      "primary_subject": "Abstract glowing mathematical Fourier transform wave equations transforming into high-speed digital data streams",
+      "background_environment": "A dimly lit modern tech workspace with subtle architectural motifs of Dhaka's architectural geometry mixed with minimalist server racks",
       "color_palette": {
-        "primary": "#0A1128",
-        "secondary": "#1F4068",
-        "accent": "#00F5D4",
-        "rationale": "Deep navy and slate blue establish a serious, trustworthy tech tone, while vibrant cyan/teal acts as a high-contrast accent that scientifically and culturally triggers curiosity and attention in the digital space."
+        "primary": "#0A192F",
+        "secondary": "#172A45",
+        "accent": "#64FFDA",
+        "rationale": "Deep navy and slate blue convey professional technology trust, while the vibrant teal accent scientifically and culturally triggers intense curiosity and forward-thinking innovation."
       },
       "dominant_emotion": "curiosity",
       "region_visual_cues": [
-        "modern minimalist tech aesthetic",
-        "global digital native workspace vibe",
-        "clean futuristic UI-inspired geometric lines"
+        "Geometric lattice patterns inspired by traditional terracotta architectural tiles",
+        "Subtle ambient lighting mimicking the soft dusk of Dhaka's urban horizon",
+        "Minimalist structural lines reflecting modern South Asian tech hubs"
       ],
       "cultural_elements_to_include": [
-        "minimalist math notations",
-        "glowing wave-particle duality visuals",
-        "sleek dark-mode interface aesthetics"
+        "Abstract geometric motifs referencing traditional regional patterns",
+        "Sophisticated tech-forward lighting reflecting modern urban youth spaces"
       ],
       "cultural_elements_to_avoid": [
-        "generic stock photos of old men in white lab coats writing on chalkboards",
-        "clichÃ© matrix green code rain",
-        "overly busy or distracting backgrounds",
-        "political symbols or watermarks"
+        "Generic Silicon Valley clichés",
+        "Culturally inaccurate South Asian stereotypes",
+        "Overused stock imagery of glowing generic brains"
       ],
       "text_overlay_space": "left_third",
       "text_overlay_color": "#FFFFFF",
       "text_overlay_background": "semi_dark",
-      "lighting_mood": "futuristic ambient bioluminescent glow with high contrast",
-      "time_of_day_depicted": "night",
-      "generation_prompt_pollinations": "abstract glowing mathematical Fourier transform wave patterns, digital art, negative space, sleek dark-mode interface aesthetics, minimalist math notations, #0A1128 deep navy, #1F4068 slate blue, #00F5D4 vibrant cyan accent, curiosity atmosphere, professional technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A stunning digital art composition featuring abstract glowing mathematical Fourier transform wave patterns seamlessly shifting into neural network nodes. The scene uses a sophisticated color palette of deep navy and slate blue, punctuated by brilliant cyan accent lighting that creates a deep sense of mystery and curiosity. The composition relies heavily on negative space to the left, providing a clean, uncluttered dark background suitable for text overlay. The overall mood is futuristic, highly credible, and visually captivating for a tech-savvy audience.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, chalkboards, white lab coats",
+      "lighting_mood": "Moody, dramatic rim lighting with glowing cyan accents and soft ambient gradients",
+      "time_of_day_depicted": "blue_hour",
+      "generation_prompt_pollinations": "Abstract glowing mathematical Fourier transform wave equations, cinematic, negative_space, geometric lattice patterns inspired by traditional terracotta architectural tiles, subtle ambient dusk lighting, deep navy and vibrant teal color description, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic, moody tech-forward composition showing abstract glowing mathematical Fourier transform wave equations seamlessly transforming into high-speed digital data streams. The environment features subtle geometric lattice patterns inspired by traditional architectural tiles blending into a modern workspace. The lighting is dominated by deep navy blue shadows and striking vibrant teal accents, creating an atmosphere of intense curiosity and sophisticated innovation, with ample clean negative space on the left side for typography.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, Indian imagery, weapons, political symbols, cluttered background",
       "quality_keywords": [
         "ultra detailed",
         "8k resolution",
-        "vector precision",
-        "raytraced glow",
-        "masterpiece"
+        "photorealistic lighting",
+        "octane render",
+        "sharp focus"
       ],
       "image_dimensions": "1080x1350",
-      "seed_suggestion": 4242,
-      "provider_preference": "huggingface_flux"
-    },
-    "7bdbcaf6-ab50-4f79-844c-cc3116654c25_slide1": {
-      "post_id": "7bdbcaf6-ab50-4f79-844c-cc3116654c25_slide1",
-      "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic realism bridges the gap between high-tech intrigue and everyday reality, perfectly suited for a surprising news hook about supermarket hacks while matching 18-34 tech audience expectations for high-production value.",
-      "composition": "negative_space",
-      "composition_rationale": "Negative space composition directs the viewer's eye to the central narrative while reserving a clean, uncluttered area for the hook text overlay.",
-      "primary_subject": "A modern European supermarket refrigerated aisle with frosty glass doors glowing with an unusual, eerie blue neon light anomaly",
-      "background_environment": "A sleek, slightly blurred grocery store interior with rows of pristine shelves and a chilling mist subtly seeping from the fridge units",
-      "color_palette": {
-        "primary": "#0F172A",
-        "secondary": "#38BDF8",
-        "accent": "#F43F5E",
-        "rationale": "Dark slate grey provides a secure, digital tech foundation; electric frost blue signifies refrigeration and cold technology; urgent magenta accent triggers curiosity and signals a system anomaly."
-      },
-      "dominant_emotion": "curiosity",
-      "region_visual_cues": [
-        "European supermarket aisle layout with multilingual digital price tags",
-        "Sleek stainless steel and glass refrigeration units common in modern European retail",
-        "Subtle frost patterns forming unusual geometric shapes on glass doors"
-      ],
-      "cultural_elements_to_include": [
-        "Modern European retail interior design",
-        "Clean minimalist aesthetic typical of continental grocery chains"
-      ],
-      "cultural_elements_to_avoid": [
-        "Generic American-style big-box store aesthetics",
-        "Overused glowing green hacker binary code overlays",
-        "Low-quality stock photo people looking surprised"
-      ],
-      "text_overlay_space": "top_third",
-      "text_overlay_color": "#FFFFFF",
-      "text_overlay_background": "semi_dark",
-      "lighting_mood": "Moody, cool-toned ambient lighting contrasted with an unexpected neon blue pulse emanating from the refrigeration units",
-      "time_of_day_depicted": "night",
-      "generation_prompt_pollinations": "A modern European supermarket refrigerated aisle, cinematic, negative_space composition, sleek stainless steel and glass refrigeration units, frosty glass doors with unusual blue neon glow, mystery atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic shot of a sleek modern European supermarket interior at night, focusing on an aisle of high-end refrigerated display cases. The glass doors are covered in a heavy frost featuring unusual geometric patterns glowing with an eerie electric blue light, creating an atmosphere of technological mystery and suspense. The composition features ample negative space in the upper portion for text overlay, with professional cinematic lighting and sharp focus on the cooling units.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, green matrix code, people",
-      "quality_keywords": [
-        "cinematic lighting",
-        "hyper-detailed textures",
-        "professional color grading",
-        "sharp focus",
-        "8k resolution"
-      ],
-      "image_dimensions": "1080x1350",
-      "seed_suggestion": 42589,
+      "seed_suggestion": 4289,
       "provider_preference": "pollinations"
     },
-    "7bdbcaf6-ab50-4f79-844c-cc3116654c25_slide2": {
-      "post_id": "7bdbcaf6-ab50-4f79-844c-cc3116654c25_slide2",
+    "b562c9e5-f3f5-405c-a53a-d6cd4a47e25e_slide1": {
+      "post_id": "b562c9e5-f3f5-405c-a53a-d6cd4a47e25e_slide1",
       "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style creates a moody, high-stakes atmosphere that drives curiosity and stops scrolling among tech-savvy 18-34 audiences, bridging the gap between everyday appliances and invisible cyber threats.",
+      "visual_style_rationale": "Cinematic style effectively captures the drama and mystery of a cyberattack on critical infrastructure, appealing to the 18-34 tech-savvy demographic with high production value, dramatic lighting, and a suspenseful atmosphere.",
       "composition": "negative_space",
-      "composition_rationale": "Placing the main subject off-center creates deep negative space on the right third of the frame, ensuring high legibility for the hook text overlay while maintaining visual tension.",
-      "primary_subject": "A modern sleek supermarket refrigerated display case with condensation dripping down the glass doors, subtle digital glitch overlay lines on the price tags",
-      "background_environment": "A dimly lit, vast European supermarket aisle with blurred background shelves and soft blue emergency lighting reflecting off polished tile floors",
+      "composition_rationale": "Using negative_space allows the subject to command attention while reserving a clean, uncluttered area specifically for the hook text overlay to ensure maximum readability.",
+      "primary_subject": "Modern European supermarket refrigerated display aisle with thick frost and condensation forming on the glass doors",
+      "background_environment": "Dimly lit, high-end European grocery store interior with subtle blue digital glitches and faint red alert indicators glowing on the refrigerator control panels",
       "color_palette": {
         "primary": "#0A192F",
-        "secondary": "#1E3A8A",
-        "accent": "#00FF66",
-        "rationale": "Deep navy and slate blue establish a trustworthy tech security atmosphere, while an unexpected neon cyber-green accent triggers curiosity and highlights the digital breach element."
+        "secondary": "#64FFDA",
+        "accent": "#FF5555",
+        "rationale": "Deep navy blue conveys digital security and mystery, glowing cyan represents modern refrigeration and tech networks, and a sharp accent red triggers curiosity and urgency regarding a security breach."
       },
       "dominant_emotion": "curiosity",
       "region_visual_cues": [
-        "European supermarket aisle layout",
-        "modern minimalist price display units",
-        "standardized metric temperature readouts"
+        "modern European supermarket store layout and shelving standards",
+        "multilingual digital price tags and pricing displays typical of EU retail",
+        "energy-class rating labels visible on high-efficiency glass refrigeration units"
       ],
       "cultural_elements_to_include": [
-        "modern European commercial refrigerator design",
-        "subtle digital interface error codes on small screens",
-        "condensation indicating temperature failure"
+        "sleek stainless steel and glass refrigeration units",
+        "subtle cyberpunk-inspired digital UI overlay on a supermarket price screen"
       ],
       "cultural_elements_to_avoid": [
-        "American-style oversized supermarket shelving",
-        "cliché hacker silhouettes in hoodies",
-        "overly cartoonish digital matrix rain effects"
-      ],
-      "text_overlay_space": "right_half",
-      "text_overlay_color": "#FFFFFF",
-      "text_overlay_background": "semi_dark",
-      "lighting_mood": "Moody low-key lighting with cool blue ambient tones and sharp neon green focal highlights",
-      "time_of_day_depicted": "night",
-      "generation_prompt_pollinations": "A cinematic shot of a modern supermarket refrigerated display case, condensation dripping on glass doors, European supermarket interior, deep navy and slate blue color palette, neon green digital glitch accents, negative space on the right, curiosity atmosphere, professional cinematography, technology security aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic, moody photograph of a sleek modern supermarket refrigeration aisle in Europe during a quiet night. Condensation beads on the glass doors of the cooling units while subtle digital glitch lines illuminate the electronic price tags in an eerie cyan glow. The color palette consists of deep midnight blues contrasting with sharp cyber-green highlights. The composition uses wide negative space on the right side for typography. The atmosphere is tense, mysterious, and visually arresting, capturing an invisible digital breach of physical infrastructure.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, hacker in hoodie, American supermarket, cartoon, illustration",
-      "quality_keywords": [
-        "hyper-detailed",
-        "volumetric lighting",
-        "cinematic color grading",
-        "ray tracing reflections",
-        "8k resolution"
-      ],
-      "image_dimensions": "1080x1350",
-      "seed_suggestion": 482910,
-      "provider_preference": "pollinations"
-    },
-    "7bdbcaf6-ab50-4f79-844c-cc3116654c25_slide3": {
-      "post_id": "7bdbcaf6-ab50-4f79-844c-cc3116654c25_slide3",
-      "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style creates an immediate atmosphere of suspense and high-tech intrusion, ideal for a curiosity-driven post about European smart infrastructure vulnerabilities for an 18-34 demographic.",
-      "composition": "negative_space",
-      "composition_rationale": "Negative space composition directs the viewer's eye to the central narrative while reserving a clean, uncluttered zone for the hook text overlay.",
-      "primary_subject": "A modern sleek supermarket smart refrigerator display with glowing frost melting in strange digital patterns",
-      "background_environment": "A dimly lit, contemporary European supermarket aisle with brushed steel shelving and subtle blue LED security lighting",
-      "color_palette": {
-        "primary": "#0F172A",
-        "secondary": "#38BDF8",
-        "accent": "#F43F5E",
-        "rationale": "Deep slate blue provides a trustworthy tech foundation, electric cyan signifies modern IoT connectivity, and a sharp accent of warning red triggers immediate curiosity and tension."
-      },
-      "dominant_emotion": "curiosity",
-      "region_visual_cues": [
-        "European retail interior architecture",
-        "multilingual digital pricing labels",
-        "modern minimalist supermarket shelving"
-      ],
-      "cultural_elements_to_include": [
-        "Euro-style product packaging silhouettes",
-        "contemporary European grocery store aesthetics"
-      ],
-      "cultural_elements_to_avoid": [
-        "generic US-style hypermarket tropes",
-        "overly cartoonish hacker imagery",
-        "plastic looking AI generation flaws",
-        "visible readable text or watermarks"
+        "generic American or Asian supermarket branding",
+        "unrealistic or overly cartoonish hacker motifs like glowing green matrix code",
+        "misleading regional architecture or currency symbols"
       ],
       "text_overlay_space": "top_third",
       "text_overlay_color": "#FFFFFF",
       "text_overlay_background": "semi_dark",
-      "lighting_mood": "moody cyberpunk-infused retail lighting with sharp contrast",
+      "lighting_mood": "Moody, dramatic low-key lighting with cool blue ambient tones and sharp accent highlights on the frosty glass",
       "time_of_day_depicted": "night",
-      "generation_prompt_pollinations": "A sleek modern supermarket refrigerator in a European store, cinematic style, negative space composition, European retail interior, modern minimalist shelving, deep slate blue and electric cyan color palette with accent red, curiosity atmosphere, professional technology photography, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic shot of a modern smart supermarket refrigerator inside a contemporary European grocery store at night. The interior is dimly lit with cool blue security lighting and brushed steel shelving. Strange frost patterns are melting off the glass in digital formations, creating an atmosphere of technological mystery and suspense. The composition features ample negative space at the top for text overlay, rendered in a palette of deep slate, electric cyan, and sharp warning red.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, US supermarket tropes, bright daylight",
+      "generation_prompt_pollinations": "modern European supermarket refrigerated display aisle, thick frost forming on glass doors, cinematic style, negative space composition, European grocery store interior, blue digital glitches, red alert indicators, deep navy blue and glowing cyan color palette, curiosity atmosphere, professional cinematography, technology security aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic shot of a modern European supermarket refrigerated aisle at night, where thick frost is mysteriously forming on the glass doors of the commercial fridges. The scene features a dramatic low-key lighting setup with deep navy and cyan tones, accented by subtle digital glitch effects on the price displays. The composition deliberately leaves the top third clean and dark for text overlay, evoking a sense of technological mystery and curiosity.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, daytime lighting, warm supermarket lighting, people, shopping carts",
       "quality_keywords": [
-        "hyper-detailed",
         "cinematic lighting",
-        "sharp focus",
-        "octane render",
-        "8k"
-      ],
-      "image_dimensions": "1080x1350",
-      "seed_suggestion": 48291,
-      "provider_preference": "pollinations"
-    },
-    "39fcad67-8b95-4ac6-b4d5-ad0adf581806_slide1": {
-      "post_id": "39fcad67-8b95-4ac6-b4d5-ad0adf581806_slide1",
-      "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style balances high-end technical credibility with an immersive, atmospheric curiosity that appeals directly to the 18-34 global tech demographic, moving away from flat or generic stock imagery.",
-      "composition": "negative_space",
-      "composition_rationale": "Negative space composition ensures the subject is anchored off-center while providing a vast, clean visual runway specifically designed to host the bold hook text overlay without clutter.",
-      "primary_subject": "A sleek modern MacBook Pro resting on a minimalist wooden desk displaying an abstract glowing voice waveform interface",
-      "background_environment": "A moody, sophisticated home office with soft ambient lighting, a blurred urban skyline visible through a large floor-to-ceiling window at dusk",
-      "color_palette": {
-        "primary": "#0F172A",
-        "secondary": "#3B82F6",
-        "accent": "#10B981",
-        "rationale": "Deep slate blue (#0F172A) establishes modern tech trust, vibrant electric blue (#3B82F6) drives curiosity and AI association, and subtle mint green (#10B981) highlights interactivity."
-      },
-      "dominant_emotion": "curiosity",
-      "region_visual_cues": [
-        "minimalist global urban workspace setup",
-        "contemporary architectural glass lines",
-        "subtle ambient LED strip lighting popular in modern setups"
-      ],
-      "cultural_elements_to_include": [
-        "modern ergonomic desk accessories",
-        "clean cable-managed aesthetic",
-        "high-end mechanical keyboard accent"
-      ],
-      "cultural_elements_to_avoid": [
-        "generic stock photo corporate office tropes",
-        "cluttered desk environments",
-        "outdated hardware or beige computer monitors",
-        "culturally inappropriate iconography"
-      ],
-      "text_overlay_space": "top_third",
-      "text_overlay_color": "#FFFFFF",
-      "text_overlay_background": "semi_dark",
-      "lighting_mood": "moody ambient teal and warm glow contrast",
-      "time_of_day_depicted": "blue_hour",
-      "generation_prompt_pollinations": "A sleek modern MacBook Pro on a minimalist wooden desk, glowing voice waveform interface, cinematic, negative_space, minimalist global urban workspace setup, contemporary architectural glass lines, slate blue and electric blue color palette, curiosity atmosphere, professional technology photography, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "Cinematic shot of a sleek modern MacBook Pro resting on a minimalist wooden desk in a sophisticated home office during the blue hour, featuring a glowing abstract voice waveform interface. The background is a moody urban setup with soft ambient lighting and negative space at the top third for text overlay. High-end tech aesthetic with a deep slate blue and electric blue color grading, evoking a strong sense of curiosity and innovation.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, cluttered background, bright daylight",
-      "quality_keywords": [
-        "hyper-realistic",
-        "octane render",
-        "studio lighting",
-        "8k",
-        "masterpiece",
+        "photorealistic texture",
+        "high-end commercial interior",
+        "volumetric frost",
         "sharp focus"
       ],
       "image_dimensions": "1080x1350",
       "seed_suggestion": 4242,
       "provider_preference": "pollinations"
     },
-    "39fcad67-8b95-4ac6-b4d5-ad0adf581806_slide2": {
-      "post_id": "39fcad67-8b95-4ac6-b4d5-ad0adf581806_slide2",
+    "b562c9e5-f3f5-405c-a53a-d6cd4a47e25e_slide2": {
+      "post_id": "b562c9e5-f3f5-405c-a53a-d6cd4a47e25e_slide2",
       "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style creates immediate intrigue and high production value, perfectly capturing the curiosity-driven tech enthusiast demographic (18-34) while avoiding generic stock aesthetics.",
+      "visual_style_rationale": "Cinematic style builds high suspense and intrigue, perfectly matching the curiosity-driven digital safety angle about a covert hack on supermarket infrastructure.",
       "composition": "negative_space",
-      "composition_rationale": "Negative space allows the sleek MacBook interface and ambient desk setup to breathe while providing a deliberate, uncluttered zone for the hook text overlay.",
-      "primary_subject": "Modern minimalist workspace with a sleek MacBook displaying a subtle, glowing audio waveform representing an AI voice assistant",
-      "background_environment": "A dimly lit, contemporary home office with warm ambient lighting, subtle indoor plants, and a modern aesthetic appealing to global tech professionals",
+      "composition_rationale": "Using negative space allows the sleek, modern supermarket aisle context to stay blurred while offering a distinct, clean area for the hook text overlay.",
+      "primary_subject": "A glowing smart commercial supermarket refrigerator display panel showing an unexpected automated defrost error code and digital intrusion data stream",
+      "background_environment": "A dimly lit, contemporary European supermarket aisle with endless rows of glass-door cooling units fading into atmospheric blur",
       "color_palette": {
-        "primary": "#0F172A",
-        "secondary": "#38BDF8",
-        "accent": "#F43F5E",
-        "rationale": "Deep slate blue (#0F172A) establishes modern tech trust, vibrant sky blue (#38BDF8) represents smooth digital workflow, and coral accent (#F43F5E) triggers curiosity and attention."
+        "primary": "#0A192F",
+        "secondary": "#1E3A8A",
+        "accent": "#00F2FE",
+        "rationale": "Deep navy and midnight blue signal advanced tech and cybersecurity, while the electric cyan accent triggers high curiosity and immediately draws the viewer's eye to the compromised interface."
       },
       "dominant_emotion": "curiosity",
       "region_visual_cues": [
-        "minimalist global urban tech aesthetic",
-        "contemporary desk setup with ergonomic design",
-        "ambient architectural lighting"
+        "European style retail price tags and pricing layout",
+        "Standardized European commercial refrigeration hardware design",
+        "Sleek minimalist supermarket architectural framing"
       ],
       "cultural_elements_to_include": [
-        "modern minimalist workspace",
-        "high-end developer aesthetic",
-        "clean cable management"
+        "Modern European retail interior design",
+        "Smart IoT control panels embedded in commercial coolers",
+        "Subtle ambient supermarket lighting"
       ],
       "cultural_elements_to_avoid": [
-        "cluttered, messy desks",
-        "generic stock photo hand gestures",
-        "overly futuristic sci-fi tropes",
-        "plastic-looking fake electronics"
+        "Generic American-style massive warehouse stores",
+        "Unrealistic or overly cartoonish hacking interfaces",
+        "Overused stock photo models posing with refrigerators",
+        "Visible human faces that distract from the technical anomaly"
       ],
       "text_overlay_space": "top_third",
       "text_overlay_color": "#FFFFFF",
       "text_overlay_background": "semi_dark",
-      "lighting_mood": "Moody and focused with soft, glowing accents from the screen and ambient backlighting",
+      "lighting_mood": "Moody, high-contrast, cool-toned ambient supermarket lighting with a glowing blue digital aura emanating from the fridge screen.",
       "time_of_day_depicted": "night",
-      "generation_prompt_pollinations": "Modern minimalist workspace with a sleek MacBook displaying a subtle glowing audio waveform, cinematic style, negative space composition, deep slate blue and sky blue color palette, curiosity atmosphere, professional technology photography, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic, moody photograph of a modern minimalist developer workspace at night. On a clean wooden desk sits an open sleek MacBook Pro with a subtle, elegant glowing audio waveform on the screen. The background is softly blurred with warm ambient lighting and a hint of indoor greenery. The color palette features deep slate blue and vibrant cyan tones, creating a high-tech yet inviting atmosphere with ample negative space in the upper portion.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, clutter, bright daylight, messy cables",
+      "generation_prompt_pollinations": "smart commercial refrigerator display panel showing automated defrost error code, cinematic style, negative space composition, European supermarket aisle, modern retail interior, deep navy and electric cyan color palette, curiosity atmosphere, professional photography, technology cybersecurity aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic shot of a smart commercial refrigerator inside a modern European supermarket aisle at night. The digital display panel glows with an eerie electric cyan light, showing a zero-day exploit data stream and automatic defrost activation code against a deep navy background. The composition uses generous negative space at the top for text overlay, with a moody, high-tech cybersecurity atmosphere.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, people, daytime, warm cozy lighting",
       "quality_keywords": [
-        "photorealistic",
-        "ray tracing",
-        "octane render",
-        "8k",
-        "detailed textures",
-        "professional color grading"
+        "hyper-realistic tech aesthetic",
+        "cinematic lighting",
+        "8k resolution",
+        "depth of field",
+        "clean composition"
+      ],
+      "image_dimensions": "1080x1350",
+      "seed_suggestion": 424242,
+      "provider_preference": "pollinations"
+    },
+    "b562c9e5-f3f5-405c-a53a-d6cd4a47e25e_slide3": {
+      "post_id": "b562c9e5-f3f5-405c-a53a-d6cd4a47e25e_slide3",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style creates a high-end, thriller-like atmosphere that naturally drives curiosity and stops the scroll for tech-savvy 18-34 audiences in Europe.",
+      "composition": "negative_space",
+      "composition_rationale": "Negative space allows the dramatic subject to command attention while providing a clean, uncluttered zone for the hook text overlay.",
+      "primary_subject": "A modern sleek European supermarket refrigerator aisle with frosty condensation glowing from an unexpected technical glitch",
+      "background_environment": "A dimly lit, contemporary European grocery store interior with blurred aisles and high-tech digital price tags",
+      "color_palette": {
+        "primary": "#1A2E40",
+        "secondary": "#00E5FF",
+        "accent": "#FF3366",
+        "rationale": "Deep navy represents digital security and trust, electric cyan triggers high-tech curiosity, and a sharp accent signals an alert or anomaly."
+      },
+      "dominant_emotion": "curiosity",
+      "region_visual_cues": [
+        "European supermarket interior architecture",
+        "multilingual digital pricing displays",
+        "sleek stainless steel refrigeration units common in Western European retail"
+      ],
+      "cultural_elements_to_include": [
+        "Realistic European retail environment",
+        "Modern sleek appliance design",
+        "Subtle digital UI glitch elements"
+      ],
+      "cultural_elements_to_avoid": [
+        "Generic American-style corner stores",
+        "Overused Matrix-style green terminal code clichés",
+        "People's faces to keep focus on the mystery",
+        "Inaccurate supermarket layouts"
+      ],
+      "text_overlay_space": "top_third",
+      "text_overlay_color": "#FFFFFF",
+      "text_overlay_background": "semi_dark",
+      "lighting_mood": "Moody, dramatic neon-accented retail lighting with cool blue tones and unexpected frost glow",
+      "time_of_day_depicted": "night",
+      "generation_prompt_pollinations": "A sleek modern European supermarket refrigerator aisle, cinematic lighting, glowing frost condensation, high-tech retail environment, digital security mystery, negative space at top, #1A2E40 deep navy and #00E5FF electric cyan color palette, curiosity atmosphere, professional cinematography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic, moody shot of a modern European supermarket refrigerated aisle at night. Thick frost forms unexpectedly on the glass doors, illuminated by an eerie electric cyan glow from the digital panels. The background shows blurred aisles with a sophisticated, high-tech ambiance designed to evoke intrigue and digital mystery. Ample negative space is preserved in the upper portion of the frame for text overlay.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, daytime lighting, warm cozy grocery store vibe",
+      "quality_keywords": [
+        "hyper-detailed",
+        "cinematic lighting",
+        "8k resolution",
+        "award-winning cinematography",
+        "volumetric light"
       ],
       "image_dimensions": "1080x1350",
       "seed_suggestion": 4242,
       "provider_preference": "pollinations"
     },
-    "39fcad67-8b95-4ac6-b4d5-ad0adf581806_slide3": {
-      "post_id": "39fcad67-8b95-4ac6-b4d5-ad0adf581806_slide3",
+    "7c939f5c-fb7a-41b1-96d0-1e6bd327cddf_slide1": {
+      "post_id": "7c939f5c-fb7a-41b1-96d0-1e6bd327cddf_slide1",
       "visual_style": "cinematic",
-      "visual_style_rationale": "Cinematic style brings a high-end, premium tech aesthetic that captures curiosity for 18-34 tech-savvy audiences while avoiding sterile stock photo clichés.",
+      "visual_style_rationale": "Cinematic style creates a high-end, immersive feel that aligns with emerging technology content, stopping the scroll for 18-34 year olds while evoking deep curiosity.",
       "composition": "negative_space",
-      "composition_rationale": "Negative space allows the sleek hardware and abstract voice wave visual to pop while leaving a deliberate, clean area for the hook text overlay.",
-      "primary_subject": "A modern minimalist Mac setup on a dark walnut desk with a glowing abstract audio waveform floating subtly above the keyboard",
-      "background_environment": "A dimly lit, contemporary workspace with soft ambient blue and purple backlighting, casting gentle reflections on a sleek aluminum laptop",
+      "composition_rationale": "Negative space allows the focal point to draw the eye while leaving a clean, unobstructed area for the hook text overlay.",
+      "primary_subject": "an advanced futuristic holographic interface glowing softly in a minimalist workspace",
+      "background_environment": "a sleek, modern room with subtle ambient lighting and architectural elements inspired by global innovation hubs",
       "color_palette": {
         "primary": "#0F172A",
         "secondary": "#3B82F6",
-        "accent": "#F59E0B",
-        "rationale": "Deep slate blue (#0F172A) provides a trustworthy tech foundation, electric blue (#3B82F6) signifies intelligence and connectivity, and warm amber (#F59E0B) triggers curiosity and focus."
+        "accent": "#10B981",
+        "rationale": "Deep slate blue establishes tech credibility, electric blue fosters trust, and vibrant teal triggers curiosity and forward-thinking aspiration for global audiences."
       },
       "dominant_emotion": "curiosity",
       "region_visual_cues": [
-        "modern minimalist global workspace",
-        "clean ergonomic desk arrangement",
-        "contemporary ambient lighting"
+        "modern minimalist architecture",
+        "sleek workspace setup",
+        "ambient neon glow reflecting global tech aesthetics"
       ],
       "cultural_elements_to_include": [
-        "sleek modern tech accessories",
-        "warm desktop illumination",
-        "clean architectural lines"
+        "sleek hardware designs",
+        "clean geometric lines",
+        "subtle futuristic UI overlays"
       ],
       "cultural_elements_to_avoid": [
-        "messy or cluttered desks",
-        "generic corporate stock photography tropes",
-        "unrealistic holographic interfaces",
-        "distorted computer hardware"
+        "generic stock photo aesthetics",
+        "overly complex or cluttered tech clichés",
+        "culturally insensitive symbols",
+        "unnatural plastic looking objects"
       ],
       "text_overlay_space": "top_third",
       "text_overlay_color": "#FFFFFF",
       "text_overlay_background": "semi_dark",
-      "lighting_mood": "Moody, atmospheric, and focused with soft neon glows",
-      "time_of_day_depicted": "night",
-      "generation_prompt_pollinations": "Modern minimalist Mac setup on dark walnut desk, cinematic, negative_space, sleek aluminum laptop, glowing abstract audio waveform, #0F172A slate blue and #3B82F6 electric blue lighting, curiosity atmosphere, professional technology photography, ultra detailed, 8k resolution, no text, no watermark, no people",
-      "generation_prompt_huggingface": "A cinematic shot of a modern minimalist Mac setup on a dark walnut desk in a dimly lit contemporary room. A subtle, glowing abstract audio waveform hovers above the keyboard, illuminated by soft slate blue and electric blue ambient lighting with warm amber accents. The composition utilizes negative space at the top for text overlay, capturing a sophisticated and curious technology atmosphere.",
-      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, messy desk, bright daylight, harsh shadows",
+      "lighting_mood": "atmospheric, high-contrast, moody with glowing accents",
+      "time_of_day_depicted": "blue_hour",
+      "generation_prompt_pollinations": "advanced futuristic holographic interface glowing softly in a minimalist workspace, cinematic, negative_space, modern minimalist architecture, sleek workspace setup, deep slate blue #0F172A, electric blue #3B82F6, vibrant teal #10B981, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic shot of an advanced futuristic holographic interface glowing softly in a sleek, minimalist workspace during the blue hour. The environment features modern architectural elements with a sophisticated color palette of deep slate blue, electric blue, and vibrant teal accents. The composition utilizes negative space at the top third for a clean layout, evoking a strong sense of technological wonder and curiosity.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, cluttered, messy background",
       "quality_keywords": [
-        "hyper-detailed",
-        "photorealistic lighting",
-        "octane render",
-        "8k",
-        "award-winning tech photography"
+        "8k resolution",
+        "ultra detailed",
+        "professional photography",
+        "cinematic lighting",
+        "hyper-realistic"
       ],
       "image_dimensions": "1080x1350",
-      "seed_suggestion": 424242,
+      "seed_suggestion": 4289,
+      "provider_preference": "pollinations"
+    },
+    "7c939f5c-fb7a-41b1-96d0-1e6bd327cddf_slide2": {
+      "post_id": "7c939f5c-fb7a-41b1-96d0-1e6bd327cddf_slide2",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style creates a premium, high-tech, yet deeply atmospheric aesthetic that stops the scroll for 18-34 tech enthusiasts, perfectly matching the curiosity-driven narrative of mind-controlled audio.",
+      "composition": "negative_space",
+      "composition_rationale": "Negative space composition directs the viewer's focus to the sleek technology while leaving a pristine, uncluttered area specifically designed for the hook text overlay.",
+      "primary_subject": "A pair of sleek, futuristic, minimalist over-ear headphones floating slightly above a smooth reflective surface, emitting a subtle, elegant ambient light pulse representing brainwave synchronization",
+      "background_environment": "An abstract, minimalist architectural interior with soft gradient lighting, subtle organic geometric patterns inspired by modern global design aesthetics, and gentle atmospheric haze",
+      "color_palette": {
+        "primary": "#0A192F",
+        "secondary": "#64FFDA",
+        "accent": "#CCD6F6",
+        "rationale": "Deep navy (#0A192F) establishes trust and tech authority, vibrant teal (#64FFDA) triggers high curiosity and represents futuristic innovation, and soft platinum (#CCD6F6) provides clean, sophisticated contrast."
+      },
+      "dominant_emotion": "curiosity",
+      "region_visual_cues": [
+        "minimalist architectural motifs",
+        "subtle geometric cultural patterns integrated into background panels",
+        "refined global metropolitan interior lighting"
+      ],
+      "cultural_elements_to_include": [
+        "clean modern design lines",
+        "sophisticated lighting indicative of high-end global tech spaces"
+      ],
+      "cultural_elements_to_avoid": [
+        "generic stock photo aesthetics",
+        "overly complex futuristic cyberpunk tropes with neon overload",
+        "culturally inappropriate imagery",
+        "visible text or watermarks"
+      ],
+      "text_overlay_space": "top_third",
+      "text_overlay_color": "#FFFFFF",
+      "text_overlay_background": "semi_dark",
+      "lighting_mood": "Moody, atmospheric, and aspirational with soft cyan rim lighting",
+      "time_of_day_depicted": "blue_hour",
+      "generation_prompt_pollinations": "sleek minimalist futuristic over-ear headphones floating, cinematic, negative_space, minimalist architectural motifs, subtle geometric cultural patterns, deep navy and vibrant teal color palette, curiosity atmosphere, professional product photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic product shot of a pair of sleek, futuristic over-ear headphones floating gracefully in a minimalist architectural space during the blue hour. The scene is bathed in a sophisticated palette of deep navy and vibrant cyan accent light, creating an atmosphere of quiet curiosity and advanced technology. Clean geometric patterns subtly adorn the background walls, and the upper third of the frame provides ample negative space for text overlay.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, cluttered background, bright daylight, harsh shadows",
+      "quality_keywords": [
+        "masterpiece",
+        "ultra-detailed",
+        "8k resolution",
+        "photorealistic lighting",
+        "commercial grade",
+        "ray tracing"
+      ],
+      "image_dimensions": "1080x1350",
+      "seed_suggestion": 4242,
+      "provider_preference": "pollinations"
+    },
+    "7c939f5c-fb7a-41b1-96d0-1e6bd327cddf_slide3": {
+      "post_id": "7c939f5c-fb7a-41b1-96d0-1e6bd327cddf_slide3",
+      "visual_style": "cinematic",
+      "visual_style_rationale": "Cinematic style creates a high-end, immersive feel that naturally triggers curiosity. For emerging tech content targeted at 18-34 year olds in Global, it bridges the gap between futuristic wonder and tactile reality, outperforming flat illustrations or generic stock photos in feed engagement.",
+      "composition": "negative_space",
+      "composition_rationale": "Negative space composition directs the viewer's eye intentionally across the frame while providing a clean, uncluttered canvas for the hook text overlay, ensuring high readability and thumb-stopping power on Facebook.",
+      "primary_subject": "an advanced futuristic holographic device revealing intricate glowing data streams and wonder-inducing patterns",
+      "background_environment": "a modern minimalist interior with subtle architectural cues from Global technology hubs, blending organic textures with sleek digital interfaces",
+      "color_palette": {
+        "primary": "#0F172A",
+        "secondary": "#38BDF8",
+        "accent": "#F43F5E",
+        "rationale": "Dark slate primary provides modern tech credibility, electric sky blue secondary builds trust and digital innovation, and vibrant rose accent sparks instant curiosity and emotional resonance."
+      },
+      "dominant_emotion": "curiosity",
+      "region_visual_cues": [
+        "modern minimalist architecture with local geometric motifs",
+        "ambient atmospheric lighting reflecting regional twilight hues",
+        "subtle integration of tactile natural textures like brushed metal and refined stone"
+      ],
+      "cultural_elements_to_include": [
+        "subtle regional geometric patterns embedded in UI elements",
+        "warm, ambient lighting reflecting local dusk aesthetics",
+        "sophisticated tech integration that respects local contemporary design sensibilities"
+      ],
+      "cultural_elements_to_avoid": [
+        "generic western silicon valley clichés",
+        "culturally inaccurate regional stereotypes",
+        "overly clinical or sterile white laboratory backgrounds",
+        "pure black backgrounds that suppress feed visibility"
+      ],
+      "text_overlay_space": "top_third",
+      "text_overlay_color": "#FFFFFF",
+      "text_overlay_background": "semi_dark",
+      "lighting_mood": "mysterious, glowing, high-contrast, cinematic rim lighting",
+      "time_of_day_depicted": "blue_hour",
+      "generation_prompt_pollinations": "advanced futuristic holographic device revealing intricate glowing data streams, cinematic style, negative space composition, modern minimalist interior, subtle regional geometric patterns, deep slate blue and electric sky blue color palette with vibrant rose accents, curiosity atmosphere, professional photography, technology aesthetic, ultra detailed, 8k resolution, no text, no watermark, no people",
+      "generation_prompt_huggingface": "A cinematic, highly detailed photograph of an advanced futuristic holographic device revealing intricate glowing data streams and wonder-inducing patterns inside a modern minimalist interior. The scene features a sophisticated color palette of deep slate blue, electric sky blue, and vibrant rose accents, evoking a strong sense of curiosity and technological wonder. The composition utilizes generous negative space at the top for text overlay, with dramatic rim lighting and a mysterious blue hour atmosphere.",
+      "negative_prompt": "blurry, low quality, generic stock photo, watermark, text, logo, oversaturated, plastic looking, uncanny valley faces, distorted hands, culturally inaccurate, pure black background, cluttered composition",
+      "quality_keywords": [
+        "masterpiece",
+        "ultra detailed",
+        "8k resolution",
+        "photorealistic lighting",
+        "cinematic composition",
+        "octane render"
+      ],
+      "image_dimensions": "1080x1350",
+      "seed_suggestion": 42891,
       "provider_preference": "pollinations"
     }
   }

@@ -1,9 +1,9 @@
 {
   "date": "2026-10-13",
-  "generated_at": "2026-10-13T06:38:18.841299+00:00",
+  "generated_at": "2026-10-13T07:06:11.934504+00:00",
   "posts": [
     {
-      "post_id": "5bc8964a-6d94-49ea-949c-950b5563a337",
+      "post_id": "11241653-3731-419e-9e64-dceb2e25e4f3",
       "slot": 1,
       "scheduled_time_utc": "2026-10-13T03:00:00+00:00",
       "format": "single_image",
@@ -15,19 +15,19 @@
       "status": "planned"
     },
     {
-      "post_id": "14f346fb-8efe-4bc4-a63e-62f226d61961",
+      "post_id": "e5814d2b-782f-4208-ae52-108d8c3b2d16",
       "slot": 2,
       "scheduled_time_utc": "2026-10-13T07:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "Show HN: Atticus – Hold-to-talk voice assistant for macOS that runs on Claude -p",
-      "content_pillar": "Tech Tips and Tutorials",
+      "trend_topic": "Muse Wonder",
+      "content_pillar": "Emerging Technology Explained",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
       "dominant_emotion": "curiosity",
       "status": "planned"
     },
     {
-      "post_id": "45713404-9147-422a-8e57-a891ea4d4f3c",
+      "post_id": "f859c7df-2db6-4f1c-9116-eabb84b6be60",
       "slot": 3,
       "scheduled_time_utc": "2026-10-13T14:00:00+00:00",
       "format": "single_image",
@@ -41,7 +41,7 @@
   ],
   "stories": [
     {
-      "post_id": "7bdbcaf6-ab50-4f79-844c-cc3116654c25",
+      "post_id": "b562c9e5-f3f5-405c-a53a-d6cd4a47e25e",
       "slot": 1,
       "scheduled_time_utc": "2026-10-13T03:00:00+00:00",
       "format": "story",
@@ -50,20 +50,20 @@
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "5bc8964a-6d94-49ea-949c-950b5563a337",
+      "parent_post_id": "11241653-3731-419e-9e64-dceb2e25e4f3",
       "status": "planned"
     },
     {
-      "post_id": "39fcad67-8b95-4ac6-b4d5-ad0adf581806",
+      "post_id": "7c939f5c-fb7a-41b1-96d0-1e6bd327cddf",
       "slot": 2,
       "scheduled_time_utc": "2026-10-13T07:00:00+00:00",
       "format": "story",
-      "trend_topic": "Show HN: Atticus – Hold-to-talk voice assistant for macOS that runs on Claude -p",
-      "content_pillar": "Tech Tips and Tutorials",
+      "trend_topic": "Muse Wonder",
+      "content_pillar": "Emerging Technology Explained",
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "14f346fb-8efe-4bc4-a63e-62f226d61961",
+      "parent_post_id": "e5814d2b-782f-4208-ae52-108d8c3b2d16",
       "status": "planned"
     }
   ],

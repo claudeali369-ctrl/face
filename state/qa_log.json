@@ -1,127 +1,117 @@
 {
-  "generated_at": "2026-10-13T06:41:53.293579+00:00",
+  "generated_at": "2026-10-13T07:11:37.037287+00:00",
   "date": "2026-10-13",
   "records": [
     {
-      "post_id": "5bc8964a-6d94-49ea-949c-950b5563a337",
-      "attempt": 1,
-      "provider": "Pollinations",
-      "score": 4.0,
-      "policy_safe": true,
-      "improvement_instructions": "",
-      "timestamp": "2026-10-13T06:39:32.240636+00:00"
-    },
-    {
-      "post_id": "5bc8964a-6d94-49ea-949c-950b5563a337",
-      "attempt": 4,
-      "provider": "Pixabay",
-      "score": 3.0,
-      "policy_safe": true,
-      "improvement_instructions": "",
-      "timestamp": "2026-10-13T06:39:34.887719+00:00",
-      "fallback": true
-    },
-    {
-      "post_id": "14f346fb-8efe-4bc4-a63e-62f226d61961",
-      "attempt": 1,
-      "provider": "Pollinations",
-      "score": 8.0,
-      "policy_safe": true,
-      "improvement_instructions": "",
-      "timestamp": "2026-10-13T06:39:44.659934+00:00"
-    },
-    {
-      "post_id": "45713404-9147-422a-8e57-a891ea4d4f3c",
-      "attempt": 1,
-      "provider": "Pollinations",
-      "score": 8.0,
-      "policy_safe": true,
-      "improvement_instructions": "",
-      "timestamp": "2026-10-13T06:40:14.907154+00:00"
-    },
-    {
-      "post_id": "7bdbcaf6-ab50-4f79-844c-cc3116654c25_slide1",
-      "attempt": 1,
-      "provider": "Pollinations",
-      "score": 4.0,
-      "policy_safe": true,
-      "improvement_instructions": "",
-      "timestamp": "2026-10-13T06:40:33.795067+00:00"
-    },
-    {
-      "post_id": "7bdbcaf6-ab50-4f79-844c-cc3116654c25_slide1",
-      "attempt": 4,
-      "provider": "Pixabay",
-      "score": 1.0,
-      "policy_safe": true,
-      "improvement_instructions": "",
-      "timestamp": "2026-10-13T06:40:36.230598+00:00",
-      "fallback": true
-    },
-    {
-      "post_id": "7bdbcaf6-ab50-4f79-844c-cc3116654c25_slide2",
+      "post_id": "11241653-3731-419e-9e64-dceb2e25e4f3",
       "attempt": 1,
       "provider": "Pollinations",
       "score": 6.0,
       "policy_safe": true,
       "improvement_instructions": "",
-      "timestamp": "2026-10-13T06:40:52.020032+00:00"
+      "timestamp": "2026-10-13T07:08:17.688772+00:00"
     },
     {
-      "post_id": "7bdbcaf6-ab50-4f79-844c-cc3116654c25_slide2",
+      "post_id": "11241653-3731-419e-9e64-dceb2e25e4f3",
       "attempt": 4,
       "provider": "Pixabay",
-      "score": 1.0,
+      "score": 3.0,
       "policy_safe": true,
       "improvement_instructions": "",
-      "timestamp": "2026-10-13T06:40:54.275608+00:00",
+      "timestamp": "2026-10-13T07:08:28.838256+00:00",
       "fallback": true
     },
     {
-      "post_id": "7bdbcaf6-ab50-4f79-844c-cc3116654c25_slide3",
+      "post_id": "e5814d2b-782f-4208-ae52-108d8c3b2d16",
+      "attempt": 1,
+      "provider": "Pollinations",
+      "score": 8.0,
+      "policy_safe": true,
+      "improvement_instructions": "",
+      "timestamp": "2026-10-13T07:08:58.622308+00:00"
+    },
+    {
+      "post_id": "f859c7df-2db6-4f1c-9116-eabb84b6be60",
+      "attempt": 1,
+      "provider": "Pollinations",
+      "score": 9.0,
+      "policy_safe": true,
+      "improvement_instructions": "",
+      "timestamp": "2026-10-13T07:09:40.502542+00:00"
+    },
+    {
+      "post_id": "b562c9e5-f3f5-405c-a53a-d6cd4a47e25e_slide1",
       "attempt": 1,
       "provider": "Pollinations",
       "score": 4.0,
       "policy_safe": true,
       "improvement_instructions": "",
-      "timestamp": "2026-10-13T06:41:07.572954+00:00"
+      "timestamp": "2026-10-13T07:10:16.439195+00:00"
     },
     {
-      "post_id": "7bdbcaf6-ab50-4f79-844c-cc3116654c25_slide3",
+      "post_id": "b562c9e5-f3f5-405c-a53a-d6cd4a47e25e_slide1",
       "attempt": 4,
       "provider": "Pixabay",
       "score": 1.0,
       "policy_safe": true,
       "improvement_instructions": "",
-      "timestamp": "2026-10-13T06:41:10.118632+00:00",
+      "timestamp": "2026-10-13T07:10:24.365218+00:00",
       "fallback": true
     },
     {
-      "post_id": "39fcad67-8b95-4ac6-b4d5-ad0adf581806_slide1",
+      "post_id": "b562c9e5-f3f5-405c-a53a-d6cd4a47e25e_slide2",
       "attempt": 1,
       "provider": "Pollinations",
-      "score": 9.0,
+      "score": 6.0,
       "policy_safe": true,
       "improvement_instructions": "",
-      "timestamp": "2026-10-13T06:41:24.094078+00:00"
+      "timestamp": "2026-10-13T07:10:38.645811+00:00"
     },
     {
-      "post_id": "39fcad67-8b95-4ac6-b4d5-ad0adf581806_slide2",
-      "attempt": 1,
-      "provider": "Pollinations",
-      "score": 9.0,
+      "post_id": "b562c9e5-f3f5-405c-a53a-d6cd4a47e25e_slide2",
+      "attempt": 4,
+      "provider": "Pixabay",
+      "score": 1.0,
       "policy_safe": true,
       "improvement_instructions": "",
-      "timestamp": "2026-10-13T06:41:37.898734+00:00"
+      "timestamp": "2026-10-13T07:10:40.855001+00:00",
+      "fallback": true
     },
     {
-      "post_id": "39fcad67-8b95-4ac6-b4d5-ad0adf581806_slide3",
+      "post_id": "b562c9e5-f3f5-405c-a53a-d6cd4a47e25e_slide3",
+      "attempt": 1,
+      "provider": "Pollinations",
+      "score": 7.0,
+      "policy_safe": true,
+      "improvement_instructions": "",
+      "timestamp": "2026-10-13T07:10:55.599712+00:00"
+    },
+    {
+      "post_id": "7c939f5c-fb7a-41b1-96d0-1e6bd327cddf_slide1",
+      "attempt": 1,
+      "provider": "Pollinations",
+      "score": 8.0,
+      "policy_safe": true,
+      "improvement_instructions": "",
+      "timestamp": "2026-10-13T07:11:09.887889+00:00"
+    },
+    {
+      "post_id": "7c939f5c-fb7a-41b1-96d0-1e6bd327cddf_slide2",
       "attempt": 1,
       "provider": "Pollinations",
       "score": 9.0,
       "policy_safe": true,
       "improvement_instructions": "",
-      "timestamp": "2026-10-13T06:41:53.251743+00:00"
+      "timestamp": "2026-10-13T07:11:24.296884+00:00"
+    },
+    {
+      "post_id": "7c939f5c-fb7a-41b1-96d0-1e6bd327cddf_slide3",
+      "attempt": 1,
+      "provider": "Pollinations",
+      "score": 8.0,
+      "policy_safe": true,
+      "improvement_instructions": "",
+      "timestamp": "2026-10-13T07:11:37.005205+00:00"
     }
   ]
 }
