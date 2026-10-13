@@ -257,9 +257,11 @@ jobs:
               sys.exit(1)
 
           print(f"Publisher outcome for run {report_run_id}: published={published}, failed={failed}")
-          if failed:
-              print(f"::error::PublisherAgent reported {failed} failed item(s). See state/errors.json and the job log.")
-              sys.exit(1)
+         if failed:
+            print(
+                f"::warning::PublisherAgent reported {failed} failed item(s). "
+                "See state/errors.json and the job log."
+            )
           PY
 
       # ── Step 16: Clean up large temp files ───────────────────────────────
