@@ -1,34 +1,9 @@
 {
   "date": "2026-10-13",
-  "run_at": "2026-10-13T04:44:44.239710+00:00",
-  "github_run_id": "38347365701",
+  "run_at": "2026-10-13T05:29:37.273545+00:00",
+  "github_run_id": "38351113844",
   "published_count": 0,
-  "failed_count": 4,
+  "failed_count": 0,
   "skipped_count": 0,
-  "items": [
-    {
-      "post_id": "cc3fd91e-0006-4202-b45f-add49afaa476",
-      "format": "single_image",
-      "status": "failed",
-      "error": "image_ready is not true"
-    },
-    {
-      "post_id": "cb236555-a47c-435c-888a-f41d28068b23",
-      "format": "single_image",
-      "status": "failed",
-      "error": "image_ready is not true"
-    },
-    {
-      "post_id": "46976164-2740-413e-8910-2bb3b9c01a6b",
-      "format": "story",
-      "status": "failed",
-      "error": "story image_ready is not true"
-    },
-    {
-      "post_id": "b194bed8-7426-45ac-852c-5b4b236f111e",
-      "format": "story",
-      "status": "failed",
-      "error": "story image_ready is not true"
-    }
-  ]
+  "items": []
 }

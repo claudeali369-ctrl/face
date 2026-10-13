@@ -1,23 +1,11 @@
 {
   "date": "2026-10-13",
-  "generated_at": "2026-10-13T04:41:08.298783+00:00",
+  "generated_at": "2026-10-13T05:26:34.942705+00:00",
   "posts": [
     {
-      "post_id": "cc3fd91e-0006-4202-b45f-add49afaa476",
+      "post_id": "dca3bf3b-1316-4ae9-9c19-5f57c8772fea",
       "slot": 1,
       "scheduled_time_utc": "2026-10-13T03:00:00+00:00",
-      "format": "single_image",
-      "trend_topic": "Hackers activate automatic defrosting in supermarket fridges across Europe",
-      "content_pillar": "Digital Safety and Privacy",
-      "hook_type": "curiosity",
-      "cta_type": "save_or_share",
-      "dominant_emotion": "curiosity",
-      "status": "planned"
-    },
-    {
-      "post_id": "d7887e2e-8f91-4e33-b17c-6565e03c8382",
-      "slot": 2,
-      "scheduled_time_utc": "2026-10-13T07:00:00+00:00",
       "format": "single_image",
       "trend_topic": "Muse Wonder",
       "content_pillar": "Emerging Technology Explained",
@@ -27,12 +15,24 @@
       "status": "planned"
     },
     {
-      "post_id": "cb236555-a47c-435c-888a-f41d28068b23",
+      "post_id": "4602f73e-d9ef-4155-85c7-8d8c85cc3fe1",
+      "slot": 2,
+      "scheduled_time_utc": "2026-10-13T07:00:00+00:00",
+      "format": "single_image",
+      "trend_topic": "Hackers activate automatic defrosting in supermarket fridges across Europe",
+      "content_pillar": "Digital Safety and Privacy",
+      "hook_type": "curiosity",
+      "cta_type": "save_or_share",
+      "dominant_emotion": "curiosity",
+      "status": "planned"
+    },
+    {
+      "post_id": "fb634b5b-49de-43d0-b5a5-aaa958335a00",
       "slot": 3,
       "scheduled_time_utc": "2026-10-13T14:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "GLM-Legal",
-      "content_pillar": "Practical AI Tools",
+      "trend_topic": "Show HN: Atticus – Hold-to-talk voice assistant for macOS that runs on Claude -p",
+      "content_pillar": "Tech Tips and Tutorials",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
       "dominant_emotion": "curiosity",
@@ -41,29 +41,29 @@
   ],
   "stories": [
     {
-      "post_id": "46976164-2740-413e-8910-2bb3b9c01a6b",
+      "post_id": "8322efa7-cbf7-4853-b63b-d84ed5dba4dc",
       "slot": 1,
       "scheduled_time_utc": "2026-10-13T03:00:00+00:00",
-      "format": "story",
-      "trend_topic": "Hackers activate automatic defrosting in supermarket fridges across Europe",
-      "content_pillar": "Digital Safety and Privacy",
-      "hook_type": "bold_claim",
-      "cta_type": "follow",
-      "dominant_emotion": "curiosity",
-      "parent_post_id": "cc3fd91e-0006-4202-b45f-add49afaa476",
-      "status": "planned"
-    },
-    {
-      "post_id": "b194bed8-7426-45ac-852c-5b4b236f111e",
-      "slot": 2,
-      "scheduled_time_utc": "2026-10-13T07:00:00+00:00",
       "format": "story",
       "trend_topic": "Muse Wonder",
       "content_pillar": "Emerging Technology Explained",
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "d7887e2e-8f91-4e33-b17c-6565e03c8382",
+      "parent_post_id": "dca3bf3b-1316-4ae9-9c19-5f57c8772fea",
+      "status": "planned"
+    },
+    {
+      "post_id": "13edff17-fb43-423c-87aa-c6d78de0f59d",
+      "slot": 2,
+      "scheduled_time_utc": "2026-10-13T07:00:00+00:00",
+      "format": "story",
+      "trend_topic": "Hackers activate automatic defrosting in supermarket fridges across Europe",
+      "content_pillar": "Digital Safety and Privacy",
+      "hook_type": "bold_claim",
+      "cta_type": "follow",
+      "dominant_emotion": "curiosity",
+      "parent_post_id": "4602f73e-d9ef-4155-85c7-8d8c85cc3fe1",
       "status": "planned"
     }
   ],
