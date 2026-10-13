@@ -1,9 +1,9 @@
 {
   "date": "2026-10-13",
-  "generated_at": "2026-10-13T06:06:21.894342+00:00",
+  "generated_at": "2026-10-13T06:38:18.841299+00:00",
   "posts": [
     {
-      "post_id": "d1413d47-2891-4d6d-9e4a-463ce58f95f3",
+      "post_id": "5bc8964a-6d94-49ea-949c-950b5563a337",
       "slot": 1,
       "scheduled_time_utc": "2026-10-13T03:00:00+00:00",
       "format": "single_image",
@@ -15,24 +15,24 @@
       "status": "planned"
     },
     {
-      "post_id": "fc9ff410-5664-4e69-b4d3-0352d9cfba39",
+      "post_id": "14f346fb-8efe-4bc4-a63e-62f226d61961",
       "slot": 2,
       "scheduled_time_utc": "2026-10-13T07:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "Muse Wonder",
-      "content_pillar": "Emerging Technology Explained",
+      "trend_topic": "Show HN: Atticus – Hold-to-talk voice assistant for macOS that runs on Claude -p",
+      "content_pillar": "Tech Tips and Tutorials",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
       "dominant_emotion": "curiosity",
       "status": "planned"
     },
     {
-      "post_id": "fc6a895f-e102-44d2-be13-aba38df83443",
+      "post_id": "45713404-9147-422a-8e57-a891ea4d4f3c",
       "slot": 3,
       "scheduled_time_utc": "2026-10-13T14:00:00+00:00",
       "format": "single_image",
-      "trend_topic": "GLM-Legal",
-      "content_pillar": "Practical AI Tools",
+      "trend_topic": "A look at OpenAI’s math that’s claimed computes faster Fourier transforms",
+      "content_pillar": "Tech Tips and Tutorials",
       "hook_type": "curiosity",
       "cta_type": "save_or_share",
       "dominant_emotion": "curiosity",
@@ -41,7 +41,7 @@
   ],
   "stories": [
     {
-      "post_id": "c53ba6c0-44a7-461d-94a7-358e663e6869",
+      "post_id": "7bdbcaf6-ab50-4f79-844c-cc3116654c25",
       "slot": 1,
       "scheduled_time_utc": "2026-10-13T03:00:00+00:00",
       "format": "story",
@@ -50,20 +50,20 @@
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "d1413d47-2891-4d6d-9e4a-463ce58f95f3",
+      "parent_post_id": "5bc8964a-6d94-49ea-949c-950b5563a337",
       "status": "planned"
     },
     {
-      "post_id": "6e56f6ee-2207-44a6-93de-b10cb76ea62f",
+      "post_id": "39fcad67-8b95-4ac6-b4d5-ad0adf581806",
       "slot": 2,
       "scheduled_time_utc": "2026-10-13T07:00:00+00:00",
       "format": "story",
-      "trend_topic": "Muse Wonder",
-      "content_pillar": "Emerging Technology Explained",
+      "trend_topic": "Show HN: Atticus – Hold-to-talk voice assistant for macOS that runs on Claude -p",
+      "content_pillar": "Tech Tips and Tutorials",
       "hook_type": "bold_claim",
       "cta_type": "follow",
       "dominant_emotion": "curiosity",
-      "parent_post_id": "fc9ff410-5664-4e69-b4d3-0352d9cfba39",
+      "parent_post_id": "14f346fb-8efe-4bc4-a63e-62f226d61961",
       "status": "planned"
     }
   ],

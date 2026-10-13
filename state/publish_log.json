@@ -1,31 +1,34 @@
 {
   "date": "2026-10-13",
-  "run_at": "2026-10-13T06:06:55.009613+00:00",
-  "github_run_id": "38354615517",
-  "published_count": 0,
-  "failed_count": 4,
+  "run_at": "2026-10-13T06:41:53.796228+00:00",
+  "github_run_id": "38357500179",
+  "published_count": 3,
+  "failed_count": 2,
   "skipped_count": 0,
   "items": [
     {
-      "post_id": "d1413d47-2891-4d6d-9e4a-463ce58f95f3",
+      "post_id": "796782446859518_122142474159061297",
+      "format": "single_image",
+      "status": "published"
+    },
+    {
+      "post_id": "796782446859518_122142474393061297",
+      "format": "single_image",
+      "status": "published"
+    },
+    {
+      "post_id": "122142475113061297",
+      "format": "story",
+      "status": "published"
+    },
+    {
+      "post_id": "5bc8964a-6d94-49ea-949c-950b5563a337",
       "format": "single_image",
       "status": "failed",
       "error": "image_ready is not true"
     },
     {
-      "post_id": "fc9ff410-5664-4e69-b4d3-0352d9cfba39",
-      "format": "single_image",
-      "status": "failed",
-      "error": "image_ready is not true"
-    },
-    {
-      "post_id": "fc6a895f-e102-44d2-be13-aba38df83443",
-      "format": "single_image",
-      "status": "failed",
-      "error": "image_ready is not true"
-    },
-    {
-      "post_id": "c53ba6c0-44a7-461d-94a7-358e663e6869",
+      "post_id": "7bdbcaf6-ab50-4f79-844c-cc3116654c25",
       "format": "story",
       "status": "failed",
       "error": "story image_ready is not true"
